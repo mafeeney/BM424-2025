@@ -1,5 +1,3 @@
-number-depth: 0
-
 project:
   type: book
   output-dir: _book
@@ -20,11 +18,10 @@ book:
   date: "28/02/2025"
 
   # Define chapters and contents here
-  
+  number-depth: 0 
   chapters:
     - index.qmd
     - part: "Group A"
-      numbered: false
       chapters: 
         - workshop3/3A.qmd
         - workshop3/dashboardA.qmd
