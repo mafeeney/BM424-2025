@@ -8,7 +8,7 @@
 
 <meta name="author" content="Leighton Pritchard">
 
-<title>1&nbsp; Workshop 3: Group A – BM424 Clinical Microbiology Pandemic Preparedness Workshops</title>
+<title>Hospital Data – BM424 Clinical Microbiology Pandemic Preparedness Workshops</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -81,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshop3.html">Workshop 3–Overview</a></li><li class="breadcrumb-item"><a href="../workshop3/3A.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Workshop 3: Group A</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshop3.html">Workshop 3–Overview</a></li><li class="breadcrumb-item"><a href="../workshop3/3A.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Hospital Data</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -124,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../workshop3/3A.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Workshop 3: Group A</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Hospital Data</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -188,9 +222,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshop3.html">Workshop 3–Overview</a></li><li class="breadcrumb-item"><a href="../workshop3/3A.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Workshop 3: Group A</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshop3.html">Workshop 3–Overview</a></li><li class="breadcrumb-item"><a href="../workshop3/3A.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Hospital Data</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Workshop 3: Group A</span></h1>
+<h1 class="title">Hospital Data</h1>
 </div>
 
 
@@ -208,28 +242,28 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Pandemic Outbreak</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Inverkeld</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false"><em>Legionella pneumophila</em></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Public Opinion: News and E-mails</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">Data Collected for the Pandemic Response Committee Meeting</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-6" role="tab" aria-controls="tabset-1-6" aria-selected="false">City and Hospital Pandemic Planning Resources</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-7" role="tab" aria-controls="tabset-1-7" aria-selected="false">Other useful resources/links</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-8" role="tab" aria-controls="tabset-1-8" aria-selected="false">Suggested Reading</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Pandemic Outbreak</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Inverkeld</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false"><em>Legionella pneumophila</em></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Public Opinion: News and E-mails</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">Data Collected for the Pandemic Response Committee Meeting</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-6" role="tab" aria-controls="tabset-1-6" aria-selected="false">Row 1, number of hospital beds</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-7" role="tab" aria-controls="tabset-1-7" aria-selected="false">Row 2, hospital bed occupancy</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-8" role="tab" aria-controls="tabset-1-8" aria-selected="false">Row 2b, staff</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-9-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-9" role="tab" aria-controls="tabset-1-9" aria-selected="false">Row 3, a&amp;e stats</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-10-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-10" role="tab" aria-controls="tabset-1-10" aria-selected="false">Row 3b</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-11-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-11" role="tab" aria-controls="tabset-1-11" aria-selected="false">Row 4, waiting times</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-12-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-12" role="tab" aria-controls="tabset-1-12" aria-selected="false">Row 5, header</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-13-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-13" role="tab" aria-controls="tabset-1-13" aria-selected="false">Row 6, organism stats</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-14-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-14" role="tab" aria-controls="tabset-1-14" aria-selected="false">Row 7, overall stats</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-15-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-15" role="tab" aria-controls="tabset-1-15" aria-selected="false">Row 8a, header</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-16-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-16" role="tab" aria-controls="tabset-1-16" aria-selected="false">Row 8, covid cases (weekly)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-17-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-17" role="tab" aria-controls="tabset-1-17" aria-selected="false">Row 9, vaccination rate</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-18-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-18" role="tab" aria-controls="tabset-1-18" aria-selected="false">City and Hospital Pandemic Planning Resources</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-19-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-19" role="tab" aria-controls="tabset-1-19" aria-selected="false">Other useful resources/links</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-20-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-20" role="tab" aria-controls="tabset-1-20" aria-selected="false">Suggested Reading</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<section id="inverkeld-metro" class="level3">
-<h3 class="anchored" data-anchor-id="inverkeld-metro">Inverkeld Metro</h3>
+<section id="inverkeld-sentinel" class="level3">
+<h3 class="anchored" data-anchor-id="inverkeld-sentinel">Inverkeld Sentinel</h3>
 <section id="breaking-news" class="level4">
 <h4 class="anchored" data-anchor-id="breaking-news">Breaking News</h4>
 <p><strong>Fears Over Possible Outbreak of Legionellosis in Inverkeld</strong></p>
 <p>24 February, 2025</p>
-<p>Anxiety surges in Inverkeld as health officials investigate a potential outbreak of Legionellosis, raising alarm bells across the region. Though yet to be formally confirmed as a pandemic, suspicions have intensified following a recent unsettling surge in patients presenting with symptoms indicative of Legionellosis.</p>
+<p>Anxiety surges in Inverkeld as health officials investigate a potential outbreak of Legionellosis, raising alarm bells across the region. Though yet to be formally confirmed as a pandemic, suspicions have intensified following a recent concerning surge in patients presenting with symptoms indicative of Legionellosis.</p>
 <p>Legionellosis is caused by <em>Legionella pneumophila</em>. It is typically transmitted through the inhalation of contaminated water droplets, such as those from air conditioning systems or hot tubs. Symptoms include fever, chills, cough, muscle aches, and headaches. Residents of Inverkeld experiencing any of these symptoms are advised to contact their GP or dial 111 for health advice.</p>
-<p>In a press release, the director of the Queen Rose in Inverkeld noted a worrying uptick in individuals reporting symptoms consistent with those associated with Legionellosis. Anxieties were first raised when the local GPs began reporting an unusual increase in patients with symptoms of Legionellosis. While investigations are still ongoing, the possibility of a pandemic outbreak hovers, prompting concern from health agencies.</p>
-<p>In response to the developing concerns, health officials have begun several contingency plans, and Inverkeld have convened an Emergency Pandemic Response Team, which will be meeting on 2025-02-28 and attempting to find solutions that will stop the spread of the pandemic in Inverkeld.</p>
-<p>The First Minister assured residents that authorities are leaving pursuing every lead in their efforts to safeguard public health, and furthermore urged residents to remain vigilant and cooperate with health directives from the Inverkeld City Council. A statement released by the First Minister’s office read: “While we cannot confirm an outbreak at this time, we are treating this situation with the utmost seriousness.”</p>
-<p>The people in Inverkeld have already begun to worry the possibility of a pandemic; potential consequences such as school closures, economic repercussions, and strain on healthcare resources, have sparked apprehension among residents, underscoring the need for swift and decisive action.</p>
+<p>In a press release, the director of the Queen Rose in Inverkeld noted a distressing uptick in individuals reporting symptoms consistent with those associated with Legionellosis. Anxieties were first raised when the local GPs began reporting an unusual increase in patients with symptoms of Legionellosis. While investigations are still ongoing, the possibility of a pandemic outbreak shadows the community, prompting concern from health agencies.</p>
+<p>In response to the escalating concerns, health officials have activated several preventive actions, and Inverkeld have convened an Emergency Pandemic Response Team, which will be meeting on 2025-02-28 and attempting to find solutions that will stop the spread of the pandemic in Inverkeld.</p>
+<p>The First Minister assured residents that authorities are leaving exploring every avenue in their efforts to safeguard public health, and furthermore urged residents to remain vigilant and cooperate with health directives from the Inverkeld City Council. A statement released by the First Minister’s office read: “While there is no confirmation of an outbreak at this time, we are taking this situation very seriously.”</p>
+<p>The people in Inverkeld have already begun to consider the possibility of a pandemic; potential consequences such as school closures, economic repercussions, and strain on healthcare resources, have sparked apprehension among residents, underscoring the need for swift and decisive action.</p>
 <p><strong>Contact Information for Further Updates:</strong></p>
 <ul>
 <li><p>More information will be posted on the Inverkeld website as the situation develops: https://www.InverkeldCouncil.co.uk</p></li>
-<li><p>The Inverkeld Emergency Pandemic Response Team can be contacted on +44 01463 8431 7423 or at pandemic_response@Inverkeld.co.uk</p></li>
+<li><p>The Inverkeld Emergency Pandemic Response Team can be contacted on +44 01786 3091 7139 or at pandemic_response@Inverkeld.co.uk</p></li>
 </ul>
 <p><strong>About the Author:</strong></p>
-<p>Lutfi al-Raad is a health correspondent at the Inverkeld Metro, specializing in public health and safety issues.He can be contacted at la4758@InverkeldMetro.com.</p>
+<p>Gerardo Sanabria is a health correspondent at the Inverkeld Sentinel, specializing in public health and safety issues.He can be contacted at gs8322@InverkeldSentinel.com.</p>
 </section>
 </section>
 </div>
@@ -240,9 +274,9 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>The Inverkeld city centre</figcaption>
 </figure>
 </div>
-<p>Inverkeld was granted city status in 1887. Located near Blackrock Beach, Inverkeld is noted for its well-preserved historic buildings. Major industries in the city include Healthcare technology, creative industries (e.g., media, advertising), and agriculture.</p>
-<p>Inverkeld is well-served by public transport: there are 4 bus companies operating routes that cover the city and outlying areas, and road links to other major cities (the A81 to Aviemore and the the A63 to Helensburgh.) Inverkeld is further connected to regional towns and villages by rail services from the Inverkeld railway station. Inverkeld is also served by Inverkeld Airport, which is 2 miles from the city centre and which offers daily flights to Florence, Krakow, and Ljubljana.</p>
-<p>Notable buildings in the city include Inverkeld Castle, Inverkeld Cathedral, and Ailsa Gallery. Inverkeld also has a number of shopping districts and markets and several historic monuments. The Inverkeld literary festival is held annually in April, and tourists also flock to Inverkeld to take historical walking tours in autumn. Inverkeld is also noted as a hub of local arts and culture, with Northgate Theatre and Ede Hall drawing in crowds for performances from local and international artists. The city is renowned for sports, with the Reds and Hawks teams representing the city for field hockey and cricket, respectively.</p>
+<p>Inverkeld was granted city status in 1956. Located near Castle Kincardine, Inverkeld is noted for its rich maritime history. Major industries in the city include pharmaceuticals, retail, and agriculture.</p>
+<p>Inverkeld is well-served by public transport: there are 3 bus companies operating routes that cover the city and outlying areas, and road links to other major cities (the A75 to Falkirk and the the A30 to Dumfries.) Inverkeld is further connected to regional towns and villages by rail services from the Inverkeld railway station. Inverkeld is also served by Inverkeld Airport, which is 8 miles from the city centre and which offers daily flights to Florence, Nice, and Düsseldorf.</p>
+<p>Notable buildings in the city include Inverkeld Castle, Inverkeld Cathedral, and Braeside Institute. Inverkeld also has a number of historic landmarks and several historic monuments. The Inverkeld jazz festival is held annually in May, and tourists also flock to Inverkeld to sample the local cuisine in autumn. Inverkeld is also noted as a hub of local arts and culture, with Stewart Hall and The Globe and Gale drawing in crowds for performances from local and international artists. The city is renowned for sports, with the Bluebirds and Hornets teams representing the city for field hockey and cricket, respectively.</p>
 <p>Some of the key Inverkeld features are summarized in the list below.</p>
 <section id="public-facilitiescommunity-amenities" class="level4">
 <h4 class="anchored" data-anchor-id="public-facilitiescommunity-amenities">Public Facilities/Community Amenities</h4>
@@ -250,18 +284,18 @@ ul.task-list li input[type="checkbox"] {
 <li>Schools:
 <ul>
 <li>5 primary schools</li>
-<li>2 secondary schools</li>
+<li>6 secondary schools</li>
 <li>1 college</li>
 </ul></li>
-<li>Nurseries: 12</li>
+<li>Nurseries: 8</li>
 <li>Care Homes: 4</li>
-<li>Restaurants and Cafes: 87</li>
-<li>Parks and Playgrounds: 15</li>
-<li>Libraries: 6</li>
-<li>Gyms and Sports Facilities: 8</li>
-<li>Prisons: 3</li>
-<li>Police and Fire Stations: 3</li>
-<li>Surgeries and pharmacies: 6</li>
+<li>Restaurants and Cafes: 103</li>
+<li>Parks and Playgrounds: 5</li>
+<li>Libraries: 4</li>
+<li>Gyms and Sports Facilities: 9</li>
+<li>Prisons: 2</li>
+<li>Police and Fire Stations: 6</li>
+<li>Surgeries and pharmacies: 13</li>
 <li>Hospital: the Queen Rose</li>
 </ul>
 <p>Refer to the “Data” tab for information about the city demographics, voting and polling data, and more information about the hospital.</p>
@@ -340,11 +374,11 @@ Email #1
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><b>From:</b> te4996@comcast.net <b>To:</b> pandemic_response@Inverkeld.co.uk <b>Cc:</b> <b>Subject:</b> This Devastating Pandemic <b>Date:</b> 29 January 2025 15:08</p>
+<p><b>From:</b> nay4270@aol.com <b>To:</b> pandemic_response@Inverkeld.co.uk <b>Cc:</b> <b>Subject:</b> This Bloody Pandemic <b>Date:</b> 30 January 2025 9:21</p>
 <p>Dear Pandemic Committee,</p>
-<p>I am devastated to hear about this new pandemic in Inverkeld. Too many people have died and it is such a tragedy.</p>
-<p>I hope that your office is going to do something about all of the poor people dying as soon as possible.</p>
-<p>All the best,<br> Taariq el-Ally</p>
+<p>I am outraged to hear about this new pandemic in Inverkeld. It seems almost like the apocalypse must be upon us, with this pandemic following so close upon the heels of COVID19.</p>
+<p>I wish that your office is going to do something about horrible pandemic at once.</p>
+<p>Sincerely,<br> Srish Nay</p>
 </div>
 </div>
 </div>
@@ -360,12 +394,12 @@ Email #2
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><b>From:</b> c.long@msn.com <b>To:</b> pandemic_response@Inverkeld.co.uk <b>Cc:</b> BusinessSupport@Inverkeld.co.uk <b>Subject:</b> Pandemic Catastrophe for Businesses <b>Date:</b> 31 January 2025 17:56</p>
+<p><b>From:</b> do5482@msn.com <b>To:</b> pandemic_response@Inverkeld.co.uk <b>Cc:</b> BusinessSupport@Inverkeld.co.uk <b>Subject:</b> Pandemic Tragedy for Businesses <b>Date:</b> 30 January 2025 21:16</p>
 <p>Dear Pandemic Response Committee,</p>
-<p>This new pandemic in Inverkeld has the potential to obliterate our businesses. I run a sweet shop on the high street and almost went out of business due to COVID. Similarly, my colleague Orion, who runs Candy Corner, nearly lost my business due to those pandemic lockdowns.</p>
-<p>I hope you realise how costly the last pandemic was for millions of people across the country, and that we can’t afford another one.</p>
-<p>I hope that your office is going to do something about this dreadful catastrophe at once, keeping in mind the economic interests of businesses in our city and the fact that we cannot afford the draconian lockdowns you imposed during COVID.<br></p>
-<p>Kind regards,<br> Cavoisier Long – (Sweet Treats, proprietor)</p>
+<p>This new pandemic in Inverkeld has the potential to devastate our businesses. I run a coffee shop on the high street and had to close because of all the draconian lockdowns due to COVID. Similarly, my neighbour Mikayla, who runs Sweat It Out, almost went out of business.</p>
+<p>I hope you realise how much business we have all lost in recent years, and how much businesses in this city are struggling financially.</p>
+<p>I hope that your office is going to do something about this dreadful catastrophe promptly, keeping in mind the economic interests of businesses in our city and the fact that we cannot afford restrictions that cripple our businesses.<br></p>
+<p>Sincerely,<br> Devon Olguin – (Java Junction, proprietor)</p>
 </div>
 </div>
 </div>
@@ -381,11 +415,11 @@ Email #3
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><b>From:</b> ganuelas1238@hotmail.co.uk <b>To:</b> pandemic_response@Inverkeld.co.uk <b>Cc:</b> <b>Subject:</b> Government Overstep <b>Date:</b> 30 January 2025 2:57</p>
+<p><b>From:</b> el-iman4325@msn.com <b>To:</b> pandemic_response@Inverkeld.co.uk <b>Cc:</b> <b>Subject:</b> Government Overreach <b>Date:</b> 31 January 2025 10:34</p>
 <p>Dear Pandemic Response Busybodies,</p>
-<p>I dread that you and your office are going to use this new pandemic as yet another excuse for government overreach into citizens’ lives. This last pandemic was just a typical example of what governments do when given a little too much power.</p>
-<p>Facemasks are just the tyranny of the minority over the majority, I hope that you will not permit them again on your watch.</p>
-<p>Yours truly,<br> Wanyi Ganuelas (a concerned voter)</p>
+<p>I hate the idea that you and your office are going to use this new pandemic as yet another excuse for government overreach into citizens’ lives. Machiavelli said that power corrupts absolutely, and he was absolutely right - look at what happened during the last pandemic.</p>
+<p>I hope that you will do the right thing in this time of crisis and that I will be able to vote for you again in the coming elections with a clean conscience.</p>
+<p>Best wishes,<br> Yoonus el-Iman (a concerned voter)</p>
 </div>
 </div>
 </div>
@@ -401,12 +435,12 @@ Email #4
 </div>
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><b>From:</b> at1326@mail.com <b>To:</b> pandemic_response@Inverkeld.co.uk <b>Cc:</b> <b>Subject:</b> This Terrible Tragedy <b>Date:</b> 29 January 2025 2:38</p>
+<p><b>From:</b> becerra6637@gmail.com <b>To:</b> pandemic_response@Inverkeld.co.uk <b>Cc:</b> <b>Subject:</b> Tragic Loss <b>Date:</b> 30 January 2025 13:22</p>
 <p>Dear Pandemic Response Committee,</p>
-<p>I have just learned that my my sister-in-law has passed away due to the new pandemic in Inverkeld. The family are all devastated as you can surely imagine.</p>
-<p>This is especially terrible coming hard on the heels of all of our losses due to COVID-19.</p>
-<p>I am sure that you and your office are doing your best, but I hope that in the fullness of time, there will be a public inquiry into how this pandemic was handled and why so many families have lost loved ones. Especially coming so soon after the lessons that we learned during the COVID-19 pandemic, I would have thought that this tragedy could have been prevented.</p>
-<p>Yours truly,<br> Amanda Tsosie</p>
+<p>I have just learned that my my auntie has passed away due to the new pandemic in Inverkeld. This is especially terrible coming hard on the heels of all of our losses due to COVID-19.</p>
+<p>The family are all devastated by this loss.</p>
+<p>I hope that you will do everything you can to stop this pandemic so that no other families need to suffer this pain.</p>
+<p>Respectfully,<br> Antatenique Becerra</p>
 </div>
 </div>
 </div>
@@ -428,13 +462,13 @@ News/blog post #1
 <div class="callout-body-container callout-body">
 <p><b>Scientific Strategies: Effective Public Health Responses to the Pandemic</b></p>
 <p>An update on the outbreak in Inverkeld</p>
-<p>Published in: Public Health and Peer Review <b>By:</b> Amanda Tsosie <b>Date:</b> 29 January 2025</p>
-<p>As the pandemic continues to unfold in Inverkeld, public health experts emphasize the importance of data-driven decisions to protect communities and save lives. By analyzing data from various sources, including testing results, health officials can implement targeted measures to curb the spread of the disease.</p>
-<p>Dr.&nbsp;Jawhar Ruiz, a leading infectious disease specialist, explains, “Our approach relies on robust data analysis to identify hotspots and allocate resources efficiently. By understanding the patterns of transmission, we will be able to introduce interventions that are both positive and minimally disruptive.”</p>
-<p>Recent data has shown that areas with higher vaccination rates are experiencing significantly lower infection rates and hospitalizations. “Vaccination will be our most powerful tool,” says Ruiz. “The data clearly reinforces for similar outbreaks that there is a correlation between implementation of public health measures and reduced severity of the disease.”</p>
-<p>These public health measures, such as mask mandates, will be crucial while new vaccines or treatments are developed and rolled out. “These interventions are based on solid evidence,” notes Ruiz. “They help to protect the vulnerable populations who might not yet be vaccinated or might have underlying health conditions.”</p>
-<p>The public is encouraged to stay informed through reliable sources and adhere to guidelines issued by health authorities. “Relying on data-driven decisions is essential,” concludes Ruiz. “Together, we can navigate through this pandemic by making informed, sensible decisions.”</p>
-<p><b>Credits:</b> Amanda Tsosie has been writing for the Public Health and Peer Review for the past 2 years, with a primary focus on science and technology. Amanda Tsosie interviewed Jawhar Ruiz on Tuesday, 28/01/2025.</p>
+<p>Published in: The Health Gazette <b>By:</b> Antatenique Becerra <b>Date:</b> 30 January 2025</p>
+<p>As the pandemic continues to unfold in Inverkeld, public health experts emphasize the importance of data-driven decisions to protect communities and save lives. By analyzing data from various sources, including vaccination coverage, health officials can implement targeted measures to curb the spread of the disease.</p>
+<p>Dr.&nbsp;Aundrea Irvin, a leading health policy analyst, explains, “Our approach relies on robust data analysis to identify hotspots and allocate resources efficiently. By understanding the patterns of transmission, we will be able to introduce interventions that are both successful and minimally disruptive.”</p>
+<p>Recent data has shown that areas with higher vaccination rates are experiencing significantly lower infection rates and hospitalizations. “Vaccination will be our most powerful tool,” says Irvin. “The data clearly reinforces for similar outbreaks that there is a correlation between implementation of public health measures and reduced severity of the disease.”</p>
+<p>These public health measures, such as mask mandates, will be crucial while new vaccines or treatments are developed and rolled out. “These interventions are based on solid evidence,” notes Irvin. “They help to protect the vulnerable populations who might not yet be vaccinated or might have underlying health conditions.”</p>
+<p>The public is encouraged to stay informed through reliable sources and adhere to guidelines issued by health authorities. “Scientific evidence is our best guide,” concludes Irvin. “Together, we can navigate through this pandemic by making informed, sensible decisions.”</p>
+<p><b>Credits:</b> Antatenique Becerra has been writing for the The Health Gazette for the past 4 years, with a primary focus on infectious diseases. Antatenique Becerra interviewed Aundrea Irvin on Tuesday, 28/01/2025.</p>
 </div>
 </div>
 </div>
@@ -450,12 +484,12 @@ News/blog post #2
 </div>
 <div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><b>A World in Peril: The Unfolding Pandemic Disaster</b> –Tiffine Naylor, senior health correspondent for The Sentinel 29 January 2025</p>
-<p>The world is descending into chaos as a new pandemic hits Inverkeld. This devastating pandemic is coming right after COVID-19 and monkey pox, amongst other diseases, have already taken an outrageous toll on the citizens of Inverkeld and nearby cities. It seems like the situation is spiraling out of control. With infection rates skyrocketing and new, more deadly variants emerging, experts warn that we could be facing the end times.</p>
-<p>Hospitals are soon going to be overwhelmed, unable to cope with the sheer volume of critically ill patients. “We’ve never seen anything like this,” says Dr.&nbsp;Espinoza, a emergency room physician at the Queen Rose. “After years and years of harsh cuts to the NHS, we’re in a terrible state. We’re running out of oxygen,, beds, and even basic medical supplies. It’s a disaster scenario.”</p>
-<p>The death toll is climbing at an alarming rate, with bleak projections suggesting that the virus could wipe out entire communities. “We’re losing this battle,” states Dr.&nbsp;Espinoza. “Without immediate and drastic action, the situation will only get more critical.” It is by no means clear that Inverkeld will be able to contain the pandemic.</p>
-<p>Panic is spreading as quickly as the virus itself. People are stocking up on canned foods,, hoarding supplies, and fearing the worst. “I’ve never been so scared in my life as I was during the COVID lockdowns,” says Cheyenne Wood, a mother of three. “It brings it all back. We don’t know what tomorrow will bring. Every day is a struggle for survival.”</p>
-<p>The future looks grim, with no end in sight. “This is just the beginning,” warns Dr.&nbsp;Espinoza. “The pathogen is mutating, making it harder to control. We’ll be in for a long, dark spring.” Other experts have noted that due to global warming, pandemics are likely to occur more frequently and be more severe in a warming world.</p>
+<p><b>Chaos Unleashed: The Terrifying Future of the Pandemic</b> –Camille Wesley, senior health correspondent for The Daily Times 29 January 2025</p>
+<p>The world is spiraling out of control as a new pandemic hits Inverkeld. This catastrophic pandemic is coming right after COVID-19 and monkey pox, amongst other diseases, have already taken an outrageous toll on the citizens of Inverkeld and nearby cities. It seems like the situation is spiraling out of control. With infection rates skyrocketing and new, more deadly variants emerging, experts warn that we could be facing the end days.</p>
+<p>Hospitals are soon going to be overwhelmed, unable to cope with the sheer volume of critically ill patients. “We’ve never seen anything like this,” says Dr.&nbsp;Ramirez-Cabrera, a critical care specialist at the Queen Rose. “After years and years of harsh cuts to the NHS, we’re in a terrible state. We’re running out of beds,, oxygen, and even basic medical supplies. It’s a disaster scenario.”</p>
+<p>The death toll is climbing at an alarming rate, with dreary projections suggesting that the pandemic could last for years. “We’re losing this battle,” states Dr.&nbsp;Ramirez-Cabrera. “Without immediate and drastic action, the situation will only get more critical.” It is by no means clear that Inverkeld will be able to contain the pandemic.</p>
+<p>Panic is spreading as quickly as the virus itself. People are hoarding supplies,, stockpiling PPE, and fearing the worst. “I’ve never been so scared in my life as I was during the COVID lockdowns,” says Minnah Meza, a mother of three. “It brings it all back. We don’t know what tomorrow will bring. Every day is a fight for our lives.”</p>
+<p>The future looks grim, with no end in sight. “This is just the beginning,” warns Dr.&nbsp;Ramirez-Cabrera. “The pathogen is mutating, making it harder to control. We’ll be in for a long, dark spring.” Other experts have noted that due to global warming, pandemics are likely to occur more frequently and be more severe in a warming world.</p>
 <p>As fear and uncertainty grip the world, one thing is clear: we must prepare for the worst. The pandemic apocalypse is upon us, and there is no turning back.</p>
 </div>
 </div>
@@ -472,15 +506,15 @@ News/blog post #3
 </div>
 <div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><b>The Truth About Vaccines: What the Government Doesn’t Want You to Know</b> - Tarik Brown - 30 January 2025 Published in: The Truth Exposed</p>
-<p>Fasten your seatbelts! There’s a new “pandemic” in Inverkeld. This one is supposedly due to something called Legionella pneumophila (according to something the “experts” call “germ theory” and which has been proven to be another Big Fat Lie.)</p>
-<p>The so-called “plandemic” is nothing but a ploy by the government and Big Pharma to manipulate the masses and make billions off their poisonous vaccines. Don’t be fooled by their fearmongering tactics!</p>
-<p>First off, the virus is no worse than the common flu. The numbers are inflated to scare you into compliance. Have you noticed how quickly they came up with new “COVID” “variants” every time people started questioning their narrative? The new pandemic in Inverkeld is just more of the same. It’s all a big lie to keep you in fear and under control.</p>
-<p>And the vaccines? Don’t even get me started. They’re filled with unknown ingredients and unsafe ingredients that have never been tested long-term. What even is this SO-CALLED ribonucleic acid? Why do you think they’re pushing so hard to get everyone jabbed? It’s not about your health, it’s about making money and keeping you obedient.</p>
-<p>People who’ve taken the vaccine are reporting all kinds of side effects, but the media won’t tell you that. They’re in on it too! Censorship is rampant, and anyone who dares to speak the truth is silenced. Ask yourself why they’re so desperate to shut down any dissenting voices.</p>
-<p>Healthy lifestyle is the way to go. Boost your immune system with vitamins, a healthy diet, and regular exercise. Don’t let them inject you with their toxic concoctions. Do your own research and think for yourself. The truth is out there if you look beyond the mainstream propaganda.</p>
+<p><b>The Truth About Vaccines: What the Government Doesn’t Want You to Know</b> - Christopher Chagolla - 29 January 2025 Published in: The Truth Exposed</p>
+<p>Brace yourselves! There’s a new “pandemic” in Inverkeld. This one is supposedly due to something called Legionella pneumophila (according to something the “experts” call “germ theory” and which has been proven to be another Big Fat Lie.)</p>
+<p>The so-called “plandemic” is nothing but a ploy by the government and Big Pharma to force compliance and make billions off their poisonous vaccines. Don’t be fooled by their fearmongering tactics!</p>
+<p>First off, the virus is a complete fabrication. The numbers are inflated to scare you into compliance. Have you noticed how quickly they came up with new “COVID” “variants” every time people started questioning their narrative? The new pandemic in Inverkeld is just more of the same. It’s all a big lie to keep you in fear and under control.</p>
+<p>And the vaccines? Don’t even get me started. They’re filled with dangerous compounds and untested ingredients that have never been tested long-term. What even is this SO-CALLED ribonucleic acid? Why do you think they’re pushing so hard to get everyone jabbed? It’s not about your health, it’s about making money and keeping you obedient.</p>
+<p>People who’ve taken the vaccine are reporting serious health issues, but the media won’t tell you that. They’re in on it too! Censorship is rampant, and anyone who dares to speak the truth is silenced. Ask yourself why they’re so desperate to shut down any dissenting voices.</p>
+<p>Herbal remedies is the way to go. Boost your immune system with vitamins, a healthy diet, and regular exercise. Don’t let them inject you with their toxic concoctions. Do your own research and think for yourself. The truth is out there if you look beyond the mainstream propaganda.</p>
 <p>Don’t be a sheep. Stand up for your rights and say no to the vaccine scam. Your health and freedom depend on it!</p>
-<p>[Keep watching this space - we’ll keep you informed on all the latest health news and help keep you healthy! Coming up next week - debunking the myths surrounding vaccine safety!]</p>
+<p>[Keep watching this space - we’ll keep you informed on all the latest health news and help keep you healthy! Coming up next week - challenging the narrative on herd immunity!]</p>
 </div>
 </div>
 </div>
@@ -489,20 +523,40 @@ News/blog post #3
 <div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
 <section id="city-demographics-polling-and-budget" class="level3">
 <h3 class="anchored" data-anchor-id="city-demographics-polling-and-budget">City Demographics, Polling, and Budget</h3>
-<p>The current population of Inverkeld (as of December 2022) is 158219. The demographic data for the city is shown below.</p>
+<p>The current population of Inverkeld (as of December 2022) is 155373. The demographic data for the city is shown below.</p>
 <div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Pop <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">sample</span>(<span class="dv">150000</span><span class="sc">:</span><span class="dv">170000</span>, <span class="at">size=</span><span class="dv">3</span>, <span class="at">replace=</span><span class="cn">TRUE</span>), <span class="fu">sample</span>(<span class="dv">170000</span><span class="sc">:</span><span class="dv">180000</span>, <span class="at">size=</span><span class="dv">3</span>, <span class="at">replace=</span><span class="cn">TRUE</span>), <span class="fu">sample</span>(<span class="dv">190000</span><span class="sc">:</span><span class="dv">170000</span>, <span class="at">size=</span><span class="dv">2</span>, <span class="at">replace=</span><span class="cn">TRUE</span>), <span class="fu">sample</span>(<span class="dv">150000</span><span class="sc">:</span><span class="dv">170000</span>, <span class="at">size=</span><span class="dv">2</span>, <span class="at">replace=</span><span class="cn">TRUE</span>))</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>PopYears <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2012</span><span class="sc">:</span><span class="dv">2021</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>population <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(Pop, PopYears)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> population, <span class="fu">aes</span>(<span class="at">x=</span>PopYears, <span class="at">y=</span>Pop)) <span class="sc">+</span> </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">y =</span> <span class="st">"Number of Inverkeld residents (estimated)"</span>, <span class="at">x =</span> <span class="st">"Year"</span>) <span class="sc">+</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits=</span><span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">200000</span>)) <span class="sc">+</span> </span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">panel.grid.major =</span> <span class="fu">element_blank</span>(), <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="3A_files/figure-html/A1-1.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<p><img src="3A_files/figure-html/A1-1.png" class="img-fluid figure-img" width="672"></p>
 <figcaption>Inverkeld demographics (Source: Office for National Statistics)</figcaption>
 </figure>
 </div>
 </div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Demog <span class="ot">&lt;-</span> <span class="fu">c</span>((<span class="fu">rep</span>(<span class="st">"Births"</span>, <span class="dv">10</span>)), (<span class="fu">rep</span>(<span class="st">"Deaths"</span>, <span class="dv">10</span>)))</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>Num <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">sample</span>(<span class="dv">1000</span><span class="sc">:</span><span class="dv">2000</span>, <span class="at">size=</span><span class="dv">10</span>, <span class="at">replace=</span><span class="cn">TRUE</span>), <span class="fu">sample</span>(<span class="dv">500</span><span class="sc">:</span><span class="dv">1500</span>, <span class="at">size=</span><span class="dv">8</span>, <span class="at">replace=</span><span class="cn">TRUE</span>), <span class="fu">sample</span>(<span class="dv">3000</span><span class="sc">:</span><span class="dv">5500</span>, <span class="at">size=</span><span class="dv">2</span>, <span class="at">replace=</span><span class="cn">TRUE</span>))</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>DemogYears <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">rep</span>(<span class="dv">2012</span><span class="sc">:</span><span class="dv">2021</span>, <span class="dv">2</span>))</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>birthdeath <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(Demog, Num, DemogYears)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> birthdeath, <span class="fu">aes</span>(<span class="at">x=</span>DemogYears, <span class="at">y=</span>Num, <span class="at">group=</span>Demog, <span class="at">colour=</span>Demog)) <span class="sc">+</span> </span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">y =</span> <span class="st">"Number of births and deaths in Inverkeld (estimated)"</span>, <span class="at">x =</span> <span class="st">"Year"</span>, <span class="at">colour =</span> <span class="st">"Demographics"</span>) <span class="sc">+</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits=</span><span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">5500</span>)) <span class="sc">+</span> </span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">panel.grid.major =</span> <span class="fu">element_blank</span>(), <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>()) <span class="sc">+</span> </span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_discrete</span>(<span class="at">name=</span><span class="st">""</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="3A_files/figure-html/A1-2.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<p><img src="3A_files/figure-html/A1-2.png" class="img-fluid figure-img" width="672"></p>
 <figcaption>Inverkeld demographics (Source: Office for National Statistics)</figcaption>
 </figure>
 </div>
@@ -519,7 +573,7 @@ News/blog post #3
 </div>
 </div>
 </div>
-<p>There are currently 147 elected councillors, representing the political parties in Inverkeld as follows:</p>
+<p>There are currently 151 elected councillors, representing the political parties in Inverkeld as follows:</p>
 <div class="cell">
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small" data-quarto-postprocess="true">
@@ -531,24 +585,24 @@ News/blog post #3
 </thead>
 <tbody>
 <tr class="odd">
+<td style="text-align: left;">Liberty League</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">Community First</td>
-<td style="text-align: right;">7</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">United Workers</td>
-<td style="text-align: right;">20</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">People's Alliance</td>
-<td style="text-align: right;">23</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Progressive Future</td>
-<td style="text-align: right;">12</td>
+<td style="text-align: right;">18</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Eco Harmony</td>
-<td style="text-align: right;">6</td>
+<td style="text-align: right;">26</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Renewal Movement</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Progressive Future</td>
+<td style="text-align: right;">3</td>
 </tr>
 </tbody>
 </table>
@@ -556,7 +610,7 @@ News/blog post #3
 
 </div>
 </div>
-<p><br><br> The overall budget (expenditures) for the 2023-2024 financial year was £471911490. A summary of expenditures by category for this financial year is shown below.</p>
+<p><br><br> The overall budget (expenditures) for the 2023-2024 financial year was £537904068. A summary of expenditures by category for this financial year is shown below.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -570,7 +624,7 @@ News/blog post #3
 </section>
 <section id="hospital-and-hospital-budget" class="level3">
 <h3 class="anchored" data-anchor-id="hospital-and-hospital-budget">Hospital and Hospital Budget</h3>
-<p>The annual operating budget for financial year 2022-2023 was £4.1 million, and average expenditures are shown by category in the figure below.</p>
+<p>The annual operating budget for financial year 2022-2023 was £3.8 million, and average expenditures are shown by category in the figure below.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -582,14 +636,508 @@ News/blog post #3
 </div>
 </div>
 <ul>
-<li>You can find more key information about the main hospital in Inverkeld, the Queen Rose in the <a href="dashboardA.html">Hospital Dashboard</a></li>
+<li>You can find more key information about the main hospital in Inverkeld, the Queen Rose in the dashboard below.</li>
 </ul>
 </section>
+<section id="info" class="level1">
+<h1>Info</h1>
+<div class="card">
+<p>The Queen Rose, built in 2010, is the main hospital in Inverkeld.</p>
+<p>The Queen Rose has units specialising in radiology, nephrology, gastroenterology, coronary care and an orthopaedics department.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/hospitalA.jpg" class="img-fluid figure-img"></p>
+<figcaption>The Queen Rose hospital</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="capacity" class="level1">
+<h1>Capacity</h1>
+</section>
+</div>
+<div id="tabset-1-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-6-tab">
+<div class="cell" content="valuebox" title="Hospital beds (general)">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"hospital"</span>,</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"dark"</span>,</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> beds</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$icon
+[1] "hospital"
+
+$color
+[1] "dark"
+
+$value
+[1] 163</code></pre>
+</div>
+</div>
+<div class="cell" content="valuebox" title="Hospital beds (ICU)">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"thermometer-half"</span>,</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"secondary"</span>,</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> icu</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$icon
+[1] "thermometer-half"
+
+$color
+[1] "secondary"
+
+$value
+[1] 19</code></pre>
+</div>
+</div>
+<div class="cell" content="valuebox" title="Isolation beds">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"vignette"</span>,</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"light"</span>,</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> isolation</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$icon
+[1] "vignette"
+
+$color
+[1] "light"
+
+$value
+[1] 6</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-1-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-7-tab">
+<div class="cell" content="valuebox" title="Average bed occupancy (%)">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"hospital"</span>,</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"dark"</span>,</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> bedocc</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$icon
+[1] "hospital"
+
+$color
+[1] "dark"
+
+$value
+[1] 92</code></pre>
+</div>
+</div>
+<div class="cell" content="valuebox" title="Average ICU bed occupancy (%)">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"thermometer-half"</span>,</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"secondary"</span>,</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> icuocc</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$icon
+[1] "thermometer-half"
+
+$color
+[1] "secondary"
+
+$value
+[1] 90</code></pre>
+</div>
+</div>
+<div class="cell" content="valuebox" title="Average isolation bed occupancy (%)">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"vignette"</span>,</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"light"</span>,</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> isocc</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$icon
+[1] "vignette"
+
+$color
+[1] "light"
+
+$value
+[1] 97</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-1-8" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-8-tab">
+<div class="cell" content="valuebox" title="Number of hospital staff">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"person-fill"</span>,</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"success"</span>,</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">round</span>(beds <span class="sc">*</span> (<span class="fu">sample</span>(<span class="fu">c</span>(<span class="fl">0.6</span>, <span class="fl">0.7</span>, <span class="fl">0.8</span>), <span class="dv">1</span>)), <span class="at">digits =</span> <span class="dv">0</span>)</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$icon
+[1] "person-fill"
+
+$color
+[1] "success"
+
+$value
+[1] 98</code></pre>
+</div>
+</div>
+<div class="cell" content="valuebox" title="Number of hospital support staff">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"people-fill"</span>,</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"warning"</span>,</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">round</span>(beds<span class="sc">/</span><span class="dv">7</span>, <span class="at">digits =</span> <span class="dv">0</span>)</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$icon
+[1] "people-fill"
+
+$color
+[1] "warning"
+
+$value
+[1] 23</code></pre>
+</div>
+</div>
+<div class="cell" content="valuebox" title="Clinical micro lab capacity (avg. # tests/month)">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"vignette"</span>,</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"info"</span>,</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">sample</span>(<span class="dv">1000</span><span class="sc">:</span><span class="dv">2000</span>, <span class="dv">1</span>)</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$icon
+[1] "vignette"
+
+$color
+[1] "info"
+
+$value
+[1] 1793</code></pre>
+</div>
+</div>
+<section id="key-performance-indicators" class="level1">
+<h1>Key Performance Indicators</h1>
+</section>
+</div>
+<div id="tabset-1-9" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-9-tab">
+<div class="card">
+<p>As part of the Queen Rose’s ongoing commitment to excellence, the hospital diligently monitors key performance indicators and strives to meet established targets. While progress has been made, we acknowledge that certain goals remain unmet. We are actively working to address these challenges and enhance patient care.</p>
+<p><em>Key Performance Targets:</em></p>
+<ul>
+<li><p>Waiting time for an ambulance (category 2 event) should be no more than 18 minutes</p></li>
+<li><p>95% or more of all patients waiting in A&amp;E should be seen in less than 4 hours</p></li>
+<li><p>85% of all patients waiting for cancer treatment should be seen within 62 days</p></li>
+</ul>
+</div>
+</div>
+<div id="tabset-1-10" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-10-tab">
+<div class="cell" content="valuebox" title="Average number of admissions to A&amp;E (monthly)">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="fu">ifelse</span>(beds<span class="sc">&lt;</span><span class="dv">150</span>, <span class="st">"primary"</span>, <span class="st">"secondary"</span>),</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> aeadmiss</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$color
+[1] "secondary"
+
+$value
+[1] 8820</code></pre>
+</div>
+</div>
+<div class="cell" content="valuebox" title="Average % of patients waiting >4 hours in A&amp;E">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"hourglass"</span>, </span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="fu">ifelse</span>(aewait<span class="sc">&gt;</span><span class="dv">95</span>, <span class="st">"success"</span>, <span class="st">"danger"</span>),</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> aewait</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$icon
+[1] "hourglass"
+
+$color
+[1] "danger"
+
+$value
+[1] 73</code></pre>
+</div>
+</div>
+<div class="cell" content="valuebox" title="Ambulance response times (minutes)">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"clock"</span>, </span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="fu">ifelse</span>(ambwait<span class="sc">&lt;</span><span class="dv">18</span>, <span class="st">"success"</span>, <span class="st">"danger"</span>),</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> ambwait</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$icon
+[1] "clock"
+
+$color
+[1] "danger"
+
+$value
+[1] 70</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-1-11" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-11-tab">
+<div class="cell" content="valuebox" title="% of patients waiting <62 days for  referral (any)">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"calendar3"</span>, </span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="fu">ifelse</span>(refwait<span class="sc">&gt;</span><span class="dv">84</span>, <span class="st">"success"</span>, <span class="st">"danger"</span>),</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> refwait</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$icon
+[1] "calendar3"
+
+$color
+[1] "danger"
+
+$value
+[1] 78</code></pre>
+</div>
+</div>
+<div class="cell" content="valuebox" title="% of patients waiting <62 days for cancer treatment">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"calendar3-event"</span>, </span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="fu">ifelse</span>(cancwait<span class="sc">&gt;</span><span class="dv">84</span>, <span class="st">"success"</span>, <span class="st">"danger"</span>),</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> cancwait</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$icon
+[1] "calendar3-event"
+
+$color
+[1] "danger"
+
+$value
+[1] 82</code></pre>
+</div>
+</div>
+<div class="cell" content="valuebox" title="Number of patients waiting for elective surgery">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"calendar3-week"</span>,</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"info"</span>,</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> elecwait</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$icon
+[1] "calendar3-week"
+
+$color
+[1] "info"
+
+$value
+[1] 8036</code></pre>
+</div>
+</div>
+<section id="infection-control" class="level1">
+<h1>Infection Control</h1>
+</section>
+</div>
+<div id="tabset-1-12" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-12-tab">
+<div class="card">
+<p>The Queen Rose hospital strives to meet stringent targets for infection control and antibiotic stewardship to ensure patient safety and combat antimicrobial resistance. Infection control protocols are critical in maintaining high standards of hygiene and patient care. Similarly, antibiotic stewardship programs are essential for optimizing the use of antimicrobials, thereby reducing the risk of resistance and ensuring effective treatments for future generations.</p>
+<ul>
+<li><p>There was 1 fewer hospital-acquired MRSA infection in 2025 than there were in 2024.</p></li>
+<li><p>There were 4 more hospital-acquired <em>Clostridiodes difficile</em> infections in 2025 than there were in 2024.</p></li>
+<li><p>There were 5 fewer hospital-acquired <em>Candida auris</em> infections in 2025 than there were in 2024.</p></li>
+</ul>
+</div>
+</div>
+<div id="tabset-1-13" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-13-tab">
+<div class="cell" content="valuebox" title="Number of hospital-acquired MRSA cases (this year)">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="fu">ifelse</span>(mrsa2<span class="sc">&lt;</span>mrsa1, <span class="st">"arrow-down-right"</span>, <span class="st">"arrow-up-right"</span>), </span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="fu">ifelse</span>(mrsa2<span class="sc">&lt;</span>mrsa1, <span class="st">"success"</span>, <span class="st">"danger"</span>), </span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> mrsa2</span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$icon
+[1] "arrow-down-right"
+
+$color
+[1] "success"
+
+$value
+[1] 6</code></pre>
+</div>
+</div>
+<div class="cell" content="valuebox" title="Number of hospital-acquired Clostridiodes difficile cases (this year)">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="fu">ifelse</span>(Cdiff2<span class="sc">&lt;</span>Cdiff1, <span class="st">"arrow-down-right"</span>, <span class="st">"arrow-up-right"</span>), </span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="fu">ifelse</span>(Cdiff2<span class="sc">&lt;</span>Cdiff1, <span class="st">"success"</span>, <span class="st">"danger"</span>), </span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> Cdiff2</span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$icon
+[1] "arrow-up-right"
+
+$color
+[1] "danger"
+
+$value
+[1] 8</code></pre>
+</div>
+</div>
+<div class="cell" content="valuebox" title="Number of hospital-acquired Candida auris cases (this year)">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="fu">ifelse</span>(Cauris2<span class="sc">&lt;</span>Cauris1, <span class="st">"arrow-down-right"</span>, <span class="st">"arrow-up-right"</span>), </span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="fu">ifelse</span>(Cauris2<span class="sc">&lt;</span>Cauris1, <span class="st">"success"</span>, <span class="st">"danger"</span>), </span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> Cauris2</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$icon
+[1] "arrow-down-right"
+
+$color
+[1] "success"
+
+$value
+[1] 5</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-1-14" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-14-tab">
+<div class="cell" content="valuebox" title="% of antibiotic prescriptions judged appropriate by an AMR steward">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"prescription"</span>,</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="fu">ifelse</span>(app_therapy <span class="sc">&gt;</span> <span class="dv">95</span>, <span class="st">"success"</span>, <span class="st">"warning"</span>),</span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> app_therapy</span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$icon
+[1] "prescription"
+
+$color
+[1] "warning"
+
+$value
+[1] 82</code></pre>
+</div>
+</div>
+<div class="cell" content="valuebox" title="Antibiotic Descalation rate (% of prescriptions switched from broad to narrow-spectrum antibiotics)">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"capsule-pill"</span>,</span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="fu">ifelse</span>(desc <span class="sc">&gt;</span> <span class="dv">15</span>, <span class="st">"success"</span>, <span class="st">"warning"</span>),</span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> desc</span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$icon
+[1] "capsule-pill"
+
+$color
+[1] "warning"
+
+$value
+[1] 13</code></pre>
+</div>
+</div>
+<div class="cell" content="valuebox" title="Prevalence of MDR-resistant organisms (% isolated) ">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"exclamation-diamond"</span>,</span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="fu">ifelse</span>(amr_rate <span class="sc">&gt;</span> <span class="dv">50</span>, <span class="st">"success"</span>, <span class="st">"warning"</span>),</span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> amr_rate</span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$icon
+[1] "exclamation-diamond"
+
+$color
+[1] "warning"
+
+$value
+[1] 47</code></pre>
+</div>
+</div>
+<section id="community-health-data" class="level1">
+<h1>Community Health Data</h1>
+</section>
+</div>
+<div id="tabset-1-15" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-15-tab">
+<div class="card">
+<p>The Queen Rose monitors the prevalence of COVID-19 and other viruses in the community to ensure they are prepared for potential surges in patient admissions, enabling them to allocate resources and staff efficiently. By tracking these trends, the hospital can implement timely public health interventions and provide accurate information to the community to mitigate the spread of infections. Additionally, continuous monitoring helps in identifying emerging outbreaks early, allowing for a rapid response that minimizes the impact on public health and healthcare services.</p>
+<ul>
+<li><p>There were 18 fewer COVID-19 cases this week than in the previous week.</p></li>
+<li><p>We are seeing an increase in infections caused by other respiratory viruses (e.g., influenza, adenovirus, rhinovirus, RSV).</p></li>
+</ul>
+</div>
+</div>
+<div id="tabset-1-16" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-16-tab">
+<div class="cell" content="valuebox" title="Number of COVID-19 cases (weekly)">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"virus"</span>,</span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="fu">ifelse</span>(covid2<span class="sc">&lt;</span>covid1, <span class="st">"success"</span>, <span class="st">"danger"</span>),</span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> covid1</span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$icon
+[1] "virus"
+
+$color
+[1] "danger"
+
+$value
+[1] 91</code></pre>
+</div>
+</div>
+<div class="cell" content="valuebox" title="Number of other respiratory virus infections (weekly)">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"virus2"</span>,</span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="fu">ifelse</span>(virus2<span class="sc">&lt;</span>virus1, <span class="st">"success"</span>, <span class="st">"danger"</span>),</span>
+<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> virus1</span>
+<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$icon
+[1] "virus2"
+
+$color
+[1] "danger"
+
+$value
+[1] 78</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-1-17" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-17-tab">
+<div class="cell" content="valuebox" title="SARS-CoV2 vaccination rate (booster campaign)">
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"clipboard2-pulse"</span>,</span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"success"</span>,</span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> covid_vacc</span>
+<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$icon
+[1] "clipboard2-pulse"
+
+$color
+[1] "success"
+
+$value
+[1] 75</code></pre>
+</div>
+</div>
+<div class="cell" content="valuebox" title="Childhood vaccination rate (DTaP/IPV/Hib/HepB)">
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"clipboard2-pulse"</span>,</span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"warning"</span>,</span>
+<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> vacc_rate</span>
+<span id="cb51-5"><a href="#cb51-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$icon
+[1] "clipboard2-pulse"
+
+$color
+[1] "warning"
+
+$value
+[1] 93</code></pre>
+</div>
+</div>
 <section id="epidemiological-data" class="level3">
 <h3 class="anchored" data-anchor-id="epidemiological-data">Epidemiological Data</h3>
 </section>
 </div>
-<div id="tabset-1-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-6-tab">
+<div id="tabset-1-18" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-18-tab">
 <section id="city-pandemic-planning-resources" class="level3">
 <h3 class="anchored" data-anchor-id="city-pandemic-planning-resources">City Pandemic Planning Resources</h3>
 <ul>
@@ -627,13 +1175,13 @@ News/blog post #3
 </div>
 </section>
 </div>
-<div id="tabset-1-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-7-tab">
+<div id="tabset-1-19" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-19-tab">
 <section id="epidemic-calculator" class="level3">
 <h3 class="anchored" data-anchor-id="epidemic-calculator">Epidemic Calculator</h3>
 <p>You may choose to include mathematical modeling as part of your decision making (for example, using an <a href="http://gabgoh.github.io/COVID/index.html">epidemic calculator</a> or other models); if you do so, you should provide details of your modelling and predictions when you submit your group’s pro forma.</p>
 </section>
 </div>
-<div id="tabset-1-8" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-8-tab">
+<div id="tabset-1-20" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-20-tab">
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
