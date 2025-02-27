@@ -1,0 +1,32 @@
+---
+title: Polling Data Analysis
+format:
+  html:
+    toc: true
+    toc-location: left
+    number-sections: false
+
+webr:
+  packages: ["tidyverse", "GGally"]
+filters:
+  - webr
+---
+```{r date, include=FALSE}
+# Get the current date
+current_date <- Sys.Date()
+
+# Extract the year from the current date
+current_year <- format(current_date, "%Y")
+```
+
+```{webr-r}
+#| context: setup
+
+# Load required libraries
+library(tidyverse)
+
+# Load required data files
+
+# demographic data files
+download.file('https://raw.githubusercontent.com/mafeeney/BM424workshop3/main/workshop3/data_sets/polling_groupA.csv', 'polling_groupA.csv')
+```
