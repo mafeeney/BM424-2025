@@ -35,7 +35,7 @@
     "href": "workshop3/dashboardA.html",
     "title": "3  Group A Hospital Dashboard",
     "section": "",
-    "text": "3.1 Hospital Info\nThe Queen Rose, built in 2012, is the main hospital in Inverkeld.\nThe Queen Rose has units specialising in maternity care, oncology, paediatric care, psychiatry and an orthopaedics department.",
+    "text": "3.1 Hospital Info\nThe Queen Rose, built in 2014, is the main hospital in Inverkeld.\nThe Queen Rose has units specialising in gastroenterology, oncology, gynecology, endocrinology and an orthopaedics department.",
     "crumbs": [
       "Group A",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Group A Hospital Dashboard</span>"
@@ -57,29 +57,40 @@
     "href": "workshop3/dashboardA.html#hospital-capacity",
     "title": "3  Group A Hospital Dashboard",
     "section": "3.2 Hospital Capacity",
-    "text": "3.2 Hospital Capacity\n\n3.2.1 Number of Hospital Beds\n\n\n\n\n\nHospital beds (general)\n\n\n189\n\n\n\n\n\n\n\n\nHospital beds (ICU)\n\n\n19\n\n\n\n\n\n\n\n\nIsolation beds\n\n\n10\n\n\n\n\n\n\n\n\nAverage bed occupancy (%)\n\n\n86%\n\n\n\n\n\n\n\n\nAverage ICU bed occupancy (%)\n\n\n94%\n\n\n\n\n\n\n\n\nAverage isolation bed occupancy (%)\n\n\n98%\n\n\n\n\n\n\n\n\nNumber of hospital staff\n\n\n113\n\n\n\n\n\n\n\n\nNumber of hospital support staff\n\n\n27\n\n\n\n\n\n\n\n\nClinical micro lab capacity (# tests/month)\n\n\n1700",
+    "text": "3.2 Hospital Capacity\n\n3.2.1 Number of Hospital Beds\n\n\n\n\n\nHospital beds (general)\n\n\n159\n\n\n\n\n\n\n\n\nHospital beds (ICU)\n\n\n16\n\n\n\n\n\n\n\n\nIsolation beds\n\n\n7\n\n\n\n\n\n\n\n\nAverage bed occupancy (%)\n\n\n86%\n\n\n\n\n\n\n\n\nAverage ICU bed occupancy (%)\n\n\n94%\n\n\n\n\n\n\n\n\nAverage isolation bed occupancy (%)\n\n\n97%\n\n\n\n\n\n\n\n\nNumber of hospital staff\n\n\n127\n\n\n\n\n\n\n\n\nNumber of hospital support staff\n\n\n23\n\n\n\n\n\n\n\n\nClinical micro lab capacity (# tests/month)\n\n\n1561",
     "crumbs": [
       "Group A",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Group A Hospital Dashboard</span>"
     ]
   },
   {
-    "objectID": "workshop3/dashboardA.html#ae-statistics",
-    "href": "workshop3/dashboardA.html#ae-statistics",
+    "objectID": "workshop3/dashboardA.html#key-performance-indicators",
+    "href": "workshop3/dashboardA.html#key-performance-indicators",
     "title": "3  Group A Hospital Dashboard",
-    "section": "4.1 A&E Statistics",
-    "text": "4.1 A&E Statistics\n\nStatement from Queen Rose: As part of the Queen Rose’s ongoing commitment to excellence, the hospital diligently monitors key performance indicators and strives to meet established targets. While progress has been made, we acknowledge that certain goals remain unmet. We are actively working to address these challenges and enhance patient care.\nKey Performance Targets:\n\nWaiting time for an ambulance (category 2 event) should be no more than 18 minutes\n95% or more of all patients waiting in A&E should be seen in less than 4 hours\n85% of all patients waiting for cancer treatment should be seen within 62 days\n\n\n\n\n\n\n\nAverage number of admissions to A&E (monthly)\n\n\n8598\n\n\n\n\n\n\n\n\nAverage % of patients waiting &gt;4 hours in A&E\n\n\n64%\n\n\n\n\n\n\n\n\nAmbulance response times (minutes)\n\n\n86 min",
+    "section": "3.3 Key Performance Indicators",
+    "text": "3.3 Key Performance Indicators\n\n3.3.1 A&E Statistics\n\nStatement from Queen Rose: As part of the Queen Rose’s ongoing commitment to excellence, the hospital diligently monitors key performance indicators and strives to meet established targets. While progress has been made, we acknowledge that certain goals remain unmet. We are actively working to address these challenges and enhance patient care.\nKey Performance Targets:\n\nWaiting time for an ambulance (category 2 event) should be no more than 18 minutes\n95% or more of all patients waiting in A&E should be seen in less than 4 hours\n85% of all patients waiting for cancer treatment should be seen within 62 days\n\n\n\n\n\n\n\nAverage number of admissions to A&E (monthly)\n\n\n6843\n\n\n\n\n\n\n\n\nAverage % of patients waiting &gt;4 hours in A&E\n\n\n85%\n\n\n\n\n\n\n\n\nAmbulance response times (minutes)\n\n\n71 min\n\n\n\n\n\n3.3.2 A&E Wait Times Metrics\n\n\n\n\n\n% of patients waiting &lt;62 days for referral (any)\n\n\n78%\n\n\n\n\n\n\n\n\n% of patients waiting &lt;62 days for cancer treatment\n\n\n82%\n\n\n\n\n\n\n\n\nNumber of patients waiting for elective surgery\n\n\n7350",
     "crumbs": [
       "Group A",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Group A Hospital Dashboard</span>"
     ]
   },
   {
-    "objectID": "workshop3/dashboardA.html#ae-wait-times-metrics",
-    "href": "workshop3/dashboardA.html#ae-wait-times-metrics",
+    "objectID": "workshop3/dashboardA.html#infection-control-metrics",
+    "href": "workshop3/dashboardA.html#infection-control-metrics",
     "title": "3  Group A Hospital Dashboard",
-    "section": "4.2 A&E Wait Times Metrics",
-    "text": "4.2 A&E Wait Times Metrics\n\n\n\n\n\n% of patients waiting &lt;62 days for referral (any)\n\n\n64%\n\n\n\n\n\n\n\n\n% of patients waiting &lt;62 days for cancer treatment\n\n\n80%\n\n\n\n\n\n\n\n\nNumber of patients waiting for elective surgery\n\n\n6716",
+    "section": "3.4 Infection Control Metrics",
+    "text": "3.4 Infection Control Metrics\n\nThe Queen Rose hospital strives to meet stringent targets for infection control and antibiotic stewardship to ensure patient safety and combat antimicrobial resistance. Infection control protocols are critical in maintaining high standards of hygiene and patient care. Similarly, antibiotic stewardship programs are essential for optimizing the use of antimicrobials, thereby reducing the risk of resistance and ensuring effective treatments for future generations.\n\nThere were 6 fewer hospital-acquired MRSA infections in 2025 than there were in 2024.\nThere were 3 more hospital-acquired Clostridiodes difficile infections in 2025 than there were in 2024.\nThere were 5 fewer hospital-acquired Candida auris infections in 2025 than there were in 2024.\n\n\n\n\n\n\n\nHospital-acquired MRSA cases (trend)\n\n\n1\n\n\n\n\n\n\n\n\nHospital-acquired C. difficile cases (trend)\n\n\n8\n\n\n\n\n\n\n\n\nHospital-acquired Candida auris cases (trend)\n\n\n1\n\n\n\n\n\n\n\n\nAntibiotic prescriptions judged appropriate (%)\n\n\n83%\n\n\n\n\n\n\n\n\nAntibiotic de-escalation rate (%)\n\n\n14%\n\n\n\n\n\n\n\n\nPrevalence of MDR-resistant organisms (%)\n\n\n38%",
+    "crumbs": [
+      "Group A",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Group A Hospital Dashboard</span>"
+    ]
+  },
+  {
+    "objectID": "workshop3/dashboardA.html#community-health-data",
+    "href": "workshop3/dashboardA.html#community-health-data",
+    "title": "3  Group A Hospital Dashboard",
+    "section": "3.5 Community Health Data",
+    "text": "3.5 Community Health Data\n\nThe Queen Rose monitors the prevalence of COVID-19 and other viruses in the community to ensure they are prepared for potential surges in patient admissions, enabling them to allocate resources and staff efficiently. By tracking these trends, the hospital can implement timely public health interventions and provide accurate information to the community to mitigate the spread of infections. Additionally, continuous monitoring helps in identifying emerging outbreaks early, allowing for a rapid response that minimizes the impact on public health and healthcare services.\n\nThere were 30 more COVID-19 cases this week than in the previous week.\nWe are seeing an increase in infections caused by other respiratory viruses (e.g., influenza, adenovirus, rhinovirus, RSV).\n\n\n\n\n\n\n\nCOVID-19 cases (weekly)\n\n\n220\n\n\n\n\n\n\n\n\nOther respiratory virus infections (weekly)\n\n\n86\n\n\n\n\n\n\n\n\nSARS-CoV2 vaccination rate (booster campaign)\n\n\n71%\n\n\n\n\n\n\n\n\nChildhood vaccination rate (DTaP/IPV/Hib/HepB)\n\n\n94%",
     "crumbs": [
       "Group A",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Group A Hospital Dashboard</span>"
@@ -101,7 +112,7 @@
     "href": "workshop3/dashboardB.html",
     "title": "6  Hospital Data",
     "section": "",
-    "text": "6.1 Row 1, number of hospital beds\nlist(\n  icon = \"hospital\",\n  color = \"dark\",\n  value = beds\n)\n\n$icon\n[1] \"hospital\"\n\n$color\n[1] \"dark\"\n\n$value\n[1] 131\nlist(\n  icon = \"thermometer-half\",\n  color = \"secondary\",\n  value = icu\n)\n\n$icon\n[1] \"thermometer-half\"\n\n$color\n[1] \"secondary\"\n\n$value\n[1] 14\nlist(\n  icon = \"vignette\",\n  color = \"light\",\n  value = isolation\n)\n\n$icon\n[1] \"vignette\"\n\n$color\n[1] \"light\"\n\n$value\n[1] 7",
+    "text": "6.1 Row 1, number of hospital beds\nlist(\n  icon = \"hospital\",\n  color = \"dark\",\n  value = beds\n)\n\n$icon\n[1] \"hospital\"\n\n$color\n[1] \"dark\"\n\n$value\n[1] 111\nlist(\n  icon = \"thermometer-half\",\n  color = \"secondary\",\n  value = icu\n)\n\n$icon\n[1] \"thermometer-half\"\n\n$color\n[1] \"secondary\"\n\n$value\n[1] 16\nlist(\n  icon = \"vignette\",\n  color = \"light\",\n  value = isolation\n)\n\n$icon\n[1] \"vignette\"\n\n$color\n[1] \"light\"\n\n$value\n[1] 10",
     "crumbs": [
       "Group B",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Hospital Data</span>"
@@ -112,7 +123,7 @@
     "href": "workshop3/dashboardB.html#row-2-hospital-bed-occupancy",
     "title": "6  Hospital Data",
     "section": "6.2 Row 2, hospital bed occupancy",
-    "text": "6.2 Row 2, hospital bed occupancy\n\nlist(\n  icon = \"hospital\",\n  color = \"dark\",\n  value = bedocc\n)\n\n$icon\n[1] \"hospital\"\n\n$color\n[1] \"dark\"\n\n$value\n[1] 93\n\n\n\nlist(\n  icon = \"thermometer-half\",\n  color = \"secondary\",\n  value = icuocc\n)\n\n$icon\n[1] \"thermometer-half\"\n\n$color\n[1] \"secondary\"\n\n$value\n[1] 93\n\n\n\nlist(\n  icon = \"vignette\",\n  color = \"light\",\n  value = isocc\n)\n\n$icon\n[1] \"vignette\"\n\n$color\n[1] \"light\"\n\n$value\n[1] 97",
+    "text": "6.2 Row 2, hospital bed occupancy\n\nlist(\n  icon = \"hospital\",\n  color = \"dark\",\n  value = bedocc\n)\n\n$icon\n[1] \"hospital\"\n\n$color\n[1] \"dark\"\n\n$value\n[1] 91\n\n\n\nlist(\n  icon = \"thermometer-half\",\n  color = \"secondary\",\n  value = icuocc\n)\n\n$icon\n[1] \"thermometer-half\"\n\n$color\n[1] \"secondary\"\n\n$value\n[1] 91\n\n\n\nlist(\n  icon = \"vignette\",\n  color = \"light\",\n  value = isocc\n)\n\n$icon\n[1] \"vignette\"\n\n$color\n[1] \"light\"\n\n$value\n[1] 98",
     "crumbs": [
       "Group B",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Hospital Data</span>"
@@ -123,7 +134,7 @@
     "href": "workshop3/dashboardB.html#row-2b-staff",
     "title": "6  Hospital Data",
     "section": "6.3 Row 2b, staff",
-    "text": "6.3 Row 2b, staff\n\nlist(\n  icon = \"person-fill\",\n  color = \"success\",\n  value = round(beds * (sample(c(0.6, 0.7, 0.8), 1)), digits = 0)\n)\n\n$icon\n[1] \"person-fill\"\n\n$color\n[1] \"success\"\n\n$value\n[1] 92\n\n\n\nlist(\n  icon = \"people-fill\",\n  color = \"warning\",\n  value = round(beds/7, digits = 0)\n)\n\n$icon\n[1] \"people-fill\"\n\n$color\n[1] \"warning\"\n\n$value\n[1] 19\n\n\n\nlist(\n  icon = \"vignette\",\n  color = \"info\",\n  value = sample(1000:2000, 1)\n)\n\n$icon\n[1] \"vignette\"\n\n$color\n[1] \"info\"\n\n$value\n[1] 1475",
+    "text": "6.3 Row 2b, staff\n\nlist(\n  icon = \"person-fill\",\n  color = \"success\",\n  value = round(beds * (sample(c(0.6, 0.7, 0.8), 1)), digits = 0)\n)\n\n$icon\n[1] \"person-fill\"\n\n$color\n[1] \"success\"\n\n$value\n[1] 89\n\n\n\nlist(\n  icon = \"people-fill\",\n  color = \"warning\",\n  value = round(beds/7, digits = 0)\n)\n\n$icon\n[1] \"people-fill\"\n\n$color\n[1] \"warning\"\n\n$value\n[1] 16\n\n\n\nlist(\n  icon = \"vignette\",\n  color = \"info\",\n  value = sample(1000:2000, 1)\n)\n\n$icon\n[1] \"vignette\"\n\n$color\n[1] \"info\"\n\n$value\n[1] 1355",
     "crumbs": [
       "Group B",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Hospital Data</span>"
@@ -167,7 +178,7 @@
     "href": "workshop3/dashboardB.html#row-5-header",
     "title": "6  Hospital Data",
     "section": "6.7 Row 5, header",
-    "text": "6.7 Row 5, header\n\nThe Queen Rose hospital strives to meet stringent targets for infection control and antibiotic stewardship to ensure patient safety and combat antimicrobial resistance. Infection control protocols are critical in maintaining high standards of hygiene and patient care. Similarly, antibiotic stewardship programs are essential for optimizing the use of antimicrobials, thereby reducing the risk of resistance and ensuring effective treatments for future generations.\n\nThere were 2 fewer hospital-acquired MRSA infections in 2025 than there were in 2024.\nThere were 4 more hospital-acquired Clostridiodes difficile infections in 2025 than there were in 2024.\nThere was 1 fewer hospital-acquired Candida auris infection in 2025 than there were in 2024.",
+    "text": "6.7 Row 5, header\n\nThe Queen Rose hospital strives to meet stringent targets for infection control and antibiotic stewardship to ensure patient safety and combat antimicrobial resistance. Infection control protocols are critical in maintaining high standards of hygiene and patient care. Similarly, antibiotic stewardship programs are essential for optimizing the use of antimicrobials, thereby reducing the risk of resistance and ensuring effective treatments for future generations.\n\nThere were 3 more hospital-acquired MRSA infections in 2025 than there were in 2024.\nThere was 1 fewer hospital-acquired Clostridiodes difficile infection in 2025 than there were in 2024.\nThere were 2 more hospital-acquired Candida auris infections in 2025 than there were in 2024.",
     "crumbs": [
       "Group B",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Hospital Data</span>"
@@ -178,7 +189,7 @@
     "href": "workshop3/dashboardB.html#row-6-organism-stats",
     "title": "6  Hospital Data",
     "section": "6.8 Row 6, organism stats",
-    "text": "6.8 Row 6, organism stats\n\nlist(\n  icon = ifelse(mrsa2&lt;mrsa1, \"arrow-down-right\", \"arrow-up-right\"), \n  color = ifelse(mrsa2&lt;mrsa1, \"success\", \"danger\"), \n  value = mrsa2\n)\n\n$icon\n[1] \"arrow-down-right\"\n\n$color\n[1] \"success\"\n\n$value\n[1] 7\n\n\n\nlist(\n  icon = ifelse(Cdiff2&lt;Cdiff1, \"arrow-down-right\", \"arrow-up-right\"), \n  color = ifelse(Cdiff2&lt;Cdiff1, \"success\", \"danger\"), \n  value = Cdiff2\n)\n\n$icon\n[1] \"arrow-up-right\"\n\n$color\n[1] \"danger\"\n\n$value\n[1] 10\n\n\n\nlist(\n  icon = ifelse(Cauris2&lt;Cauris1, \"arrow-down-right\", \"arrow-up-right\"), \n  color = ifelse(Cauris2&lt;Cauris1, \"success\", \"danger\"), \n  value = Cauris2\n)\n\n$icon\n[1] \"arrow-down-right\"\n\n$color\n[1] \"success\"\n\n$value\n[1] 4",
+    "text": "6.8 Row 6, organism stats\n\nlist(\n  icon = ifelse(mrsa2&lt;mrsa1, \"arrow-down-right\", \"arrow-up-right\"), \n  color = ifelse(mrsa2&lt;mrsa1, \"success\", \"danger\"), \n  value = mrsa2\n)\n\n$icon\n[1] \"arrow-up-right\"\n\n$color\n[1] \"danger\"\n\n$value\n[1] 4\n\n\n\nlist(\n  icon = ifelse(Cdiff2&lt;Cdiff1, \"arrow-down-right\", \"arrow-up-right\"), \n  color = ifelse(Cdiff2&lt;Cdiff1, \"success\", \"danger\"), \n  value = Cdiff2\n)\n\n$icon\n[1] \"arrow-down-right\"\n\n$color\n[1] \"success\"\n\n$value\n[1] 2\n\n\n\nlist(\n  icon = ifelse(Cauris2&lt;Cauris1, \"arrow-down-right\", \"arrow-up-right\"), \n  color = ifelse(Cauris2&lt;Cauris1, \"success\", \"danger\"), \n  value = Cauris2\n)\n\n$icon\n[1] \"arrow-up-right\"\n\n$color\n[1] \"danger\"\n\n$value\n[1] 9",
     "crumbs": [
       "Group B",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Hospital Data</span>"
@@ -189,7 +200,7 @@
     "href": "workshop3/dashboardB.html#row-7-overall-stats",
     "title": "6  Hospital Data",
     "section": "6.9 Row 7, overall stats",
-    "text": "6.9 Row 7, overall stats\n\nlist(\n  icon = \"prescription\",\n  color = ifelse(app_therapy &gt; 95, \"success\", \"warning\"),\n  value = app_therapy\n)\n\n$icon\n[1] \"prescription\"\n\n$color\n[1] \"warning\"\n\n$value\n[1] 83\n\n\n\nlist(\n  icon = \"capsule-pill\",\n  color = ifelse(desc &gt; 15, \"success\", \"warning\"),\n  value = desc\n)\n\n$icon\n[1] \"capsule-pill\"\n\n$color\n[1] \"warning\"\n\n$value\n[1] 12\n\n\n\nlist(\n  icon = \"exclamation-diamond\",\n  color = ifelse(amr_rate &gt; 50, \"success\", \"warning\"),\n  value = amr_rate\n)\n\n$icon\n[1] \"exclamation-diamond\"\n\n$color\n[1] \"warning\"\n\n$value\n[1] 45",
+    "text": "6.9 Row 7, overall stats\n\nlist(\n  icon = \"prescription\",\n  color = ifelse(app_therapy &gt; 95, \"success\", \"warning\"),\n  value = app_therapy\n)\n\n$icon\n[1] \"prescription\"\n\n$color\n[1] \"warning\"\n\n$value\n[1] 80\n\n\n\nlist(\n  icon = \"capsule-pill\",\n  color = ifelse(desc &gt; 15, \"success\", \"warning\"),\n  value = desc\n)\n\n$icon\n[1] \"capsule-pill\"\n\n$color\n[1] \"warning\"\n\n$value\n[1] 15\n\n\n\nlist(\n  icon = \"exclamation-diamond\",\n  color = ifelse(amr_rate &gt; 50, \"success\", \"warning\"),\n  value = amr_rate\n)\n\n$icon\n[1] \"exclamation-diamond\"\n\n$color\n[1] \"warning\"\n\n$value\n[1] 37",
     "crumbs": [
       "Group B",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Hospital Data</span>"
@@ -200,7 +211,7 @@
     "href": "workshop3/dashboardB.html#row-8a-header",
     "title": "6  Hospital Data",
     "section": "6.10 Row 8a, header",
-    "text": "6.10 Row 8a, header\n\nThe Queen Rose monitors the prevalence of COVID-19 and other viruses in the community to ensure they are prepared for potential surges in patient admissions, enabling them to allocate resources and staff efficiently. By tracking these trends, the hospital can implement timely public health interventions and provide accurate information to the community to mitigate the spread of infections. Additionally, continuous monitoring helps in identifying emerging outbreaks early, allowing for a rapid response that minimizes the impact on public health and healthcare services.\n\nThere were 37 fewer COVID-19 cases this week than in the previous week.\nWe are seeing an increase in infections caused by other respiratory viruses (e.g., influenza, adenovirus, rhinovirus, RSV).",
+    "text": "6.10 Row 8a, header\n\nThe Queen Rose monitors the prevalence of COVID-19 and other viruses in the community to ensure they are prepared for potential surges in patient admissions, enabling them to allocate resources and staff efficiently. By tracking these trends, the hospital can implement timely public health interventions and provide accurate information to the community to mitigate the spread of infections. Additionally, continuous monitoring helps in identifying emerging outbreaks early, allowing for a rapid response that minimizes the impact on public health and healthcare services.\n\nThere were 15 fewer COVID-19 cases this week than in the previous week.\nWe are seeing an increase in infections caused by other respiratory viruses (e.g., influenza, adenovirus, rhinovirus, RSV).",
     "crumbs": [
       "Group B",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Hospital Data</span>"
@@ -211,7 +222,7 @@
     "href": "workshop3/dashboardB.html#row-8-covid-cases-weekly",
     "title": "6  Hospital Data",
     "section": "6.11 Row 8, covid cases (weekly)",
-    "text": "6.11 Row 8, covid cases (weekly)\n\nlist(\n  icon = \"virus\",\n  color = ifelse(covid2&lt;covid1, \"success\", \"danger\"),\n  value = covid1\n)\n\n$icon\n[1] \"virus\"\n\n$color\n[1] \"danger\"\n\n$value\n[1] 120\n\n\n\nlist(\n  icon = \"virus2\",\n  color = ifelse(virus2&lt;virus1, \"success\", \"danger\"),\n  value = virus1\n)\n\n$icon\n[1] \"virus2\"\n\n$color\n[1] \"danger\"\n\n$value\n[1] 95",
+    "text": "6.11 Row 8, covid cases (weekly)\n\nlist(\n  icon = \"virus\",\n  color = ifelse(covid2&lt;covid1, \"success\", \"danger\"),\n  value = covid1\n)\n\n$icon\n[1] \"virus\"\n\n$color\n[1] \"danger\"\n\n$value\n[1] 66\n\n\n\nlist(\n  icon = \"virus2\",\n  color = ifelse(virus2&lt;virus1, \"success\", \"danger\"),\n  value = virus1\n)\n\n$icon\n[1] \"virus2\"\n\n$color\n[1] \"danger\"\n\n$value\n[1] 71",
     "crumbs": [
       "Group B",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Hospital Data</span>"
@@ -222,7 +233,7 @@
     "href": "workshop3/dashboardB.html#row-9-vaccination-rate",
     "title": "6  Hospital Data",
     "section": "6.12 Row 9, vaccination rate",
-    "text": "6.12 Row 9, vaccination rate\n\nlist(\n  icon = \"clipboard2-pulse\",\n  color = \"success\",\n  value = covid_vacc\n)\n\n$icon\n[1] \"clipboard2-pulse\"\n\n$color\n[1] \"success\"\n\n$value\n[1] 67\n\n\n\nlist(\n  icon = \"clipboard2-pulse\",\n  color = \"warning\",\n  value = vacc_rate\n)\n\n$icon\n[1] \"clipboard2-pulse\"\n\n$color\n[1] \"warning\"\n\n$value\n[1] 95",
+    "text": "6.12 Row 9, vaccination rate\n\nlist(\n  icon = \"clipboard2-pulse\",\n  color = \"success\",\n  value = covid_vacc\n)\n\n$icon\n[1] \"clipboard2-pulse\"\n\n$color\n[1] \"success\"\n\n$value\n[1] 68\n\n\n\nlist(\n  icon = \"clipboard2-pulse\",\n  color = \"warning\",\n  value = vacc_rate\n)\n\n$icon\n[1] \"clipboard2-pulse\"\n\n$color\n[1] \"warning\"\n\n$value\n[1] 96",
     "crumbs": [
       "Group B",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Hospital Data</span>"
