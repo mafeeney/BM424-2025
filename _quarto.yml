@@ -22,7 +22,6 @@ book:
     - index.qmd
     - part: "Group A"
       chapters:
-      numbered: false
         - workshop3/3A.qmd
         - workshop3/dashboardA.qmd
         - workshop3/refA.qmd
