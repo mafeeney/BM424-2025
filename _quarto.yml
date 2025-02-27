@@ -3,7 +3,7 @@ number-depth: 0
 project:
   type: book
   output-dir: _book
-  files:
+  resources:
     - workshop3/dashboardA.qmd
 book:
   title: "BM424 Clinical Microbiology Pandemic Preparedness Workshops"
