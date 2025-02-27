@@ -39,7 +39,7 @@ news_date <- format(news_date, "%d %B, %Y")
 
 {{< include _includes/data.qmd >}}
 
-* You can find more key information about the main hospital in `r city_name`, the `r hosp_name` in the [Hospital Dashboard](dashboardA.qmd)
+* You can find more key information about the main hospital in `r city_name`, the `r hosp_name` in the [Hospital Dashboard](dashboardA.html)
 
 ### Epidemiological Data
 
