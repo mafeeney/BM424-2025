@@ -146,9 +146,7 @@ vacc_rate <- sample(93:96, 1)
 
 ```
 
-::: panel-tabset
-
-# Hospital Info
+## Hospital Info
 
 The `r hosp_name`, built in `r sample(2008:2015, 1)`, is the main hospital in `r city_name`.
 
@@ -156,7 +154,6 @@ The `r hosp_name` has units specialising in `r hosp_units` and `r clinic`.
 
 `r paste0("![The ", hosp_name , " hospital ](", hospital , ")")`
 
-::: 
 
 ## Hospital Capacity
 
@@ -188,90 +185,61 @@ The `r hosp_name` has units specialising in `r hosp_units` and `r clinic`.
 :::
 :::
 
+::: {.grid .g-col-4}
 
-```{r}
-#| content: valuebox
-#| title: "Hospital beds (ICU)"
-list(
-  icon = "thermometer-half",
-  color = "secondary",
-  value = icu
-)
-```
+::: {.card .bg-dark .text-white}
+<div class="card-body text-center">
+  <i class="bi bi-hospital" style="font-size: 3rem;"></i>  
+  <h4>Average bed occupancy (%)</h4>
+  <p class="fs-2">`r bedocc`%</p>
+</div>
+:::
 
-```{r}
-#| content: valuebox
-#| title: "Isolation beds"
-list(
-  icon = "vignette",
-  color = "light",
-  value = isolation
-)
-```
+::: {.card .bg-secondary .text-white}
+<div class="card-body text-center">
+  <i class="bi bi-thermometer-half" style="font-size: 3rem;"></i>  
+  <h4>Average ICU bed occupancy (%)</h4>
+  <p class="fs-2">`r icuocc`%</p>
+</div>
+:::
 
-## Row 2, hospital bed occupancy
+::: {.card .bg-light .text-dark}
+<div class="card-body text-center">
+  <i class="bi bi-vignette" style="font-size: 3rem;"></i>  
+  <h4>Average isolation bed occupancy (%)</h4>
+  <p class="fs-2">`r isocc`%</p>
+</div>
+:::
 
-```{r}
-#| content: valuebox
-#| title: "Average bed occupancy (%)"
-list(
-  icon = "hospital",
-  color = "dark",
-  value = bedocc
-)
-```
+:::
 
-```{r}
-#| content: valuebox
-#| title: "Average ICU bed occupancy (%)"
-list(
-  icon = "thermometer-half",
-  color = "secondary",
-  value = icuocc
-)
-```
+::: {.grid .g-col-4}
 
-```{r}
-#| content: valuebox
-#| title: "Average isolation bed occupancy (%)"
-list(
-  icon = "vignette",
-  color = "light",
-  value = isocc
-)
-```
+::: {.card .bg-success .text-white}
+<div class="card-body text-center">
+  <i class="bi bi-person-fill" style="font-size: 3rem;"></i>  
+  <h4>Number of hospital staff</h4>
+  <p class="fs-2">`r round(beds * (sample(c(0.6, 0.7, 0.8), 1)), digits = 0)`</p>
+</div>
+:::
 
-## Row 2b, staff
+::: {.card .bg-warning .text-dark}
+<div class="card-body text-center">
+  <i class="bi bi-people-fill" style="font-size: 3rem;"></i>  
+  <h4>Number of hospital support staff</h4>
+  <p class="fs-2">`r round(beds/7, digits = 0)`</p>
+</div>
+:::
 
-```{r}
-#| content: valuebox
-#| title: "Number of hospital staff"
-list(
-  icon = "person-fill",
-  color = "success",
-  value = round(beds * (sample(c(0.6, 0.7, 0.8), 1)), digits = 0)
-)
-```
+::: {.card .bg-info .text-white}
+<div class="card-body text-center">
+  <i class="bi bi-vignette" style="font-size: 3rem;"></i>  
+  <h4>Clinical micro lab capacity (# tests/month)</h4>
+  <p class="fs-2">`r sample(1000:2000, 1)`</p>
+</div>
+:::
 
-```{r}
-#| content: valuebox
-#| title: "Number of hospital support staff"
-list(
-  icon = "people-fill",
-  color = "warning",
-  value = round(beds/7, digits = 0)
-)
-```
-
-```{r}
-#| content: valuebox
-#| title: "Clinical micro lab capacity (avg. # tests/month)"
-list(
-  icon = "vignette",
-  color = "info",
-  value = sample(1000:2000, 1)
-)
-```
+:::
 
 # Key Performance Indicators
 

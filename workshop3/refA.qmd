@@ -50,8 +50,8 @@ The following list of references is provided as a starting place for you to begi
 * Kawasaki, Takeshi et al. “Diagnostic accuracy of urinary antigen tests for legionellosis: A systematic review and meta-analysis.” Respiratory investigation vol. 60,2 (2022): 205-214. 
 
 * [Clinician Factsheet: Legionnaire's Disease](https://www.cdc.gov/legionella/downloads/fs-legionella-clinicians.pdf)
-* 
-[Clinical features of Legionnaire's Disease and Pontiac Fever](https://www.cdc.gov/legionella/clinicians/clinical-features.html)
+
+* [Clinical features of Legionnaire's Disease and Pontiac Fever](https://www.cdc.gov/legionella/clinicians/clinical-features.html)
 
 * [Diagnosis, Treatment, and Prevention - CDC guidelines](https://www.cdc.gov/legionella/clinicians/diagnostic-testing.html)
 
