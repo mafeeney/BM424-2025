@@ -4,6 +4,23 @@ library(ggplot2)
 library(knitr)
 ```
 
+### Pandemic Report
+
+```{r A0, echo=FALSE}
+outbreak_deaths <- floor(runif(1, min = 10, max = 30))
+outbreak_cases <- floor(runif(1, min = 400, max = 700))
+outbreak_icu <- floor(runif(1, min = 10, max = 30))
+
+```
+
+*Briefing:*
+
+* Based on collated hospital reports and death certificates, it is believed that there have been `r outbreak_deaths` in `r city_name` thus far
+
+* There are currently `r outbreak_cases` patients in the `r hospital_name` (with confirmed `r dis_name`, or symptoms consistent with `r dis_name`
+
+* There are currently `r outbreak_icu`  patients currently in the ICU with confirmed `r dis_name`
+
 ### City Demographics, Polling, and Budget
 
 The current population of `r city_name` (as of December 2022) is `r sample(150000:170000, size=1)`. The demographic data for the city is shown below.

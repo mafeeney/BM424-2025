@@ -21,7 +21,7 @@ The following list of references is provided as a starting place for you to begi
 
 ::: panel-tabset
 
-## *`r inf_agent`* Public Health Literature
+## Selected *`r inf_agent`* Public Health Literature
 
 * [Guidelines on the management of <i>Legionella</i> cases, incidents,outbreaks and clusters in the community: Health Protection Network Scottish Guidance](https://hpspubsrepo.blob.core.windows.net/hps-website/nss/2070/documents/1_legionella-guidelines-2014-2.pdf)
 
@@ -45,7 +45,7 @@ The following list of references is provided as a starting place for you to begi
 
 * McCormick, D et al. “Public health response to an outbreak of Legionnaires' disease in Edinburgh, United Kingdom, June 2012.” Euro surveillance : bulletin Europeen sur les maladies transmissibles = European communicable disease bulletin vol. 17,28 20216. 12 Jul. 2012, doi:10.2807/ese.17.28.20216-en
 
-## *`r inf_agent`* Diagnostics and Treatment
+## Selected *`r inf_agent`* Diagnostics and Treatment
 
 * [Clinician Factsheet: Legionnaire's Disease](https://www.cdc.gov/legionella/downloads/fs-legionella-clinicians.pdf)
 
@@ -69,7 +69,7 @@ The following list of references is provided as a starting place for you to begi
 
 * Viasus, Diego et al. “Legionnaires' Disease: Update on Diagnosis and Treatment.” Infectious diseases and therapy vol. 11,3 (2022): 973-986. doi:10.1007/s40121-022-00635-7
 
-## *`r inf_agent`* Epidemiology
+## Selected *`r inf_agent`* Epidemiology Literature
 
 * Gorzynski, Jamie et al. “Epidemiological analysis of Legionnaires' disease in Scotland: a genomic study.” The Lancet. Microbe vol. 3,11 (2022): e835-e845. 
 
