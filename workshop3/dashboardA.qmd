@@ -167,7 +167,7 @@ The `r hosp_name` has units specialising in `r hosp_units` and `r clinic`.
 </div>
 :::
 
-::: {.card .bg-secondary .text-white}
+::: {.card .bg-light .text-dark}
 <div class="card-body text-center">
   <i class="bi bi-thermometer-half" style="font-size: 3rem;"></i>  
   <h4>Hospital beds (ICU)</h4>
@@ -234,10 +234,10 @@ The `r hosp_name` has units specialising in `r hosp_units` and `r clinic`.
 
 # Key Performance Indicators
 
-## Row 3, a&e stats
+## A&E Statistics
 
 ::: card
-As part of the `r hosp_name`'s ongoing commitment to excellence, the hospital diligently monitors key performance indicators and strives to meet established targets. While progress has been made, we acknowledge that certain goals remain unmet. We are actively working to address these challenges and enhance patient care.
+Statement from `r hosp_name`: As part of the `r hosp_name`'s ongoing commitment to excellence, the hospital diligently monitors key performance indicators and strives to meet established targets. While progress has been made, we acknowledge that certain goals remain unmet. We are actively working to address these challenges and enhance patient care.
 
 *Key Performance Targets:*
 
@@ -247,10 +247,6 @@ As part of the `r hosp_name`'s ongoing commitment to excellence, the hospital di
 
 -   85% of all patients waiting for cancer treatment should be seen within 62 days
 :::
-
-## Row 3b
-
-::: {.grid}
 
 ::: {.card `r ifelse(beds<150, ".bg-primary .text-white", ".bg-secondary .text-white")`}
 <div class="card-body text-center">
@@ -276,9 +272,7 @@ As part of the `r hosp_name`'s ongoing commitment to excellence, the hospital di
 </div>
 :::
 
-:::
-
-## Row 4, waiting times
+## A&E Wait Times Metrics
 
 ::: {.card `r ifelse(refwait>84, ".bg-success .text-white", ".bg-danger .text-white")`}
 <div class="card-body text-center">
@@ -305,9 +299,7 @@ As part of the `r hosp_name`'s ongoing commitment to excellence, the hospital di
 :::
 
 
-# Infection Control
-
-## Row 5, header
+# Infection Control Metrics
 
 ::: card
 The `r hosp_name` hospital strives to meet stringent targets for infection control and antibiotic stewardship to ensure patient safety and combat antimicrobial resistance. Infection control protocols are critical in maintaining high standards of hygiene and patient care. Similarly, antibiotic stewardship programs are essential for optimizing the use of antimicrobials, thereby reducing the risk of resistance and ensuring effective treatments for future generations.
@@ -319,12 +311,10 @@ The `r hosp_name` hospital strives to meet stringent targets for infection contr
 -   `r Cauris_result`
 :::
 
-## Row 6, organism stats
-
 ::: {.card `r ifelse(mrsa2<mrsa1, ".bg-success .text-white", ".bg-danger .text-white")`}
 <div class="card-body text-center">
   <i class="bi bi-arrow-`r ifelse(mrsa2<mrsa1, "down-right", "up-right")`" style="font-size: 3rem;"></i>  
-  <h4>Hospital-acquired MRSA cases (this year)</h4>
+  <h4>Hospital-acquired MRSA cases (trend)</h4>
   <p class="fs-2">`r mrsa2`</p>
 </div>
 :::
@@ -332,7 +322,7 @@ The `r hosp_name` hospital strives to meet stringent targets for infection contr
 ::: {.card `r ifelse(Cdiff2<Cdiff1, ".bg-success .text-white", ".bg-danger .text-white")`}
 <div class="card-body text-center">
   <i class="bi bi-arrow-`r ifelse(Cdiff2<Cdiff1, "down-right", "up-right")`" style="font-size: 3rem;"></i>  
-  <h4>Hospital-acquired C. difficile cases (this year)</h4>
+  <h4>Hospital-acquired C. difficile cases (trend)</h4>
   <p class="fs-2">`r Cdiff2`</p>
 </div>
 :::
@@ -340,11 +330,10 @@ The `r hosp_name` hospital strives to meet stringent targets for infection contr
 ::: {.card `r ifelse(Cauris2<Cauris1, ".bg-success .text-white", ".bg-danger .text-white")`}
 <div class="card-body text-center">
   <i class="bi bi-arrow-`r ifelse(Cauris2<Cauris1, "down-right", "up-right")`" style="font-size: 3rem;"></i>  
-  <h4>Hospital-acquired Candida auris cases (this year)</h4>
+  <h4>Hospital-acquired Candida auris cases (trend)</h4>
   <p class="fs-2">`r Cauris2`</p>
 </div>
 :::
-
 
 ::: {.card `r ifelse(app_therapy > 95, ".bg-success .text-white", ".bg-warning .text-white")`}
 <div class="card-body text-center">
@@ -373,8 +362,6 @@ The `r hosp_name` hospital strives to meet stringent targets for infection contr
 
 # Community Health Data
 
-## Row 8a, header
-
 ::: card
 The `r hosp_name` monitors the prevalence of COVID-19 and other viruses in the community to ensure they are prepared for potential surges in patient admissions, enabling them to allocate resources and staff efficiently. By tracking these trends, the hospital can implement timely public health interventions and provide accurate information to the community to mitigate the spread of infections. Additionally, continuous monitoring helps in identifying emerging outbreaks early, allowing for a rapid response that minimizes the impact on public health and healthcare services.
 
@@ -382,8 +369,6 @@ The `r hosp_name` monitors the prevalence of COVID-19 and other viruses in the c
 
 -   We are seeing an increase in infections caused by other respiratory viruses (e.g., influenza, adenovirus, rhinovirus, RSV).
 :::
-
-
 
 ::: {.card `r ifelse(covid2<covid1, ".bg-success .text-white", ".bg-danger .text-white")`}
 <div class="card-body text-center">
@@ -400,8 +385,6 @@ The `r hosp_name` monitors the prevalence of COVID-19 and other viruses in the c
   <p class="fs-2">`r virus1`</p>
 </div>
 :::
-
-
 
 ::: {.card .bg-success .text-white}
 <div class="card-body text-center">

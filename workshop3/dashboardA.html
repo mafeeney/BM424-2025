@@ -390,19 +390,11 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#key-performance-indicators" id="toc-key-performance-indicators" class="nav-link" data-scroll-target="#key-performance-indicators"><span class="header-section-number">4</span> Key Performance Indicators</a>
   <ul class="collapse">
-  <li><a href="#row-3-ae-stats" id="toc-row-3-ae-stats" class="nav-link" data-scroll-target="#row-3-ae-stats"><span class="header-section-number">4.1</span> Row 3, a&amp;e stats</a></li>
-  <li><a href="#row-3b" id="toc-row-3b" class="nav-link" data-scroll-target="#row-3b"><span class="header-section-number">4.2</span> Row 3b</a></li>
-  <li><a href="#row-4-waiting-times" id="toc-row-4-waiting-times" class="nav-link" data-scroll-target="#row-4-waiting-times"><span class="header-section-number">4.3</span> Row 4, waiting times</a></li>
+  <li><a href="#ae-statistics" id="toc-ae-statistics" class="nav-link" data-scroll-target="#ae-statistics"><span class="header-section-number">4.1</span> A&amp;E Statistics</a></li>
+  <li><a href="#ae-wait-times-metrics" id="toc-ae-wait-times-metrics" class="nav-link" data-scroll-target="#ae-wait-times-metrics"><span class="header-section-number">4.2</span> A&amp;E Wait Times Metrics</a></li>
   </ul></li>
-  <li><a href="#infection-control" id="toc-infection-control" class="nav-link" data-scroll-target="#infection-control"><span class="header-section-number">5</span> Infection Control</a>
-  <ul class="collapse">
-  <li><a href="#row-5-header" id="toc-row-5-header" class="nav-link" data-scroll-target="#row-5-header"><span class="header-section-number">5.1</span> Row 5, header</a></li>
-  <li><a href="#row-6-organism-stats" id="toc-row-6-organism-stats" class="nav-link" data-scroll-target="#row-6-organism-stats"><span class="header-section-number">5.2</span> Row 6, organism stats</a></li>
-  </ul></li>
-  <li><a href="#community-health-data" id="toc-community-health-data" class="nav-link" data-scroll-target="#community-health-data"><span class="header-section-number">6</span> Community Health Data</a>
-  <ul class="collapse">
-  <li><a href="#row-8a-header" id="toc-row-8a-header" class="nav-link" data-scroll-target="#row-8a-header"><span class="header-section-number">6.1</span> Row 8a, header</a></li>
-  </ul></li>
+  <li><a href="#infection-control-metrics" id="toc-infection-control-metrics" class="nav-link" data-scroll-target="#infection-control-metrics"><span class="header-section-number">5</span> Infection Control Metrics</a></li>
+  <li><a href="#community-health-data" id="toc-community-health-data" class="nav-link" data-scroll-target="#community-health-data"><span class="header-section-number">6</span> Community Health Data</a></li>
   </ul>
 </nav>
     </div>
@@ -431,7 +423,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="hospital-info" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="hospital-info"><span class="header-section-number">3.1</span> Hospital Info</h2>
 <p>The Queen Rose, built in 2010, is the main hospital in Inverkeld.</p>
-<p>The Queen Rose has units specialising in oncology, maternity care, radiology, gynecology and an orthopaedics department.</p>
+<p>The Queen Rose has units specialising in paediatric care, dermatology, neurology, gynecology and an ear, nose, and throat clinic.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/hospitalA.jpg" class="img-fluid figure-img"></p>
@@ -451,11 +443,11 @@ ul.task-list li input[type="checkbox"] {
 Hospital beds (general)
 </h4>
 <p class="fs-2">
-120
+153
 </p>
 </div>
 </div>
-<div class="card bg-secondary text-white">
+<div class="card bg-light text-dark">
 <div class="card-body text-center">
 <i class="bi bi-thermometer-half" style="font-size: 3rem;"></i><br>
 
@@ -463,7 +455,7 @@ Hospital beds (general)
 Hospital beds (ICU)
 </h4>
 <p class="fs-2">
-18
+17
 </p>
 </div>
 </div>
@@ -475,7 +467,7 @@ Hospital beds (ICU)
 Isolation beds
 </h4>
 <p class="fs-2">
-6
+7
 </p>
 </div>
 </div>
@@ -487,7 +479,7 @@ Isolation beds
 Average bed occupancy (%)
 </h4>
 <p class="fs-2">
-87%
+92%
 </p>
 </div>
 </div>
@@ -499,7 +491,7 @@ Average bed occupancy (%)
 Average ICU bed occupancy (%)
 </h4>
 <p class="fs-2">
-90%
+91%
 </p>
 </div>
 </div>
@@ -523,7 +515,7 @@ Average isolation bed occupancy (%)
 Number of hospital staff
 </h4>
 <p class="fs-2">
-84
+122
 </p>
 </div>
 </div>
@@ -535,7 +527,7 @@ Number of hospital staff
 Number of hospital support staff
 </h4>
 <p class="fs-2">
-17
+22
 </p>
 </div>
 </div>
@@ -547,7 +539,7 @@ Number of hospital support staff
 Clinical micro lab capacity (# tests/month)
 </h4>
 <p class="fs-2">
-1885
+1361
 </p>
 </div>
 </div>
@@ -555,10 +547,10 @@ Clinical micro lab capacity (# tests/month)
 </section>
 <section id="key-performance-indicators" class="level1" data-number="4">
 <h1 data-number="4"><span class="header-section-number">4</span> Key Performance Indicators</h1>
-<section id="row-3-ae-stats" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="row-3-ae-stats"><span class="header-section-number">4.1</span> Row 3, a&amp;e stats</h2>
+<section id="ae-statistics" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="ae-statistics"><span class="header-section-number">4.1</span> A&amp;E Statistics</h2>
 <div class="card">
-<p>As part of the Queen Rose’s ongoing commitment to excellence, the hospital diligently monitors key performance indicators and strives to meet established targets. While progress has been made, we acknowledge that certain goals remain unmet. We are actively working to address these challenges and enhance patient care.</p>
+<p>Statement from Queen Rose: As part of the Queen Rose’s ongoing commitment to excellence, the hospital diligently monitors key performance indicators and strives to meet established targets. While progress has been made, we acknowledge that certain goals remain unmet. We are actively working to address these challenges and enhance patient care.</p>
 <p><em>Key Performance Targets:</em></p>
 <ul>
 <li><p>Waiting time for an ambulance (category 2 event) should be no more than 18 minutes</p></li>
@@ -566,11 +558,7 @@ Clinical micro lab capacity (# tests/month)
 <li><p>85% of all patients waiting for cancer treatment should be seen within 62 days</p></li>
 </ul>
 </div>
-</section>
-<section id="row-3b" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="row-3b"><span class="header-section-number">4.2</span> Row 3b</h2>
-<div class="grid">
-<div class="card bg-primary text-white">
+<div class="card bg-secondary text-white">
 <div class="card-body text-center">
 <i class="bi bi-hospital" style="font-size: 3rem;"></i><br>
 
@@ -578,7 +566,7 @@ Clinical micro lab capacity (# tests/month)
 Average number of admissions to A&amp;E (monthly)
 </h4>
 <p class="fs-2">
-9169
+8905
 </p>
 </div>
 </div>
@@ -590,7 +578,7 @@ Average number of admissions to A&amp;E (monthly)
 Average % of patients waiting &gt;4 hours in A&amp;E
 </h4>
 <p class="fs-2">
-62%
+86%
 </p>
 </div>
 </div>
@@ -602,15 +590,14 @@ Average % of patients waiting &gt;4 hours in A&amp;E
 Ambulance response times (minutes)
 </h4>
 <p class="fs-2">
-51 min
+38 min
 </p>
 </div>
 </div>
-</div>
 </section>
-<section id="row-4-waiting-times" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="row-4-waiting-times"><span class="header-section-number">4.3</span> Row 4, waiting times</h2>
-<div class="card bg-success text-white">
+<section id="ae-wait-times-metrics" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="ae-wait-times-metrics"><span class="header-section-number">4.2</span> A&amp;E Wait Times Metrics</h2>
+<div class="card bg-danger text-white">
 <div class="card-body text-center">
 <i class="bi bi-calendar3" style="font-size: 3rem;"></i><br>
 
@@ -618,7 +605,7 @@ Ambulance response times (minutes)
 % of patients waiting &lt;62 days for referral (any)
 </h4>
 <p class="fs-2">
-85%
+73%
 </p>
 </div>
 </div>
@@ -630,7 +617,7 @@ Ambulance response times (minutes)
 % of patients waiting &lt;62 days for cancer treatment
 </h4>
 <p class="fs-2">
-69%
+63%
 </p>
 </div>
 </div>
@@ -642,33 +629,28 @@ Ambulance response times (minutes)
 Number of patients waiting for elective surgery
 </h4>
 <p class="fs-2">
-6907
+8019
 </p>
 </div>
 </div>
 </section>
 </section>
-<section id="infection-control" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Infection Control</h1>
-<section id="row-5-header" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="row-5-header"><span class="header-section-number">5.1</span> Row 5, header</h2>
+<section id="infection-control-metrics" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Infection Control Metrics</h1>
 <div class="card">
 <p>The Queen Rose hospital strives to meet stringent targets for infection control and antibiotic stewardship to ensure patient safety and combat antimicrobial resistance. Infection control protocols are critical in maintaining high standards of hygiene and patient care. Similarly, antibiotic stewardship programs are essential for optimizing the use of antimicrobials, thereby reducing the risk of resistance and ensuring effective treatments for future generations.</p>
 <ul>
-<li><p>There were 4 fewer hospital-acquired MRSA infections in 2025 than there were in 2024.</p></li>
-<li><p>There was 1 fewer hospital-acquired <em>Clostridiodes difficile</em> infection in 2025 than there were in 2024.</p></li>
-<li><p>There were 2 fewer hospital-acquired <em>Candida auris</em> infections in 2025 than there were in 2024.</p></li>
+<li><p>There were 5 fewer hospital-acquired MRSA infections in 2025 than there were in 2024.</p></li>
+<li><p>There were 6 fewer hospital-acquired <em>Clostridiodes difficile</em> infections in 2025 than there were in 2024.</p></li>
+<li><p>There were 3 more hospital-acquired <em>Candida auris</em> infections in 2025 than there were in 2024.</p></li>
 </ul>
 </div>
-</section>
-<section id="row-6-organism-stats" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="row-6-organism-stats"><span class="header-section-number">5.2</span> Row 6, organism stats</h2>
 <div class="card bg-success text-white">
 <div class="card-body text-center">
 <i class="bi bi-arrow-down-right" style="font-size: 3rem;"></i><br>
 
-<h4 class="anchored">
-Hospital-acquired MRSA cases (this year)
+<h4 class="anchored" data-anchor-id="infection-control-metrics">
+Hospital-acquired MRSA cases (trend)
 </h4>
 <p class="fs-2">
 4
@@ -680,22 +662,22 @@ Hospital-acquired MRSA cases (this year)
 <i class="bi bi-arrow-down-right" style="font-size: 3rem;"></i><br>
 
 <h4 class="anchored">
-Hospital-acquired C. difficile cases (this year)
+Hospital-acquired C. difficile cases (trend)
 </h4>
 <p class="fs-2">
-8
+3
 </p>
 </div>
 </div>
-<div class="card bg-success text-white">
+<div class="card bg-danger text-white">
 <div class="card-body text-center">
-<i class="bi bi-arrow-down-right" style="font-size: 3rem;"></i><br>
+<i class="bi bi-arrow-up-right" style="font-size: 3rem;"></i><br>
 
 <h4 class="anchored">
-Hospital-acquired Candida auris cases (this year)
+Hospital-acquired Candida auris cases (trend)
 </h4>
 <p class="fs-2">
-6
+7
 </p>
 </div>
 </div>
@@ -707,7 +689,7 @@ Hospital-acquired Candida auris cases (this year)
 Antibiotic prescriptions judged appropriate (%)
 </h4>
 <p class="fs-2">
-83%
+89%
 </p>
 </div>
 </div>
@@ -719,11 +701,11 @@ Antibiotic prescriptions judged appropriate (%)
 Antibiotic de-escalation rate (%)
 </h4>
 <p class="fs-2">
-18%
+17%
 </p>
 </div>
 </div>
-<div class="card bg-success text-white">
+<div class="card bg-warning text-white">
 <div class="card-body text-center">
 <i class="bi bi-exclamation-diamond" style="font-size: 3rem;"></i><br>
 
@@ -731,32 +713,29 @@ Antibiotic de-escalation rate (%)
 Prevalence of MDR-resistant organisms (%)
 </h4>
 <p class="fs-2">
-58%
+36%
 </p>
 </div>
 </div>
 </section>
-</section>
 <section id="community-health-data" class="level1" data-number="6">
 <h1 data-number="6"><span class="header-section-number">6</span> Community Health Data</h1>
-<section id="row-8a-header" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="row-8a-header"><span class="header-section-number">6.1</span> Row 8a, header</h2>
 <div class="card">
 <p>The Queen Rose monitors the prevalence of COVID-19 and other viruses in the community to ensure they are prepared for potential surges in patient admissions, enabling them to allocate resources and staff efficiently. By tracking these trends, the hospital can implement timely public health interventions and provide accurate information to the community to mitigate the spread of infections. Additionally, continuous monitoring helps in identifying emerging outbreaks early, allowing for a rapid response that minimizes the impact on public health and healthcare services.</p>
 <ul>
-<li><p>There were 35 fewer COVID-19 cases this week than in the previous week.</p></li>
+<li><p>There were 17 more COVID-19 cases this week than in the previous week.</p></li>
 <li><p>We are seeing an increase in infections caused by other respiratory viruses (e.g., influenza, adenovirus, rhinovirus, RSV).</p></li>
 </ul>
 </div>
-<div class="card bg-danger text-white">
+<div class="card bg-success text-white">
 <div class="card-body text-center">
 <i class="bi bi-virus" style="font-size: 3rem;"></i><br>
 
-<h4 class="anchored">
+<h4 class="anchored" data-anchor-id="community-health-data">
 COVID-19 cases (weekly)
 </h4>
 <p class="fs-2">
-157
+206
 </p>
 </div>
 </div>
@@ -768,7 +747,7 @@ COVID-19 cases (weekly)
 Other respiratory virus infections (weekly)
 </h4>
 <p class="fs-2">
-63
+80
 </p>
 </div>
 </div>
@@ -780,7 +759,7 @@ Other respiratory virus infections (weekly)
 SARS-CoV2 vaccination rate (booster campaign)
 </h4>
 <p class="fs-2">
-61%
+70%
 </p>
 </div>
 </div>
@@ -792,13 +771,12 @@ SARS-CoV2 vaccination rate (booster campaign)
 Childhood vaccination rate (DTaP/IPV/Hib/HepB)
 </h4>
 <p class="fs-2">
-94%
+93%
 </p>
 </div>
 </div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
