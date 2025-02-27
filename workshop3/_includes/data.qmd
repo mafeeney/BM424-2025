@@ -1,11 +1,10 @@
 ```{r data, include=FALSE}
 
 library(ggplot2)
+library(knitr)
 ```
 
 ### City Demographics, Polling, and Budget
-
-You are the provost of `r city_name`, elected in `r sample(2012:2021, size=1)`. 
 
 The current population of `r city_name` (as of December 2022) is `r sample(150000:170000, size=1)`. The demographic data for the city is shown below.
 
@@ -34,7 +33,8 @@ ggplot(data = birthdeath, aes(x=DemogYears, y=Num, group=Demog, colour=Demog)) +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) + 
   scale_color_discrete(name="")
 ```
-You were elected as a member of the popular "Environment First" party and made a number of election promises regarding a "Green New Deal" for `r city_name`. This is your first full year in office.
+
+The current provost of `r city_name` was elected in `r sample(2012:2021, size=1)`, as a member of the popular "Environment First" party who made a number of election promises regarding a "Green New Deal" for `r city_name`.
 
 ```{r A2, fig.cap="Voting intention by Inverkeld residents (Source: YouGov polling)", echo=FALSE}
 
