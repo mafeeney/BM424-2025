@@ -157,7 +157,7 @@ The `r hosp_name` has units specialising in `r hosp_units` and `r clinic`.
 
 ## Hospital Capacity {.unnumbered}
 
-### Number of Hospital Beds {.unnumbered}
+### Number and Capacity of Hospital Beds {.unnumbered}
 
 ::: {.card .bg-dark .text-white}
 <div class="card-body text-center">
@@ -167,7 +167,7 @@ The `r hosp_name` has units specialising in `r hosp_units` and `r clinic`.
 </div>
 :::
 
-::: {.card .bg-light .text-dark}
+::: {.card .bg-primary .text-light}
 <div class="card-body text-center">
   <i class="bi bi-thermometer-half" style="font-size: 3rem;"></i>  
   <h4>Hospital beds (ICU)</h4>
@@ -191,7 +191,7 @@ The `r hosp_name` has units specialising in `r hosp_units` and `r clinic`.
 </div>
 :::
 
-::: {.card .bg-secondary .text-white}
+::: {.card .bg-primary .text-light}
 <div class="card-body text-center">
   <i class="bi bi-thermometer-half" style="font-size: 3rem;"></i>  
   <h4>Average ICU bed occupancy (%)</h4>
@@ -206,6 +206,8 @@ The `r hosp_name` has units specialising in `r hosp_units` and `r clinic`.
   <p class="fs-2">`r isocc`%</p>
 </div>
 :::
+
+### Hospital Staffing Levels {.unnumbered}
 
 ::: {.card .bg-success .text-white}
 <div class="card-body text-center">
