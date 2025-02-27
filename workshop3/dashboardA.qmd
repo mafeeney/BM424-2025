@@ -146,7 +146,7 @@ vacc_rate <- sample(93:96, 1)
 
 ```
 
-## Hospital Info
+## Hospital Info {.unnumbered}
 
 The `r hosp_name`, built in `r sample(2008:2015, 1)`, is the main hospital in `r city_name`.
 
@@ -155,9 +155,9 @@ The `r hosp_name` has units specialising in `r hosp_units` and `r clinic`.
 `r paste0("![The ", hosp_name , " hospital ](", hospital , ")")`
 
 
-## Hospital Capacity
+## Hospital Capacity {.unnumbered}
 
-### Number of Hospital Beds
+### Number of Hospital Beds {.unnumbered}
 
 ::: {.card .bg-dark .text-white}
 <div class="card-body text-center">
@@ -232,9 +232,9 @@ The `r hosp_name` has units specialising in `r hosp_units` and `r clinic`.
 :::
 
 
-## Key Performance Indicators
+## Key Performance Indicators {.unnumbered}
 
-### A&E Statistics
+### A&E Statistics {.unnumbered}
 
 ::: card
 Statement from `r hosp_name`: As part of the `r hosp_name`'s ongoing commitment to excellence, the hospital diligently monitors key performance indicators and strives to meet established targets. While progress has been made, we acknowledge that certain goals remain unmet. We are actively working to address these challenges and enhance patient care.
@@ -272,7 +272,7 @@ Statement from `r hosp_name`: As part of the `r hosp_name`'s ongoing commitment 
 </div>
 :::
 
-### A&E Wait Times Metrics
+### A&E Wait Times Metrics {.unnumbered}
 
 ::: {.card `r ifelse(refwait>84, ".bg-success .text-white", ".bg-danger .text-white")`}
 <div class="card-body text-center">
@@ -299,7 +299,7 @@ Statement from `r hosp_name`: As part of the `r hosp_name`'s ongoing commitment 
 :::
 
 
-## Infection Control Metrics
+## Infection Control Metrics {.unnumbered}
 
 ::: card
 The `r hosp_name` hospital strives to meet stringent targets for infection control and antibiotic stewardship to ensure patient safety and combat antimicrobial resistance. Infection control protocols are critical in maintaining high standards of hygiene and patient care. Similarly, antibiotic stewardship programs are essential for optimizing the use of antimicrobials, thereby reducing the risk of resistance and ensuring effective treatments for future generations.
@@ -360,7 +360,7 @@ The `r hosp_name` hospital strives to meet stringent targets for infection contr
 :::
 
 
-## Community Health Data
+## Community Health Data {.unnumbered}
 
 ::: card
 The `r hosp_name` monitors the prevalence of COVID-19 and other viruses in the community to ensure they are prepared for potential surges in patient admissions, enabling them to allocate resources and staff efficiently. By tracking these trends, the hospital can implement timely public health interventions and provide accurate information to the community to mitigate the spread of infections. Additionally, continuous monitoring helps in identifying emerging outbreaks early, allowing for a rapid response that minimizes the impact on public health and healthcare services.
