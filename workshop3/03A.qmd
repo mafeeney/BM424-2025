@@ -1,13 +1,5 @@
 ---
 title: "Workshop 3: Group A"
-filters:
-  - multibib
-validate-yaml: false
-bibliography:
-  general: general.bib
-  pathogen: A.bib
-nocite: |
-  @*
 ---
 
 ```{r setup, include=FALSE}

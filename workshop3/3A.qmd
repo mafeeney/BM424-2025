@@ -1,22 +1,8 @@
 ---
 title: "Workshop 3: Group A"
-filters:
-  - multibib
-validate-yaml: false
-bibliography:
-  general: general.bib
-  pathogen: A.bib
-nocite: |
-  @*
 ---
 
 ```{r setup, include=FALSE}
-#To set up this page for a new group, note that you will need to change:
-# 1: the variables below, 
-# 2: the link which is in the ## *`r inf_agent`* section: {{< include _includes/pathogenA.qmd >}} -- replace A with the correct group letter
-# 3: the title and pathogen bibliography in the YAML header above: 
-# title: "Group A: Workshop 3" and pathogen: A.bib -- replace A with the correct group letter
-
 #define variables for each group: city and hospital name, infectious agent and disease, group letter
 city_name <- "Inverkeld"
 hosp_name <- "Queen Rose"
@@ -67,7 +53,5 @@ news_date <- format(news_date, "%d %B, %Y")
 The following list of references is provided as a starting place for you to begin exploring various aspects of *`r inf_agent`* biology, diagnostics, epidemiology, and treatment. However, this is by no means an exhaustive list: you should further explore the relevant peer-reviewed literature independently.  
 :::
 
-::: {#refs-pathogen}
-:::
 
 :::
