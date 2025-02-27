@@ -105,7 +105,7 @@ times <-  sample(c("immediately", "very soon", "at once", "as soon as possible")
 
 Dear Pandemic Committee,
 
-I am `r angry1` to hear about this new pandemic in `r city_name`. `r `initial_sentences`
+I am `r angry1` to hear about this new pandemic in `r city_name`. `r initial_sentences`
 
 I `r hope` that your office is going to do something about `r states_of_affairs` `r times`.
 
@@ -208,7 +208,7 @@ time1 <- sample(c("very soon", "immediately", "at once", "promptly", "as soon as
 
 Dear Pandemic Response Committee,
 
-This new pandemic in `r city_name` has the potential to `r devastate` our businesses. I run a `r business_type1` on the high street and `r pandemic_consequences[1]` due to COVID. Similarly, my `r relationship` `r owner`, who runs `rbusiness_name2`, `r pandemic_consequences[2]`.
+This new pandemic in `r city_name` has the potential to `r devastate` our businesses. I run a `r business_type1` on the high street and `r pandemic_consequences[1]` due to COVID. Similarly, my `r relationship` `r owner`, who runs `r business_name2`, `r pandemic_consequences[2]`.
 
 `r business_concerns`
 
@@ -282,13 +282,13 @@ Your committee has also been monitoring news and published blog posts about the 
 
 ```{r news-PH, echo=FALSE}
 # Define variables for randomizing content
-public_health_titles <- c(
+public_health_titles <- sample(c(
   "Data-Driven Decisions: How Public Health Measures are Mitigating the Pandemic",
   "The Power of Data: Protecting Communities During the Pandemic",
   "Scientific Strategies: Effective Public Health Responses to the Pandemic",
   "Analyzing the Pandemic: Data-Driven Public Health Approaches",
   "Informed Actions: The Role of Data in Pandemic Response"
-)
+), 1)
 positive_adjectives <- sample(c("effective", "successful", "promising", "positive", "encouraging"), 1)
 expert_titles <- sample(c("epidemiologist", "public health expert", "infectious disease specialist", "health policy analyst"), 1)
 verifications <- sample(c("confirms", "supports", "validates", "reinforces"), 1)
@@ -305,7 +305,7 @@ three_days_before <- workshop3_date - 3
 interview_date <- format(three_days_before, "%A, %d/%m/%Y")
 ```
 
-<b>`r public_health_titles`</b>
+<b>`r sample(public_health_titles, 1)`</b>
 
 An update on the outbreak in `r city_name`
 
@@ -332,13 +332,13 @@ The public is encouraged to stay informed through reliable sources and adhere to
 
 ```{r news-doom, echo=FALSE}
 # Define variables for randomizing content
-scaremongering_titles <- c(
+scaremongering_titles <- sample(c(
   "The Pandemic Apocalypse: Are We on the Brink of Collapse?",
   "Chaos Unleashed: The Terrifying Future of the Pandemic",
   "End Times: The Catastrophic Impact of the Pandemic",
   "A World in Peril: The Unfolding Pandemic Disaster",
   "The Looming Nightmare: How this Pandemic is Destroying Society"
-)
+), 1)
 negative_adjectives <- sample(c("unprecedented", "catastrophic", "devastating", "terrifying", "horrific"), 1)
 grim <- sample(c("grim", "terrible", "threatening", "bleak", "gloomy", "dark", "dreary"))
 fear_phrases <- sample(c("teetering on the edge", "spiraling out of control", "on the brink of collapse", "descending into chaos"), 1)
@@ -376,13 +376,13 @@ As fear and uncertainty grip the world, one thing is clear: we must prepare for 
 ## News/blog post #3
 ```{r news-AV, echo=FALSE}
 # Define variables for randomizing content
-antivax_titles <- c(
+antivax_titles <- sample(c(
   "The Pandemic Hoax: Why You Shouldn't Fall for the Vaccine Scam",
   "Exposing the Vaccine Lie: What They're Not Telling You",
   "The Truth About Vaccines: What the Government Doesn't Want You to Know",
   "Vaccines Unmasked: The Real Agenda Behind the Pandemic",
   "Think for Yourself: The Real Risks of the Vaccine"
-)
+), 1)
 intro_joke <- sample(c("Wake up, people!", "Buckle up, buttercups!", "Hold on to your hats!", "Get ready for this!", "Brace yourselves!", "Here's the kicker!", "Listen up, folks!", "Fasten your seatbelts!", "You won't believe this!", "Prepare to be shocked!", "Hold tight, everyone!"), 1)
 hoax_phrases <- sample(c("pandemic hoax", "scamdemic", "plandemic", "fake pandemic"), 1)
 control_phrases <- sample(c("control your lives", "make billions", "force compliance", "manipulate the masses"), 1)

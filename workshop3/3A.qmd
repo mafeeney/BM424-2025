@@ -35,7 +35,7 @@ news_date <- format(news_date, "%d %B, %Y")
 
 {{< include _includes/emails3.qmd >}}
 
-## Data Analysis
+## Data Collected for the Pandemic Response Committee Meeting
 
 {{< include _includes/data.qmd >}}
 

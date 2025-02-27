@@ -1,3 +1,23 @@
 # Preface {.unnumbered}
 
 These are materials for the workshop sessions on pandemic management and infectious disease control, presented as part of BM424 at the University of Strathclyde (SIPBS) in AY 2024-25. 
+
+Each member of your group will play one of the following roles as you attempt to tackle the disease outbreak and save your city:
+
+1.	Provost (head of the city council)
+2.	Representative from a national public health org. (Public Health Scotland)
+3.	Epidemiologist (on secondment from Public Health Scotland)
+4.	Director of the city's main hospital (`r hospital_name`)
+5.	City planner/civil servant
+6.	Microbiologist (working in one of the NHS Scotland clinical labs)
+7.	Public communications expert (past and current sci comm campaigns)
+8.  Doctor at a major surgery in `r city_name`
+9. Epidemiologist from the local university, an expert on <i>Legionella pneumophila</i> transmission
+
+You must work together, using the information that has been provided for you in the attached information packets, and decide what action(s) should be taken to control the <i>Legionella</i> outbreak currently plaguing your city, `r city_name`. Your actions should be evidence-based – use the peer-reviewed literature to decide on measures that will stop the pandemic in your scenario.
+
+Your action points may include directives to gather more information (e.g., contact tracing of current cases, microbiological testing of food/water, etc.), or specific directives (e.g. public health measures, non-pharmaceutical interventions, etc.). Use the data/expertise of all group members. Be clear, concise, and specific.
+
+You may choose to include mathematical modeling as part of your decision making (for example, using an [epidemic calculator](http://gabgoh.github.io/COVID/index.html) or other models); if you do so, you should provide details of your modelling and predictions when you submit your group's pro forma.
+
+You should submit 3-5 specific actions to control the pandemic, using the [workshop 3 pro forma](../proformas/BM424_workshop3_proforma.docx) (also available on MyPlace). Submit this by noon, Friday March 1st, via the submission link on MyPlace. 
