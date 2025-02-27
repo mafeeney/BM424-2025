@@ -27,7 +27,7 @@ The following list of references is provided as a starting place for you to begi
 
 * [Cluster of <i>Legionella longbeachae</i> cases in Scotland in September/October 2013: Report from a national Incident Management Team](https://hpspubsrepo.blob.core.windows.net/hps-website/nss/1918/documents/1_legionella-outbreak-report-2014.pdf)
 
-* [Legionnaires’ Disease: Use water management programs in buildings to help prevent outbreaks](https://www.cdc.gov/vitalsigns/pdf/2016-06-vitalsigns.pdf) CDC fact-sheet.
+* [CDC Fact Sheet - Legionnaires’ Disease: Use water management programs in buildings to help prevent outbreaks](https://www.cdc.gov/vitalsigns/pdf/2016-06-vitalsigns.pdf)
 
 * [CDC <i>Legionella</i> Communications Resources](https://www.cdc.gov/legionella/health-depts/communications-resources.html)
 

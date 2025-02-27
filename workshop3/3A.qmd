@@ -1,5 +1,5 @@
 ---
-title: "Workshop 3: Group A"
+title: "Group A Main Page"
 ---
 
 ```{r setupA, include=FALSE}
