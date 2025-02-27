@@ -4,7 +4,8 @@ project:
   type: book
   output-dir: _book
   resources:
-    - workshop3/dashboardA.qmd
+    - workshop3/dashboardA.qmd  # Keep it listed so it gets rendered
+
 book:
   title: "BM424 Clinical Microbiology Pandemic Preparedness Workshops"
   cover-image: sipbs_compbio_800.png
@@ -12,7 +13,6 @@ book:
   page-navigation: false
     
   # Sets the page footer text/images
-  # [B] FOOTER TEXT
   page-footer:
     center: |
       BM424 Workshops · 2024-25 · Dr Morgan Feeney
@@ -20,7 +20,6 @@ book:
   date: "28/02/2025"
 
   # Define chapters and sections here
-  # [E] CHAPTERS AND SECTIONS
   chapters:
     - index.qmd
     - part: workshop3.qmd
@@ -34,9 +33,21 @@ book:
         - workshop3/3G.qmd
         - workshop3/3H.qmd
         - workshop3/3I.qmd
-        
-
-
+    - dashboardA.qmd  # Include for rendering, but not for the sidebar
+  sidebar:
+    - contents:
+        - index.qmd
+        - part: workshop3.qmd
+          chapters:
+            - workshop3/3A.qmd
+            - workshop3/3B.qmd
+            - workshop3/3C.qmd
+            - workshop3/3D.qmd
+            - workshop3/3E.qmd
+            - workshop3/3F.qmd
+            - workshop3/3G.qmd
+            - workshop3/3H.qmd
+            - workshop3/3I.qmd
 
 
 
