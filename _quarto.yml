@@ -22,15 +22,15 @@ book:
     - index.qmd
     - part: workshop3.qmd
       chapters: 
-        - 3A.qmd
-        - 3B.qmd
-        - 3C.qmd
-        - 3D.qmd
-        - 3E.qmd
-        - 3F.qmd
-        - 3G.qmd
-        - 3H.qmd
-        - 3I.qmd
+        - workshop3/3A.qmd
+        - workshop3/3B.qmd
+        - workshop3/3C.qmd
+        - workshop3/3D.qmd
+        - workshop3/3E.qmd
+        - workshop3/3F.qmd
+        - workshop3/3G.qmd
+        - workshop3/3H.qmd
+        - workshop3/3I.qmd
         
 
 
