@@ -159,7 +159,6 @@ The `r hosp_name` has units specialising in `r hosp_units` and `r clinic`.
 
 ### Number of Hospital Beds
 
-::: {.grid}
 ::: {.card .bg-dark .text-white}
 <div class="card-body text-center">
   <i class="bi bi-hospital" style="font-size: 3rem;"></i>  
@@ -183,9 +182,6 @@ The `r hosp_name` has units specialising in `r hosp_units` and `r clinic`.
   <p class="fs-2">`r isolation`</p>
 </div>
 :::
-:::
-
-::: {.grid}
 
 ::: {.card .bg-dark .text-white}
 <div class="card-body text-center">
@@ -211,10 +207,6 @@ The `r hosp_name` has units specialising in `r hosp_units` and `r clinic`.
 </div>
 :::
 
-:::
-
-::: {.grid}
-
 ::: {.card .bg-success .text-white}
 <div class="card-body text-center">
   <i class="bi bi-person-fill" style="font-size: 3rem;"></i>  
@@ -239,7 +231,6 @@ The `r hosp_name` has units specialising in `r hosp_units` and `r clinic`.
 </div>
 :::
 
-:::
 
 # Key Performance Indicators
 
@@ -289,8 +280,6 @@ As part of the `r hosp_name`'s ongoing commitment to excellence, the hospital di
 
 ## Row 4, waiting times
 
-::: {.grid}
-
 ::: {.card `r ifelse(refwait>84, ".bg-success .text-white", ".bg-danger .text-white")`}
 <div class="card-body text-center">
   <i class="bi bi-calendar3" style="font-size: 3rem;"></i>  
@@ -315,7 +304,6 @@ As part of the `r hosp_name`'s ongoing commitment to excellence, the hospital di
 </div>
 :::
 
-:::
 
 # Infection Control
 
@@ -332,7 +320,6 @@ The `r hosp_name` hospital strives to meet stringent targets for infection contr
 :::
 
 ## Row 6, organism stats
-::: {.grid}
 
 ::: {.card `r ifelse(mrsa2<mrsa1, ".bg-success .text-white", ".bg-danger .text-white")`}
 <div class="card-body text-center">
@@ -358,10 +345,6 @@ The `r hosp_name` hospital strives to meet stringent targets for infection contr
 </div>
 :::
 
-:::
-
-
-::: {.grid}
 
 ::: {.card `r ifelse(app_therapy > 95, ".bg-success .text-white", ".bg-warning .text-white")`}
 <div class="card-body text-center">
@@ -387,7 +370,6 @@ The `r hosp_name` hospital strives to meet stringent targets for infection contr
 </div>
 :::
 
-:::
 
 # Community Health Data
 
@@ -401,7 +383,7 @@ The `r hosp_name` monitors the prevalence of COVID-19 and other viruses in the c
 -   We are seeing an increase in infections caused by other respiratory viruses (e.g., influenza, adenovirus, rhinovirus, RSV).
 :::
 
-::: {.grid}
+
 
 ::: {.card `r ifelse(covid2<covid1, ".bg-success .text-white", ".bg-danger .text-white")`}
 <div class="card-body text-center">
@@ -419,9 +401,7 @@ The `r hosp_name` monitors the prevalence of COVID-19 and other viruses in the c
 </div>
 :::
 
-:::
 
-::: {.grid}
 
 ::: {.card .bg-success .text-white}
 <div class="card-body text-center">
