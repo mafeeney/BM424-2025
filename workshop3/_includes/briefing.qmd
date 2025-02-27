@@ -2,7 +2,7 @@
 # 
 ```
 
-### City Pandemic Planning Resources
+### City Pandemic Planning Resources {.unnumbered}
 
 * [Standing Committee on Pandemic Preparedness](https://www.gov.scot/groups/standing-committee-on-pandemic-preparedness/)
 
@@ -19,7 +19,7 @@
 * [Communicating risk in public health emergencies: A WHO guideline for emergency risk communication (ERC) policy and practice](https://apps.who.int/iris/bitstream/handle/10665/259807/9789241550208-eng.pdf?sequence=2&isAllowed=y)
 
 
-### Hospital Pandemic Preparedness and Planning
+### Hospital Pandemic Preparedness and Planning {.unnumbered}
 
 * [National Infection Prevention and Control Manual](https://www.nipcm.hps.scot.nhs.uk/).
 
@@ -31,7 +31,7 @@ As a hospital director, you are familiar with the literature surrounding hospita
 
 * Adelaja, I., Sayma, M., Walton, H., McLachlan, G., de Boisanger, J., Bartlett-Pestell, S., Roche, E., Gandhi, V., Wilson, G. J., Brookes, Z., Yeen Fung, C., Macfarlane, H., Navaratnam, A., James, C., Scolding, P., & Sara, H. (2020). A comprehensive hospital agile preparedness (CHAPs) tool for pandemic preparedness, based on the COVID-19 experience. Future healthcare journal, 7(2), 165–168. 
 
-### Communications Resources
+### Communications Resources {.unnumbered}
 
 * Matta, G. Science communication as a preventative tool in the COVID19 pandemic. Humanit Soc Sci Commun 7, 159 (2020).
 
@@ -40,6 +40,3 @@ As a hospital director, you are familiar with the literature surrounding hospita
 * Royan, Regina et al. “Use of Twitter Amplifiers by Medical Professionals to Combat Misinformation During the COVID-19 Pandemic.” Journal of medical Internet research vol. 24,7 e38324. 22 Jul. 2022, doi:10.2196/38324
 
 * Tait, Margaret E et al. “Serving the public? A content analysis of COVID-19 public service announcements airing from March - December of 2020 in the U.S.” Preventive medicine reports vol. 29 (2022): 101971. 
-
-::: {#refs-general}
-:::

@@ -82,12 +82,12 @@ random_times <- paste0(random_hours, ":", sprintf("%02d", random_minutes))
 author_data$RandomDateTime <- random_times
 ```
 
-### Emails
+### Emails {.unnumbered}
 
 Your committee has recently received a great deal of correspondence regarding the pandemic in `r city_name`. A representative sample of these e-mails is shown below.
 
 ::: {.callout-caution collapse="true" icon=false}
-## Email #1
+## Email #1 {.unnumbered}
 ```{r email-upset, echo=FALSE}
 # Define variables to randomise e-mail content
 adjectives <- sample(c("Disgraceful", "Terrible", "Horrible", "Devastating", "Sad", "Bloody"), 1)
@@ -114,7 +114,7 @@ I `r hope` that your office is going to do something about `r states_of_affairs`
 :::
 
 ::: {.callout-caution collapse="true" icon=false}
-## Email #2
+## Email #2 {.unnumbered}
 ```{r email-business, echo=FALSE}
 # Define the business types and corresponding names
 business_data <- data.frame(
@@ -219,7 +219,7 @@ I `r wish1` that your office is going to do something about `r state` `r sample(
 :::
 
 ::: {.callout-caution collapse="true" icon=false}
-## Email #3
+## Email #3 {.unnumbered}
 ```{r email-overreach, echo=FALSE}
 # Define variables to randomise e-mail content
 subjects_government <- sample(c("Government Overreach", "Government Overstep", "Stop This Madness", "New Pandemic Measures"), 1)
@@ -244,7 +244,7 @@ I `r fear1` that you and your office are going to use this new pandemic as yet a
 :::
 
 ::: {.callout-caution collapse="true" icon=false}
-## Email #4
+## Email #4 {.unnumbered}
 
 ```{r email-tragedy, echo=FALSE}
 # Define variables to randomise e-mail content
@@ -273,12 +273,12 @@ I have just learned that my `r relative` has passed away due to the new pandemic
 
 :::
 
-### News/Blog Posts
+### News/Blog Posts {.unnumbered}
 
 Your committee has also been monitoring news and published blog posts about the pandemic in `r city_name`, in order to better gauge public opinion. A representative sample of these is shown below.
 
 ::: {.callout-caution collapse="true" icon=false}
-## News/blog post #1
+## News/blog post #1 {.unnumbered}
 
 ```{r news-PH, echo=FALSE}
 # Define variables for randomizing content
@@ -328,7 +328,7 @@ The public is encouraged to stay informed through reliable sources and adhere to
 :::
 
 ::: {.callout-caution collapse="true" icon=false}
-## News/blog post #2
+## News/blog post #2 {.unnumbered}
 
 ```{r news-doom, echo=FALSE}
 # Define variables for randomizing content
@@ -373,7 +373,7 @@ As fear and uncertainty grip the world, one thing is clear: we must prepare for 
 :::
 
 ::: {.callout-caution collapse="true" icon=false}
-## News/blog post #3
+## News/blog post #3 {.unnumbered}
 ```{r news-AV, echo=FALSE}
 # Define variables for randomizing content
 antivax_titles <- sample(c(

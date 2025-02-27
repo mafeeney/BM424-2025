@@ -3,7 +3,7 @@
 knitr::include_graphics(rep("images/pathogenA.jpg"))
 ```
 
-### Fact Sheet and General Information
+### Fact Sheet and General Information {.unnumbered}
 
 * [Legionnaire's Disease Fact Sheet](https://www.cdc.gov/legionella/downloads/fs-legionnaires.pdf)
 
@@ -11,7 +11,7 @@ knitr::include_graphics(rep("images/pathogenA.jpg"))
 
 * [CDC: Legionella](https://www.cdc.gov/legionella/index.html)
 
-### Clinical Microbiology and Diagnosis Resources
+### Clinical Microbiology and Diagnosis Resources {.unnumbered}
 
 * [UK Standards for Microbiology Investigations (UK SMI): Identification of <i>Legionella</i> species](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/422702/ID_18i3.pdf)
 

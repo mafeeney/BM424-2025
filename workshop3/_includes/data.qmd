@@ -4,7 +4,7 @@ library(ggplot2)
 library(knitr)
 ```
 
-### Pandemic Report
+### Pandemic Report {.unnumbered}
 
 ```{r A0, echo=FALSE}
 outbreak_deaths <- floor(runif(1, min = 10, max = 30))
@@ -21,7 +21,7 @@ outbreak_icu <- floor(runif(1, min = 10, max = 30))
 
 * There are currently `r outbreak_icu`  patients currently in the ICU with confirmed `r dis_name`
 
-### City Demographics, Polling, and Budget
+### City Demographics, Polling, and Budget {.unnumbered}
 
 The current population of `r city_name` (as of December 2022) is `r sample(150000:170000, size=1)`. The demographic data for the city is shown below.
 
@@ -144,7 +144,7 @@ ggplot(expenses, aes(x="", y=value, fill=Category)) +
 
 ```
 
-### Hospital and Hospital Budget
+### Hospital and Hospital Budget {.unnumbered}
 
 The annual operating budget for financial year 2022-2023 was £`r round(runif(1, 1, 10), 1)` million, and average expenditures are shown by category in the figure below. 
 

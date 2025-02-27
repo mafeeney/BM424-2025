@@ -23,29 +23,29 @@ news_date <- format(news_date, "%d %B, %Y")
 ```
 
 ::: panel-tabset
-## Pandemic Outbreak
+## Pandemic Outbreak {.unnumbered}
 
 {{< include _includes/news1.qmd >}}
 
-## `r city_name`
+## `r city_name` {.unnumbered}
 
 {{< include _includes/city.qmd >}}
 
-## *`r inf_agent`*
+## *`r inf_agent`* {.unnumbered}
 
 {{< include _includes/pathogenA.qmd >}}
 
-## Public Opinion: News and E-mails
+## Public Opinion: News and E-mails {.unnumbered}
 
 {{< include _includes/emails3.qmd >}}
 
-## Data Collected for the Pandemic Response Committee Meeting
+## Data Collected for the Pandemic Response Committee Meeting {.unnumbered}
 
 {{< include _includes/data.qmd >}}
 
 * You can find more key information about the main hospital in `r city_name`, the `r hosp_name` in the [hospital dashboard](dashboardA.qmd).
 
-### Epidemiological Data
+### Epidemiological Data {.unnumbered}
 
 A team of scientists working together have cultured <i>Legionella pneumophila</i> from a number of patient sputum samples; isolated genomic DNA from these strains; sequenced this genomic DNA using an Illumina MiSeq platform; assembled the short paired-end reads; and compared these assemblies to the extant <i>Legionella pneumophila</i> sequences available in the NCBI databases. The results of these experiments are summarised in the table below. 
 
@@ -98,11 +98,11 @@ A team of scientists working together have cultured <i>Legionella pneumophila</i
 </table>  
 <br><br>
 
-## City and Hospital Pandemic Planning Resources
+## City and Hospital Pandemic Planning Resources {.unnumbered}
 
 {{< include _includes/briefing.qmd >}}
 
-## Other useful resources/links
+## Other useful resources/links {.unnumbered}
 
 {{< include _includes/resources.qmd >}}
 
