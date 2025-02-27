@@ -4,7 +4,7 @@ format:
   dashboard
 ---
 
-```{r setup, include=FALSE}
+```{r dashboardA, include=FALSE}
 #define variables for each group
 city_name <- "Inverkeld"
 dis_name <- "Legionellosis"
