@@ -6,7 +6,8 @@ book:
   title: "BM424 Clinical Microbiology Pandemic Preparedness Workshops"
   cover-image: sipbs_compbio_800.png
   favicon: icon_32.png
-  
+  page-navigation: false
+    
   # Sets the page footer text/images
   # [B] FOOTER TEXT
   page-footer:
