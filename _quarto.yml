@@ -23,19 +23,51 @@ book:
   
   chapters:
     - index.qmd
-    - part: workshop3.qmd
+    - part: "Group A"
       chapters: 
         - workshop3/3A.qmd
+        - workshop3/dashboardA.qmd
+        - workshop3/refA.qmd
+    - part: "Group B"
+      chapters: 
         - workshop3/3B.qmd
+        - workshop3/dashboardB.qmd
+        - workshop3/refB.qmd
+    - part: "Group C"
+      chapters: 
         - workshop3/3C.qmd
+        - workshop3/dashboardC.qmd
+        - workshop3/refC.qmd
+    - part: "Group D"
+      chapters: 
         - workshop3/3D.qmd
+        - workshop3/dashboardD.qmd
+        - workshop3/refD.qmd
+    - part: "Group E"
+      chapters: 
         - workshop3/3E.qmd
+        - workshop3/dashboardE.qmd
+        - workshop3/refE.qmd
+    - part: "Group F"
+      chapters: 
         - workshop3/3F.qmd
+        - workshop3/dashboardF.qmd
+        - workshop3/refF.qmd
+    - part: "Group G"
+      chapters: 
         - workshop3/3G.qmd
+        - workshop3/dashboardG.qmd
+        - workshop3/refG.qmd
+    - part: "Group H"
+      chapters: 
         - workshop3/3H.qmd
+        - workshop3/dashboardH.qmd
+        - workshop3/refH.qmd
+    - part: "Group I"
+      chapters: 
         - workshop3/3I.qmd
-
-
+        - workshop3/dashboardI.qmd
+        - workshop3/refI.qmd
 
 # Formatting and theme; may not need to be changed
 format:

@@ -1,3 +1,7 @@
+---
+title: "Workshop 3--Overview"
+---
+
 # Preface {.unnumbered}
 
 These are materials for the workshop sessions on pandemic management and infectious disease control, presented as part of BM424 at the University of Strathclyde (SIPBS) in AY 2024-25. 
@@ -5,3 +9,51 @@ These are materials for the workshop sessions on pandemic management and infecti
 Please use the menu on the left to find the briefing packet for your group. Group lists, and other workshop materials, are posted on the module MyPlace page.
 
 Please report any issues or any broken links to Dr. Feeney.
+
+## Overview of workshop 3
+
+In this workshop, you will work in groups to solve a scenario where a city has encountered a pandemic outbreak of disease. You will need to agree, as a group, on the actions you wish to take to limit the spread of the disease and mitigate the effects of the pandemic.
+
+In the next workshop, you will be able to see what effect(s) your actions have had and further decide on the course(s) of action that your city should take.
+
+### Roles and Responsibilities
+
+::: callout-tip
+
+As a group, you should decide who will be responsible for which task(s) and how to allocate the work fairly. One possible way to divide the workload amongst your group is by choosing/allocating roles based on subject specialism, as outlined below. However, it is up to your group to decide on the best way to divide the work and a democratic process for making decisions.
+
+:::
+
+Each member of your group will play one of the following roles as you attempt to tackle the disease outbreak and save your city:
+
+1.	Provost (head of the city council)
+2.	Representative from a national public health org. (Public Health Scotland)
+3.	Epidemiologist (on secondment from Public Health Scotland)
+4.	Director of the city's main hospital 
+5.	City planner/civil servant
+6.	Microbiologist (working in one of the NHS Scotland clinical labs)
+7.	Public communications expert (past and current sci comm campaigns)
+8.  Doctor at a major surgery 
+9.  Epidemiologist from the local university wiht relevant expertise
+
+
+### Emergency Pandemic Response Team Meeting
+
+You must work together, using the information that has been provided for you in the attached information packets, and decide what action(s) should be taken to control the  outbreak currently plaguing your city. 
+  
+::: callout-tip
+
+Your actions should be evidence-based – use the peer-reviewed literature to decide on measures that will stop the pandemic in your scenario. What public health measures have previously been shown to work to contain similar outbreaks?
+
+:::
+
+
+### Submit committee decisions
+
+You should submit 3-5 specific actions that your city will take to try to control the pandemic, using the workshop 3 pro forma (available on MyPlace). Submit this by noon, Friday March 7th, via the submission link on MyPlace. (Only one member in each group needs to submit the pro forma - you should decide among yourselves who will do this.)
+
+::: callout-tip
+
+Your action points may include directives to gather more information (e.g., contact tracing of current cases, microbiological testing of food/water, etc.), or specific directives (e.g. public health measures, non-pharmaceutical interventions, etc.). Use the data/expertise of all group members. Be clear, concise, and specific.
+
+:::

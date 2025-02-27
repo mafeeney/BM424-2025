@@ -39,10 +39,3 @@ knitr::include_graphics(rep("images/plateD.jpg"))
 * [Campylobacter information and guidance (Food Standards Scotland)](https://www.foodstandards.gov.scot/downloads/Factsheet_-_Campylobacter_-_Website_-_for_businesses_and_professionals_-_June_2017.pdf)
 
 * [Campylobacter "Fit for Travel" advice](https://www.fitfortravel.nhs.uk/advice/disease-prevention-advice/campylobacter)
-
-
-
-
-
-
-
