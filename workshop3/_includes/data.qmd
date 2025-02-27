@@ -70,9 +70,6 @@ ggplot(data = politics, aes(x=PolYears, y=Polls, color=Party)) +
 # Calculate total councillors elected after 2020
 Councillors <- sum(politics[politics$PolYears > 2020, "Polls"])
 
-# Print the randomly selected party names
-print(party_names)
-
 ```
 
 There are currently `r Councillors` elected councillors, representing the 5 main political parties in `r city_name` as follows:
@@ -90,26 +87,40 @@ kable(x = Councillors,
 
 ```
 <br><br>
-The overall budget (expenditures) for the 2022-2023 financial year was £`r sample(400000000:600000000, size=1)`. A summary of expeditures by category for this financial year is shown below. 
+The overall budget (expenditures) for the 2023-2024 financial year was £`r sample(400000000:600000000, size=1)`. A summary of expeditures by category for this financial year is shown below. 
 
-```{r A4, fig.cap="Public expenditures by category for the 2022-2023 financial year (Source: Inverkeld City Council)", echo=FALSE}
+```{r A4, fig.cap="Public expenditures by category for the 2022-2023 financial year", echo=FALSE}
 
-expenses <- data.frame(
-  Category=c("Education", "Industry and Agriculture", "Social Care", "Transport", "Public order and safety", "Healthcare", "Housing", "Other"),
-  value=c(13,7,9,5,7,21,8,2)
-)
+# Define the categories
+categories <- c("Education", "Industry and Agriculture", "Social Care", 
+                "Transport", "Public order and safety", "Healthcare", 
+                "Housing", "Other")
 
+# Original values
+base_values <- c(13, 7, 9, 5, 7, 21, 8, 2)
+
+# Generate a random increase between 2 and 10 for each category
+random_increase <- sample(2:10, length(base_values), replace=TRUE)
+
+# Add the random increase to the base values
+new_values <- base_values + random_increase
+
+# Create the data frame
+expenses <- data.frame(Category = categories, value = new_values)
+
+# Plot the pie chart
 ggplot(expenses, aes(x="", y=value, fill=Category)) +
   geom_bar(stat="identity", width=1, color="white") +
   coord_polar("y", start=0) +
-  theme_void() 
+  theme_void()
+
 ```
 
 
 
 ### Hospital and Hospital Budget
 
-* You can find key information about the main hospital in `r city_name`, the `r hosp_name` in the [Hospital Dashboard](dashboardA.qmd)
+* You can find key information about the main hospital in `r city_name`, the `r hosp_name` in the [Hospital Dashboard](./dashboardA.qmd)
 
 The annual operating budget for financial year 2022-2023 was £1.3 million, and average expenditures are shown by category in the figure below. 
 
