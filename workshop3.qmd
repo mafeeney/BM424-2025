@@ -2,62 +2,49 @@
 title: "Workshop 3--Overview"
 ---
 
-### Overview of workshop
+## Overview of workshop
+
+
+
+
 
 ::: callout-tip
 As a group, you should decide who will be responsible for which task(s) and how to allocate the work fairly. One possible way to divide the workload amongst your group is by choosing/allocating roles based on subject specialism, e.g.: 
 
-# Roles and Responsibilities
+### Roles and Responsibilities
 
-## Epidemiologist/Public Health Tasks
+Each member of your group will play one of the following roles as you attempt to tackle the disease outbreak and save your city:
 
-- **Clinical Microbiologist role: diagnostic methods**
-    - Analyse the sequence data collected from the outbreak thus far to confirm the etiology of the disease in each case.
-    - Read the suggested references/search the literature (e.g., read the UK SMI document) to understand the diagnostic methods that could be useful for testing patients/residents for this particular pathogen.
-
-- **Epidemiologist role: demographics**
-    - Analyse your city's demographic data.
-    - Read the suggested references/search the literature to understand what demographic groups will be at higher risk from this particular pathogen.
-
-- **Epidemiologist role: pandemic effect analysis**
-    - Analyse your city's death certificate data.
-    - Read the suggested references/search the literature to understand the scope of the pandemic's effect on your city and what measures can be taken to stop the pathogen's transmission/reduce the severity of illness.
-
-- **Hospital Director role: hospital case data**
-    - Analyse your hospital's case data and dashboard.
-    - Read the suggested references/search the literature to understand the scope of the pandemic's effect on your hospital and what measures can be taken to stop the pathogen's transmission/what resources are available.
-
-- **Doctor/GP role**
-    - Responsibilities to be defined.
-
-## Resource Management/Planning Tasks
-
-- **City Planner/Civil Servant role: resource determination**
-    - Analyse your city's budget data to determine what resources your city has available to deal with this crisis.
-    - Read the suggested references/search the literature to determine what measures have been shown to be effective (and cost-effective) for containing the spread of this particular pathogen, or pathogens transmitted via similar routes.
-
-- **Public Communications Expert role**
-    - Analyse opinion data to inform your public communications/outreach strategies.
-    - Read the suggested references/search the literature to determine what measures have been shown to be effective (and supported by the public) for containing the spread of this particular pathogen, or pathogens transmitted via similar routes.
-    
-- **Provost/City Council member role**
-    - Analyse polling data to inform your understanding of public support for the ciy council's policies
-    - Read the suggested references/search the literature to determine what measures the council are legally 
-
-:::
+1.	Provost (head of the city council)
+2.	Representative from a national public health org. (Public Health Scotland)
+3.	Epidemiologist (on secondment from Public Health Scotland)
+4.	Director of the city's main hospital 
+5.	City planner/civil servant
+6.	Microbiologist (working in one of the NHS Scotland clinical labs)
+7.	Public communications expert (past and current sci comm campaigns)
+8.  Doctor at a major surgery 
+9.  Epidemiologist from the local university wiht relevant expertise
 
 
-*2. Emergency Pandemic Response Team Meeting*
+### Emergency Pandemic Response Team Meeting
 
-        
+You must work together, using the information that has been provided for you in the attached information packets, and decide what action(s) should be taken to control the  outbreak currently plaguing your city. 
+  
 ::: callout-tip
-Your decisions should be evidence-based
+
+Your actions should be evidence-based – use the peer-reviewed literature to decide on measures that will stop the pandemic in your scenario. What public health measures have previously been shown to work to contain similar outbreaks?
+
 :::
 
 
-*3. submit committee decisions*
+### Submit committee decisions
+
+You should submit 3-5 specific actions that your city will take to try to control the pandemic, using the workshop 3 pro forma (available on MyPlace). Submit this by noon, Friday March 7th, via the submission link on MyPlace. (Only one member in each group needs to submit the pro forma - you should decide among yourselves who will do this.)
 
 ::: callout-important
+
+Your action points may include directives to gather more information (e.g., contact tracing of current cases, microbiological testing of food/water, etc.), or specific directives (e.g. public health measures, non-pharmaceutical interventions, etc.). Use the data/expertise of all group members. Be clear, concise, and specific.
+
 :::
 
 

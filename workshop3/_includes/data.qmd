@@ -1,16 +1,6 @@
 ```{r data, include=FALSE}
-# Define the link for the hospital dashboard page based on the group variable
-if (group == "A") {
-  http_address <- "dashboardA.qmd"
-} else if (group == "B") {
-  http_address <- "dashboardB.qmd"
-} else {
-  # Handle other cases if needed
-  link <- "default_link"
-}
 
-# Define an include_statement variable to point to the correct epidemiology data
-include_statement <- paste0('{{< include _includes/epi', inf_type, '.qmd >}}')
+library(ggplot2)
 ```
 
 ### City Demographics, Polling, and Budget
