@@ -8,7 +8,7 @@ library(knitr)
 
 The current population of `r city_name` (as of December 2022) is `r sample(150000:170000, size=1)`. The demographic data for the city is shown below.
 
-```{r A1, fig.cap="Inverkeld demographics (Source: Office for National Statistics)"}
+```{r A1, echo=FALSE, fig.cap="Inverkeld demographics (Source: Office for National Statistics)"}
 
 Pop <- c(sample(150000:170000, size=3, replace=TRUE), sample(170000:180000, size=3, replace=TRUE), sample(190000:170000, size=2, replace=TRUE), sample(150000:170000, size=2, replace=TRUE))
 PopYears <- c(2012:2021)
