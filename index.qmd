@@ -1,7 +1,3 @@
 # Preface {.unnumbered}
 
-This is a Quarto book, generated using the `sipbs-compbiol-book-template` GitHub template.
-
-The Preface page is intended as a frontispiece with brief introductory information about the book and, maybe, its authors.
-
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+These are materials for the workshop sessions on pandemic management and infectious disease control, presented as part of BM424 at the University of Strathclyde (SIPBS) in AY 2024-25. 
