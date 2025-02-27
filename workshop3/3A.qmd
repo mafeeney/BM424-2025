@@ -4,8 +4,6 @@ title: "Workshop 3: Group A"
 
 ```{r setupA, include=FALSE}
 
-set.seed(123) # Ensures reproducibility 
-
 #define variables for each group: city and hospital name, infectious agent and disease, group letter
 city_name <- "Inverkeld"
 hosp_name <- "Queen Rose"
@@ -13,12 +11,15 @@ dis_name <- "Legionellosis"
 inf_agent <- "Legionella pneumophila"
 inf_type <- "bact"
 group <- "A"
+set.seed(123) # Ensures reproducibility
 paper_name <- sample(c("Times", "Courier", "Express", "Chronicle", "Gazette", "Herald", "News", "Metro", "Sentinel", "Beacon", "Journal"), 1)
 
 #Define variables for the dates: 
 workshop3_date <- as.Date("2025-02-28", format="%Y-%m-%d")
 news_date <- workshop3_date - sample(c(3:6), 1)
 news_date <- format(news_date, "%d %B, %Y")
+
+
 ```
 
 ::: panel-tabset
@@ -36,7 +37,7 @@ news_date <- format(news_date, "%d %B, %Y")
 
 ## Public Opinion: News and E-mails
 
-{{< include _includes/emails3.qmd >}
+{{< include _includes/emails3.qmd >}}
 
 ## Data Collected for the Pandemic Response Committee Meeting
 
@@ -44,7 +45,7 @@ news_date <- format(news_date, "%d %B, %Y")
 
 * You can find more key information about the main hospital in `r city_name`, the `r hosp_name` in the [hospital dashboard](dashboardA.qmd).
 
-### Epidemiological Data
+## Epidemiological Data
 
 A team of scientists working together have cultured <i>Legionella pneumophila</i> from a number of patient sputum samples; isolated genomic DNA from these strains; sequenced this genomic DNA using an Illumina MiSeq platform; assembled the short paired-end reads; and compared these assemblies to the extant <i>Legionella pneumophila</i> sequences available in the NCBI databases. The results of these experiments are summarised in the table below. 
 
