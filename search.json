@@ -46,7 +46,7 @@
     "href": "workshop3/dashboardA.html#row-1-number-of-hospital-beds",
     "title": "3  Group A Hospital Dashboard",
     "section": "Row 1, number of hospital beds",
-    "text": "Row 1, number of hospital beds\n\nlist(\n  icon = \"hospital\",\n  color = \"dark\",\n  value = beds\n)\n\n$icon\n[1] \"hospital\"\n\n$color\n[1] \"dark\"\n\n$value\n[1] 196\n\n\n\nlist(\n  icon = \"thermometer-half\",\n  color = \"secondary\",\n  value = icu\n)\n\n$icon\n[1] \"thermometer-half\"\n\n$color\n[1] \"secondary\"\n\n$value\n[1] 17\n\n\n\nlist(\n  icon = \"vignette\",\n  color = \"light\",\n  value = isolation\n)\n\n$icon\n[1] \"vignette\"\n\n$color\n[1] \"light\"\n\n$value\n[1] 9",
+    "text": "Row 1, number of hospital beds\n\nlist(\n  icon = \"hospital\",\n  color = \"dark\",\n  value = beds\n)\n\n$icon\n[1] \"hospital\"\n\n$color\n[1] \"dark\"\n\n$value\n[1] 185\n\n\n\nlist(\n  icon = \"thermometer-half\",\n  color = \"secondary\",\n  value = icu\n)\n\n$icon\n[1] \"thermometer-half\"\n\n$color\n[1] \"secondary\"\n\n$value\n[1] 20\n\n\n\nlist(\n  icon = \"vignette\",\n  color = \"light\",\n  value = isolation\n)\n\n$icon\n[1] \"vignette\"\n\n$color\n[1] \"light\"\n\n$value\n[1] 7",
     "crumbs": [
       "Group A",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Group A Hospital Dashboard</span>"
@@ -57,7 +57,7 @@
     "href": "workshop3/dashboardA.html#row-2-hospital-bed-occupancy",
     "title": "3  Group A Hospital Dashboard",
     "section": "Row 2, hospital bed occupancy",
-    "text": "Row 2, hospital bed occupancy\n\nlist(\n  icon = \"hospital\",\n  color = \"dark\",\n  value = bedocc\n)\n\n$icon\n[1] \"hospital\"\n\n$color\n[1] \"dark\"\n\n$value\n[1] 87\n\n\n\nlist(\n  icon = \"thermometer-half\",\n  color = \"secondary\",\n  value = icuocc\n)\n\n$icon\n[1] \"thermometer-half\"\n\n$color\n[1] \"secondary\"\n\n$value\n[1] 95\n\n\n\nlist(\n  icon = \"vignette\",\n  color = \"light\",\n  value = isocc\n)\n\n$icon\n[1] \"vignette\"\n\n$color\n[1] \"light\"\n\n$value\n[1] 98",
+    "text": "Row 2, hospital bed occupancy\n\nlist(\n  icon = \"hospital\",\n  color = \"dark\",\n  value = bedocc\n)\n\n$icon\n[1] \"hospital\"\n\n$color\n[1] \"dark\"\n\n$value\n[1] 86\n\n\n\nlist(\n  icon = \"thermometer-half\",\n  color = \"secondary\",\n  value = icuocc\n)\n\n$icon\n[1] \"thermometer-half\"\n\n$color\n[1] \"secondary\"\n\n$value\n[1] 92\n\n\n\nlist(\n  icon = \"vignette\",\n  color = \"light\",\n  value = isocc\n)\n\n$icon\n[1] \"vignette\"\n\n$color\n[1] \"light\"\n\n$value\n[1] 95",
     "crumbs": [
       "Group A",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Group A Hospital Dashboard</span>"
@@ -68,7 +68,7 @@
     "href": "workshop3/dashboardA.html#row-2b-staff",
     "title": "3  Group A Hospital Dashboard",
     "section": "Row 2b, staff",
-    "text": "Row 2b, staff\n\nlist(\n  icon = \"person-fill\",\n  color = \"success\",\n  value = round(beds * (sample(c(0.6, 0.7, 0.8), 1)), digits = 0)\n)\n\n$icon\n[1] \"person-fill\"\n\n$color\n[1] \"success\"\n\n$value\n[1] 118\n\n\n\nlist(\n  icon = \"people-fill\",\n  color = \"warning\",\n  value = round(beds/7, digits = 0)\n)\n\n$icon\n[1] \"people-fill\"\n\n$color\n[1] \"warning\"\n\n$value\n[1] 28\n\n\n\nlist(\n  icon = \"vignette\",\n  color = \"info\",\n  value = sample(1000:2000, 1)\n)\n\n$icon\n[1] \"vignette\"\n\n$color\n[1] \"info\"\n\n$value\n[1] 1809",
+    "text": "Row 2b, staff\n\nlist(\n  icon = \"person-fill\",\n  color = \"success\",\n  value = round(beds * (sample(c(0.6, 0.7, 0.8), 1)), digits = 0)\n)\n\n$icon\n[1] \"person-fill\"\n\n$color\n[1] \"success\"\n\n$value\n[1] 111\n\n\n\nlist(\n  icon = \"people-fill\",\n  color = \"warning\",\n  value = round(beds/7, digits = 0)\n)\n\n$icon\n[1] \"people-fill\"\n\n$color\n[1] \"warning\"\n\n$value\n[1] 26\n\n\n\nlist(\n  icon = \"vignette\",\n  color = \"info\",\n  value = sample(1000:2000, 1)\n)\n\n$icon\n[1] \"vignette\"\n\n$color\n[1] \"info\"\n\n$value\n[1] 1336",
     "crumbs": [
       "Group A",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Group A Hospital Dashboard</span>"
@@ -90,7 +90,7 @@
     "href": "workshop3/dashboardA.html#row-3b",
     "title": "3  Group A Hospital Dashboard",
     "section": "Row 3b",
-    "text": "Row 3b\n\nlist(\n  color = ifelse(beds&lt;150, \"primary\", \"secondary\"),\n  value = aeadmiss\n)\n\n$color\n[1] \"secondary\"\n\n$value\n[1] 8381\n\n\n\nlist(\n  icon = \"hourglass\", \n  color = ifelse(aewait&gt;95, \"success\", \"danger\"),\n  value = aewait\n)\n\n$icon\n[1] \"hourglass\"\n\n$color\n[1] \"danger\"\n\n$value\n[1] 66\n\n\n\nlist(\n  icon = \"clock\", \n  color = ifelse(ambwait&lt;18, \"success\", \"danger\"),\n  value = ambwait\n)\n\n$icon\n[1] \"clock\"\n\n$color\n[1] \"danger\"\n\n$value\n[1] 52",
+    "text": "Row 3b\n\nlist(\n  color = ifelse(beds&lt;150, \"primary\", \"secondary\"),\n  value = aeadmiss\n)\n\n$color\n[1] \"secondary\"\n\n$value\n[1] 9576\n\n\n\nlist(\n  icon = \"hourglass\", \n  color = ifelse(aewait&gt;95, \"success\", \"danger\"),\n  value = aewait\n)\n\n$icon\n[1] \"hourglass\"\n\n$color\n[1] \"danger\"\n\n$value\n[1] 71\n\n\n\nlist(\n  icon = \"clock\", \n  color = ifelse(ambwait&lt;18, \"success\", \"danger\"),\n  value = ambwait\n)\n\n$icon\n[1] \"clock\"\n\n$color\n[1] \"danger\"\n\n$value\n[1] 74",
     "crumbs": [
       "Group A",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Group A Hospital Dashboard</span>"
@@ -101,7 +101,7 @@
     "href": "workshop3/dashboardA.html#row-4-waiting-times",
     "title": "3  Group A Hospital Dashboard",
     "section": "Row 4, waiting times",
-    "text": "Row 4, waiting times\n\nlist(\n  icon = \"calendar3\", \n  color = ifelse(refwait&gt;84, \"success\", \"danger\"),\n  value = refwait\n)\n\n$icon\n[1] \"calendar3\"\n\n$color\n[1] \"danger\"\n\n$value\n[1] 84\n\n\n\nlist(\n  icon = \"calendar3-event\", \n  color = ifelse(cancwait&gt;84, \"success\", \"danger\"),\n  value = cancwait\n)\n\n$icon\n[1] \"calendar3-event\"\n\n$color\n[1] \"danger\"\n\n$value\n[1] 60\n\n\n\nlist(\n  icon = \"calendar3-week\",\n  color = \"info\",\n  value = elecwait\n)\n\n$icon\n[1] \"calendar3-week\"\n\n$color\n[1] \"info\"\n\n$value\n[1] 6680",
+    "text": "Row 4, waiting times\n\nlist(\n  icon = \"calendar3\", \n  color = ifelse(refwait&gt;84, \"success\", \"danger\"),\n  value = refwait\n)\n\n$icon\n[1] \"calendar3\"\n\n$color\n[1] \"danger\"\n\n$value\n[1] 72\n\n\n\nlist(\n  icon = \"calendar3-event\", \n  color = ifelse(cancwait&gt;84, \"success\", \"danger\"),\n  value = cancwait\n)\n\n$icon\n[1] \"calendar3-event\"\n\n$color\n[1] \"danger\"\n\n$value\n[1] 73\n\n\n\nlist(\n  icon = \"calendar3-week\",\n  color = \"info\",\n  value = elecwait\n)\n\n$icon\n[1] \"calendar3-week\"\n\n$color\n[1] \"info\"\n\n$value\n[1] 6655",
     "crumbs": [
       "Group A",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Group A Hospital Dashboard</span>"
@@ -112,7 +112,7 @@
     "href": "workshop3/dashboardA.html#row-5-header",
     "title": "3  Group A Hospital Dashboard",
     "section": "Row 5, header",
-    "text": "Row 5, header\n\nThe Queen Rose hospital strives to meet stringent targets for infection control and antibiotic stewardship to ensure patient safety and combat antimicrobial resistance. Infection control protocols are critical in maintaining high standards of hygiene and patient care. Similarly, antibiotic stewardship programs are essential for optimizing the use of antimicrobials, thereby reducing the risk of resistance and ensuring effective treatments for future generations.\n\nThere were 3 more hospital-acquired MRSA infections in 2025 than there were in 2024.\nThere was 1 more hospital-acquired Clostridiodes difficile infection in 2025 than there were in 2024.\nThere were 8 fewer hospital-acquired Candida auris infections in 2025 than there were in 2024.",
+    "text": "Row 5, header\n\nThe Queen Rose hospital strives to meet stringent targets for infection control and antibiotic stewardship to ensure patient safety and combat antimicrobial resistance. Infection control protocols are critical in maintaining high standards of hygiene and patient care. Similarly, antibiotic stewardship programs are essential for optimizing the use of antimicrobials, thereby reducing the risk of resistance and ensuring effective treatments for future generations.\n\nThere were 3 more hospital-acquired MRSA infections in 2025 than there were in 2024.\nThere was 1 more hospital-acquired Clostridiodes difficile infection in 2025 than there were in 2024.\nThere were 5 fewer hospital-acquired Candida auris infections in 2025 than there were in 2024.",
     "crumbs": [
       "Group A",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Group A Hospital Dashboard</span>"
@@ -123,7 +123,7 @@
     "href": "workshop3/dashboardA.html#row-6-organism-stats",
     "title": "3  Group A Hospital Dashboard",
     "section": "Row 6, organism stats",
-    "text": "Row 6, organism stats\n\nlist(\n  icon = ifelse(mrsa2&lt;mrsa1, \"arrow-down-right\", \"arrow-up-right\"), \n  color = ifelse(mrsa2&lt;mrsa1, \"success\", \"danger\"), \n  value = mrsa2\n)\n\n$icon\n[1] \"arrow-up-right\"\n\n$color\n[1] \"danger\"\n\n$value\n[1] 9\n\n\n\nlist(\n  icon = ifelse(Cdiff2&lt;Cdiff1, \"arrow-down-right\", \"arrow-up-right\"), \n  color = ifelse(Cdiff2&lt;Cdiff1, \"success\", \"danger\"), \n  value = Cdiff2\n)\n\n$icon\n[1] \"arrow-up-right\"\n\n$color\n[1] \"danger\"\n\n$value\n[1] 8\n\n\n\nlist(\n  icon = ifelse(Cauris2&lt;Cauris1, \"arrow-down-right\", \"arrow-up-right\"), \n  color = ifelse(Cauris2&lt;Cauris1, \"success\", \"danger\"), \n  value = Cauris2\n)\n\n$icon\n[1] \"arrow-down-right\"\n\n$color\n[1] \"success\"\n\n$value\n[1] 2",
+    "text": "Row 6, organism stats\n\nlist(\n  icon = ifelse(mrsa2&lt;mrsa1, \"arrow-down-right\", \"arrow-up-right\"), \n  color = ifelse(mrsa2&lt;mrsa1, \"success\", \"danger\"), \n  value = mrsa2\n)\n\n$icon\n[1] \"arrow-up-right\"\n\n$color\n[1] \"danger\"\n\n$value\n[1] 8\n\n\n\nlist(\n  icon = ifelse(Cdiff2&lt;Cdiff1, \"arrow-down-right\", \"arrow-up-right\"), \n  color = ifelse(Cdiff2&lt;Cdiff1, \"success\", \"danger\"), \n  value = Cdiff2\n)\n\n$icon\n[1] \"arrow-up-right\"\n\n$color\n[1] \"danger\"\n\n$value\n[1] 10\n\n\n\nlist(\n  icon = ifelse(Cauris2&lt;Cauris1, \"arrow-down-right\", \"arrow-up-right\"), \n  color = ifelse(Cauris2&lt;Cauris1, \"success\", \"danger\"), \n  value = Cauris2\n)\n\n$icon\n[1] \"arrow-down-right\"\n\n$color\n[1] \"success\"\n\n$value\n[1] 1",
     "crumbs": [
       "Group A",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Group A Hospital Dashboard</span>"
@@ -134,7 +134,7 @@
     "href": "workshop3/dashboardA.html#row-7-overall-stats",
     "title": "3  Group A Hospital Dashboard",
     "section": "Row 7, overall stats",
-    "text": "Row 7, overall stats\n\nlist(\n  icon = \"prescription\",\n  color = ifelse(app_therapy &gt; 95, \"success\", \"warning\"),\n  value = app_therapy\n)\n\n$icon\n[1] \"prescription\"\n\n$color\n[1] \"warning\"\n\n$value\n[1] 87\n\n\n\nlist(\n  icon = \"capsule-pill\",\n  color = ifelse(desc &gt; 15, \"success\", \"warning\"),\n  value = desc\n)\n\n$icon\n[1] \"capsule-pill\"\n\n$color\n[1] \"warning\"\n\n$value\n[1] 14\n\n\n\nlist(\n  icon = \"exclamation-diamond\",\n  color = ifelse(amr_rate &gt; 50, \"success\", \"warning\"),\n  value = amr_rate\n)\n\n$icon\n[1] \"exclamation-diamond\"\n\n$color\n[1] \"warning\"\n\n$value\n[1] 49",
+    "text": "Row 7, overall stats\n\nlist(\n  icon = \"prescription\",\n  color = ifelse(app_therapy &gt; 95, \"success\", \"warning\"),\n  value = app_therapy\n)\n\n$icon\n[1] \"prescription\"\n\n$color\n[1] \"warning\"\n\n$value\n[1] 87\n\n\n\nlist(\n  icon = \"capsule-pill\",\n  color = ifelse(desc &gt; 15, \"success\", \"warning\"),\n  value = desc\n)\n\n$icon\n[1] \"capsule-pill\"\n\n$color\n[1] \"success\"\n\n$value\n[1] 19\n\n\n\nlist(\n  icon = \"exclamation-diamond\",\n  color = ifelse(amr_rate &gt; 50, \"success\", \"warning\"),\n  value = amr_rate\n)\n\n$icon\n[1] \"exclamation-diamond\"\n\n$color\n[1] \"warning\"\n\n$value\n[1] 49",
     "crumbs": [
       "Group A",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Group A Hospital Dashboard</span>"
@@ -145,7 +145,7 @@
     "href": "workshop3/dashboardA.html#row-8a-header",
     "title": "3  Group A Hospital Dashboard",
     "section": "Row 8a, header",
-    "text": "Row 8a, header\n\nThe Queen Rose monitors the prevalence of COVID-19 and other viruses in the community to ensure they are prepared for potential surges in patient admissions, enabling them to allocate resources and staff efficiently. By tracking these trends, the hospital can implement timely public health interventions and provide accurate information to the community to mitigate the spread of infections. Additionally, continuous monitoring helps in identifying emerging outbreaks early, allowing for a rapid response that minimizes the impact on public health and healthcare services.\n\nThere were 13 more COVID-19 cases this week than in the previous week.\nWe are seeing an increase in infections caused by other respiratory viruses (e.g., influenza, adenovirus, rhinovirus, RSV).",
+    "text": "Row 8a, header\n\nThe Queen Rose monitors the prevalence of COVID-19 and other viruses in the community to ensure they are prepared for potential surges in patient admissions, enabling them to allocate resources and staff efficiently. By tracking these trends, the hospital can implement timely public health interventions and provide accurate information to the community to mitigate the spread of infections. Additionally, continuous monitoring helps in identifying emerging outbreaks early, allowing for a rapid response that minimizes the impact on public health and healthcare services.\n\nThere were 43 more COVID-19 cases this week than in the previous week.\nWe are seeing an increase in infections caused by other respiratory viruses (e.g., influenza, adenovirus, rhinovirus, RSV).",
     "crumbs": [
       "Group A",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Group A Hospital Dashboard</span>"
@@ -156,7 +156,7 @@
     "href": "workshop3/dashboardA.html#row-8-covid-cases-weekly",
     "title": "3  Group A Hospital Dashboard",
     "section": "Row 8, covid cases (weekly)",
-    "text": "Row 8, covid cases (weekly)\n\nlist(\n  icon = \"virus\",\n  color = ifelse(covid2&lt;covid1, \"success\", \"danger\"),\n  value = covid1\n)\n\n$icon\n[1] \"virus\"\n\n$color\n[1] \"success\"\n\n$value\n[1] 171\n\n\n\nlist(\n  icon = \"virus2\",\n  color = ifelse(virus2&lt;virus1, \"success\", \"danger\"),\n  value = virus1\n)\n\n$icon\n[1] \"virus2\"\n\n$color\n[1] \"danger\"\n\n$value\n[1] 77",
+    "text": "Row 8, covid cases (weekly)\n\nlist(\n  icon = \"virus\",\n  color = ifelse(covid2&lt;covid1, \"success\", \"danger\"),\n  value = covid1\n)\n\n$icon\n[1] \"virus\"\n\n$color\n[1] \"success\"\n\n$value\n[1] 175\n\n\n\nlist(\n  icon = \"virus2\",\n  color = ifelse(virus2&lt;virus1, \"success\", \"danger\"),\n  value = virus1\n)\n\n$icon\n[1] \"virus2\"\n\n$color\n[1] \"danger\"\n\n$value\n[1] 93",
     "crumbs": [
       "Group A",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Group A Hospital Dashboard</span>"
@@ -167,7 +167,7 @@
     "href": "workshop3/dashboardA.html#row-9-vaccination-rate",
     "title": "3  Group A Hospital Dashboard",
     "section": "Row 9, vaccination rate",
-    "text": "Row 9, vaccination rate\n\nlist(\n  icon = \"clipboard2-pulse\",\n  color = \"success\",\n  value = covid_vacc\n)\n\n$icon\n[1] \"clipboard2-pulse\"\n\n$color\n[1] \"success\"\n\n$value\n[1] 68\n\n\n\nlist(\n  icon = \"clipboard2-pulse\",\n  color = \"warning\",\n  value = vacc_rate\n)\n\n$icon\n[1] \"clipboard2-pulse\"\n\n$color\n[1] \"warning\"\n\n$value\n[1] 95",
+    "text": "Row 9, vaccination rate\n\nlist(\n  icon = \"clipboard2-pulse\",\n  color = \"success\",\n  value = covid_vacc\n)\n\n$icon\n[1] \"clipboard2-pulse\"\n\n$color\n[1] \"success\"\n\n$value\n[1] 61\n\n\n\nlist(\n  icon = \"clipboard2-pulse\",\n  color = \"warning\",\n  value = vacc_rate\n)\n\n$icon\n[1] \"clipboard2-pulse\"\n\n$color\n[1] \"warning\"\n\n$value\n[1] 96",
     "crumbs": [
       "Group A",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Group A Hospital Dashboard</span>"
@@ -189,7 +189,7 @@
     "href": "workshop3/dashboardB.html",
     "title": "6  Hospital Data",
     "section": "",
-    "text": "Row 1, number of hospital beds\nlist(\n  icon = \"hospital\",\n  color = \"dark\",\n  value = beds\n)\n\n$icon\n[1] \"hospital\"\n\n$color\n[1] \"dark\"\n\n$value\n[1] 195\nlist(\n  icon = \"thermometer-half\",\n  color = \"secondary\",\n  value = icu\n)\n\n$icon\n[1] \"thermometer-half\"\n\n$color\n[1] \"secondary\"\n\n$value\n[1] 20\nlist(\n  icon = \"vignette\",\n  color = \"light\",\n  value = isolation\n)\n\n$icon\n[1] \"vignette\"\n\n$color\n[1] \"light\"\n\n$value\n[1] 6",
+    "text": "Row 1, number of hospital beds\nlist(\n  icon = \"hospital\",\n  color = \"dark\",\n  value = beds\n)\n\n$icon\n[1] \"hospital\"\n\n$color\n[1] \"dark\"\n\n$value\n[1] 171\nlist(\n  icon = \"thermometer-half\",\n  color = \"secondary\",\n  value = icu\n)\n\n$icon\n[1] \"thermometer-half\"\n\n$color\n[1] \"secondary\"\n\n$value\n[1] 11\nlist(\n  icon = \"vignette\",\n  color = \"light\",\n  value = isolation\n)\n\n$icon\n[1] \"vignette\"\n\n$color\n[1] \"light\"\n\n$value\n[1] 8",
     "crumbs": [
       "Group B",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Hospital Data</span>"
@@ -200,7 +200,7 @@
     "href": "workshop3/dashboardB.html#row-2-hospital-bed-occupancy",
     "title": "6  Hospital Data",
     "section": "Row 2, hospital bed occupancy",
-    "text": "Row 2, hospital bed occupancy\n\nlist(\n  icon = \"hospital\",\n  color = \"dark\",\n  value = bedocc\n)\n\n$icon\n[1] \"hospital\"\n\n$color\n[1] \"dark\"\n\n$value\n[1] 93\n\n\n\nlist(\n  icon = \"thermometer-half\",\n  color = \"secondary\",\n  value = icuocc\n)\n\n$icon\n[1] \"thermometer-half\"\n\n$color\n[1] \"secondary\"\n\n$value\n[1] 92\n\n\n\nlist(\n  icon = \"vignette\",\n  color = \"light\",\n  value = isocc\n)\n\n$icon\n[1] \"vignette\"\n\n$color\n[1] \"light\"\n\n$value\n[1] 98",
+    "text": "Row 2, hospital bed occupancy\n\nlist(\n  icon = \"hospital\",\n  color = \"dark\",\n  value = bedocc\n)\n\n$icon\n[1] \"hospital\"\n\n$color\n[1] \"dark\"\n\n$value\n[1] 86\n\n\n\nlist(\n  icon = \"thermometer-half\",\n  color = \"secondary\",\n  value = icuocc\n)\n\n$icon\n[1] \"thermometer-half\"\n\n$color\n[1] \"secondary\"\n\n$value\n[1] 93\n\n\n\nlist(\n  icon = \"vignette\",\n  color = \"light\",\n  value = isocc\n)\n\n$icon\n[1] \"vignette\"\n\n$color\n[1] \"light\"\n\n$value\n[1] 95",
     "crumbs": [
       "Group B",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Hospital Data</span>"
@@ -211,7 +211,7 @@
     "href": "workshop3/dashboardB.html#row-2b-staff",
     "title": "6  Hospital Data",
     "section": "Row 2b, staff",
-    "text": "Row 2b, staff\n\nlist(\n  icon = \"person-fill\",\n  color = \"success\",\n  value = round(beds * (sample(c(0.6, 0.7, 0.8), 1)), digits = 0)\n)\n\n$icon\n[1] \"person-fill\"\n\n$color\n[1] \"success\"\n\n$value\n[1] 136\n\n\n\nlist(\n  icon = \"people-fill\",\n  color = \"warning\",\n  value = round(beds/7, digits = 0)\n)\n\n$icon\n[1] \"people-fill\"\n\n$color\n[1] \"warning\"\n\n$value\n[1] 28\n\n\n\nlist(\n  icon = \"vignette\",\n  color = \"info\",\n  value = sample(1000:2000, 1)\n)\n\n$icon\n[1] \"vignette\"\n\n$color\n[1] \"info\"\n\n$value\n[1] 1460",
+    "text": "Row 2b, staff\n\nlist(\n  icon = \"person-fill\",\n  color = \"success\",\n  value = round(beds * (sample(c(0.6, 0.7, 0.8), 1)), digits = 0)\n)\n\n$icon\n[1] \"person-fill\"\n\n$color\n[1] \"success\"\n\n$value\n[1] 120\n\n\n\nlist(\n  icon = \"people-fill\",\n  color = \"warning\",\n  value = round(beds/7, digits = 0)\n)\n\n$icon\n[1] \"people-fill\"\n\n$color\n[1] \"warning\"\n\n$value\n[1] 24\n\n\n\nlist(\n  icon = \"vignette\",\n  color = \"info\",\n  value = sample(1000:2000, 1)\n)\n\n$icon\n[1] \"vignette\"\n\n$color\n[1] \"info\"\n\n$value\n[1] 1410",
     "crumbs": [
       "Group B",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Hospital Data</span>"
@@ -255,7 +255,7 @@
     "href": "workshop3/dashboardB.html#row-5-header",
     "title": "6  Hospital Data",
     "section": "Row 5, header",
-    "text": "Row 5, header\n\nThe Queen Rose hospital strives to meet stringent targets for infection control and antibiotic stewardship to ensure patient safety and combat antimicrobial resistance. Infection control protocols are critical in maintaining high standards of hygiene and patient care. Similarly, antibiotic stewardship programs are essential for optimizing the use of antimicrobials, thereby reducing the risk of resistance and ensuring effective treatments for future generations.\n\nThere were 2 more hospital-acquired MRSA infections in 2025 than there were in 2024.\nThere were 5 more hospital-acquired Clostridiodes difficile infections in 2025 than there were in 2024.\nThere were 7 more hospital-acquired Candida auris infections in 2025 than there were in 2024.",
+    "text": "Row 5, header\n\nThe Queen Rose hospital strives to meet stringent targets for infection control and antibiotic stewardship to ensure patient safety and combat antimicrobial resistance. Infection control protocols are critical in maintaining high standards of hygiene and patient care. Similarly, antibiotic stewardship programs are essential for optimizing the use of antimicrobials, thereby reducing the risk of resistance and ensuring effective treatments for future generations.\n\nThere was 1 fewer hospital-acquired MRSA infection in 2025 than there were in 2024.\nThere were 8 fewer hospital-acquired Clostridiodes difficile infections in 2025 than there were in 2024.\nThere were 6 fewer hospital-acquired Candida auris infections in 2025 than there were in 2024.",
     "crumbs": [
       "Group B",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Hospital Data</span>"
@@ -266,7 +266,7 @@
     "href": "workshop3/dashboardB.html#row-6-organism-stats",
     "title": "6  Hospital Data",
     "section": "Row 6, organism stats",
-    "text": "Row 6, organism stats\n\nlist(\n  icon = ifelse(mrsa2&lt;mrsa1, \"arrow-down-right\", \"arrow-up-right\"), \n  color = ifelse(mrsa2&lt;mrsa1, \"success\", \"danger\"), \n  value = mrsa2\n)\n\n$icon\n[1] \"arrow-up-right\"\n\n$color\n[1] \"danger\"\n\n$value\n[1] 9\n\n\n\nlist(\n  icon = ifelse(Cdiff2&lt;Cdiff1, \"arrow-down-right\", \"arrow-up-right\"), \n  color = ifelse(Cdiff2&lt;Cdiff1, \"success\", \"danger\"), \n  value = Cdiff2\n)\n\n$icon\n[1] \"arrow-up-right\"\n\n$color\n[1] \"danger\"\n\n$value\n[1] 9\n\n\n\nlist(\n  icon = ifelse(Cauris2&lt;Cauris1, \"arrow-down-right\", \"arrow-up-right\"), \n  color = ifelse(Cauris2&lt;Cauris1, \"success\", \"danger\"), \n  value = Cauris2\n)\n\n$icon\n[1] \"arrow-up-right\"\n\n$color\n[1] \"danger\"\n\n$value\n[1] 9",
+    "text": "Row 6, organism stats\n\nlist(\n  icon = ifelse(mrsa2&lt;mrsa1, \"arrow-down-right\", \"arrow-up-right\"), \n  color = ifelse(mrsa2&lt;mrsa1, \"success\", \"danger\"), \n  value = mrsa2\n)\n\n$icon\n[1] \"arrow-down-right\"\n\n$color\n[1] \"success\"\n\n$value\n[1] 2\n\n\n\nlist(\n  icon = ifelse(Cdiff2&lt;Cdiff1, \"arrow-down-right\", \"arrow-up-right\"), \n  color = ifelse(Cdiff2&lt;Cdiff1, \"success\", \"danger\"), \n  value = Cdiff2\n)\n\n$icon\n[1] \"arrow-down-right\"\n\n$color\n[1] \"success\"\n\n$value\n[1] 2\n\n\n\nlist(\n  icon = ifelse(Cauris2&lt;Cauris1, \"arrow-down-right\", \"arrow-up-right\"), \n  color = ifelse(Cauris2&lt;Cauris1, \"success\", \"danger\"), \n  value = Cauris2\n)\n\n$icon\n[1] \"arrow-down-right\"\n\n$color\n[1] \"success\"\n\n$value\n[1] 1",
     "crumbs": [
       "Group B",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Hospital Data</span>"
@@ -277,7 +277,7 @@
     "href": "workshop3/dashboardB.html#row-7-overall-stats",
     "title": "6  Hospital Data",
     "section": "Row 7, overall stats",
-    "text": "Row 7, overall stats\n\nlist(\n  icon = \"prescription\",\n  color = ifelse(app_therapy &gt; 95, \"success\", \"warning\"),\n  value = app_therapy\n)\n\n$icon\n[1] \"prescription\"\n\n$color\n[1] \"warning\"\n\n$value\n[1] 88\n\n\n\nlist(\n  icon = \"capsule-pill\",\n  color = ifelse(desc &gt; 15, \"success\", \"warning\"),\n  value = desc\n)\n\n$icon\n[1] \"capsule-pill\"\n\n$color\n[1] \"warning\"\n\n$value\n[1] 12\n\n\n\nlist(\n  icon = \"exclamation-diamond\",\n  color = ifelse(amr_rate &gt; 50, \"success\", \"warning\"),\n  value = amr_rate\n)\n\n$icon\n[1] \"exclamation-diamond\"\n\n$color\n[1] \"success\"\n\n$value\n[1] 58",
+    "text": "Row 7, overall stats\n\nlist(\n  icon = \"prescription\",\n  color = ifelse(app_therapy &gt; 95, \"success\", \"warning\"),\n  value = app_therapy\n)\n\n$icon\n[1] \"prescription\"\n\n$color\n[1] \"warning\"\n\n$value\n[1] 84\n\n\n\nlist(\n  icon = \"capsule-pill\",\n  color = ifelse(desc &gt; 15, \"success\", \"warning\"),\n  value = desc\n)\n\n$icon\n[1] \"capsule-pill\"\n\n$color\n[1] \"warning\"\n\n$value\n[1] 14\n\n\n\nlist(\n  icon = \"exclamation-diamond\",\n  color = ifelse(amr_rate &gt; 50, \"success\", \"warning\"),\n  value = amr_rate\n)\n\n$icon\n[1] \"exclamation-diamond\"\n\n$color\n[1] \"warning\"\n\n$value\n[1] 36",
     "crumbs": [
       "Group B",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Hospital Data</span>"
@@ -288,7 +288,7 @@
     "href": "workshop3/dashboardB.html#row-8a-header",
     "title": "6  Hospital Data",
     "section": "Row 8a, header",
-    "text": "Row 8a, header\n\nThe Queen Rose monitors the prevalence of COVID-19 and other viruses in the community to ensure they are prepared for potential surges in patient admissions, enabling them to allocate resources and staff efficiently. By tracking these trends, the hospital can implement timely public health interventions and provide accurate information to the community to mitigate the spread of infections. Additionally, continuous monitoring helps in identifying emerging outbreaks early, allowing for a rapid response that minimizes the impact on public health and healthcare services.\n\nThere were 15 fewer COVID-19 cases this week than in the previous week.\nWe are seeing an increase in infections caused by other respiratory viruses (e.g., influenza, adenovirus, rhinovirus, RSV).",
+    "text": "Row 8a, header\n\nThe Queen Rose monitors the prevalence of COVID-19 and other viruses in the community to ensure they are prepared for potential surges in patient admissions, enabling them to allocate resources and staff efficiently. By tracking these trends, the hospital can implement timely public health interventions and provide accurate information to the community to mitigate the spread of infections. Additionally, continuous monitoring helps in identifying emerging outbreaks early, allowing for a rapid response that minimizes the impact on public health and healthcare services.\n\nThere were 13 fewer COVID-19 cases this week than in the previous week.\nWe are seeing an increase in infections caused by other respiratory viruses (e.g., influenza, adenovirus, rhinovirus, RSV).",
     "crumbs": [
       "Group B",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Hospital Data</span>"
@@ -299,7 +299,7 @@
     "href": "workshop3/dashboardB.html#row-8-covid-cases-weekly",
     "title": "6  Hospital Data",
     "section": "Row 8, covid cases (weekly)",
-    "text": "Row 8, covid cases (weekly)\n\nlist(\n  icon = \"virus\",\n  color = ifelse(covid2&lt;covid1, \"success\", \"danger\"),\n  value = covid1\n)\n\n$icon\n[1] \"virus\"\n\n$color\n[1] \"danger\"\n\n$value\n[1] 132\n\n\n\nlist(\n  icon = \"virus2\",\n  color = ifelse(virus2&lt;virus1, \"success\", \"danger\"),\n  value = virus1\n)\n\n$icon\n[1] \"virus2\"\n\n$color\n[1] \"danger\"\n\n$value\n[1] 95",
+    "text": "Row 8, covid cases (weekly)\n\nlist(\n  icon = \"virus\",\n  color = ifelse(covid2&lt;covid1, \"success\", \"danger\"),\n  value = covid1\n)\n\n$icon\n[1] \"virus\"\n\n$color\n[1] \"danger\"\n\n$value\n[1] 53\n\n\n\nlist(\n  icon = \"virus2\",\n  color = ifelse(virus2&lt;virus1, \"success\", \"danger\"),\n  value = virus1\n)\n\n$icon\n[1] \"virus2\"\n\n$color\n[1] \"danger\"\n\n$value\n[1] 76",
     "crumbs": [
       "Group B",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Hospital Data</span>"
@@ -310,7 +310,7 @@
     "href": "workshop3/dashboardB.html#row-9-vaccination-rate",
     "title": "6  Hospital Data",
     "section": "Row 9, vaccination rate",
-    "text": "Row 9, vaccination rate\n\nlist(\n  icon = \"clipboard2-pulse\",\n  color = \"success\",\n  value = covid_vacc\n)\n\n$icon\n[1] \"clipboard2-pulse\"\n\n$color\n[1] \"success\"\n\n$value\n[1] 63\n\n\n\nlist(\n  icon = \"clipboard2-pulse\",\n  color = \"warning\",\n  value = vacc_rate\n)\n\n$icon\n[1] \"clipboard2-pulse\"\n\n$color\n[1] \"warning\"\n\n$value\n[1] 96",
+    "text": "Row 9, vaccination rate\n\nlist(\n  icon = \"clipboard2-pulse\",\n  color = \"success\",\n  value = covid_vacc\n)\n\n$icon\n[1] \"clipboard2-pulse\"\n\n$color\n[1] \"success\"\n\n$value\n[1] 62\n\n\n\nlist(\n  icon = \"clipboard2-pulse\",\n  color = \"warning\",\n  value = vacc_rate\n)\n\n$icon\n[1] \"clipboard2-pulse\"\n\n$color\n[1] \"warning\"\n\n$value\n[1] 94",
     "crumbs": [
       "Group B",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Hospital Data</span>"
