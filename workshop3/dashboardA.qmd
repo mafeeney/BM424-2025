@@ -1,7 +1,5 @@
 ---
 title: "Group A Hospital Dashboard"
-format:
-  dashboard
 ---
 
 ```{r dashboardA, include=FALSE}
