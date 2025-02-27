@@ -23,19 +23,11 @@ The following list of references is provided as a starting place for you to begi
 
 ## *`r inf_agent`* Public Health Literature
 
-* [Guideline on the management of <i>Legionella</i> cases, incidents,outbreaks and clusters in the community: Health Protection Network Scottish Guidance](https://hpspubsrepo.blob.core.windows.net/hps-website/nss/2070/documents/1_legionella-guidelines-2014-2.pdf)
+* [Guidelines on the management of <i>Legionella</i> cases, incidents,outbreaks and clusters in the community: Health Protection Network Scottish Guidance](https://hpspubsrepo.blob.core.windows.net/hps-website/nss/2070/documents/1_legionella-guidelines-2014-2.pdf)
 
 * [Cluster of <i>Legionella longbeachae</i> cases in Scotland in September/October 2013: Report from a national Incident Management Team](https://hpspubsrepo.blob.core.windows.net/hps-website/nss/1918/documents/1_legionella-outbreak-report-2014.pdf)
 
-* Nisar, Muhammad Atif et al. “<i>Legionella pneumophila</i> and Protozoan Hosts: Implications for the Control of Hospital and Potable Water Systems.” Pathogens (Basel, Switzerland) vol. 9,4 286. 15 Apr. 2020
-
-* Cameron, R L et al. “Comparison of <i>Legionella longbeachae</i> and <i>Legionella pneumophila</i> cases in Scotland; implications for diagnosis, treatment and public health response.” Journal of medical microbiology vol. 65,2 (2016): 142-146.
-
 * [Legionnaires’ Disease: Use water management programs in buildings to help prevent outbreaks](https://www.cdc.gov/vitalsigns/pdf/2016-06-vitalsigns.pdf) CDC fact-sheet.
-
-* Currie, S L et al. “<i>Legionella</i> spp. in UK composts--a potential public health issue?.” Clinical microbiology and infection : the official publication of the European Society of Clinical Microbiology and Infectious Diseases vol. 20,4 (2014): O224-9. 
-
-* McCormick, D et al. “Public health response to an outbreak of Legionnaires' disease in Edinburgh, United Kingdom, June 2012.” Euro surveillance : bulletin Europeen sur les maladies transmissibles = European communicable disease bulletin vol. 17,28 20216. 12 Jul. 2012, doi:10.2807/ese.17.28.20216-en
 
 * [CDC <i>Legionella</i> Communications Resources](https://www.cdc.gov/legionella/health-depts/communications-resources.html)
 
@@ -45,9 +37,15 @@ The following list of references is provided as a starting place for you to begi
 
 * Hyland, J M et al. “Outbreak of Legionnaires' disease in West Fife: review of environmental guidelines needed.” Public health vol. 122,1 (2008): 79-83.
 
-## *`r inf_agent`* Diagnostics and Treatment
+* Nisar, Muhammad Atif et al. “<i>Legionella pneumophila</i> and Protozoan Hosts: Implications for the Control of Hospital and Potable Water Systems.” Pathogens (Basel, Switzerland) vol. 9,4 286. 15 Apr. 2020
 
-* Kawasaki, Takeshi et al. “Diagnostic accuracy of urinary antigen tests for legionellosis: A systematic review and meta-analysis.” Respiratory investigation vol. 60,2 (2022): 205-214. 
+* Cameron, R L et al. “Comparison of <i>Legionella longbeachae</i> and <i>Legionella pneumophila</i> cases in Scotland; implications for diagnosis, treatment and public health response.” Journal of medical microbiology vol. 65,2 (2016): 142-146.
+
+* Currie, S L et al. “<i>Legionella</i> spp. in UK composts--a potential public health issue?.” Clinical microbiology and infection : the official publication of the European Society of Clinical Microbiology and Infectious Diseases vol. 20,4 (2014): O224-9. 
+
+* McCormick, D et al. “Public health response to an outbreak of Legionnaires' disease in Edinburgh, United Kingdom, June 2012.” Euro surveillance : bulletin Europeen sur les maladies transmissibles = European communicable disease bulletin vol. 17,28 20216. 12 Jul. 2012, doi:10.2807/ese.17.28.20216-en
+
+## *`r inf_agent`* Diagnostics and Treatment
 
 * [Clinician Factsheet: Legionnaire's Disease](https://www.cdc.gov/legionella/downloads/fs-legionella-clinicians.pdf)
 
@@ -57,11 +55,13 @@ The following list of references is provided as a starting place for you to begi
 
 * [CDC guidance on processing environmental samples](https://www.cdc.gov/legionella/labs/procedures-manual.html)
 
+* [National Enhanced <i>Legionella</i> Surveillance Scotland](https://publichealthscotland.scot/media/8072/2021-01-surveillance-form-legionella.pdf)
+
 * Benitez, Alvaro J, and Jonas M Winchell. “Clinical application of a multiplex real-time PCR assay for simultaneous detection of <i>Legionella</i> species, <i>Legionella pneumophila</i>, and <i>Legionella pneumophila</i> serogroup 1.” Journal of clinical microbiology vol. 51,1 (2013): 348-51. 
 
 * Pascale, Maria Rosaria et al. “Use of Fourier-Transform Infrared Spectroscopy With IR Biotyper® System for <i>Legionella pneumophila</i> Serogroups Identification.” Frontiers in microbiology vol. 13 866426. 26 Apr. 2022, doi:10.3389/fmicb.2022.866426
 
-* [National Enhanced <i>Legionella</i> Surveillance Scotland](https://publichealthscotland.scot/media/8072/2021-01-surveillance-form-legionella.pdf)
+* Kawasaki, Takeshi et al. “Diagnostic accuracy of urinary antigen tests for legionellosis: A systematic review and meta-analysis.” Respiratory investigation vol. 60,2 (2022): 205-214. 
 
 * Mandell, Lionel A et al. “Infectious Diseases Society of America/American Thoracic Society consensus guidelines on the management of community-acquired pneumonia in adults.” Clinical infectious diseases : an official publication of the Infectious Diseases Society of America vol. 44 Suppl 2,Suppl 2 (2007): S27-72. doi:10.1086/511159
 

@@ -159,7 +159,7 @@ The `r hosp_name` has units specialising in `r hosp_units` and `r clinic`.
 
 ### Number of Hospital Beds
 
-::: {.grid .g-col-4}
+::: {.grid}
 ::: {.card .bg-dark .text-white}
 <div class="card-body text-center">
   <i class="bi bi-hospital" style="font-size: 3rem;"></i>  
@@ -185,7 +185,7 @@ The `r hosp_name` has units specialising in `r hosp_units` and `r clinic`.
 :::
 :::
 
-::: {.grid .g-col-4}
+::: {.grid}
 
 ::: {.card .bg-dark .text-white}
 <div class="card-body text-center">
@@ -213,7 +213,7 @@ The `r hosp_name` has units specialising in `r hosp_units` and `r clinic`.
 
 :::
 
-::: {.grid .g-col-4}
+::: {.grid}
 
 ::: {.card .bg-success .text-white}
 <div class="card-body text-center">
@@ -259,7 +259,7 @@ As part of the `r hosp_name`'s ongoing commitment to excellence, the hospital di
 
 ## Row 3b
 
-::: {.grid .g-col-4}
+::: {.grid}
 
 ::: {.card `r ifelse(beds<150, ".bg-primary .text-white", ".bg-secondary .text-white")`}
 <div class="card-body text-center">
@@ -289,7 +289,7 @@ As part of the `r hosp_name`'s ongoing commitment to excellence, the hospital di
 
 ## Row 4, waiting times
 
-::: {.grid .g-col-4}
+::: {.grid}
 
 ::: {.card `r ifelse(refwait>84, ".bg-success .text-white", ".bg-danger .text-white")`}
 <div class="card-body text-center">
@@ -332,7 +332,7 @@ The `r hosp_name` hospital strives to meet stringent targets for infection contr
 :::
 
 ## Row 6, organism stats
-::: {.grid .g-col-4}
+::: {.grid}
 
 ::: {.card `r ifelse(mrsa2<mrsa1, ".bg-success .text-white", ".bg-danger .text-white")`}
 <div class="card-body text-center">
@@ -361,7 +361,7 @@ The `r hosp_name` hospital strives to meet stringent targets for infection contr
 :::
 
 
-::: {.grid .g-col-4}
+::: {.grid}
 
 ::: {.card `r ifelse(app_therapy > 95, ".bg-success .text-white", ".bg-warning .text-white")`}
 <div class="card-body text-center">
@@ -401,7 +401,7 @@ The `r hosp_name` monitors the prevalence of COVID-19 and other viruses in the c
 -   We are seeing an increase in infections caused by other respiratory viruses (e.g., influenza, adenovirus, rhinovirus, RSV).
 :::
 
-::: {.grid .g-col-4}
+::: {.grid}
 
 ::: {.card `r ifelse(covid2<covid1, ".bg-success .text-white", ".bg-danger .text-white")`}
 <div class="card-body text-center">
@@ -421,7 +421,7 @@ The `r hosp_name` monitors the prevalence of COVID-19 and other viruses in the c
 
 :::
 
-::: {.grid .g-col-4}
+::: {.grid}
 
 ::: {.card .bg-success .text-white}
 <div class="card-body text-center">
@@ -439,4 +439,4 @@ The `r hosp_name` monitors the prevalence of COVID-19 and other viruses in the c
 </div>
 :::
 
-:::
+
