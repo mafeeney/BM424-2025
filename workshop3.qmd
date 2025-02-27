@@ -4,7 +4,9 @@ title: "Workshop 3--Overview"
 
 ## Overview of workshop
 
-In this workshop, you will work in groups to solve a scenario where a city has encountered a pandemic outbreak of disease. You will need to agree, as a group, on the actions you wish to take to 
+In this workshop, you will work in groups to solve a scenario where a city has encountered a pandemic outbreak of disease. You will need to agree, as a group, on the actions you wish to take to limit the spread of the disease and mitigate the effects of the pandemic.
+
+In the next workshop, you will be able to see what effect(s) your actions have had and further decide on the course(s) of action that your city should take.
 
 ### Roles and Responsibilities
 

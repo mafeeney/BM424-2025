@@ -33,7 +33,7 @@ book:
         - workshop3/3G.qmd
         - workshop3/3H.qmd
         - workshop3/3I.qmd
-    - dashboardA.qmd  # Include for rendering, but not for the sidebar
+    - workshop3/dashboardA.qmd  # Include for rendering, but not for the sidebar
   sidebar:
     - contents:
         - index.qmd
