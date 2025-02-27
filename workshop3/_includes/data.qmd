@@ -76,11 +76,22 @@ There are currently `r Councillors` elected councillors, representing the 5 main
 
 ```{r A3, echo=FALSE}
 
-pol2021 <- (politics[politics$PolYears>2020, 2])
+# Get the most recent year in the dataset
+latest_year <- max(politics$PolYears)
+
+# Extract only the most recent year's data
+pol2024 <- politics[politics$PolYears == latest_year, 2]
+
+# Add randomness (increase seats by 2 to 10)
+pol2024 <- pol2024 + sample(2:10, length(pol2024), replace = TRUE)
+
+# Define political parties
 Parties <- c("Revolutionary", "Social Capital", "Environment First", "Wind Power", "Social Redistribution")
 
-Councillors <- data.frame(Parties, pol2021)
+# Create the data frame
+Councillors <- data.frame(Parties, pol2024)
 
+# Format table output
 kable(x = Councillors, 
       format = "html", 
       col.names = c("Political Party", "Number of Seats"))
@@ -89,7 +100,7 @@ kable(x = Councillors,
 <br><br>
 The overall budget (expenditures) for the 2023-2024 financial year was £`r sample(400000000:600000000, size=1)`. A summary of expenditures by category for this financial year is shown below. 
 
-```{r A4, fig.cap="Public expenditures by category for the 2022-2023 financial year", echo=FALSE}
+```{r A4, fig.cap="Public expenditures by category for the 2023-2024 financial year", echo=FALSE}
 
 # Define the categories
 categories <- c("Education", "Industry and Agriculture", "Social Care", 
@@ -120,21 +131,30 @@ ggplot(expenses, aes(x="", y=value, fill=Category)) +
 
 ### Hospital and Hospital Budget
 
-* You can find key information about the main hospital in `r city_name`, the `r hosp_name` in the [Hospital Dashboard](./dashboardA.qmd)
+* You can find key information about the main hospital in `r city_name`, the `r hosp_name` in the [Hospital Dashboard](dashboardA.qmd)
 
 The annual operating budget for financial year 2022-2023 was £`r round(runif(1, 1, 10), 1)` million, and average expenditures are shown by category in the figure below. 
 
-```{r A5, fig.cap="Hospital expenditures by category for financial year 2022-2023 (Source: NHS Scotland)", echo=FALSE}
+```{r A5, fig.cap="Hospital expenditures by category for financial year 2023-2024", echo=FALSE}
 
+# Original expense values
+expense_values <- c(25, 17, 9, 12)
+
+# Add a small random change (-3 to +3), ensuring values stay above 1
+randomized_values <- pmax(expense_values + sample(-3:3, length(expense_values), replace = TRUE), 1)
+
+# Create the data frame
 expenses <- data.frame(
-  Category=c("Staff costs", "Healthcare expenditures (drugs, supplies, etc.)", "Other supplies", "Other running costs (procurement, IT, HR, etc.)"),
-  value=c(25,17,9,12)
+  Category = c("Staff costs", "Healthcare expenditures (drugs, supplies, etc.)", 
+               "Other supplies", "Other running costs (procurement, IT, HR, etc.)"),
+  value = randomized_values
 )
 
+# Plot the data
 ggplot(expenses, aes(x="", y=value, fill=Category)) +
   geom_bar(stat="identity", width=1, color="white") +
   coord_polar("y", start=0) +
-  theme_void() 
+  theme_void()
 
 ```
 
