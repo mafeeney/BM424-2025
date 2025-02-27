@@ -19,7 +19,8 @@ book:
   author: "Dr Morgan Feeney"
   date: "28/02/2025"
 
-  # Define chapters and sections here
+  # Define chapters and contents here
+  
   chapters:
     - index.qmd
     - part: workshop3.qmd
@@ -33,21 +34,6 @@ book:
         - workshop3/3G.qmd
         - workshop3/3H.qmd
         - workshop3/3I.qmd
-    - workshop3/dashboardA.qmd  # Include for rendering, but not for the sidebar
-  sidebar:
-    - contents:
-        - index.qmd
-        - part: workshop3.qmd
-          chapters:
-            - workshop3/3A.qmd
-            - workshop3/3B.qmd
-            - workshop3/3C.qmd
-            - workshop3/3D.qmd
-            - workshop3/3E.qmd
-            - workshop3/3F.qmd
-            - workshop3/3G.qmd
-            - workshop3/3H.qmd
-            - workshop3/3I.qmd
 
 
 
