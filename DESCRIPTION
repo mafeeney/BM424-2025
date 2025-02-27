@@ -13,6 +13,8 @@ Imports:
     ggplot2,
     flextable,
     kableExtra,
+    randomNames,
+    stringr
 Suggests:
     knitr,
     sessioninfo
