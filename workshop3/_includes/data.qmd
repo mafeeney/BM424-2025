@@ -17,10 +17,6 @@ include_statement <- paste0('{{< include _includes/epi', inf_type, '.qmd >}}')
 
 You are the provost of `r city_name`, elected in `r sample(2012:2021, size=1)`. 
 
-```{r city, echo=FALSE, fig.cap="Photograph of Inverkeld city centre. Image credit: DALL-E"}
-knitr::include_graphics(rep("images/Inverkeld.png"))
-```
-
 The current population of `r city_name` (as of December 2022) is `r sample(150000:170000, size=1)`. The demographic data for the city is shown below.
 
 ```{r A1, fig.show="hold", out.width="50%", echo=FALSE, fig.cap="Inverkeld demographics (Source: Office for National Statistics)"}
@@ -97,7 +93,7 @@ ggplot(expenses, aes(x="", y=value, fill=Category)) +
 
 
 
-### Hospital and Death Data
+### Hospital and Hospital Budget
 
 * You can find key information about the main hospital in `r city_name`, the `r hosp_name` in the [Hospital Dashboard](dashboardA.qmd)
 
