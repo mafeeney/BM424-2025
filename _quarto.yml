@@ -3,7 +3,8 @@ number-depth: 0
 project:
   type: book
   output-dir: _book
-
+  files:
+    - workshop3/dashboardA.qmd
 book:
   title: "BM424 Clinical Microbiology Pandemic Preparedness Workshops"
   cover-image: sipbs_compbio_800.png

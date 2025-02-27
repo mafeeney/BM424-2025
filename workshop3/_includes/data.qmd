@@ -87,7 +87,7 @@ kable(x = Councillors,
 
 ```
 <br><br>
-The overall budget (expenditures) for the 2023-2024 financial year was £`r sample(400000000:600000000, size=1)`. A summary of expeditures by category for this financial year is shown below. 
+The overall budget (expenditures) for the 2023-2024 financial year was £`r sample(400000000:600000000, size=1)`. A summary of expenditures by category for this financial year is shown below. 
 
 ```{r A4, fig.cap="Public expenditures by category for the 2022-2023 financial year", echo=FALSE}
 
@@ -122,7 +122,7 @@ ggplot(expenses, aes(x="", y=value, fill=Category)) +
 
 * You can find key information about the main hospital in `r city_name`, the `r hosp_name` in the [Hospital Dashboard](./dashboardA.qmd)
 
-The annual operating budget for financial year 2022-2023 was £1.3 million, and average expenditures are shown by category in the figure below. 
+The annual operating budget for financial year 2022-2023 was £`r round(runif(1, 1, 10), 1)` million, and average expenditures are shown by category in the figure below. 
 
 ```{r A5, fig.cap="Hospital expenditures by category for financial year 2022-2023 (Source: NHS Scotland)", echo=FALSE}
 
