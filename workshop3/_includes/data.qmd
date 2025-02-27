@@ -131,8 +131,6 @@ ggplot(expenses, aes(x="", y=value, fill=Category)) +
 
 ### Hospital and Hospital Budget
 
-* You can find key information about the main hospital in `r city_name`, the `r hosp_name` in the [Hospital Dashboard](dashboardA.qmd)
-
 The annual operating budget for financial year 2022-2023 was £`r round(runif(1, 1, 10), 1)` million, and average expenditures are shown by category in the figure below. 
 
 ```{r A5, fig.cap="Hospital expenditures by category for financial year 2023-2024", echo=FALSE}
@@ -157,6 +155,3 @@ ggplot(expenses, aes(x="", y=value, fill=Category)) +
   theme_void()
 
 ```
-
-
-### Epidemiological Data

@@ -44,10 +44,8 @@ Your actions should be evidence-based – use the peer-reviewed literature to de
 
 You should submit 3-5 specific actions that your city will take to try to control the pandemic, using the workshop 3 pro forma (available on MyPlace). Submit this by noon, Friday March 7th, via the submission link on MyPlace. (Only one member in each group needs to submit the pro forma - you should decide among yourselves who will do this.)
 
-::: callout-important
+::: callout-tip
 
 Your action points may include directives to gather more information (e.g., contact tracing of current cases, microbiological testing of food/water, etc.), or specific directives (e.g. public health measures, non-pharmaceutical interventions, etc.). Use the data/expertise of all group members. Be clear, concise, and specific.
 
 :::
-
-
