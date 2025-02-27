@@ -146,9 +146,9 @@ vacc_rate <- sample(93:96, 1)
 
 ```
 
-# Info
+::: panel-tabset
 
-::: card
+# Hospital Info
 
 The `r hosp_name`, built in `r sample(2008:2015, 1)`, is the main hospital in `r city_name`.
 
@@ -158,19 +158,36 @@ The `r hosp_name` has units specialising in `r hosp_units` and `r clinic`.
 
 ::: 
 
-# Capacity
+## Hospital Capacity
 
-## Row 1, number of hospital beds
+### Number of Hospital Beds
 
-```{r}
-#| content: valuebox
-#| title: "Hospital beds (general)"
-list(
-  icon = "hospital",
-  color = "dark",
-  value = beds
-)
-```
+::: {.grid .g-col-4}
+::: {.card .bg-dark .text-white}
+<div class="card-body text-center">
+  <i class="bi bi-hospital" style="font-size: 3rem;"></i>  
+  <h4>Hospital beds (general)</h4>
+  <p class="fs-2">`r beds`</p>
+</div>
+:::
+
+::: {.card .bg-secondary .text-white}
+<div class="card-body text-center">
+  <i class="bi bi-thermometer-half" style="font-size: 3rem;"></i>  
+  <h4>Hospital beds (ICU)</h4>
+  <p class="fs-2">`r icu`</p>
+</div>
+:::
+
+::: {.card .bg-light .text-dark}
+<div class="card-body text-center">
+  <i class="bi bi-shield-virus" style="font-size: 3rem;"></i>  
+  <h4>Isolation beds</h4>
+  <p class="fs-2">`r isolation`</p>
+</div>
+:::
+:::
+
 
 ```{r}
 #| content: valuebox
@@ -274,66 +291,63 @@ As part of the `r hosp_name`'s ongoing commitment to excellence, the hospital di
 
 ## Row 3b
 
-```{r}
-#| content: valuebox
-#| title: "Average number of admissions to A&E (monthly)"
-list(
-  color = ifelse(beds<150, "primary", "secondary"),
-  value = aeadmiss
-)
-```
+::: {.grid .g-col-4}
 
-```{r}
-#| content: valuebox
-#| title: "Average % of patients waiting >4 hours in A&E"
-list(
-  icon = "hourglass", 
-  color = ifelse(aewait>95, "success", "danger"),
-  value = aewait
-)
-```
+::: {.card `r ifelse(beds<150, ".bg-primary .text-white", ".bg-secondary .text-white")`}
+<div class="card-body text-center">
+  <i class="bi bi-hospital" style="font-size: 3rem;"></i>  
+  <h4>Average number of admissions to A&E (monthly)</h4>
+  <p class="fs-2">`r aeadmiss`</p>
+</div>
+:::
 
-```{r}
-#| content: valuebox
-#| title: "Ambulance response times (minutes)"
-list(
-  icon = "clock", 
-  color = ifelse(ambwait<18, "success", "danger"),
-  value = ambwait
-)
-```
+::: {.card `r ifelse(aewait>95, ".bg-success .text-white", ".bg-danger .text-white")`}
+<div class="card-body text-center">
+  <i class="bi bi-hourglass" style="font-size: 3rem;"></i>  
+  <h4>Average % of patients waiting &gt;4 hours in A&E</h4>
+  <p class="fs-2">`r aewait`%</p>
+</div>
+:::
+
+::: {.card `r ifelse(ambwait<18, ".bg-success .text-white", ".bg-danger .text-white")`}
+<div class="card-body text-center">
+  <i class="bi bi-clock" style="font-size: 3rem;"></i>  
+  <h4>Ambulance response times (minutes)</h4>
+  <p class="fs-2">`r ambwait` min</p>
+</div>
+:::
+
+:::
 
 ## Row 4, waiting times
 
-```{r}
-#| content: valuebox
-#| title: "% of patients waiting <62 days for  referral (any)"
-list(
-  icon = "calendar3", 
-  color = ifelse(refwait>84, "success", "danger"),
-  value = refwait
-)
-```
+::: {.grid .g-col-4}
 
-```{r}
-#| content: valuebox
-#| title: "% of patients waiting <62 days for cancer treatment"
-list(
-  icon = "calendar3-event", 
-  color = ifelse(cancwait>84, "success", "danger"),
-  value = cancwait
-)
-```
+::: {.card `r ifelse(refwait>84, ".bg-success .text-white", ".bg-danger .text-white")`}
+<div class="card-body text-center">
+  <i class="bi bi-calendar3" style="font-size: 3rem;"></i>  
+  <h4>% of patients waiting &lt;62 days for referral (any)</h4>
+  <p class="fs-2">`r refwait`%</p>
+</div>
+:::
 
-```{r}
-#| content: valuebox
-#| title: "Number of patients waiting for elective surgery"
-list(
-  icon = "calendar3-week",
-  color = "info",
-  value = elecwait
-)
-```
+::: {.card `r ifelse(cancwait>84, ".bg-success .text-white", ".bg-danger .text-white")`}
+<div class="card-body text-center">
+  <i class="bi bi-calendar3-event" style="font-size: 3rem;"></i>  
+  <h4>% of patients waiting &lt;62 days for cancer treatment</h4>
+  <p class="fs-2">`r cancwait`%</p>
+</div>
+:::
+
+::: {.card .bg-info .text-white}
+<div class="card-body text-center">
+  <i class="bi bi-calendar3-week" style="font-size: 3rem;"></i>  
+  <h4>Number of patients waiting for elective surgery</h4>
+  <p class="fs-2">`r elecwait`</p>
+</div>
+:::
+
+:::
 
 # Infection Control
 
@@ -350,68 +364,62 @@ The `r hosp_name` hospital strives to meet stringent targets for infection contr
 :::
 
 ## Row 6, organism stats
+::: {.grid .g-col-4}
 
-```{r}
-#| content: valuebox
-#| title: "Number of hospital-acquired MRSA cases (this year)"
-list(
-  icon = ifelse(mrsa2<mrsa1, "arrow-down-right", "arrow-up-right"), 
-  color = ifelse(mrsa2<mrsa1, "success", "danger"), 
-  value = mrsa2
-)
-```
+::: {.card `r ifelse(mrsa2<mrsa1, ".bg-success .text-white", ".bg-danger .text-white")`}
+<div class="card-body text-center">
+  <i class="bi bi-arrow-`r ifelse(mrsa2<mrsa1, "down-right", "up-right")`" style="font-size: 3rem;"></i>  
+  <h4>Hospital-acquired MRSA cases (this year)</h4>
+  <p class="fs-2">`r mrsa2`</p>
+</div>
+:::
 
-```{r}
-#| content: valuebox
-#| title: "Number of hospital-acquired Clostridiodes difficile cases (this year)"
-list(
-  icon = ifelse(Cdiff2<Cdiff1, "arrow-down-right", "arrow-up-right"), 
-  color = ifelse(Cdiff2<Cdiff1, "success", "danger"), 
-  value = Cdiff2
-)
-```
+::: {.card `r ifelse(Cdiff2<Cdiff1, ".bg-success .text-white", ".bg-danger .text-white")`}
+<div class="card-body text-center">
+  <i class="bi bi-arrow-`r ifelse(Cdiff2<Cdiff1, "down-right", "up-right")`" style="font-size: 3rem;"></i>  
+  <h4>Hospital-acquired C. difficile cases (this year)</h4>
+  <p class="fs-2">`r Cdiff2`</p>
+</div>
+:::
 
-```{r}
-#| content: valuebox
-#| title: "Number of hospital-acquired Candida auris cases (this year)"
-list(
-  icon = ifelse(Cauris2<Cauris1, "arrow-down-right", "arrow-up-right"), 
-  color = ifelse(Cauris2<Cauris1, "success", "danger"), 
-  value = Cauris2
-)
-```
+::: {.card `r ifelse(Cauris2<Cauris1, ".bg-success .text-white", ".bg-danger .text-white")`}
+<div class="card-body text-center">
+  <i class="bi bi-arrow-`r ifelse(Cauris2<Cauris1, "down-right", "up-right")`" style="font-size: 3rem;"></i>  
+  <h4>Hospital-acquired Candida auris cases (this year)</h4>
+  <p class="fs-2">`r Cauris2`</p>
+</div>
+:::
 
-## Row 7, overall stats
+:::
 
-```{r}
-#| content: valuebox
-#| title: "% of antibiotic prescriptions judged appropriate by an AMR steward"
-list(
-  icon = "prescription",
-  color = ifelse(app_therapy > 95, "success", "warning"),
-  value = app_therapy
-)
-```
 
-```{r}
-#| content: valuebox
-#| title: "Antibiotic Descalation rate (% of prescriptions switched from broad to narrow-spectrum antibiotics)"
-list(
-  icon = "capsule-pill",
-  color = ifelse(desc > 15, "success", "warning"),
-  value = desc
-)
-```
+::: {.grid .g-col-4}
 
-```{r}
-#| content: valuebox
-#| title: "Prevalence of MDR-resistant organisms (% isolated) "
-list(
-  icon = "exclamation-diamond",
-  color = ifelse(amr_rate > 50, "success", "warning"),
-  value = amr_rate
-)
-```
+::: {.card `r ifelse(app_therapy > 95, ".bg-success .text-white", ".bg-warning .text-white")`}
+<div class="card-body text-center">
+  <i class="bi bi-prescription" style="font-size: 3rem;"></i>  
+  <h4>Antibiotic prescriptions judged appropriate (%)</h4>
+  <p class="fs-2">`r app_therapy`%</p>
+</div>
+:::
+
+::: {.card `r ifelse(desc > 15, ".bg-success .text-white", ".bg-warning .text-white")`}
+<div class="card-body text-center">
+  <i class="bi bi-capsule-pill" style="font-size: 3rem;"></i>  
+  <h4>Antibiotic de-escalation rate (%)</h4>
+  <p class="fs-2">`r desc`%</p>
+</div>
+:::
+
+::: {.card `r ifelse(amr_rate > 50, ".bg-success .text-white", ".bg-warning .text-white")`}
+<div class="card-body text-center">
+  <i class="bi bi-exclamation-diamond" style="font-size: 3rem;"></i>  
+  <h4>Prevalence of MDR-resistant organisms (%)</h4>
+  <p class="fs-2">`r amr_rate`%</p>
+</div>
+:::
+
+:::
 
 # Community Health Data
 
@@ -425,47 +433,42 @@ The `r hosp_name` monitors the prevalence of COVID-19 and other viruses in the c
 -   We are seeing an increase in infections caused by other respiratory viruses (e.g., influenza, adenovirus, rhinovirus, RSV).
 :::
 
-## Row 8, covid cases (weekly)
+::: {.grid .g-col-4}
 
-```{r}
-#| content: valuebox
-#| title: "Number of COVID-19 cases (weekly)"
-list(
-  icon = "virus",
-  color = ifelse(covid2<covid1, "success", "danger"),
-  value = covid1
-)
-```
+::: {.card `r ifelse(covid2<covid1, ".bg-success .text-white", ".bg-danger .text-white")`}
+<div class="card-body text-center">
+  <i class="bi bi-virus" style="font-size: 3rem;"></i>  
+  <h4>COVID-19 cases (weekly)</h4>
+  <p class="fs-2">`r covid1`</p>
+</div>
+:::
 
-```{r}
-#| content: valuebox
-#| title: "Number of other respiratory virus infections (weekly)"
-list(
-  icon = "virus2",
-  color = ifelse(virus2<virus1, "success", "danger"),
-  value = virus1
-)
-```
+::: {.card `r ifelse(virus2<virus1, ".bg-success .text-white", ".bg-danger .text-white")`}
+<div class="card-body text-center">
+  <i class="bi bi-virus2" style="font-size: 3rem;"></i>  
+  <h4>Other respiratory virus infections (weekly)</h4>
+  <p class="fs-2">`r virus1`</p>
+</div>
+:::
 
-## Row 9, vaccination rate
+:::
 
-```{r}
-#| content: valuebox
-#| title: "SARS-CoV2 vaccination rate (booster campaign)"
-list(
-  icon = "clipboard2-pulse",
-  color = "success",
-  value = covid_vacc
-)
-```
+::: {.grid .g-col-4}
 
-```{r}
-#| content: valuebox
-#| title: "Childhood vaccination rate (DTaP/IPV/Hib/HepB)"
-list(
-  icon = "clipboard2-pulse",
-  color = "warning",
-  value = vacc_rate
-)
-```
+::: {.card .bg-success .text-white}
+<div class="card-body text-center">
+  <i class="bi bi-clipboard2-pulse" style="font-size: 3rem;"></i>  
+  <h4>SARS-CoV2 vaccination rate (booster campaign)</h4>
+  <p class="fs-2">`r covid_vacc`%</p>
+</div>
+:::
 
+::: {.card .bg-warning .text-dark}
+<div class="card-body text-center">
+  <i class="bi bi-clipboard2-pulse" style="font-size: 3rem;"></i>  
+  <h4>Childhood vaccination rate (DTaP/IPV/Hib/HepB)</h4>
+  <p class="fs-2">`r vacc_rate`%</p>
+</div>
+:::
+
+:::
