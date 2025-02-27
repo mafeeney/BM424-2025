@@ -24,6 +24,7 @@ book:
   chapters:
     - index.qmd
     - part: "Group A"
+      numbered: false
       chapters: 
         - workshop3/3A.qmd
         - workshop3/dashboardA.qmd

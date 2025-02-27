@@ -1,5 +1,5 @@
 ---
-title: "Group A - Reference Library"
+title: "Group A - References"
 ---
 
 ```{r refA, include=FALSE}

@@ -97,11 +97,11 @@ hope <-  sample(c("hope", "hope very much", "wish", "expect", "sincerely hope"),
 states_of_affairs <-  sample(c("dreadful state of affairs", "horrible pandemic", "all of the poor people dying", "tragedy"), 1)
 times <-  sample(c("immediately", "very soon", "at once", "as soon as possible"), 1)
 ```
-<b>From:</b> `r author_data$Email[1]`
-<b>To:</b> pandemic_response@`r city_name`.co.uk 
-<b>Cc:</b> 
-<b>Subject:</b> This `r adjectives` Pandemic
-<b>Date:</b> `r author_data$RandomDates[1]` `r author_data$RandomDateTime[1]`
+<b>From:</b> `r author_data$Email[1]`<br>
+<b>To:</b> pandemic_response@`r city_name`.co.uk <br>
+<b>Cc:</b> <br>
+<b>Subject:</b> This `r adjectives` Pandemic <br>
+<b>Date:</b> `r author_data$RandomDates[1]` `r author_data$RandomDateTime[1]`<br>
 
 Dear Pandemic Committee,
 
@@ -200,11 +200,11 @@ state <- sample(c("the pandemic", "this state of affairs", "this dreadful catast
 unaffordable <- sample(c("another lockdown", "a return to COVID rules", "face masks and gallons of hand sanitizer", "the draconian lockdowns you imposed during COVID", "restrictions that cripple our businesses"), 1)
 time1 <- sample(c("very soon", "immediately", "at once", "promptly", "as soon as possible"), 1)
 ```
-<b>From:</b> `r author_data$Email[2]`
-<b>To:</b> pandemic_response@`r city_name`.co.uk 
-<b>Cc:</b> BusinessSupport@`r city_name`.co.uk 
-<b>Subject:</b> Pandemic `r Disaster` for Businesses
-<b>Date:</b> `r author_data$RandomDates[2]` `r author_data$RandomDateTime[2]`
+<b>From:</b> `r author_data$Email[2]` <br>
+<b>To:</b> pandemic_response@`r city_name`.co.uk  <br>
+<b>Cc:</b> BusinessSupport@`r city_name`.co.uk <br>
+<b>Subject:</b> Pandemic `r Disaster` for Businesses <br>
+<b>Date:</b> `r author_data$RandomDates[2]` `r author_data$RandomDateTime[2]` <br>
 
 Dear Pandemic Response Committee,
 
@@ -227,11 +227,11 @@ fear1 <- sample(c("fear", "dread", "abhor the idea", "hate the idea", "am afraid
 pandemic_government_concerns <- sample(c("This last pandemic was just a typical example of what governments do when given a little too much power.", "Machiavelli said that power corrupts absolutely, and he was absolutely right - look at what happened during the last pandemic.", "I am sick and tired of government interference with my life, I have the right to go about my life without some do-gooder from a public health agency telling me that I need to wear a mask and can't visit my grandmother.", "The mental health consequences of the last pandemic were underappreciated, but very real - people suffered due to the lockdowns and children's development was affected by the wearing of face masks and the closing of schools."), 1)
 pandemic_requests <- sample(c("Please do not use this disaster as another opportunity for oppressive lockdowns and government control of our lives.", "You must not allow the city to suffer through another round of lockdowns, face-masks, and other punitive restrictions that destroy people's lives.", "I hope that you will do the right thing in this time of crisis and that I will be able to vote for you again in the coming elections with a clean conscience.", "Facemasks are just the tyranny of the minority over the majority, I hope that you will not permit them again on your watch."), 1)
 ```
-<b>From:</b> `r author_data$Email[3]`
-<b>To:</b> pandemic_response@`r city_name`.co.uk 
-<b>Cc:</b> 
-<b>Subject:</b> `r subjects_government`
-<b>Date:</b> `r author_data$RandomDates[3]` `r author_data$RandomDateTime[3]`
+<b>From:</b> `r author_data$Email[3]` <br>
+<b>To:</b> pandemic_response@`r city_name`.co.uk  <br>
+<b>Cc:</b> <br>
+<b>Subject:</b> `r subjects_government` <br>
+<b>Date:</b> `r author_data$RandomDates[3]` `r author_data$RandomDateTime[3]` <br>
 
 Dear Pandemic Response Busybodies,
 
@@ -255,11 +255,11 @@ personal_tragedy_request <- sample(c("I don't understand why we haven't learned 
 
 ```
 
-<b>From:</b> `r author_data$Email[4]`
-<b>To:</b> pandemic_response@`r city_name`.co.uk 
-<b>Cc:</b> 
-<b>Subject:</b> `r subject_personal` 
-<b>Date:</b> `r author_data$RandomDates[4]` `r author_data$RandomDateTime[4]`
+<b>From:</b> `r author_data$Email[4]` <br>
+<b>To:</b> pandemic_response@`r city_name`.co.uk  <br>
+<b>Cc:</b> <br>
+<b>Subject:</b> `r subject_personal` <br>
+<b>Date:</b> `r author_data$RandomDates[4]` `r author_data$RandomDateTime[4]` <br>
 
 Dear Pandemic Response Committee,
 
@@ -309,9 +309,9 @@ interview_date <- format(three_days_before, "%A, %d/%m/%Y")
 
 An update on the outbreak in `r city_name`
 
-Published in: `r newspaper_titles`
-<b>By:</b> `r author_data$Name[4]`
-<b>Date:</b> `r author_data$RandomDates[4]`
+Published in: `r newspaper_titles`<br>
+<b>By:</b> `r author_data$Name[4]`<br>
+<b>Date:</b> `r author_data$RandomDates[4]`<br>
 
 As the pandemic continues to unfold in `r city_name`, public health experts emphasize the importance of data-driven decisions to protect communities and save lives. By analyzing data from various sources, including `r data_sources`, health officials can implement targeted measures to curb the spread of the disease.
 
@@ -354,9 +354,9 @@ survival_struggles <- sample(c("struggle for survival", "fight for our lives", "
 mother_name <- randomNames(gender = 1, which.names = "first")
 mother_last <- randomNames(gender = 1, which.names = "last")
 ```
-<b>`r scaremongering_titles`</b>
---`r author_data$Name[5]`, senior health correspondent for `r scary_sources`
-`r author_data$RandomDates[5]`
+<b>`r scaremongering_titles`</b><br>
+--`r author_data$Name[5]`, senior health correspondent for `r scary_sources`<br>
+`r author_data$RandomDates[5]`<br>
 
 The world is `r fear_phrases` as a new pandemic hits `r city_name`. This `r negative_adjectives` pandemic is coming right after COVID-19 and monkey pox, amongst other diseases, have already taken an outrageous toll on the citizens of `r city_name` and nearby cities. It seems like the situation is spiraling out of control. With infection rates skyrocketing and new, more deadly variants emerging, experts warn that we could be facing the `r end_days`.
 
@@ -396,10 +396,10 @@ side_effects <- sample(c("all kinds of side effects", "serious health issues", "
 next_article <- sample(c("a deep dive into Big Pharma's Real Motivations", "an expose on the latest vaccine trial", "a proper unveiling of the hidden dangers of vaccine ingredients", "debunking the myths surrounding vaccine safety", "an examination of the link between vaccines and chronic illness", "exploring ALL the benefits of echinacea", "challenging the narrative on herd immunity"), 1)
 ```
 
-<b>`r antivax_titles`</b>
-- `r author_data$Name[6]`
-- `r author_data$RandomDates[6]`
-Published in: `r antivax_blog_titles`
+<b>`r antivax_titles`</b><br>
+- `r author_data$Name[6]`<br>
+- `r author_data$RandomDates[6]`<br>
+Published in: `r antivax_blog_titles`<br>
 
 `r intro_joke` There's a new "pandemic" in `r city_name`. This one is supposedly due to something called `r inf_agent` (according to something the "experts" call "germ theory" and which has been proven to be another Big Fat Lie.)
 

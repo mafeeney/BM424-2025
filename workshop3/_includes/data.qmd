@@ -127,8 +127,6 @@ ggplot(expenses, aes(x="", y=value, fill=Category)) +
 
 ```
 
-
-
 ### Hospital and Hospital Budget
 
 The annual operating budget for financial year 2022-2023 was £`r round(runif(1, 1, 10), 1)` million, and average expenditures are shown by category in the figure below. 
