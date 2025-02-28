@@ -1,0 +1,116 @@
+---
+title: "Group I - References"
+---
+
+```{r refI, include=FALSE}
+
+#define variables for each group: city and hospital name, infectious agent and disease, group letter
+city_name <- "Ardkeld"
+hosp_name <- "Riverview"
+dis_name <- "anthrax"
+inf_agent <- "Bacillus anthracis"
+inf_type <- "bact"
+group <- "I"
+set.seed(987) # Ensures reproducibility
+
+```
+
+::: callout-tip
+The following list of references is provided as a starting place for you to begin exploring various aspects of *`r inf_agent`* biology, diagnostics, epidemiology, and treatment. However, this is by no means an exhaustive list: you should further explore the relevant peer-reviewed literature independently.  
+:::
+
+::: panel-tabset
+
+## Selected *`r inf_agent`* Public Health Literature {.unnumbered}
+
+* [Exotic notifiable animal diseases contingency plans - Scottish Regional Resilience Partnerships' framework: August 2022](https://www.gov.scot/publications/scottish-regional-resilience-partnerships-framework-exotic-notifiable-animal-diseases-contingency-plans-august-2022/pages/21/)
+
+* [Public Health Scotland: Gastrointestinal and Zoonoses Biennial report 2020 to 2021](https://publichealthscotland.scot/publications/gastrointestinal-and-zoonoses/gastrointestinal-and-zoonoses-biennial-report-2020-to-2021/)
+
+* [Anthrax: Guidance, Data, and Analysis (GOV.UK)](https://www.gov.uk/government/collections/anthrax-guidance-data-and-analysis)
+
+* [Guidelines for the public health management of tetanus, botulism or anthrax among people who use drugs (Public Health Scotland)](https://publichealthscotland.scot/publications/guidelines-for-the-public-health-management-of-tetanus-botulism-or-anthrax-among-people-who-use-drugs/guidelines-for-the-public-health-management-of-tetanus-botulism-or-anthrax-among-people-who-use-drugs/)
+
+* [Anthrax Response Resources](https://doh.wa.gov/public-health-provider-resources/emergency-preparedness/emergency-communications-toolkit/resources-specific-emergencies/anthrax)
+
+* [Official Veterinarian Anthrax Instructions (Animal and Plant Health Agency)](http://apha.defra.gov.uk/External_OV_Instructions/Anthrax/index.htm)
+
+* [Construction micro-organisms: Anthrax from contaminated land and buildings (Health and Safety Executive)](https://www.hse.gov.uk/construction/healthrisks/hazardous-substances/harmful-micro-organisms/anthrax.htm)
+
+* [Anthrax: how to spot and report the disease (ScotGov)](https://www.gov.scot/publications/anthrax/)
+
+* [Exotic notifiable animal diseases contingency plans - Scottish Regional Resilience Partnerships' framework: August 2022](https://www.gov.scot/publications/scottish-regional-resilience-partnerships-framework-exotic-notifiable-animal-diseases-contingency-plans-august-2022/pages/21/)
+
+* [Public Health Scotland: Gastrointestinal and Zoonoses Biennial report 2020 to 2021](https://publichealthscotland.scot/publications/gastrointestinal-and-zoonoses/gastrointestinal-and-zoonoses-biennial-report-2020-to-2021/)
+Cross AR, Baldwin VM, Roy S, Essex-Lopresti AE, Prior JL, Harmer NJ. Zoonoses under our noses. Microbes Infect. 2019;21(1):10-19. doi:10.1016/j.micinf.2018.06.001
+
+* Kyriacou DN, Dobrez D, Parada JP, et al. Cost-effectiveness comparison of response strategies to a large-scale anthrax attack on the chicago metropolitan area: impact of timing and surge capacity. Biosecur Bioterror. 2012;10(3):264-279. doi:10.1089/bsp.2011.0105
+
+* Steelfisher GK, Blendon RJ, Brulé AS, Ben-Porath EN, Ross LJ, Atkins BM. Public response to an anthrax attack: a multiethnic perspective. Biosecur Bioterror. 2012;10(4):401-411. doi:10.1089/bsp.2012.0041
+
+* Clarke, L., Chess, C., Holmes, R. and O'Neill, K.M. (2006), Speaking with One Voice: Risk Communication Lessons from the US Anthrax Attacks†. Journal of Contingencies and Crisis Management, 14: 160-169. https://doi.org/10.1111/j.1468-5973.2006.00491.x
+
+* Quinn SC, Thomas T, Kumar S. The anthrax vaccine and research: reactions from postal workers and public health professionals. Biosecur Bioterror. 2008;6(4):321-333. doi:10.1089/bsp.2007.0064
+
+
+## Selected *`r inf_agent`* Diagnostics and Treatment Literature {.unnumbered}
+
+* [NICE guidelines: Anthrax Treatment and post-exposure prophylaxis](https://bnf.nice.org.uk/treatment-summaries/anthrax/)
+
+* [BNF: Anthrax vaccine](https://bnf.nice.org.uk/drugs/anthrax-vaccine/#indications-and-dose)
+
+* [BMJ Best Practice - Anthrax](https://bestpractice.bmj.com/topics/en-gb/604)
+
+* [Treatment of Anthrax infection (CDC)](https://www.cdc.gov/anthrax/treatment/index.html)
+
+* Elbahr US, Tekin R, Papić M, Pandak N, Erdem H, Can FK, Alpat SN, Pekok AU, Pehlivanoglu F, Karamese M, Petru PC, Kulzhanova S, Tosun S, Doğan M, Moroti R, Ramosaco E, Alay H, Puca E, Arapovic J, Pshenichnaya N, Fasciana T, Giammanco A. Factors leading to dissemination of cutaneous anthrax: an international ID-IRI study. New Microbes New Infect. 2022 Sep 7;48:101028. doi: 10.1016/j.nmni.2022.101028.
+
+* Palmateer NE, Ramsay CN, Browning L, Goldberg DJ, Hutchinson SJ. Anthrax infection among heroin users in Scotland during 2009-2010: a case-control study by linkage to a national drug treatment database. Clin Infect Dis. 2012;55(5):706-710. doi:10.1093/cid/cis511
+
+* Liu Y, Zheng G, Li J, et al. A Case Report of Cutaneous Anthrax Diagnosed by Using a Metagenomic Next-Generation Sequencing (mNGS) Approach. Infect Drug Resist. 2023;16:3601-3606. Published 2023 Jun 7. doi:10.2147/IDR.S411717
+
+* Tyśkiewicz R, Fedorowicz M, Nakonieczna A, Zielińska P, Kwiatek M, Mizak L. Electrochemical, optical and mass-based immunosensors: A comprehensive review of <i>Bacillus anthracis</i> detection methods. Anal Biochem. 2023;675:115215. doi:10.1016/j.ab.2023.115215
+
+* Wang D, Chen G, Lyu Y, et al. A CRISPR/Cas12a-based DNAzyme visualization system for rapid, non-electrically dependent detection of <i>Bacillus anthracis</i>. Emerg Microbes Infect. 2022;11(1):428-437. doi:10.1080/22221751.2021.2012091
+
+* Witt N, Galante D, Andreotti S, et al. Identification of Universally Applicable and Species-Specific Marker Peptides for <i>Bacillus anthracis</i>. Life (Basel). 2022;12(10):1549. Published 2022 Oct 6. doi:10.3390/life12101549
+
+* González AA, Rivera-Pérez JI, Toranzos GA. Forensic Approaches to Detect Possible Agents of Bioterror. Microbiol Spectr. 2017;5(2):10.1128/microbiolspec.EMF-0010-2016. doi:10.1128/microbiolspec.EMF-0010-2016
+
+## Selected *`r inf_agent`* Epidemiology Literature {.unnumbered}
+
+* Minogue TD, Koehler JW, Stefan CP, Conrad TA. Next-Generation Sequencing for Biodefense: Biothreat Detection, Forensics, and the Clinic. Clin Chem. 2019;65(3):383-392. doi:10.1373/clinchem.2016.266536
+
+* Keim P, Grunow R, Vipond R, et al. Whole Genome Analysis of Injectional Anthrax Identifies Two Disease Clusters Spanning More Than 13 Years. EBioMedicine. 2015;2(11):1613-1618. Published 2015 Oct 6. doi:10.1016/j.ebiom.2015.10.004
+
+* Price EP, Seymour ML, Sarovich DS, et al. Molecular epidemiologic investigation of an anthrax outbreak among heroin users, Europe. Emerg Infect Dis. 2012;18(8):1307-1313. doi:10.3201/eid1808.111343
+
+* Tourasse NJ, Jolley KA, Kolstø AB, Økstad OA. Core genome multilocus sequence typing scheme for Bacillus cereus group bacteria. Res Microbiol. 2023;174(6):104050. doi:10.1016/j.resmic.2023.104050
+
+* Booth M, Donaldson L, Cui X, et al. Confirmed <i>Bacillus anthracis</i> infection among persons who inject drugs, Scotland, 2009-2010. Emerg Infect Dis. 2014;20(9):1452-1463. doi:10.3201/eid2009.131481
+
+* Braun P, Beyer W, Hanczaruk M, et al. Reoccurring Bovine Anthrax in Germany on the Same Pasture after 12 Years. J Clin Microbiol. 2022;60(3):e0229121. doi:10.1128/jcm.02291-21
+
+* Metrailer MC, Hoang TTH, Jiranantasak T, et al. Spatial and phylogenetic patterns reveal hidden infection sources of <i>Bacillus anthracis</i> in an anthrax outbreak in Son La province, Vietnam. Infect Genet Evol. 2023;114:105496. doi:10.1016/j.meegid.2023.105496
+
+
+::: 
+
+
+
+
+Inverarity DJ, Forrester VM, Cumming JG, et al. Injectional anthrax at a Scottish district general hospital. Epidemiol Infect. 2015;143(6):1311-1321. doi:10.1017/S0950268814001885
+
+[Anthrax - Annual Epidemiological Report 2021 (ECDC)](https://www.ecdc.europa.eu/sites/default/files/documents/anthrax-annual-epidemiological-report-for-2021.pdf)
+
+
+
+
+
+
+
+
+
+
+
+

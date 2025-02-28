@@ -1,0 +1,106 @@
+---
+title: "Group H - References"
+---
+
+```{r refH, include=FALSE}
+
+#define variables for each group: city and hospital name, infectious agent and disease, group letter
+city_name <- "Dalessie"
+hosp_name <- "Fairview"
+dis_name <- "Group A Streptococcus infection"
+inf_agent <- "Streptococcus pyogenes"
+inf_type <- "bact"
+group <- "H"
+set.seed(890) # Ensures reproducibility
+```
+
+::: callout-tip
+The following list of references is provided as a starting place for you to begin exploring various aspects of *`r inf_agent`* biology, diagnostics, epidemiology, and treatment. However, this is by no means an exhaustive list: you should further explore the relevant peer-reviewed literature independently.  
+:::
+
+::: panel-tabset
+
+## Selected *`r inf_agent`* Public Health Literature {.unnumbered}
+
+* [Group A Streptococcal Infections (PHS)](https://www.hps.scot.nhs.uk/a-to-z-of-topics/streptococcal-infections/group-a-streptococcal-infections/)
+
+* [Group A streptococcal infections: activity during the 2022 to 2023 season (UKHSA)](https://www.gov.uk/government/publications/group-a-streptococcal-infections-activity-during-the-2022-to-2023-season)
+
+* [UKHSA Group A streptococcus Communications Support Pack](https://www.nenc-healthiertogether.nhs.uk/application/files/8516/7033/9986/UKHSA_iGAS_stakeholder_communications_support_pack_v_1.2.pdf)
+
+* [Group A Strep Campaign Resources (UKHSA)](https://campaignresources.dhsc.gov.uk/campaigns/group-a-strep/)
+
+* [NHS Inform - Strep A](https://www.nhsinform.scot/illnesses-and-conditions/infections-and-poisoning/streptococcus-a-strep-a/)
+
+* [UK guidelines for the management of contacts of invasive group A streptococcus (iGAS) infection in community settings (UKHSA)](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1124985/management-of-contacts-of-invasive-group-a-streptococcus.pdf)
+
+* [Guidelines for the public health management of scarlet fever outbreaks in schools, nurseries and other childcare settings (UKHSA)](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1131109/guidelines-for-public-health-management-scarlet-fever-outbreaks-january-2023_.pdf)
+
+* [UKHSA Group A streptococcus Communications Support Pack](https://www.nenc-healthiertogether.nhs.uk/application/files/8516/7033/9986/UKHSA_iGAS_stakeholder_communications_support_pack_v_1.2.pdf)
+
+* Miller, Kate M et al. “The global burden of sore throat and group A Streptococcus pharyngitis: A systematic review and meta-analysis.” EClinicalMedicine vol. 48 101458. 20 May. 2022, doi:10.1016/j.eclinm.2022.101458
+
+* Moore, Hannah C et al. “Harmonizing Surveillance Methodologies for Group A Streptococcal Diseases.” Open forum infectious diseases vol. 9,Suppl 1 S1-S4. 15 Sep. 2022, doi:10.1093/ofid/ofac210
+
+* Steer, Jane A et al. “Guidelines for prevention and control of group A streptococcal infection in acute healthcare and maternity settings in the UK.” The Journal of infection vol. 64,1 (2012): 1-18. doi:10.1016/j.jinf.2011.11.001
+
+* Avire, Nelly Janira et al. “A Review of <i>Streptococcus pyogenes</i>: Public Health Risk Factors, Prevention and Control.” Pathogens (Basel, Switzerland) vol. 10,2 248. 22 Feb. 2021, doi:10.3390/pathogens10020248
+
+* Huttner, Benedikt et al. “Characteristics and outcomes of public campaigns aimed at improving the use of antibiotics in outpatients in high-income countries.” The Lancet. Infectious diseases vol. 10,1 (2010): 17-31. doi:10.1016/S1473-3099(09)70305-6
+
+* Veys, Koen et al. “The effect of hand hygiene promotion programs during epidemics and pandemics of respiratory droplet-transmissible infections on health outcomes: a rapid systematic review.” BMC public health vol. 21,1 1745. 25 Sep. 2021, doi:10.1186/s12889-021-11815-4
+
+* Hay, Alastair D. “The group A strep crisis: can we do better?.” BMJ (Clinical research ed.) vol. 380 58. 10 Jan. 2023, doi:10.1136/bmj.p58
+
+
+## Selected *`r inf_agent`* Diagnostics and Treatment Literature {.unnumbered}
+
+* [BMJ Best Practice - Toxic Shock Syndrome](https://bestpractice.bmj.com/topics/en-gb/329)
+
+* [BMJ Best Practice - Necrotising Fasciitis](https://bestpractice.bmj.com/topics/en-gb/3000241)
+
+* [Group A Streptococcal Disease - For Clinicians (CDC)](https://www.cdc.gov/groupastrep/diseases-hcp/index.html)
+
+* [Rapid tests for group A streptococcal infections in people with a sore throat (NICE)](https://www.nice.org.uk/guidance/dg38)
+
+* Nguyen, Andrew D K et al. “The efficacy and safety of a shortened duration of antimicrobial therapy for group A Streptococcus bacteremia.” International journal of infectious diseases : IJID : official publication of the International Society for Infectious Diseases vol. 128 (2023): 11-19. doi:10.1016/j.ijid.2022.12.015
+
+* Primera, Gabriella et al. “Aortic valve infective endocarditis due to <i>Streptococcus pyogenes</i> : A case report.” IDCases vol. 31 e01697. 16 Jan. 2023, doi:10.1016/j.idcr.2023.e01697
+
+* Silva, José Miguel et al. “Streptococcal Toxic Shock Syndrome: A Case Report.” Cureus vol. 14,12 e32539. 14 Dec. 2022, doi:10.7759/cureus.32539
+
+* Robberts, F J Lourens et al. “Rapid, Low-Complexity, Simultaneous Bacterial Group Identification and Antimicrobial Susceptibility Testing Performed Directly on Positive Blood Culture Bottles Using Chromogenic Agar.” The American journal of tropical medicine and hygiene vol. 107,6 1302-1307. 14 Nov. 2022, doi:10.4269/ajtmh.22-0278
+
+* Velusamy, Srinivasan et al. “Sequential Quadriplex Real-Time PCR for Identifying 20 Common emm Types of Group A Streptococcus.” Journal of clinical microbiology vol. 59,1 e01764-20. 17 Dec. 2020, doi:10.1128/JCM.01764-20
+
+* Wang, Jie et al. “Identification and cluster analysis of <i>Streptococcus pyogenes</i> by MALDI-TOF mass spectrometry.” PloS one vol. 7,11 (2012): e47152. doi:10.1371/journal.pone.0047152
+
+## Selected *`r inf_agent`* Epidemiology Literature {.unnumbered}
+
+* Chochua, Sopio et al. “Population and Whole Genome Sequence Based Characterization of Invasive Group A Streptococci Recovered in the United States during 2015.” mBio vol. 8,5 e01422-17. 19 Sep. 2017, doi:10.1128/mBio.01422-17
+
+* [<i>Streptococcus pyogenes</i> pubMLST](https://pubmlst.org/organisms/streptococcus-pyogenes)
+
+* Cordery, Rebecca et al. “Frequency of transmission, asymptomatic shedding, and airborne spread of <i>Streptococcus pyogenes</i> in schoolchildren exposed to scarlet fever: a prospective, longitudinal, multicohort, molecular epidemiological, contact-tracing study in England, UK.” The Lancet. Microbe vol. 3,5 (2022): e366-e375. doi:10.1016/S2666-5247(21)00332-3
+
+* Pagnossin, Davide et al. “Complete Genome Sequences of Three Invasive Strains of <i>Streptococcus pyogenes</i> Subtype emm5.23 Isolated in Scotland.” Microbiology resource announcements vol. 10,15 e00101-21. 15 Apr. 2021, doi:10.1128/MRA.00101-21
+
+* Friães, A et al. “Annotated Whole-Genome Multilocus Sequence Typing Schema for Scalable High-Resolution Typing of <i>Streptococcus pyogenes</i>.” Journal of clinical microbiology vol. 60,6 (2022): e0031522. doi:10.1128/jcm.00315-22
+
+* Jespersen, Magnus G et al. “Global genomic epidemiology of <i>Streptococcus pyogenes</i>.” Infection, genetics and evolution : journal of molecular epidemiology and evolutionary genetics in infectious diseases vol. 86 (2020): 104609. doi:10.1016/j.meegid.2020.104609
+
+* Latronico, Francesca et al. “Genomic Characteristics Behind the Spread of Bacteremic Group A Streptococcus Type emm89 in Finland, 2004-2014.” The Journal of infectious diseases vol. 214,12 (2016): 1987-1995. doi:10.1093/infdis/jiw468
+
+* Hayes, Andrew et al. “Restricted Sequence Variation in <i>Streptococcus pyogenes</i> Penicillin Binding Proteins.” mSphere vol. 5,2 e00090-20. 29 Apr. 2020, doi:10.1128/mSphere.00090-20
+
+* Tagini, F et al. “Importance of whole genome sequencing for the assessment of outbreaks in diagnostic laboratories: analysis of a case series of invasive <i>Streptococcus pyogenes</i> infections.” European journal of clinical microbiology & infectious diseases : official publication of the European Society of Clinical Microbiology vol. 36,7 (2017): 1173-1180. doi:10.1007/s10096-017-2905-z
+
+* Turner, Claire E et al. “Community outbreaks of group A Streptococcus revealed by genome sequencing.” Scientific reports vol. 7,1 8554. 17 Aug. 2017, doi:10.1038/s41598-017-08914-x
+
+* Smeesters PR, de Crombrugghe G, Tsoi SK, et al. Global Streptococcus pyogenes strain diversity, disease associations, and implications for vaccine development: a systematic review. Lancet Microbe. 2024;5(2):e181-e193. doi:10.1016/S2666-5247(23)00318-X
+
+* Maldonado-Barrueco A, Bloise I, Cendejas-Bueno E, López-Rodrigo F, García-Rodríguez J, Lázaro-Perona F. Epidemiological changes in invasive Streptococcus pyogenes infection during the UK alert period: A molecular comparative analysis from a tertiary Spanish hospital in 2023. Enferm Infecc Microbiol Clin (Engl Ed). 2024;42(1):34-37. doi:10.1016/j.eimce.2023.09.003
+
+* Toorop MMA, Kraakman MEM, Hoogendijk IV, et al. A core-genome multilocus sequence typing scheme for the detection of genetically related Streptococcus pyogenes clusters. J Clin Microbiol. 2023;61(11):e0055823. doi:10.1128/jcm.00558-23
+
+::: 
