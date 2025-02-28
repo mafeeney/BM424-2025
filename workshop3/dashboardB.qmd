@@ -4,12 +4,15 @@ title: "Group B Hospital Dashboard"
 
 ```{r dashboardB, include=FALSE}
 #define variables for each group
-set.seed(234) # Ensures reproducibility
 city_name <- "Baltyre"
+hosp_name <- "Queen's College"
 dis_name <- "influenza"
 inf_agent <- "Alphainfluenzavirus influenzae"
-hosp_name <- "Queen's College"
+inf_type <- "vir"
 group <- "B"
+set.seed(234) # Ensures reproducibility
+
+#define hospital data
 hosp_units <- sample(c("coronary care", "maternity care", "paediatric care", "dermatology", "gastroenterology", "radiology", "oncology", "neurology", "psychiatry", "nephrology", "endocrinology", "gynecology"), 4, replace = FALSE)
 clinic <- sample(c("an ear, nose, and throat clinic", "an eye clinic", "an orthopaedics department"), 1)
 
