@@ -1,0 +1,27 @@
+---
+title: "Group X - References"
+---
+
+```{r refX, include=FALSE}
+
+#define variables for each group: city and hospital name, infectious agent and disease, group letter
+
+```
+
+::: callout-tip
+The following list of references is provided as a starting place for you to begin exploring various aspects of *`r inf_agent`* biology, diagnostics, epidemiology, and treatment. However, this is by no means an exhaustive list: you should further explore the relevant peer-reviewed literature independently.  
+:::
+
+::: panel-tabset
+
+## Selected *`r inf_agent`* Public Health Literature {.unnumbered}
+
+
+## Selected *`r inf_agent`* Diagnostics and Treatment Literature {.unnumbered}
+
+
+## Selected *`r inf_agent`* Epidemiology Literature {.unnumbered}
+
+
+
+::: 

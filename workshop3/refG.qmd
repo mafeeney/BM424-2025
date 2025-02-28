@@ -1,0 +1,106 @@
+---
+title: "Group G - References"
+---
+
+```{r refG, include=FALSE}
+
+#define variables for each group: city and hospital name, infectious agent and disease, group letter
+city_name <- "Glenleith"
+hosp_name <- "Riverview"
+dis_name <- "XDR tuberculosis"
+inf_agent <- "Mycobacterium tuberculosis"
+inf_type <- "bact"
+group <- "G"
+set.seed(789) # Ensures reproducibility
+
+```
+
+::: callout-tip
+The following list of references is provided as a starting place for you to begin exploring various aspects of *`r inf_agent`* biology, diagnostics, epidemiology, and treatment. However, this is by no means an exhaustive list: you should further explore the relevant peer-reviewed literature independently.  
+:::
+
+::: panel-tabset
+
+## Selected *`r inf_agent`* Public Health Literature {.unnumbered}
+
+* [Public Health Scotland - Tuberculosis](https://www.hps.scot.nhs.uk/a-to-z-of-topics/tuberculosis/)
+
+* [2021 Tuberculosis Annual Report for Scotland](https://publichealthscotland.scot/publications/tuberculosis-annual-report-for-scotland/2021-tuberculosis-annual-report-for-scotland/)
+
+* [TB Framework for Scotland](https://hps.scot.nhs.uk/web-resources-container/tb-framework-for-scotland/)
+
+* [WHO policy on TB infection control in health-care facilities, congregate settings and households](https://www.who.int/publications/i/item/9789241598323)
+
+* [TB General Public Communication and Education Resources (CDC)](https://www.cdc.gov/tb/communication-resources/index.html)
+
+* [WHO World TB Day Resources](https://www.who.int/campaigns/world-tb-day/2022/campaign-materials)
+
+* Baggaley, Rebecca F et al. “National policies for delivering tuberculosis, HIV and hepatitis B and C virus infection services for refugees and migrants among Member States of the WHO European Region.” Journal of travel medicine vol. 30,1 (2023): taac136. doi:10.1093/jtm/taac136
+
+* Költringer, Fiona A et al. “The social determinants of national tuberculosis incidence rates in 116 countries: a longitudinal ecological study between 2005-2015.” BMC public health vol. 23,1 337. 15 Feb. 2023, doi:10.1186/s12889-023-15213-w
+
+* Neiderud C. J. (2015). How urbanization affects the epidemiology of emerging infectious diseases. Infection ecology & epidemiology, 5, 27060. https://doi.org/10.3402/iee.v5.27060
+
+* Prasad, A., Ross, A., Rosenberg, P., & Dye, C. (2016). A world of cities and the end of TB. Transactions of the Royal Society of Tropical Medicine and Hygiene, 110(3), 151–152. 
+
+* Bigio, Jacob et al. “A scoping review on the risk of tuberculosis in specific population groups: can we expand the World Health Organization recommendations?.” European respiratory review : an official journal of the European Respiratory Society vol. 32,167 220127. 11 Jan. 2023, doi:10.1183/16000617.0127-2022
+
+* Hasan, R., Shakoor, S., Hanefeld, J., & Khan, M. (2018). Integrating tuberculosis and antimicrobial resistance control programmes. Bulletin of the World Health Organization, 96(3), 194–200. 
+
+* Jackson, A D et al. “Knowledge of tuberculosis transmission among recently infected patients in Glasgow.” Public health vol. 122,10 (2008): 1004-12. doi:10.1016/j.puhe.2008.01.011
+
+* Gomes, Ricardo Estêvão et al. “Awareness and education in lung diseases: Are we reaching the target?.” Pulmonology vol. 28,5 (2022): 330-332. doi:10.1016/j.pulmoe.2022.02.011
+
+* Bello-Bravo, Julia et al. “Measuring the impact and reach of informal educational videos on YouTube: The case of Scientific Animations Without Borders.” Heliyon vol. 7,12 e08508. 1 Dec. 2021, doi:10.1016/j.heliyon.2021.e08508
+
+
+
+## Selected *`r inf_agent`* Diagnostics and Treatment Literature {.unnumbered}
+
+* [BMJ Best Practice - Pulmonary Tuberculosis](https://bestpractice.bmj.com/topics/en-gb/165)
+
+* [BMJ Best Practice - Extrapulmonary Tuberculosis](https://bestpractice.bmj.com/topics/en-gb/166)
+
+* [NICE guideline - Tuberculosis](https://www.nice.org.uk/guidance/ng33)
+
+* [Tuberculosis Tools for Healthcare Providers (CDC)](https://www.cdc.gov/tb/education/provider_edmaterials.htm)
+
+* Günther, Gunar et al. “Availability and costs of medicines for the treatment of tuberculosis in Europe.” Clinical microbiology and infection : the official publication of the European Society of Clinical Microbiology and Infectious Diseases vol. 29,1 (2023): 77-84. doi:10.1016/j.cmi.2022.07.026
+
+* Steingart, Karen R et al. “Xpert® MTB/RIF assay for pulmonary tuberculosis and rifampicin resistance in adults.” The Cochrane database of systematic reviews vol. 2014,1 CD009593. 21 Jan. 2014, doi:10.1002/14651858.CD009593.pub3
+
+* Åhsberg, Johanna et al. “The in-hospital tuberculosis diagnostic cascade and early clinical outcomes among people living with HIV before and during the COVID-19 pandemic - a prospective multisite cohort study from Ghana.” International journal of infectious diseases : IJID : official publication of the International Society for Infectious Diseases vol. 128 (2023): 290-300. doi:10.1016/j.ijid.2022.12.044
+
+
+* Taufiq, Saman et al. “Towards portable rapid TB biosensor: Detecting <i>Mycobacterium tuberculosis</i> in raw sputum samples using functionalized screen printed electrodes.” Bioelectrochemistry (Amsterdam, Netherlands) vol. 150 (2023): 108353. doi:10.1016/j.bioelechem.2022.108353
+
+* Augustin, Linus, and Nisheeth Agarwal. “Designing a Cas9/gRNA-assisted quantitative Real-Time PCR (CARP) assay for identification of point mutations leading to rifampicin resistance in the human pathogen <i>Mycobacterium tuberculosis</i>.” Gene vol. 857 (2023): 147173. doi:10.1016/j.gene.2023.147173
+
+* Gliddon, Harriet D et al. “A Rapid Drug Resistance Genotyping Workflow for <i>Mycobacterium tuberculosis</i>, Using Targeted Isothermal Amplification and Nanopore Sequencing.” Microbiology spectrum vol. 9,3 (2021): e0061021. doi:10.1128/Spectrum.00610-21
+
+## Selected *`r inf_agent`* Epidemiology Literature {.unnumbered}
+
+* [<i>Mycobacteria</i> spp. pubMLST](https://pubmlst.org/organisms/mycobacteria-spp)
+
+* Hall, Michael B et al. “Evaluation of Nanopore sequencing for <i>Mycobacterium tuberculosis</i> drug susceptibility testing and outbreak investigation: a genomic analysis.” The Lancet. Microbe vol. 4,2 (2023): e84-e92. doi:10.1016/S2666-5247(22)00301-9
+
+* Macedo, Rita et al. “Molecular Capture of <i>Mycobacterium tuberculosis</i> Genomes Directly from Clinical Samples: A Potential Backup Approach for Epidemiological and Drug Susceptibility Inferences.” International journal of molecular sciences vol. 24,3 2912. 2 Feb. 2023, doi:10.3390/ijms24032912
+
+* Phelan, Jody et al. “Genome-wide host-pathogen analyses reveal genetic interaction points in tuberculosis disease.” Nature communications vol. 14,1 549. 1 Feb. 2023, doi:10.1038/s41467-023-36282-w
+
+* López, Mariana G et al. “Deciphering the Tangible Spatio-Temporal Spread of a 25-Year Tuberculosis Outbreak Boosted by Social Determinants.” Microbiology spectrum, e0282622. 14 Feb. 2023, doi:10.1128/spectrum.02826-22
+
+* Stucki, David et al. “Tracking a tuberculosis outbreak over 21 years: strain-specific single-nucleotide polymorphism typing combined with targeted whole-genome sequencing.” The Journal of infectious diseases vol. 211,8 (2015): 1306-16. doi:10.1093/infdis/jiu601
+
+* Roetzer, Andreas et al. “Whole genome sequencing versus traditional genotyping for investigation of a <i>Mycobacterium tuberculosis</i> outbreak: a longitudinal molecular epidemiological study.” PLoS medicine vol. 10,2 (2013): e1001387. doi:10.1371/journal.pmed.1001387
+
+* Arnold, Amber et al. “XDR-TB transmission in London: Case management and contact tracing investigation assisted by early whole genome sequencing.” The Journal of infection vol. 73,3 (2016): 210-8. doi:10.1016/j.jinf.2016.04.037
+
+* Nikolayevskyy, Vlad et al. “Whole genome sequencing of <i>Mycobacterium tuberculosis</i> for detection of recent transmission and tracing outbreaks: A systematic review.” Tuberculosis (Edinburgh, Scotland) vol. 98 (2016): 77-85. doi:10.1016/j.tube.2016.02.009
+
+* Napier, Gary et al. “Large-scale genomic analysis of <i>Mycobacterium tuberculosis</i> reveals extent of target and compensatory mutations linked to multi-drug resistant tuberculosis.” Scientific reports vol. 13,1 623. 12 Jan. 2023, doi:10.1038/s41598-023-27516-4
+
+* Jarchow-MacDonald, Anna et al. “Changing Incidence and Characteristics of Nontuberculous Mycobacterial Infections in Scotland and Comparison With <i>Mycobacterium tuberculosis</i> Complex Incidence (2011 to 2019).” Open forum infectious diseases vol. 10,1 ofac665. 12 Dec. 2022, doi:10.1093/ofid/ofac665
+
+
+::: 

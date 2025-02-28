@@ -1,0 +1,103 @@
+---
+title: "Group E - References"
+---
+
+```{r refE, include=FALSE}
+
+#define variables for each group: city and hospital name, infectious agent and disease, group letter
+city_name <- "Rosmakirk"
+hosp_name <- "Horizon NHS"
+dis_name <- "Listeriosis"
+inf_agent <- "Listeria monocytogenes"
+inf_type <- "bact"
+group <- "E"
+set.seed(567) # Ensures reproducibility
+```
+
+::: callout-tip
+The following list of references is provided as a starting place for you to begin exploring various aspects of *`r inf_agent`* biology, diagnostics, epidemiology, and treatment. However, this is by no means an exhaustive list: you should further explore the relevant peer-reviewed literature independently.  
+:::
+
+::: panel-tabset
+
+## Selected *`r inf_agent`* Public Health Literature {.unnumbered}
+
+* [Public Health Scotland - Listeria](https://www.hps.scot.nhs.uk/a-to-z-of-topics/listeria/)
+
+* [Food Standards Scotland - <i>Listeria monocytogenes</i>](https://www.foodstandards.gov.scot/consumers/food-safety/foodborne-illness/listeria-monocytogenes)
+
+* [Listeria Information and Guidance (Food Standards Scotland)](https://www.foodstandards.gov.scot/downloads/Factsheet_-_Listeria_-_Website_-_for_businesses_and_professionals_-_May_2019.pdf)
+
+* [World Food Safety Day Campaign Materials](https://www.who.int/campaigns/world-food-safety-day/2022/campaign-materials)
+
+* [Reducing the risk of vulnerable groups contracting Listeriosis (Food Standards Agency)](https://www.food.gov.uk/sites/default/files/media/document/listeria-guidance-june2016-rev.pdf)
+
+* [Listeria: Guidance, Data, and Analysis (GOV.UK)](https://www.gov.uk/government/collections/listeria-guidance-data-and-analysis)
+
+* Abbot, Jaclyn Maurer et al. “Development and evaluation of a university campus-based food safety media campaign for young adults.” Journal of food protection vol. 75,6 (2012): 1117-24. doi:10.4315/0362-028X.JFP-11-506
+
+* Sillence, Elizabeth et al. “Examining trust factors in online food risk information: The case of unpasteurized or 'raw' milk.” Appetite vol. 99 (2016): 200-210. doi:10.1016/j.appet.2016.01.010
+
+* Malley, Thomas J V et al. “Seek and destroy process: <i>Listeria monocytogenes</i> process controls in the ready-to-eat meat and poultry industry.” Journal of food protection vol. 78,2 (2015): 436-45.
+
+* EFSA Panel on Biological Hazards (BIOHAZ) et al. “The public health risk posed by <i>Listeria monocytogenes</i> in frozen fruit and vegetables including herbs, blanched during processing.” EFSA journal. European Food Safety Authority vol. 18,4 e06092. 20 Apr. 2020, doi:10.2903/j.efsa.2020.6092
+
+* Okpo, Emmanuel et al. “An outbreak of an unusual strain of <i>Listeria monocytogenes</i> infection in North-East Scotland.” Journal of infection and public health vol. 8,6 (2015): 612-8. doi:10.1016/j.jiph.2015.05.009
+
+* Macleod, Joshua et al. “An Exploration of <i>Listeria monocytogenes</i>, Its Influence on the UK Food Industry and Future Public Health Strategies.” Foods (Basel, Switzerland) vol. 11,10 1456. 17 May. 2022, doi:10.3390/foods11101456
+
+* Townsend, Anna et al. “A Systematic Review of <i>Listeria</i> Species and <i>Listeria monocytogenes</i> Prevalence, Persistence, and Diversity throughout the Fresh Produce Supply Chain.” Foods (Basel, Switzerland) vol. 10,6 1427. 20 Jun. 2021, doi:10.3390/foods10061427
+
+## Selected *`r inf_agent`* Diagnostics and Treatment Literature {.unnumbered}
+
+* [BMJ Best Practice - Listeriosis](https://bestpractice.bmj.com/topics/en-gb/914)
+
+* [<i>Listeria</i> - Information for Health Professionals (CDC)](https://www.cdc.gov/listeria/technical.html)
+
+* [Central nervous system infections, antibacterial therapy (NICE)](https://bnf.nice.org.uk/treatment-summaries/central-nervous-system-infections-antibacterial-therapy/)
+
+* [Neonatal infection: antibiotics for prevention and treatment (NICE)](https://www.nice.org.uk/guidance/ng195/chapter/recommendations)
+
+* Khsim, Ijlas El Founti et al. “Listeriosis in pregnancy: An umbrella review of maternal exposure, treatment and neonatal complications.” BJOG : an international journal of obstetrics and gynaecology vol. 129,9 (2022): 1427-1433. doi:10.1111/1471-0528.17073
+
+* Dunphy, Louise et al. “Maternal sepsis caused by <i>Listeria monocytogenes</i> with a fatal fetal outcome.” BMJ case reports vol. 15,10 e249989. 3 Oct. 2022, doi:10.1136/bcr-2022-249989
+
+* Bokhari, Syed Faqeer Hussain et al. “Listerial Meningitis and Brain Abscess With Coexisting COVID-19 Infection in a Young, Immunocompetent Male: A Case Report.” Cureus vol. 14,9 e29455. 22 Sep. 2022, doi:10.7759/cureus.29455
+
+* Moura, Alexandra et al. “Whole genome-based population biology and epidemiological surveillance of <i>Listeria monocytogenes</i>.” Nature microbiology vol. 2 16185. 10 Oct. 2016, doi:10.1038/nmicrobiol.2016.185
+
+* Lucchini, R et al. “Molecular typing and genome sequencing allow the identification of persistent <i>Listeria monocytogenes</i> strains and the tracking of the contamination source in food environments.” International journal of food microbiology vol. 386 (2023): 110025. doi:10.1016/j.ijfoodmicro.2022.110025
+
+* Highmore, Callum J et al. “Viable-but-Nonculturable <i>Listeria monocytogenes</i> and Salmonella enterica Serovar Thompson Induced by Chlorine Stress Remain Infectious.” mBio vol. 9,2 e00540-18. 17 Apr. 2018, doi:10.1128/mBio.00540-18
+
+* Kalinin, Egor V et al. “Combination of growth conditions and InlB-specific dot-immunoassay for rapid detection of <i>Listeria monocytogenes</i> in raw milk.” Journal of dairy science, S0022-0302(23)00027-9. 27 Jan. 2023, doi:10.3168/jds.2022-21997
+
+## Selected *`r inf_agent`* Epidemiology Literature {.unnumbered}
+
+* [Public Health Scotland: Annual Summary of <i>Listeria</i> Infections](https://publichealthscotland.scot/publications/annual-summary-of-listeria-infections/annual-summary-of-listeria-infections-2019/)
+
+* McLAUCHLIN, J et al. “<i>Listeria monocytogenes</i> in Cooked Chicken: Detection of an Outbreak in the United Kingdom (2016 to 2017) and Analysis of L. monocytogenes from Unrelated Monitoring of Foods (2013 to 2017).” Journal of food protection vol. 83,12 (2020): 2041-2052.
+
+* Burnett, Elton et al. “Whole-Genome Sequencing Reveals Multiple Subpopulations of Dominant and Persistent Lineage I Isolates of <i>Listeria monocytogenes</i> in Two Meat Processing Facilities during 2011-2015.” Microorganisms vol. 10,5 1070. 23 May. 2022, doi:10.3390/microorganisms10051070
+
+* Félix, Benjamin et al. “A European-wide dataset to uncover adaptive traits of <i>Listeria monocytogenes</i> to diverse ecological niches.” Scientific data vol. 9,1 190. 28 Apr. 2022, doi:10.1038/s41597-022-01278-6
+
+* Gu W, Cui Z, Stroika S, et al. Predicting Food Sources of Listeria monocytogenes Based on Genomic Profiling Using Random Forest Model. Foodborne Pathog Dis. 2023;20(12):579-586. doi:10.1089/fpd.2023.0046
+
+* Félix B, Capitaine K, Te S, et al. Identification by High-Throughput Real-Time PCR of 30 Major Circulating Listeria monocytogenes Clonal Complexes in Europe. Microbiol Spectr. 2023;11(3):e0395422. doi:10.1128/spectrum.03954-22
+
+* Brown P, Kucerova Z, Gorski L, et al. Horizontal Gene Transfer and Loss of Serotype-Specific Genes in Listeria monocytogenes Can Lead to Incorrect Serotype Designations with a Commonly-Employed Molecular Serotyping Scheme. Microbiol Spectr. 2023;11(1):e0274522. doi:10.1128/spectrum.02745-22
+
+* Voronina OL, Ryzhova NN, Aksenova EI, et al. Genetic Diversity of Listeria Detected in the Production Environment of Meat Processing. Mol Gen Microbiol Virol. 2023;38(1):21-28. doi:10.3103/S0891416823010111
+
+* Lakicevic B, Jankovic V, Pietzka A, Ruppitsch W. Wholegenome sequencing as the gold standard approach for control of Listeria monocytogenes in the food chain. J Food Prot. 2023;86(1):100003. doi:10.1016/j.jfp.2022.10.002
+
+* Fagerlund A, Idland L, Heir E, et al. Whole-Genome Sequencing Analysis of Listeria monocytogenes from Rural, Urban, and Farm Environments in Norway: Genetic Diversity, Persistence, and Relation to Clinical and Food Isolates. Appl Environ Microbiol. 2022;88(6):e0213621. doi:10.1128/aem.02136-21
+
+* Hurley D, Luque-Sastre L, Parker CT, et al. Whole-Genome Sequencing-Based Characterization of 100 Listeria monocytogenes Isolates Collected from Food Processing Environments over a Four-Year Period. mSphere. 2019;4(4):e00252-19. Published 2019 Aug 7. doi:10.1128/mSphere.00252-19
+
+* Orsi RH, Jagadeesan B, Baert L, Wiedmann M. Identification of Closely Related Listeria monocytogenes Isolates with No Apparent Evidence for a Common Source or Location: A Retrospective Whole Genome Sequencing Analysis. J Food Prot. 2021;84(7):1104-1113. doi:10.4315/JFP-20-417
+
+* Orsi RH, Liao J, Carlin CR, Wiedmann M. Taxonomy, ecology, and relevance to food safety of the genus Listeria with a particular consideration of new Listeria species described between 2010 and 2022. mBio. 2024;15(2):e0093823. doi:10.1128/mbio.00938-23
+
+::: 

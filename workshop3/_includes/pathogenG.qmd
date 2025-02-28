@@ -15,31 +15,6 @@ knitr::include_graphics(rep("images/pathogenG.jpg"))
 
 * [UK Standards for Microbiology Investigations (UK SMI): Investigation of specimens for Mycobacterium species](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/931957/B_40i7.3.pdf)
 
-* [BMJ Best Practice - Pulmonary Tuberculosis](https://bestpractice.bmj.com/topics/en-gb/165)
-
-* [BMJ Best Practice - Extrapulmonary Tuberculosis](https://bestpractice.bmj.com/topics/en-gb/166)
-
-* [NICE guideline - Tuberculosis](https://www.nice.org.uk/guidance/ng33)
-
-```{r mycob, echo=FALSE, fig.cap="Colony morphology of Mycobacterium tuberculosis grown on an agar plate. Image credit: [CDC](https://phil.cdc.gov/details.aspx?pid=4428)"}
+```{r DIS-NAME, echo=FALSE, fig.cap="Colony morphology of Mycobacterium tuberculosis grown on an agar plate. Image credit: [CDC](https://phil.cdc.gov/details.aspx?pid=4428)"}
 knitr::include_graphics(rep("images/plateG.jpg"))
 ```
-
-### Public Health and Epidemiology Resources
-
-* [Public Health Scotland - Tuberculosis](https://www.hps.scot.nhs.uk/a-to-z-of-topics/tuberculosis/)
-
-* [2021 Tuberculosis Annual Report for Scotland](https://publichealthscotland.scot/publications/tuberculosis-annual-report-for-scotland/2021-tuberculosis-annual-report-for-scotland/)
-
-* [TB Framework for Scotland](https://hps.scot.nhs.uk/web-resources-container/tb-framework-for-scotland/)
-
-* [Multidrug-resistant (MDR) tuberculosis in the EU/EEA (European Centre for Disease Prevention and Control)](https://www.ecdc.europa.eu/en/publications-data/infographic-multidrug-resistant-mdr-tuberculosis-eueea-2021)
-
-### Public Communications Resources
-
-* [TB General Public Communication and Education Resources (CDC)](https://www.cdc.gov/tb/communication-resources/index.html)
-
-* [WHO policy on TB infection control in health-care facilities, congregate settings and households](https://www.who.int/publications/i/item/9789241598323)
-
-* [WHO World TB Day Resources](https://www.who.int/campaigns/world-tb-day/2022/campaign-materials)
-
