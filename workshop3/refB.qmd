@@ -1,22 +1,37 @@
+---
+title: "Group B - References"
+---
 
+```{r refB, include=FALSE}
 
-* [Guidance on use of antiviral agents for the treatment and prophylaxis of seasonal influenza(UKHSA)](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1058443/ukhsa-guidance-antivirals-influenza-11v4.pdf)
+set.seed(234) # Ensures reproducibility 
 
-* [Surveillance and Laboratory Testing of Influenza Neuraminidase Inhibitor Resistance](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/757445/surveillance_and_laboratory_testing_of_influenza_neuraminidase_inhibitor_resistance.pdf) 
+#define variables for each group: city and hospital name, infectious agent and disease, group letter
+set.seed(234) # Ensures reproducibility
+city_name <- "Baltyre"
+dis_name <- "influenza"
+inf_agent <- "Alphainfluenzavirus influenzae"
+hosp_name <- "Queen's College"
+group <- "B"
+```
 
-* [Information for Clinicians on Influenza Virus Testing (CDC)](https://www.cdc.gov/flu/professionals/diagnosis/index.htm)
+::: callout-tip
+The following list of references is provided as a starting place for you to begin exploring various aspects of *`r inf_agent`* biology, diagnostics, epidemiology, and treatment. However, this is by no means an exhaustive list: you should further explore the relevant peer-reviewed literature independently.  
+:::
 
-### Public Health and Epidemiology Resources
+::: panel-tabset
+
+## Selected *`r inf_agent`* Public Health Literature {.unnumbered}
 
 * [Pandemic Flu: A Scottish Framework for Responding to an Influenza Pandemic](https://www.gov.scot/binaries/content/documents/govscot/publications/strategy-plan/2007/11/pandemic-flu-scottish-framework-responding-influenza-pandemic/documents/0054442-pdf/0054442-pdf/govscot%3Adocument/0054442.pdf)
+
+* [Weekly National Flu Reports (UKHSA)](https://www.gov.uk/government/collections/weekly-national-flu-reports)
 
 * [NatureScot: Highly pathogenic avian influenza (bird flu) - Guidance for site managers](https://www.nature.scot/doc/highly-pathogenic-avian-influenza-bird-flu-guidance-site-managers)
 
 * [Guidelines for PHE health protection teams on the management of outbreaks of influenza-like illness (ILI) in care homes](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/932991/Guidelines_for_the_management_of_outbreaks_of_influenza-like_illness_in_care_homes_05_11_2020.pdf)
 
 * [Investigation and management of outbreaks of suspected acute viral respiratory infection in schools: guidance for health protection teams](https://www.gov.uk/government/publications/influenza-like-illness-ili-managing-outbreaks-in-schools/investigation-and-management-of-outbreaks-of-suspected-acute-viral-respiratory-infection-in-schools-guidance-for-health-protection-teams)
-
-### Public Communications Resources
 
 * [Influenza Pandemic Communication and Public Outreach (CDC)](https://www.cdc.gov/flu/pandemic-resources/planning-preparedness/communication-public-outreach.htm)
 
@@ -26,3 +41,55 @@
 
 * [Health communication resources on influenza (European Centre for Disease Prevention and Control)](https://www.ecdc.europa.eu/en/infectious-disease-topics/z-disease-list/seasonal-influenza/health-communication-resources)
 
+* [Influenza Pandemic Communication and Public Outreach (CDC)](https://www.cdc.gov/flu/pandemic-resources/planning-preparedness/communication-public-outreach.htm)
+
+* Lawes-Wickwar, Sadie et al. “A Rapid Systematic Review of Public Responses to Health Messages Encouraging Vaccination against Infectious Diseases in a Pandemic or Epidemic.” Vaccines vol. 9,2 72. 20 Jan. 2021, doi:10.3390/vaccines9020072
+
+* Bielecki, K et al. “Impact of an influenza information pamphlet on vaccination uptake among Polish pupils in Edinburgh, Scotland and the role of social media in parental decision making.” BMC public health vol. 20,1 1381. 10 Sep. 2020, doi:10.1186/s12889-020-09481-z
+
+## Selected *`r inf_agent`* Diagnostics and Treatment Literature {.unnumbered}
+
+* [Guidance on use of antiviral agents for the treatment and prophylaxis of seasonal influenza(UKHSA)](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1058443/ukhsa-guidance-antivirals-influenza-11v4.pdf)
+
+* [Surveillance and Laboratory Testing of Influenza Neuraminidase Inhibitor Resistance](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/757445/surveillance_and_laboratory_testing_of_influenza_neuraminidase_inhibitor_resistance.pdf) 
+
+* [Information for Clinicians on Influenza Virus Testing (CDC)](https://www.cdc.gov/flu/professionals/diagnosis/index.htm)
+
+* Morehouse, Zachary P et al. “A narrative review of nine commercial point of care influenza tests: an overview of methods, benefits, and drawbacks to rapid influenza diagnostic testing.” Journal of osteopathic medicine vol. 123,1 39-47. 19 Aug. 2022.
+
+* Ison MG, Hayden FG, Hay AJ, Gubareva LV, Govorkova EA, Takashita E, McKimm-Breschkin JL. Influenza polymerase inhibitor resistance: Assessment of the current state of the art - A report of the isirv Antiviral group. Antiviral Res. 2021 Oct;194:105158. 
+
+* Van Poelvoorde, Laura A E et al. “Next-Generation Sequencing: An Eye-Opener for the Surveillance of Antiviral Resistance in Influenza.” Trends in biotechnology vol. 38,4 (2020): 360-367.
+
+* Jiang, Chao et al. “Comparative review of respiratory diseases caused by coronaviruses and influenza A viruses during epidemic season.” Microbes and infection vol. 22,6-7 (2020): 236-244.
+
+* Clark, Tristan W et al. “Clinical impact of a routine, molecular, point-of-care, test-and-treat strategy for influenza in adults admitted to hospital (FluPOC): a multicentre, open-label, randomised controlled trial.” The Lancet. Respiratory medicine vol. 9,4 (2021): 419-429. 
+
+* Okiyama, Sho et al. “Examining the Use of an Artificial Intelligence Model to Diagnose Influenza: Development and Validation Study.” Journal of medical Internet research vol. 24,12 e38751. 23 Dec. 2022.
+
+## Selected *`r inf_agent`* Epidemiology Literature {.unnumbered}
+
+* Lean, Fabian Z X et al. “Gross pathology of high pathogenicity avian influenza virus H5N1 2021-2022 epizootic in naturally infected birds in the United Kingdom.” One health (Amsterdam, Netherlands) vol. 14 100392. 27 Apr. 2022, doi:10.1016/j.onehlt.2022.100392
+
+* Wolken, Madeline et al. “Wastewater surveillance of SARS-CoV-2 and influenza in preK-12 schools shows school, community, and citywide infections.” Water research vol. 231 (2023): 119648. doi:10.1016/j.watres.2023.119648
+
+* Chen, Kuang-Yu et al. “High-throughput droplet-based analysis of influenza A virus genetic reassortment by single-virus RNA sequencing.” Proceedings of the National Academy of Sciences of the United States of America vol. 120,6 (2023): e2211098120. doi:10.1073/pnas.2211098120
+
+* Smyk, Julia M et al. “Evolution of Influenza Viruses-Drug Resistance, Treatment Options, and Prospects.” International journal of molecular sciences vol. 23,20 12244. 13 Oct. 2022, doi:10.3390/ijms232012244
+
+
+* Castro-Sanguinetti GR, González-Veliz R, Callupe-Leyva A, et al. Highly pathogenic avian influenza virus H5N1 clade 2.3.4.4b from Peru forms a monophyletic group with Chilean isolates in South America. Sci Rep. 2024;14(1):3635. Published 2024 Feb 13. doi:10.1038/s41598-024-54072-2
+
+* Yang Q, Wang B, Lemey P, et al. Synchrony of Bird Migration with Global Dispersal of Avian Influenza Reveals Exposed Bird Orders. Nat Commun. 2024;15(1):1126. Published 2024 Feb 6. doi:10.1038/s41467-024-45462-1
+
+* Seo YR, Cho AY, Si YJ, et al. Evolution and Spread of Highly Pathogenic Avian Influenza A(H5N1) Clade 2.3.4.4b Virus in Wild Birds, South Korea, 2022-2023. Emerg Infect Dis. 2024;30(2):299-309. doi:10.3201/eid3002.231274
+
+* Croville G, Walch M, Sécula A, et al. An amplicon-based nanopore sequencing workflow for rapid tracking of avian influenza outbreaks, France, 2020-2022. Front Cell Infect Microbiol. 2024;14:1257586. Published 2024 Jan 22. doi:10.3389/fcimb.2024.1257586
+
+* Wang X, Kim KW, Walker G, Stelzer-Braid S, Scotch M, Rawlinson WD. Genome characterization of influenza A and B viruses in New South Wales, Australia, in 2019: A retrospective study using high-throughput whole genome sequencing. Influenza Other Respir Viruses. 2024;18(1):e13252. doi:10.1111/irv.13252
+
+* Szablewski CM, McBride DS, Trock SC, et al. Evolution of influenza A viruses in exhibition swine and transmission to humans, 2013-2015. Zoonoses Public Health. Published online December 18, 2023. doi:10.1111/zph.13104
+
+* Perofsky AC, Huddleston J, Hansen C, et al. Antigenic drift and subtype interference shape A(H3N2) epidemic dynamics in the United States. Preprint. medRxiv. 2023;2023.10.02.23296453. Published 2023 Oct 3. doi:10.1101/2023.10.02.23296453
+
+::: 

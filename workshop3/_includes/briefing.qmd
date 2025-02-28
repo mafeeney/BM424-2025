@@ -23,8 +23,6 @@
 
 * [National Infection Prevention and Control Manual](https://www.nipcm.hps.scot.nhs.uk/).
 
-As a hospital director, you are familiar with the literature surrounding hospital pandemic preparedness, and regularly read papers such as:
-
 * Mer, Mervyn et al. “Critical Care Pandemic Preparation: Considerations and Lessons Learned from COVID-19.” Critical care clinics vol. 38,4 (2022): 761-774. 
 
 * Tacconelli, Evelina et al. “Challenges of data sharing in European Covid-19 projects: A learning opportunity for advancing pandemic preparedness and response.” The Lancet regional health. Europe vol. 21 (2022): 100467. 

@@ -85,7 +85,7 @@ In a press release, the director of the `r hosp_name` in `r city_name` noted a `
 
 In response to the `r growing` concerns, health officials have `r begun` several `r responses`, and `r city_name` have convened an Emergency Pandemic Response Team, which will be meeting on `r as.Date(workshop3_date, format = "%A %B %d")` and attempting to find solutions that will stop the spread of the pandemic in `r city_name`.
 
-The First Minister assured residents that authorities are leaving `r metaphor1` in their efforts to safeguard public health, and furthermore urged residents to remain vigilant and cooperate with health directives from the `r city_name` City Council. A statement released by the First Minister's office read: "`r statement`" 
+The First Minister assured residents that authorities are `r metaphor1` in their efforts to safeguard public health, and furthermore urged residents to remain vigilant and cooperate with health directives from the `r city_name` City Council. A statement released by the First Minister's office read: "`r statement`" 
 
 The people in `r city_name` have already begun to `r fear` the possibility of a pandemic; potential consequences such as school closures, economic repercussions, and strain on healthcare resources, have sparked apprehension among residents, underscoring the need for swift and decisive action.
 

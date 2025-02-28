@@ -45,7 +45,7 @@ The following list of references is provided as a starting place for you to begi
 
 * McCormick, D et al. “Public health response to an outbreak of Legionnaires' disease in Edinburgh, United Kingdom, June 2012.” Euro surveillance : bulletin Europeen sur les maladies transmissibles = European communicable disease bulletin vol. 17,28 20216. 12 Jul. 2012, doi:10.2807/ese.17.28.20216-en
 
-## Selected *`r inf_agent`* Diagnostics and Treatment {.unnumbered}
+## Selected *`r inf_agent`* Diagnostics and Treatment Literature {.unnumbered}
 
 * [Clinician Factsheet: Legionnaire's Disease](https://www.cdc.gov/legionella/downloads/fs-legionella-clinicians.pdf)
 
