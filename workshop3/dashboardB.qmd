@@ -1,16 +1,15 @@
 ---
-title: "Hospital Data"
-format:
-  dashboard
+title: "Group B Hospital Dashboard"
 ---
 
-```{r setup, include=FALSE}
+```{r dashboardB, include=FALSE}
 #define variables for each group
-city_name <- "Inverkeld"
-dis_name <- "Legionellosis"
-inf_agent <- "Legionella pneumophila"
-hosp_name <- "Queen Rose"
-group <- "A"
+set.seed(234) # Ensures reproducibility
+city_name <- "Baltyre"
+dis_name <- "influenza"
+inf_agent <- "Alphainfluenzavirus influenzae"
+hosp_name <- "Queen's College"
+group <- "B"
 hosp_units <- sample(c("coronary care", "maternity care", "paediatric care", "dermatology", "gastroenterology", "radiology", "oncology", "neurology", "psychiatry", "nephrology", "endocrinology", "gynecology"), 4, replace = FALSE)
 clinic <- sample(c("an ear, nose, and throat clinic", "an eye clinic", "an orthopaedics department"), 1)
 
@@ -148,7 +147,7 @@ vacc_rate <- sample(93:96, 1)
 
 ```
 
-::: card
+## Hospital Info {.unnumbered}
 
 The `r hosp_name`, built in `r sample(2008:2015, 1)`, is the main hospital in `r city_name`.
 
@@ -156,110 +155,92 @@ The `r hosp_name` has units specialising in `r hosp_units` and `r clinic`.
 
 `r paste0("![The ", hosp_name , " hospital ](", hospital , ")")`
 
+
+## Hospital Capacity {.unnumbered}
+
+### Number and Capacity of Hospital Beds {.unnumbered}
+
+::: {.card .bg-dark .text-white}
+<div class="card-body text-center">
+  <i class="bi bi-hospital" style="font-size: 3rem;"></i>  
+  <h4>Hospital beds (general)</h4>
+  <p class="fs-2">`r beds`</p>
+</div>
+:::
+
+::: {.card .bg-primary .text-light}
+<div class="card-body text-center">
+  <i class="bi bi-thermometer-half" style="font-size: 3rem;"></i>  
+  <h4>Hospital beds (ICU)</h4>
+  <p class="fs-2">`r icu`</p>
+</div>
+:::
+
+::: {.card .bg-light .text-dark}
+<div class="card-body text-center">
+  <i class="bi bi-shield-virus" style="font-size: 3rem;"></i>  
+  <h4>Isolation beds</h4>
+  <p class="fs-2">`r isolation`</p>
+</div>
+:::
+
+::: {.card .bg-dark .text-white}
+<div class="card-body text-center">
+  <i class="bi bi-hospital" style="font-size: 3rem;"></i>  
+  <h4>Average bed occupancy (%)</h4>
+  <p class="fs-2">`r bedocc`%</p>
+</div>
+:::
+
+::: {.card .bg-primary .text-light}
+<div class="card-body text-center">
+  <i class="bi bi-thermometer-half" style="font-size: 3rem;"></i>  
+  <h4>Average ICU bed occupancy (%)</h4>
+  <p class="fs-2">`r icuocc`%</p>
+</div>
+:::
+
+::: {.card .bg-light .text-dark}
+<div class="card-body text-center">
+  <i class="bi bi-vignette" style="font-size: 3rem;"></i>  
+  <h4>Average isolation bed occupancy (%)</h4>
+  <p class="fs-2">`r isocc`%</p>
+</div>
+:::
+
+### Hospital Staffing Levels {.unnumbered}
+
+::: {.card .bg-success .text-white}
+<div class="card-body text-center">
+  <i class="bi bi-person-fill" style="font-size: 3rem;"></i>  
+  <h4>Number of hospital staff</h4>
+  <p class="fs-2">`r round(beds * (sample(c(0.6, 0.7, 0.8), 1)), digits = 0)`</p>
+</div>
+:::
+
+::: {.card .bg-warning .text-dark}
+<div class="card-body text-center">
+  <i class="bi bi-people-fill" style="font-size: 3rem;"></i>  
+  <h4>Number of hospital support staff</h4>
+  <p class="fs-2">`r round(beds/7, digits = 0)`</p>
+</div>
+:::
+
+::: {.card .bg-info .text-white}
+<div class="card-body text-center">
+  <i class="bi bi-vignette" style="font-size: 3rem;"></i>  
+  <h4>Clinical micro lab capacity (# tests/month)</h4>
+  <p class="fs-2">`r sample(1000:2000, 1)`</p>
+</div>
 :::
 
 
-## Row 1, number of hospital beds
+## Key Performance Indicators {.unnumbered}
 
-```{r}
-#| content: valuebox
-#| title: "Hospital beds (general)"
-list(
-  icon = "hospital",
-  color = "dark",
-  value = beds
-)
-```
-
-```{r}
-#| content: valuebox
-#| title: "Hospital beds (ICU)"
-list(
-  icon = "thermometer-half",
-  color = "secondary",
-  value = icu
-)
-```
-
-```{r}
-#| content: valuebox
-#| title: "Isolation beds"
-list(
-  icon = "vignette",
-  color = "light",
-  value = isolation
-)
-```
-
-## Row 2, hospital bed occupancy
-
-```{r}
-#| content: valuebox
-#| title: "Average bed occupancy (%)"
-list(
-  icon = "hospital",
-  color = "dark",
-  value = bedocc
-)
-```
-
-```{r}
-#| content: valuebox
-#| title: "Average ICU bed occupancy (%)"
-list(
-  icon = "thermometer-half",
-  color = "secondary",
-  value = icuocc
-)
-```
-
-```{r}
-#| content: valuebox
-#| title: "Average isolation bed occupancy (%)"
-list(
-  icon = "vignette",
-  color = "light",
-  value = isocc
-)
-```
-
-## Row 2b, staff
-
-```{r}
-#| content: valuebox
-#| title: "Number of hospital staff"
-list(
-  icon = "person-fill",
-  color = "success",
-  value = round(beds * (sample(c(0.6, 0.7, 0.8), 1)), digits = 0)
-)
-```
-
-```{r}
-#| content: valuebox
-#| title: "Number of hospital support staff"
-list(
-  icon = "people-fill",
-  color = "warning",
-  value = round(beds/7, digits = 0)
-)
-```
-
-```{r}
-#| content: valuebox
-#| title: "Clinical micro lab capacity (avg. # tests/month)"
-list(
-  icon = "vignette",
-  color = "info",
-  value = sample(1000:2000, 1)
-)
-```
-
-
-## Row 3, a&e stats
+### A&E Statistics {.unnumbered}
 
 ::: card
-As part of the `r hosp_name`'s ongoing commitment to excellence, the hospital diligently monitors key performance indicators and strives to meet established targets. While progress has been made, we acknowledge that certain goals remain unmet. We are actively working to address these challenges and enhance patient care.
+Statement from `r hosp_name`: As part of the `r hosp_name`'s ongoing commitment to excellence, the hospital diligently monitors key performance indicators and strives to meet established targets. While progress has been made, we acknowledge that certain goals remain unmet. We are actively working to address these challenges and enhance patient care.
 
 *Key Performance Targets:*
 
@@ -270,66 +251,58 @@ As part of the `r hosp_name`'s ongoing commitment to excellence, the hospital di
 -   85% of all patients waiting for cancer treatment should be seen within 62 days
 :::
 
-## Row 3b
+::: {.card `r ifelse(beds<150, ".bg-primary .text-white", ".bg-secondary .text-white")`}
+<div class="card-body text-center">
+  <i class="bi bi-hospital" style="font-size: 3rem;"></i>  
+  <h4>Average number of admissions to A&E (monthly)</h4>
+  <p class="fs-2">`r aeadmiss`</p>
+</div>
+:::
 
-```{r}
-#| content: valuebox
-#| title: "Number of admissions to A&E (unit)"
-list(
-  color = ifelse(beds<150, "primary", "secondary"),
-  value = ""
-)
-```
+::: {.card `r ifelse(aewait>95, ".bg-success .text-white", ".bg-danger .text-white")`}
+<div class="card-body text-center">
+  <i class="bi bi-hourglass" style="font-size: 3rem;"></i>  
+  <h4>Average % of patients waiting &gt;4 hours in A&E</h4>
+  <p class="fs-2">`r aewait`%</p>
+</div>
+:::
 
-```{r}
-#| content: valuebox
-#| title: "Average A&E waiting times"
-list(
-  color = "danger",
-  value = ""
-)
-```
+::: {.card `r ifelse(ambwait<18, ".bg-success .text-white", ".bg-danger .text-white")`}
+<div class="card-body text-center">
+  <i class="bi bi-clock" style="font-size: 3rem;"></i>  
+  <h4>Ambulance response times (minutes)</h4>
+  <p class="fs-2">`r ambwait` min</p>
+</div>
+:::
 
-```{r}
-#| content: valuebox
-#| title: "Ambulance response times (category 2 incident)"
-list(
-  color = "danger",
-  value = ""
-)
-```
+### A&E Wait Times Metrics {.unnumbered}
 
-## Row 4, waiting times
+::: {.card `r ifelse(refwait>84, ".bg-success .text-white", ".bg-danger .text-white")`}
+<div class="card-body text-center">
+  <i class="bi bi-calendar3" style="font-size: 3rem;"></i>  
+  <h4>% of patients waiting &lt;62 days for referral (any)</h4>
+  <p class="fs-2">`r refwait`%</p>
+</div>
+:::
 
-```{r}
-#| content: valuebox
-#| title: "Average waiting time for referral (any)"
-list(
-  color = "danger",
-  value = ""
-)
-```
+::: {.card `r ifelse(cancwait>84, ".bg-success .text-white", ".bg-danger .text-white")`}
+<div class="card-body text-center">
+  <i class="bi bi-calendar3-event" style="font-size: 3rem;"></i>  
+  <h4>% of patients waiting &lt;62 days for cancer treatment</h4>
+  <p class="fs-2">`r cancwait`%</p>
+</div>
+:::
 
-```{r}
-#| content: valuebox
-#| title: "Average waiting time for cancer treatment"
-list(
-  color = "danger",
-  value = ""
-)
-```
-
-```{r}
-#| content: valuebox
-#| title: "Average waiting time for elective surgery"
-list(
-  color = "danger",
-  value = ""
-)
-```
+::: {.card .bg-info .text-white}
+<div class="card-body text-center">
+  <i class="bi bi-calendar3-week" style="font-size: 3rem;"></i>  
+  <h4>Number of patients waiting for elective surgery</h4>
+  <p class="fs-2">`r elecwait`</p>
+</div>
+:::
 
 
-## Row 5, header
+## Infection Control Metrics {.unnumbered}
 
 ::: card
 The `r hosp_name` hospital strives to meet stringent targets for infection control and antibiotic stewardship to ensure patient safety and combat antimicrobial resistance. Infection control protocols are critical in maintaining high standards of hygiene and patient care. Similarly, antibiotic stewardship programs are essential for optimizing the use of antimicrobials, thereby reducing the risk of resistance and ensuring effective treatments for future generations.
@@ -341,72 +314,56 @@ The `r hosp_name` hospital strives to meet stringent targets for infection contr
 -   `r Cauris_result`
 :::
 
-## Row 6, organism stats
+::: {.card `r ifelse(mrsa2<mrsa1, ".bg-success .text-white", ".bg-danger .text-white")`}
+<div class="card-body text-center">
+  <i class="bi bi-arrow-`r ifelse(mrsa2<mrsa1, "down-right", "up-right")`" style="font-size: 3rem;"></i>  
+  <h4>Hospital-acquired MRSA cases (trend)</h4>
+  <p class="fs-2">`r mrsa2`</p>
+</div>
+:::
 
-```{r}
-#| content: valuebox
-#| title: "Number of hospital-acquired MRSA cases (this year)"
-list(
-  icon = ifelse(mrsa2<mrsa1, "arrow-down-right", "arrow-up-right"), 
-  color = ifelse(mrsa2<mrsa1, "success", "danger"), 
-  value = mrsa2
-)
-```
+::: {.card `r ifelse(Cdiff2<Cdiff1, ".bg-success .text-white", ".bg-danger .text-white")`}
+<div class="card-body text-center">
+  <i class="bi bi-arrow-`r ifelse(Cdiff2<Cdiff1, "down-right", "up-right")`" style="font-size: 3rem;"></i>  
+  <h4>Hospital-acquired C. difficile cases (trend)</h4>
+  <p class="fs-2">`r Cdiff2`</p>
+</div>
+:::
 
-```{r}
-#| content: valuebox
-#| title: "Number of hospital-acquired Clostridiodes difficile cases (this year)"
-list(
-  icon = ifelse(Cdiff2<Cdiff1, "arrow-down-right", "arrow-up-right"), 
-  color = ifelse(Cdiff2<Cdiff1, "success", "danger"), 
-  value = Cdiff2
-)
-```
+::: {.card `r ifelse(Cauris2<Cauris1, ".bg-success .text-white", ".bg-danger .text-white")`}
+<div class="card-body text-center">
+  <i class="bi bi-arrow-`r ifelse(Cauris2<Cauris1, "down-right", "up-right")`" style="font-size: 3rem;"></i>  
+  <h4>Hospital-acquired Candida auris cases (trend)</h4>
+  <p class="fs-2">`r Cauris2`</p>
+</div>
+:::
 
-```{r}
-#| content: valuebox
-#| title: "Number of hospital-acquired Candida auris cases (this year)"
-list(
-  icon = ifelse(Cauris2<Cauris1, "arrow-down-right", "arrow-up-right"), 
-  color = ifelse(Cauris2<Cauris1, "success", "danger"), 
-  value = Cauris2
-)
-```
+::: {.card `r ifelse(app_therapy > 95, ".bg-success .text-white", ".bg-warning .text-white")`}
+<div class="card-body text-center">
+  <i class="bi bi-prescription" style="font-size: 3rem;"></i>  
+  <h4>Antibiotic prescriptions judged appropriate (%)</h4>
+  <p class="fs-2">`r app_therapy`%</p>
+</div>
+:::
 
-## Row 7, overall stats
+::: {.card `r ifelse(desc > 15, ".bg-success .text-white", ".bg-warning .text-white")`}
+<div class="card-body text-center">
+  <i class="bi bi-capsule-pill" style="font-size: 3rem;"></i>  
+  <h4>Antibiotic de-escalation rate (%)</h4>
+  <p class="fs-2">`r desc`%</p>
+</div>
+:::
 
-```{r}
-#| content: valuebox
-#| title: "% of antibiotic prescriptions judged appropriate by an AMR steward"
-list(
-  icon = "prescription",
-  color = ifelse(app_therapy > 95, "success", "warning"),
-  value = app_therapy
-)
-```
-
-```{r}
-#| content: valuebox
-#| title: "Antibiotic Descalation rate (% of prescriptions switched from broad to narrow-spectrum antibiotics)"
-list(
-  icon = "capsule-pill",
-  color = ifelse(desc > 15, "success", "warning"),
-  value = desc
-)
-```
-
-```{r}
-#| content: valuebox
-#| title: "Prevalence of MDR-resistant organisms (% isolated) "
-list(
-  icon = "exclamation-diamond",
-  color = ifelse(amr_rate > 50, "success", "warning"),
-  value = amr_rate
-)
-```
+::: {.card `r ifelse(amr_rate > 50, ".bg-success .text-white", ".bg-warning .text-white")`}
+<div class="card-body text-center">
+  <i class="bi bi-exclamation-diamond" style="font-size: 3rem;"></i>  
+  <h4>Prevalence of MDR-resistant organisms (%)</h4>
+  <p class="fs-2">`r amr_rate`%</p>
+</div>
+:::
 
 
-## Row 8a, header
+## Community Health Data {.unnumbered}
 
 ::: card
 The `r hosp_name` monitors the prevalence of COVID-19 and other viruses in the community to ensure they are prepared for potential surges in patient admissions, enabling them to allocate resources and staff efficiently. By tracking these trends, the hospital can implement timely public health interventions and provide accurate information to the community to mitigate the spread of infections. Additionally, continuous monitoring helps in identifying emerging outbreaks early, allowing for a rapid response that minimizes the impact on public health and healthcare services.
@@ -416,47 +373,36 @@ The `r hosp_name` monitors the prevalence of COVID-19 and other viruses in the c
 -   We are seeing an increase in infections caused by other respiratory viruses (e.g., influenza, adenovirus, rhinovirus, RSV).
 :::
 
-## Row 8, covid cases (weekly)
+::: {.card `r ifelse(covid2<covid1, ".bg-success .text-white", ".bg-danger .text-white")`}
+<div class="card-body text-center">
+  <i class="bi bi-virus" style="font-size: 3rem;"></i>  
+  <h4>COVID-19 cases (weekly)</h4>
+  <p class="fs-2">`r covid1`</p>
+</div>
+:::
 
-```{r}
-#| content: valuebox
-#| title: "Number of COVID-19 cases (weekly)"
-list(
-  icon = "virus",
-  color = ifelse(covid2<covid1, "success", "danger"),
-  value = covid1
-)
-```
+::: {.card `r ifelse(virus2<virus1, ".bg-success .text-white", ".bg-danger .text-white")`}
+<div class="card-body text-center">
+  <i class="bi bi-virus2" style="font-size: 3rem;"></i>  
+  <h4>Other respiratory virus infections (weekly)</h4>
+  <p class="fs-2">`r virus1`</p>
+</div>
+:::
 
-```{r}
-#| content: valuebox
-#| title: "Number of other respiratory virus infections (weekly)"
-list(
-  icon = "virus2",
-  color = ifelse(virus2<virus1, "success", "danger"),
-  value = virus1
-)
-```
+::: {.card .bg-success .text-white}
+<div class="card-body text-center">
+  <i class="bi bi-clipboard2-pulse" style="font-size: 3rem;"></i>  
+  <h4>SARS-CoV2 vaccination rate (booster campaign)</h4>
+  <p class="fs-2">`r covid_vacc`%</p>
+</div>
+:::
 
-## Row 9, vaccination rate
+::: {.card .bg-warning .text-dark}
+<div class="card-body text-center">
+  <i class="bi bi-clipboard2-pulse" style="font-size: 3rem;"></i>  
+  <h4>Childhood vaccination rate (DTaP/IPV/Hib/HepB)</h4>
+  <p class="fs-2">`r vacc_rate`%</p>
+</div>
+:::
 
-```{r}
-#| content: valuebox
-#| title: "SARS-CoV2 vaccination rate (booster campaign)"
-list(
-  icon = "clipboard2-pulse",
-  color = "success",
-  value = covid_vacc
-)
-```
-
-```{r}
-#| content: valuebox
-#| title: "Childhood vaccination rate (DTaP/IPV/Hib/HepB)"
-list(
-  icon = "clipboard2-pulse",
-  color = "warning",
-  value = vacc_rate
-)
-```
 

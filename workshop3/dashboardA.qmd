@@ -4,6 +4,7 @@ title: "Group A Hospital Dashboard"
 
 ```{r dashboardA, include=FALSE}
 #define variables for each group
+set.seed(123) # Ensures reproducibility
 city_name <- "Inverkeld"
 dis_name <- "Legionellosis"
 inf_agent <- "Legionella pneumophila"

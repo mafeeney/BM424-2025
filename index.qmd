@@ -34,7 +34,7 @@ Each member of your group will play one of the following roles as you attempt to
 6.	Microbiologist (working in one of the NHS Scotland clinical labs)
 7.	Public communications expert (past and current sci comm campaigns)
 8.  Doctor at a major surgery 
-9.  Epidemiologist from the local university wiht relevant expertise
+9.  Epidemiologist from the local university with relevant expertise
 
 
 ### Emergency Pandemic Response Team Meeting
