@@ -67,6 +67,39 @@ pathogen_info <- list(
 
 pathogen_paragraph <- pathogen_info[[group]]
 
+
+# Define the link for the outbreak image based on the group variable
+if (group == "A") {
+  outbreak <- "images/outbreakA.jpg"
+} else if (group == "B") {
+  outbreak <- "images/outbreakB.jpg"
+} else if (group == "C") {
+  outbreak <- "images/outbreakC.jpg"
+} else if (group == "D") {
+  outbreak <- "images/outbreakD.jpg"
+} else if (group == "E") {
+  outbreak <- "images/outbreakE.jpg"
+} else if (group == "F") {
+  outbreak <- "images/outbreakF.jpg"
+} else if (group == "G") {
+  outbreak <- "images/outbreakG.jpg"
+} else if (group == "H") {
+  outbreak <- "images/outbreakH.jpg"
+} else if (group == "I") {
+  outbreak <- "images/outbreakI.jpg"
+} else if (group == "J") {
+  outbreak <- "images/outbreakJ.jpg"
+} else if (group == "K") {
+  outbreak <- "images/outbreakK.jpg"
+} else if (group == "L") {
+  outbreak <- "images/outbreakL.jpg"
+} else if (group == "M") {
+  outbreak <- "images/outbreakM.jpg"
+} else {
+  # Handle other cases if needed
+  outbreak <- "images/outbreak_default.jpg"
+}
+
 ```
 
 ### `r city_name` `r paper_name` {.unnumbered}
@@ -76,6 +109,8 @@ pathogen_paragraph <- pathogen_info[[group]]
 **`r concerns[1]` Over Possible Outbreak of `r dis_name` in `r city_name`**
 
 `r news_date`
+
+`r paste0("![The looming pandemic in ", city_name , " ](", outbreak , ")")`
 
 Anxiety `r rises` in `r city_name` as health officials investigate a potential outbreak of `r dis_name`, raising alarm bells across the region. Though yet to be formally confirmed as a pandemic, suspicions have intensified following a recent `r alarming [1]` surge in patients presenting with symptoms indicative of `r dis_name`.
 
