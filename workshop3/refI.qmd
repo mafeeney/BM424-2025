@@ -67,10 +67,6 @@ Inverarity DJ, Forrester VM, Cumming JG, et al. Injectional anthrax at a Scottis
 
 * [Treatment of Anthrax infection (CDC)](https://www.cdc.gov/anthrax/treatment/index.html)
 
-* Elbahr US, Tekin R, Papić M, Pandak N, Erdem H, Can FK, Alpat SN, Pekok AU, Pehlivanoglu F, Karamese M, Petru PC, Kulzhanova S, Tosun S, Doğan M, Moroti R, Ramosaco E, Alay H, Puca E, Arapovic J, Pshenichnaya N, Fasciana T, Giammanco A. Factors leading to dissemination of cutaneous anthrax: an international ID-IRI study. New Microbes New Infect. 2022 Sep 7;48:101028. doi: 10.1016/j.nmni.2022.101028.
-
-* Palmateer NE, Ramsay CN, Browning L, Goldberg DJ, Hutchinson SJ. Anthrax infection among heroin users in Scotland during 2009-2010: a case-control study by linkage to a national drug treatment database. Clin Infect Dis. 2012;55(5):706-710. doi:10.1093/cid/cis511
-
 * Liu Y, Zheng G, Li J, et al. A Case Report of Cutaneous Anthrax Diagnosed by Using a Metagenomic Next-Generation Sequencing (mNGS) Approach. Infect Drug Resist. 2023;16:3601-3606. Published 2023 Jun 7. doi:10.2147/IDR.S411717
 
 * Tyśkiewicz R, Fedorowicz M, Nakonieczna A, Zielińska P, Kwiatek M, Mizak L. Electrochemical, optical and mass-based immunosensors: A comprehensive review of <i>Bacillus anthracis</i> detection methods. Anal Biochem. 2023;675:115215. doi:10.1016/j.ab.2023.115215
@@ -97,5 +93,8 @@ Inverarity DJ, Forrester VM, Cumming JG, et al. Injectional anthrax at a Scottis
 
 * Metrailer MC, Hoang TTH, Jiranantasak T, et al. Spatial and phylogenetic patterns reveal hidden infection sources of <i>Bacillus anthracis</i> in an anthrax outbreak in Son La province, Vietnam. Infect Genet Evol. 2023;114:105496. doi:10.1016/j.meegid.2023.105496
 
+* Elbahr US, Tekin R, Papić M, Pandak N, Erdem H, Can FK, Alpat SN, Pekok AU, Pehlivanoglu F, Karamese M, Petru PC, Kulzhanova S, Tosun S, Doğan M, Moroti R, Ramosaco E, Alay H, Puca E, Arapovic J, Pshenichnaya N, Fasciana T, Giammanco A. Factors leading to dissemination of cutaneous anthrax: an international ID-IRI study. New Microbes New Infect. 2022 Sep 7;48:101028. doi: 10.1016/j.nmni.2022.101028.
+
+* Palmateer NE, Ramsay CN, Browning L, Goldberg DJ, Hutchinson SJ. Anthrax infection among heroin users in Scotland during 2009-2010: a case-control study by linkage to a national drug treatment database. Clin Infect Dis. 2012;55(5):706-710. doi:10.1093/cid/cis511
 
 ::: 
