@@ -1,0 +1,109 @@
+---
+title: "Group C - References"
+---
+
+```{r refC, include=FALSE}
+
+#define variables for each group: city and hospital name, infectious agent and disease, group letter
+city_name <- "Malleith"
+hosp_name <- "Central Highland"
+dis_name <- "MRSA"
+inf_agent <- "Staphylococcus aureus"
+inf_type <- "bact"
+group <- "C"
+set.seed(345) # Ensures reproducibility
+
+```
+
+::: callout-tip
+The following list of references is provided as a starting place for you to begin exploring various aspects of *`r inf_agent`* biology, diagnostics, epidemiology, and treatment. However, this is by no means an exhaustive list: you should further explore the relevant peer-reviewed literature independently.  
+:::
+
+::: panel-tabset
+
+## Selected *`r inf_agent`* Public Health Literature {.unnumbered}
+
+* [Staphylococcus aureus bacteraemia (NHS)](https://www.nss.nhs.scot/antimicrobial-resistance-and-healthcare-associated-infection/data-and-intelligence/staphylococcus-aureus-bacteraemia/)
+
+* [Prevention and control of infection in care homes – an information resource (Health Protection Agency)](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/214929/Care-home-resource-18-February-2013.pdf)
+
+* [Health protection in children and young people settings, including education](https://www.gov.uk/government/publications/health-protection-in-schools-and-other-childcare-facilities)
+
+* [Infection control in the built environment](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/148493/HFN_30_-_Infection_control.pdf)
+
+* [MRSA guidelines (Healthcare Infection Society)](https://www.his.org.uk/resources-guidelines/mrsa-guidelines/)
+
+* [CDC MRSA Factsheets and Posters for different audiences](https://www.cdc.gov/mrsa/communication-resources/index.html)
+
+* [Communication campaigns on antimicrobial resistance (European Centre for Disease Prevention and Control)](https://www.ecdc.europa.eu/en/antimicrobial-resistance/communication)
+
+* Tong SY, Davis JS, Eichenberger E, Holland TL, Fowler VG Jr. Staphylococcus aureus infections: epidemiology, pathophysiology, clinical manifestations, and management. Clin Microbiol Rev. 2015 Jul;28(3):603-61.
+
+* Lawes T, Edwards B, López-Lozano JM, Gould I. Trends in <i>Staphylococcus aureus</i> bacteraemia and impacts of infection control practices including universal MRSA admission screening in a hospital in Scotland, 2006-2010: retrospective cohort study and time-series intervention analysis. BMJ Open. 2012 Jun 8;2(3):e000797. 
+
+* Dickmann P, Keeping S, Döring N, Schmidt AE, Binder C, Ariño-Blasco S, Gil J. Communicating the Risk of MRSA: The Role of Clinical Practice, Regulation and Other Policies in Five European Countries. Front Public Health. 2017 Mar 17;5:44. 
+
+* Mason, Thuy et al. “Knowledge and awareness of the general public and perception of pharmacists about antibiotic resistance.” BMC public health vol. 18,1 711. 8 Jun. 2018.
+
+* Djerf-Pierre, Monika, and Mia Lindgren. “Making sense of "superbugs" on YouTube: A storytelling approach.” Public understanding of science (Bristol, England) vol. 30,5 (2021): 535-551.
+
+
+## Selected *`r inf_agent`* Diagnostics and Treatment Literature {.unnumbered}
+
+* [Methicillin-resistant <i>Staphylococcus aureus</i> (MRSA): Laboratory Testing (CDC)](https://www.cdc.gov/mrsa/lab/index.html)
+
+* [Staphylococcus aureus bacteraemia (NHS)](https://www.nss.nhs.scot/antimicrobial-resistance-and-healthcare-associated-infection/data-and-intelligence/staphylococcus-aureus-bacteraemia/)
+
+* [Guidance on the diagnosis and management of PVL-associated <i>Staphylococcus aureus</i> infections (PVL-SA) in England](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/322857/Guidance_on_the_diagnosis_and_management_of_PVL_associated_SA_infections_in_England_2_Ed.pdf)
+
+* [Guidance on the diagnosis and management of PVL-associated <i>Staphylococcus aureus</i> infections (PVL-SA) in England](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/322857/Guidance_on_the_diagnosis_and_management_of_PVL_associated_SA_infections_in_England_2_Ed.pdf)
+
+* [Scottish One Health Antimicrobial Use and Antimicrobial Resistance in 2021](https://www.nss.nhs.scot/publications/scottish-one-health-antimicrobial-use-and-antimicrobial-resistance-in-2021/)
+
+* [MRSA Standard Operating Procedure (SOP)(NHSGGC)](https://www.nhsggc.scot/downloads/mrsa-sop-august-2022/?wpdmdl=47439&refresh=63cab74ea7ec71674229582&ind=1668006657031&filename=MRSA-SOP-V8-amended-Nov-22.pdf)
+
+* [MRSA care checklist (NHSGGC)](https://www.nhsggc.scot/downloads/mrsa-care-checklist/?wpdmdl=56223&refresh=63cab81b342021674229787&ind=1667989330488&filename=MRSA-Checklist-amended-Oct-22.pdf)
+
+* Turner, Nicholas A et al. “Methicillin-resistant Staphylococcus aureus: an overview of basic and clinical research.” Nature reviews. Microbiology vol. 17,4 (2019): 203-218.
+
+* Brown, Nicholas M et al. “Treatment of methicillin-resistant Staphylococcus aureus (MRSA): updated guidelines from the UK.” JAC-antimicrobial resistance vol. 3,1 dlaa114. 3 Feb. 2021, doi:10.1093/jacamr/dlaa114
+
+* Adalbert, Jenna R et al. “Clinical outcomes in patients co-infected with COVID-19 and Staphylococcus aureus: a scoping review.” BMC infectious diseases vol. 21,1 985. 21 Sep. 2021.
+
+
+* Hunt AC, Edwards B, Girvan EK, Cosgrove B, Edwards GF, Gould IM. Methicillin-resistant Staphylococcus aureus in Northeastern Scotland in 2003 to 2007: evolving strain distribution and resistance patterns. J Clin Microbiol. 2011 May;49(5):1975-8. 
+
+* Giulieri SG, Tong SYC, Williamson DA. Using genomics to understand meticillin- and vancomycin-resistant Staphylococcus aureus infections. Microb Genom. 2020 Jan;6(1):e000324. 
+
+
+
+## Selected *`r inf_agent`* Epidemiology Literature {.unnumbered}
+
+* [<i>Staphylococcus aureus</i> epidemiology (UKHSA)](https://www.gov.uk/government/collections/staphylococcus-aureus-guidance-data-and-analysis#epidemiology)
+
+* [<i>Staphylococcus aureus</i> pubMLST](https://pubmlst.org/organisms/staphylococcus-aureus) 
+
+* Reuter, Sandra et al. “Building a genomic framework for prospective MRSA surveillance in the United Kingdom and the Republic of Ireland.” Genome research vol. 26,2 (2016): 263-70. 
+* Mollerup, Sarah et al. “<i>spa</i> Typing of Methicillin-Resistant <i>Staphylococcus aureus</i> Based on Whole-Genome Sequencing: the Impact of the Assembler.” Microbiology spectrum vol. 10,6 (2022): e0218922. doi:10.1128/spectrum.02189-22
+
+* Cunningham, Scott A et al. “Comparison of Whole-Genome Sequencing Methods for Analysis of Three Methicillin-Resistant Staphylococcus aureus Outbreaks.” Journal of clinical microbiology vol. 55,6 (2017): 1946-1953. doi:10.1128/JCM.00029-17
+
+* Dung TTN, Phat VV, Vinh C, et al. Development and validation of multiplex real-time PCR for simultaneous detection of six bacterial pathogens causing lower respiratory tract infections and antimicrobial resistance genes. BMC Infect Dis. 2024;24(1):164. Published 2024 Feb 7. doi:10.1186/s12879-024-09028-2
+
+* Benvenga V, Cuénod A, Purushothaman S, et al. Historic methicillin-resistant Staphylococcus aureus: expanding current knowledge using molecular epidemiological characterization of a Swiss legacy collection. Genome Med. 2024;16(1):23. Published 2024 Feb 5. doi:10.1186/s13073-024-01292-w
+
+* Aung MS, Urushibara N, Kawaguchiya M, et al. Molecular Epidemiological Characterization of Methicillin-Resistant Staphylococcus aureus from Bloodstream Infections in Northern Japan: Increasing Trend of CC1 and Identification of ST8-SCCmec IVa USA300-Like Isolate Lacking Arginine Catabolic Mobile Element. Microb Drug Resist. 2024;30(2):63-72. doi:10.1089/mdr.2023.0203
+
+* Jiang J-H, Cameron DR, Nethercott C, Aires-de-Sousa M, Peleg AY. Virulence attributes of successful methicillin-resistant Staphylococcus aureus lineages. Clin Microbiol Rev. 2023;36(4):e0014822. doi:10.1128/cmr.00148-22
+
+* Zaghen F, Sora VM, Meroni G, et al. Epidemiology of Antimicrobial Resistance Genes in Staphylococcus aureus Isolates from a Public Database from a One Health Perspective-Sample Origin and Geographical Distribution of Isolates. Antibiotics (Basel). 2023;12(12):1654. Published 2023 Nov 24. doi:10.3390/antibiotics12121654
+
+* Wendel AF, Otchwemah R, Layer-Nicolaou F, et al. Investigating a possible link between antiseptic treatment and the increased occurrence of daptomycin-resistant Staphylococcus aureus. Clin Microbiol Infect. 2023;29(10):1334.e1-1334.e6. doi:10.1016/j.cmi.2023.06.007
+
+* Giulieri SG, Guérillot R, Holmes NE, et al. A statistical genomics framework to trace bacterial genomic predictors of clinical outcomes in Staphylococcus aureus bacteremia. Cell Rep. 2023;42(9):113069. doi:10.1016/j.celrep.2023.113069 
+
+* Sato T, Yamaguchi T, Aoki K, et al. Whole-genome sequencing analysis of molecular epidemiology and silent transmissions causing meticillin-resistant Staphylococcus aureus bloodstream infections in a university hospital. J Hosp Infect. 2023;139:141-149. doi:10.1016/j.jhin.2023.05.014
+
+* Zhang Z, Wang J, Wang H, et al. Molecular Surveillance of MRSA in Raw Milk Provides Insight into MRSA Cross Species Evolution. Microbiol Spectr. 2023;11(4):e0031123. doi:10.1128/spectrum.00311-23
+
+::: 
