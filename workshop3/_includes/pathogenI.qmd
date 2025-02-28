@@ -14,3 +14,7 @@ knitr::include_graphics(rep("images/pathogenI.jpg"))
 ### Clinical Microbiology and Diagnosis Resources
 
 * [UK Standards for Microbiology Investigations (UK SMI): Identification of Bacillus species](https://assets.publishing.service.gov.uk/media/5ac4e7cc40f0b60a4e1b0e7a/ID_9i3.1.pdf)
+
+```{r Bacillus-agar, echo=FALSE, fig.cap="Bacillus anthracis cultured on sheep's blood agar. Image credit: [CDC](https://phil.cdc.gov/Details.aspx?pid=17097)"}
+knitr::include_graphics(rep("images/plateI.jpg"))
+```

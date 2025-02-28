@@ -1,0 +1,106 @@
+---
+title: "Group D - References"
+---
+
+```{r refD, include=FALSE}
+
+#define variables for each group: city and hospital name, infectious agent and disease, group letter
+city_name <- "Rosblane"
+hosp_name <- "North Shore"
+dis_name <- "Campylobacteriosis"
+inf_agent <- "Campylobacter jejuni"
+inf_type <- "bact"
+group <- "D"
+set.seed(456) # Ensures reproducibility
+```
+
+::: callout-tip
+The following list of references is provided as a starting place for you to begin exploring various aspects of *`r inf_agent`* biology, diagnostics, epidemiology, and treatment. However, this is by no means an exhaustive list: you should further explore the relevant peer-reviewed literature independently.  
+:::
+
+::: panel-tabset
+
+## Selected *`r inf_agent`* Public Health Literature {.unnumbered}
+
+* [Campylobacter guidance, data and surveillance (PHS)](https://www.hps.scot.nhs.uk/a-to-z-of-topics/campylobacter/)
+
+* [Campylobacter Food Poisoning (Food Standards Scotland)](https://www.foodstandards.gov.scot/consumers/food-safety/foodborne-illness/campylobacter)
+
+* [Campylobacter: Estimating the burden of gastrointestinal infection in Scotland using data linkage](https://www.foodstandards.gov.scot/downloads/HPS_-_Campylobacter_Data_Linkage_Report.pdf)
+
+* [Campylobacter information and guidance (Food standards Scotland)](https://www.foodstandards.gov.scot/downloads/Factsheet_-_Campylobacter_-_Website_-_for_businesses_and_professionals_-_June_2017.pdf)
+
+* [Campylobacter "Fit for Travel" advice](https://www.fitfortravel.nhs.uk/advice/disease-prevention-advice/campylobacter)
+
+* [World Food Safety Day Campaign Materials](https://www.who.int/campaigns/world-food-safety-day/2022/campaign-materials)
+
+* [Campylobacter campaign partner toolkit](https://www.foodstandards.gov.scot/publications-and-research/publications/campylobacter-campaign-partner-toolkit)
+
+* [Campylobacter: guidance, data and analysis (GOV.UK)](https://www.gov.uk/government/collections/campylobacter-guidance-data-and-analysis)
+
+* [Surveillance and disease data for campylobacteriosis (European Centre for Disease Prevention and Control)](https://www.ecdc.europa.eu/en/campylobacteriosis/surveillance)
+
+
+* Gölz, Greta et al. “Relevance of <i>Campylobacter</i> to public health--the need for a One Health approach.” International journal of medical microbiology : IJMM vol. 304,7 (2014): 817-23.
+
+* MacRitchie, L A et al. “Consumer acceptability of interventions to reduce <i>Campylobacter</i> in the poultry food chain.” Food control vol. 35,1 (2014): 260-266. doi:10.1016/j.foodcont.2013.06.005
+
+* Bessell, Paul R et al. “Geographic determinants of reported human <i>Campylobacter</i> infections in Scotland.” BMC public health vol. 10 423. 15 Jul. 2010, doi:10.1186/1471-2458-10-423
+
+* Scott, Elizabeth. “Food safety and foodborne disease in 21st century homes.” The Canadian journal of infectious diseases = Journal canadien des maladies infectieuses vol. 14,5 (2003): 277-80.
+
+* Bessell, Paul R et al. “Geographic determinants of reported human Campylobacter infections in Scotland.” BMC public health vol. 10 423. 15 Jul. 2010, doi:10.1186/1471-2458-10-423
+
+## Selected *`r inf_agent`* Diagnostics and Treatment Literature {.unnumbered}
+
+* [Campylobacter Information for Health Professionals (CDC)](https://www.cdc.gov/campylobacter/technical.html)
+
+* [BMJ Best Practice - Campylobacter Infection](https://bestpractice.bmj.com/topics/en-gb/1175)
+
+* [NICE Gastroenteritis Background Information](https://cks.nice.org.uk/topics/gastroenteritis/background-information/causes/)
+
+* [NICE Gastroenteritis: Management](https://cks.nice.org.uk/topics/gastroenteritis/management/)
+
+* Tang, Yizhi et al. “Antibiotic resistance trends and mechanisms in the foodborne pathogen, <i>Campylobacter</i>.” Animal health research reviews vol. 18,2 (2017): 87-98.
+
+* Valenčak-Ignjatić, Ivana et al. “<i>Campylobacter jejuni</i> subdural hygroma infection in a 2-year old boy: case report and a brief literature review.” BMC infectious diseases vol. 22,1 700. 20 Aug. 2022, doi:10.1186/s12879-022-07680-0
+
+* Lévesque, Simon et al. “Campylobacteriosis in urban versus rural areas: a case-case study integrated with molecular typing to validate risk factors and to attribute sources of infection.” PloS one vol. 8,12 e83731. 26 Dec. 2013, doi:10.1371/journal.pone.0083731
+
+* LaGier, Michael J et al. “A real-time multiplexed PCR assay for rapid detection and differentiation of <i>Campylobacter jejuni</i> and <i>Campylobacter coli</i>.” Molecular and cellular probes vol. 18,4 (2004): 275-82.
+
+* Ferrari, Sevinc et al. “Validation of PCR methods for confirmation and species identification of thermotolerant <i>Campylobacter</i> as part of EN ISO 10272 - Microbiology of the food chain - Horizontal method for detection and enumeration of <i>Campylobacter</i> spp.” International journal of food microbiology vol. 388 (2023): 110064.
+
+* Ojima-Kato, Teruyo et al. “Proteotyping of <i>Campylobacter jejuni</i> by MALDI-TOF MS and Strain Solution Version 2 Software.” Microorganisms vol. 11,1 202. 12 Jan. 2023, doi:10.3390/microorganisms11010202
+
+* Hong, Seung-Hwan et al. “Gold Nanoparticle and Polymerase Chain Reaction (PCR)-Based Colorimetric Assay for the Identification of <i>Campylobacter</i> spp. in Chicken Carcass.” Food science of animal resources vol. 43,1 (2023): 73-84. doi:10.5851/kosfa.2022.e59
+
+## Selected *`r inf_agent`* Epidemiology Literature {.unnumbered}
+
+* [<i>Campylobacter jejuni/coli</i> pubMLST](https://pubmlst.org/organisms/campylobacter-jejunicoli)
+
+* Bessell, Paul R et al. “Using sequence data to identify alternative routes and risk of infection: a case-study of campylobacter in Scotland.” BMC infectious diseases vol. 12 80. 1 Apr. 2012, doi:10.1186/1471-2334-12-80
+
+* Llarena, Ann-Katrin et al. “Whole-Genome Sequencing in Epidemiology of Campylobacter jejuni Infections.” Journal of clinical microbiology vol. 55,5 (2017): 1269-1275. doi:10.1128/JCM.00017-17
+
+* Joseph, Lavin A et al. “Comparison of Molecular Subtyping and Antimicrobial Resistance Detection Methods Used in a Large Multistate Outbreak of Extensively Drug-Resistant Campylobacter jejuni Infections Linked to Pet Store Puppies.” Journal of clinical microbiology vol. 58,10 e00771-20. 22 Sep. 2020, doi:10.1128/JCM.00771-20
+
+* Bishop, H et al. “Bacteriological Survey of Fresh Minced Beef on Sale at Retail Outlets in Scotland in 2019: Three Foodborne Pathogens, Hygiene Process Indicators, and Phenotypic Antimicrobial Resistance.” Journal of food protection vol. 85,9 (2022): 1370-1379. 
+
+* Lopes, Bruno S et al. “Nationwide Stepwise Emergence and Evolution of Multidrug-Resistant <i>Campylobacter jejuni</i> Sequence Type 5136, United Kingdom.” Emerging infectious diseases vol. 25,7 (2019): 1320-1329. 
+
+* Sheppard, Samuel K et al. “Evolution of an agriculture-associated disease causing <i>Campylobacter coli</i> clade: evidence from national surveillance data in Scotland.” PloS one vol. 5,12 e15708. 15 Dec. 2010, doi:10.1371/journal.pone.0015708
+
+* Sheppard, Samuel K et al. “<i>Campylobacter</i> genotypes from food animals, environmental sources and clinical disease in Scotland 2005/6.” International journal of food microbiology vol. 134,1-2 (2009): 96-103.
+
+* Dessouky, Yara El et al. “Genomic insights into zoonotic transmission and antimicrobial resistance in <i>Campylobacter jejuni</i> from farm to fork: a one health perspective.” Gut pathogens vol. 14,1 44. 5 Dec. 2022, doi:10.1186/s13099-022-00517-w
+
+* Hadiyan, Maryam et al. “Prevalence, antimicrobial resistance, virulence gene profile and molecular typing of <i>Campylobacter</i> species isolated from poultry meat samples.” Veterinary medicine and science vol. 8,6 (2022): 2482-2493. 
+
+* Ocejo M, Oporto B, Lavín JL, Hurtado A. Monitoring within-farm transmission dynamics of antimicrobial-resistant Campylobacter in dairy cattle using broth microdilution and long-read whole genome sequencing. Sci Rep. 2023;13(1):12529. Published 2023 Aug 2. doi:10.1038/s41598-023-39588-3
+
+* Rodrigues JA, Blankenship HM, Cha W, et al. Pangenomic analyses of antibiotic-resistant Campylobacter jejuni reveal unique lineage distributions and epidemiological associations. Microb Genom. 2023;9(8):mgen001073. doi:10.1099/mgen.0.001073
+
+* Katz A, Porte L, Weitzel T, et al. Whole-genome sequencing reveals changes in genomic diversity and distinctive repertoires of T3SS and T6SS effector candidates in Chilean clinical Campylobacter strains. Front Cell Infect Microbiol. 2023;13:1208825. Published 2023 Jul 13. doi:10.3389/fcimb.2023.1208825
+
+::: 

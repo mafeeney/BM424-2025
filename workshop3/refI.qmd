@@ -44,6 +44,10 @@ The following list of references is provided as a starting place for you to begi
 * [Public Health Scotland: Gastrointestinal and Zoonoses Biennial report 2020 to 2021](https://publichealthscotland.scot/publications/gastrointestinal-and-zoonoses/gastrointestinal-and-zoonoses-biennial-report-2020-to-2021/)
 Cross AR, Baldwin VM, Roy S, Essex-Lopresti AE, Prior JL, Harmer NJ. Zoonoses under our noses. Microbes Infect. 2019;21(1):10-19. doi:10.1016/j.micinf.2018.06.001
 
+[Anthrax - Annual Epidemiological Report 2021 (ECDC)](https://www.ecdc.europa.eu/sites/default/files/documents/anthrax-annual-epidemiological-report-for-2021.pdf)
+
+Inverarity DJ, Forrester VM, Cumming JG, et al. Injectional anthrax at a Scottish district general hospital. Epidemiol Infect. 2015;143(6):1311-1321. doi:10.1017/S0950268814001885
+
 * Kyriacou DN, Dobrez D, Parada JP, et al. Cost-effectiveness comparison of response strategies to a large-scale anthrax attack on the chicago metropolitan area: impact of timing and surge capacity. Biosecur Bioterror. 2012;10(3):264-279. doi:10.1089/bsp.2011.0105
 
 * Steelfisher GK, Blendon RJ, Brulé AS, Ben-Porath EN, Ross LJ, Atkins BM. Public response to an anthrax attack: a multiethnic perspective. Biosecur Bioterror. 2012;10(4):401-411. doi:10.1089/bsp.2012.0041
@@ -95,22 +99,3 @@ Cross AR, Baldwin VM, Roy S, Essex-Lopresti AE, Prior JL, Harmer NJ. Zoonoses un
 
 
 ::: 
-
-
-
-
-Inverarity DJ, Forrester VM, Cumming JG, et al. Injectional anthrax at a Scottish district general hospital. Epidemiol Infect. 2015;143(6):1311-1321. doi:10.1017/S0950268814001885
-
-[Anthrax - Annual Epidemiological Report 2021 (ECDC)](https://www.ecdc.europa.eu/sites/default/files/documents/anthrax-annual-epidemiological-report-for-2021.pdf)
-
-
-
-
-
-
-
-
-
-
-
-
