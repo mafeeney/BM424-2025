@@ -1,0 +1,109 @@
+---
+title: "Group I Main Page"
+---
+
+```{r setupI, include=FALSE}
+
+#define variables for each group: city and hospital name, infectious agent and disease, group letter
+city_name <- "Ardkeld"
+hosp_name <- "Riverview"
+dis_name <- "anthrax"
+inf_agent <- "Bacillus anthracis"
+inf_type <- "bact"
+group <- "I"
+set.seed(987) # Ensures reproducibility
+paper_name <- sample(c("Times", "Courier", "Express", "Chronicle", "Gazette", "Herald", "News", "Metro", "Sentinel", "Beacon", "Journal"), 1)
+
+#Define variables for the dates: 
+workshop3_date <- as.Date("2025-02-28", format="%Y-%m-%d")
+news_date <- workshop3_date - sample(c(3:6), 1)
+news_date <- format(news_date, "%d %B, %Y")
+
+
+```
+
+::: panel-tabset
+## Pandemic Outbreak {.unnumbered}
+
+{{< include _includes/news1.qmd >}}
+
+## `r city_name` City Info {.unnumbered}
+
+{{< include _includes/city.qmd >}}
+
+## *`r inf_agent`* {.unnumbered}
+
+{{< include _includes/pathogenI.qmd >}}
+
+## Public Opinion: News and E-mails {.unnumbered}
+
+{{< include _includes/emails3.qmd >}}
+
+## Data Collected for the Pandemic Response Committee Meeting {.unnumbered}
+
+{{< include _includes/data.qmd >}}
+
+* You can find more key information about the main hospital in `r city_name`, the `r hosp_name` in the [hospital dashboard](dashboardI.qmd).
+
+### Epidemiological Data {.unnumbered}
+
+A team of scientists working together have in a PHS lab have isolated and cultured <i>B. anthracis</i> (using a standard tissue culture model) from a number of patient samples taken during this outbreak; isolated <i>B. anthracis</i> genomic DNA from these cultures; and sequenced this DNA using an Illumina MiSeq platform; assembled the short paired-end reads; and compared these assemblies to the extant <i>B. anthracis</i> sequences available in the NCBI databases. The results of these experiments are summarised in the table below. 
+
+<table>
+<table border="1">
+  <tr>
+    <th>Patient  </th>
+    <th>NCBI accession of closest database match</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>GCA_022220665.1</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>GCA_022220665.1</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>GCA_022220665.1</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>GCA_022220665.1</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>GCA_022220665.1</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>GCA_022220665.1</td>
+  </tr>
+    <tr>
+    <td>7</td>
+    <td>GCA_022220665.1</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>GCA_022220665.1</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>GCA_022220665.1</td>
+  </tr>
+    <tr>
+    <td>10</td>
+    <td>GCA_022220665.1</td>
+  </tr>
+</table>  
+<br><br>
+
+## City and Hospital Pandemic Planning Resources {.unnumbered}
+
+{{< include _includes/briefing.qmd >}}
+
+## Other useful resources/links {.unnumbered}
+
+{{< include _includes/resources.qmd >}}
+
+:::
