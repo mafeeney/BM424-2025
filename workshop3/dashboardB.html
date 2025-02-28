@@ -8,7 +8,7 @@
 
 <meta name="author" content="Leighton Pritchard">
 
-<title>6&nbsp; Hospital Data – BM424 Clinical Microbiology Pandemic Preparedness Workshops</title>
+<title>6&nbsp; Group B Hospital Dashboard – BM424 Clinical Microbiology Pandemic Preparedness Workshops</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -115,7 +81,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshop3/3B.html">Group B</a></li><li class="breadcrumb-item"><a href="../workshop3/dashboardB.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Hospital Data</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshop3/3B.html">Group B</a></li><li class="breadcrumb-item"><a href="../workshop3/dashboardB.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Group B Hospital Dashboard</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -187,19 +153,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../workshop3/3B.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">3B.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Group B Main Page</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../workshop3/dashboardB.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Hospital Data</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Group B Hospital Dashboard</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../workshop3/refB.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">refB.html</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Public Health and Epidemiology Resources</span></span></a>
   </div>
 </li>
       </ul>
@@ -417,27 +383,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#row-1-number-of-hospital-beds" id="toc-row-1-number-of-hospital-beds" class="nav-link active" data-scroll-target="#row-1-number-of-hospital-beds"><span class="header-section-number">6.1</span> Row 1, number of hospital beds</a></li>
-  <li><a href="#row-2-hospital-bed-occupancy" id="toc-row-2-hospital-bed-occupancy" class="nav-link" data-scroll-target="#row-2-hospital-bed-occupancy"><span class="header-section-number">6.2</span> Row 2, hospital bed occupancy</a></li>
-  <li><a href="#row-2b-staff" id="toc-row-2b-staff" class="nav-link" data-scroll-target="#row-2b-staff"><span class="header-section-number">6.3</span> Row 2b, staff</a></li>
-  <li><a href="#row-3-ae-stats" id="toc-row-3-ae-stats" class="nav-link" data-scroll-target="#row-3-ae-stats"><span class="header-section-number">6.4</span> Row 3, a&amp;e stats</a></li>
-  <li><a href="#row-3b" id="toc-row-3b" class="nav-link" data-scroll-target="#row-3b"><span class="header-section-number">6.5</span> Row 3b</a></li>
-  <li><a href="#row-4-waiting-times" id="toc-row-4-waiting-times" class="nav-link" data-scroll-target="#row-4-waiting-times"><span class="header-section-number">6.6</span> Row 4, waiting times</a></li>
-  <li><a href="#row-5-header" id="toc-row-5-header" class="nav-link" data-scroll-target="#row-5-header"><span class="header-section-number">6.7</span> Row 5, header</a></li>
-  <li><a href="#row-6-organism-stats" id="toc-row-6-organism-stats" class="nav-link" data-scroll-target="#row-6-organism-stats"><span class="header-section-number">6.8</span> Row 6, organism stats</a></li>
-  <li><a href="#row-7-overall-stats" id="toc-row-7-overall-stats" class="nav-link" data-scroll-target="#row-7-overall-stats"><span class="header-section-number">6.9</span> Row 7, overall stats</a></li>
-  <li><a href="#row-8a-header" id="toc-row-8a-header" class="nav-link" data-scroll-target="#row-8a-header"><span class="header-section-number">6.10</span> Row 8a, header</a></li>
-  <li><a href="#row-8-covid-cases-weekly" id="toc-row-8-covid-cases-weekly" class="nav-link" data-scroll-target="#row-8-covid-cases-weekly"><span class="header-section-number">6.11</span> Row 8, covid cases (weekly)</a></li>
-  <li><a href="#row-9-vaccination-rate" id="toc-row-9-vaccination-rate" class="nav-link" data-scroll-target="#row-9-vaccination-rate"><span class="header-section-number">6.12</span> Row 9, vaccination rate</a></li>
+  <li><a href="#hospital-info" id="toc-hospital-info" class="nav-link active" data-scroll-target="#hospital-info">Hospital Info</a></li>
+  <li><a href="#hospital-capacity" id="toc-hospital-capacity" class="nav-link" data-scroll-target="#hospital-capacity">Hospital Capacity</a>
+  <ul class="collapse">
+  <li><a href="#number-and-capacity-of-hospital-beds" id="toc-number-and-capacity-of-hospital-beds" class="nav-link" data-scroll-target="#number-and-capacity-of-hospital-beds">Number and Capacity of Hospital Beds</a></li>
+  <li><a href="#hospital-staffing-levels" id="toc-hospital-staffing-levels" class="nav-link" data-scroll-target="#hospital-staffing-levels">Hospital Staffing Levels</a></li>
+  </ul></li>
+  <li><a href="#key-performance-indicators" id="toc-key-performance-indicators" class="nav-link" data-scroll-target="#key-performance-indicators">Key Performance Indicators</a>
+  <ul class="collapse">
+  <li><a href="#ae-statistics" id="toc-ae-statistics" class="nav-link" data-scroll-target="#ae-statistics">A&amp;E Statistics</a></li>
+  <li><a href="#ae-wait-times-metrics" id="toc-ae-wait-times-metrics" class="nav-link" data-scroll-target="#ae-wait-times-metrics">A&amp;E Wait Times Metrics</a></li>
+  </ul></li>
+  <li><a href="#infection-control-metrics" id="toc-infection-control-metrics" class="nav-link" data-scroll-target="#infection-control-metrics">Infection Control Metrics</a></li>
+  <li><a href="#community-health-data" id="toc-community-health-data" class="nav-link" data-scroll-target="#community-health-data">Community Health Data</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshop3/3B.html">Group B</a></li><li class="breadcrumb-item"><a href="../workshop3/dashboardB.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Hospital Data</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshop3/3B.html">Group B</a></li><li class="breadcrumb-item"><a href="../workshop3/dashboardB.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Group B Hospital Dashboard</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Hospital Data</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Group B Hospital Dashboard</span></h1>
 </div>
 
 
@@ -454,182 +421,140 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div class="card">
-<p>The Queen Rose, built in 2009, is the main hospital in Inverkeld.</p>
-<p>The Queen Rose has units specialising in oncology, coronary care, dermatology, psychiatry and an eye clinic.</p>
+<section id="hospital-info" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="hospital-info">Hospital Info</h2>
+<p>The Queen’s College, built in 2013, is the main hospital in Baltyre.</p>
+<p>The Queen’s College has units specialising in coronary care, maternity care, endocrinology, nephrology and an ear, nose, and throat clinic.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/hospitalA.jpg" class="img-fluid figure-img"></p>
-<figcaption>The Queen Rose hospital</figcaption>
+<p><img src="images/hospitalB.jpg" class="img-fluid figure-img"></p>
+<figcaption>The Queen’s College hospital</figcaption>
 </figure>
 </div>
-</div>
-<section id="row-1-number-of-hospital-beds" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="row-1-number-of-hospital-beds"><span class="header-section-number">6.1</span> Row 1, number of hospital beds</h2>
-<div class="cell" content="valuebox" title="Hospital beds (general)">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"hospital"</span>,</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"dark"</span>,</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> beds</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$icon
-[1] "hospital"
+</section>
+<section id="hospital-capacity" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="hospital-capacity">Hospital Capacity</h2>
+<section id="number-and-capacity-of-hospital-beds" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="number-and-capacity-of-hospital-beds">Number and Capacity of Hospital Beds</h3>
+<div class="card bg-dark text-white">
+<div class="card-body text-center">
+<i class="bi bi-hospital" style="font-size: 3rem;"></i><br>
 
-$color
-[1] "dark"
-
-$value
-[1] 162</code></pre>
+<h4 class="anchored">
+Hospital beds (general)
+</h4>
+<p class="fs-2">
+155
+</p>
 </div>
 </div>
-<div class="cell" content="valuebox" title="Hospital beds (ICU)">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"thermometer-half"</span>,</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"secondary"</span>,</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> icu</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$icon
-[1] "thermometer-half"
+<div class="card bg-primary text-light">
+<div class="card-body text-center">
+<i class="bi bi-thermometer-half" style="font-size: 3rem;"></i><br>
 
-$color
-[1] "secondary"
-
-$value
-[1] 16</code></pre>
+<h4 class="anchored">
+Hospital beds (ICU)
+</h4>
+<p class="fs-2">
+10
+</p>
 </div>
 </div>
-<div class="cell" content="valuebox" title="Isolation beds">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"vignette"</span>,</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"light"</span>,</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> isolation</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$icon
-[1] "vignette"
+<div class="card bg-light text-dark">
+<div class="card-body text-center">
+<i class="bi bi-shield-virus" style="font-size: 3rem;"></i><br>
 
-$color
-[1] "light"
+<h4 class="anchored">
+Isolation beds
+</h4>
+<p class="fs-2">
+8
+</p>
+</div>
+</div>
+<div class="card bg-dark text-white">
+<div class="card-body text-center">
+<i class="bi bi-hospital" style="font-size: 3rem;"></i><br>
 
-$value
-[1] 7</code></pre>
+<h4 class="anchored">
+Average bed occupancy (%)
+</h4>
+<p class="fs-2">
+89%
+</p>
+</div>
+</div>
+<div class="card bg-primary text-light">
+<div class="card-body text-center">
+<i class="bi bi-thermometer-half" style="font-size: 3rem;"></i><br>
+
+<h4 class="anchored">
+Average ICU bed occupancy (%)
+</h4>
+<p class="fs-2">
+95%
+</p>
+</div>
+</div>
+<div class="card bg-light text-dark">
+<div class="card-body text-center">
+<i class="bi bi-vignette" style="font-size: 3rem;"></i><br>
+
+<h4 class="anchored">
+Average isolation bed occupancy (%)
+</h4>
+<p class="fs-2">
+96%
+</p>
 </div>
 </div>
 </section>
-<section id="row-2-hospital-bed-occupancy" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="row-2-hospital-bed-occupancy"><span class="header-section-number">6.2</span> Row 2, hospital bed occupancy</h2>
-<div class="cell" content="valuebox" title="Average bed occupancy (%)">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"hospital"</span>,</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"dark"</span>,</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> bedocc</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$icon
-[1] "hospital"
+<section id="hospital-staffing-levels" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="hospital-staffing-levels">Hospital Staffing Levels</h3>
+<div class="card bg-success text-white">
+<div class="card-body text-center">
+<i class="bi bi-person-fill" style="font-size: 3rem;"></i><br>
 
-$color
-[1] "dark"
-
-$value
-[1] 89</code></pre>
+<h4 class="anchored">
+Number of hospital staff
+</h4>
+<p class="fs-2">
+124
+</p>
 </div>
 </div>
-<div class="cell" content="valuebox" title="Average ICU bed occupancy (%)">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"thermometer-half"</span>,</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"secondary"</span>,</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> icuocc</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$icon
-[1] "thermometer-half"
+<div class="card bg-warning text-dark">
+<div class="card-body text-center">
+<i class="bi bi-people-fill" style="font-size: 3rem;"></i><br>
 
-$color
-[1] "secondary"
-
-$value
-[1] 90</code></pre>
+<h4 class="anchored">
+Number of hospital support staff
+</h4>
+<p class="fs-2">
+22
+</p>
 </div>
 </div>
-<div class="cell" content="valuebox" title="Average isolation bed occupancy (%)">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"vignette"</span>,</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"light"</span>,</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> isocc</span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$icon
-[1] "vignette"
+<div class="card bg-info text-white">
+<div class="card-body text-center">
+<i class="bi bi-vignette" style="font-size: 3rem;"></i><br>
 
-$color
-[1] "light"
-
-$value
-[1] 97</code></pre>
+<h4 class="anchored">
+Clinical micro lab capacity (# tests/month)
+</h4>
+<p class="fs-2">
+1870
+</p>
 </div>
 </div>
 </section>
-<section id="row-2b-staff" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="row-2b-staff"><span class="header-section-number">6.3</span> Row 2b, staff</h2>
-<div class="cell" content="valuebox" title="Number of hospital staff">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"person-fill"</span>,</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"success"</span>,</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">round</span>(beds <span class="sc">*</span> (<span class="fu">sample</span>(<span class="fu">c</span>(<span class="fl">0.6</span>, <span class="fl">0.7</span>, <span class="fl">0.8</span>), <span class="dv">1</span>)), <span class="at">digits =</span> <span class="dv">0</span>)</span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$icon
-[1] "person-fill"
-
-$color
-[1] "success"
-
-$value
-[1] 130</code></pre>
-</div>
-</div>
-<div class="cell" content="valuebox" title="Number of hospital support staff">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"people-fill"</span>,</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"warning"</span>,</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">round</span>(beds<span class="sc">/</span><span class="dv">7</span>, <span class="at">digits =</span> <span class="dv">0</span>)</span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$icon
-[1] "people-fill"
-
-$color
-[1] "warning"
-
-$value
-[1] 23</code></pre>
-</div>
-</div>
-<div class="cell" content="valuebox" title="Clinical micro lab capacity (avg. # tests/month)">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"vignette"</span>,</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"info"</span>,</span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">sample</span>(<span class="dv">1000</span><span class="sc">:</span><span class="dv">2000</span>, <span class="dv">1</span>)</span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$icon
-[1] "vignette"
-
-$color
-[1] "info"
-
-$value
-[1] 1258</code></pre>
-</div>
-</div>
 </section>
-<section id="row-3-ae-stats" class="level2" data-number="6.4">
-<h2 data-number="6.4" class="anchored" data-anchor-id="row-3-ae-stats"><span class="header-section-number">6.4</span> Row 3, a&amp;e stats</h2>
+<section id="key-performance-indicators" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="key-performance-indicators">Key Performance Indicators</h2>
+<section id="ae-statistics" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="ae-statistics">A&amp;E Statistics</h3>
 <div class="card">
-<p>As part of the Queen Rose’s ongoing commitment to excellence, the hospital diligently monitors key performance indicators and strives to meet established targets. While progress has been made, we acknowledge that certain goals remain unmet. We are actively working to address these challenges and enhance patient care.</p>
+<p>Statement from Queen’s College: As part of the Queen’s College’s ongoing commitment to excellence, the hospital diligently monitors key performance indicators and strives to meet established targets. While progress has been made, we acknowledge that certain goals remain unmet. We are actively working to address these challenges and enhance patient care.</p>
 <p><em>Key Performance Targets:</em></p>
 <ul>
 <li><p>Waiting time for an ambulance (category 2 event) should be no more than 18 minutes</p></li>
@@ -637,291 +562,221 @@ $value
 <li><p>85% of all patients waiting for cancer treatment should be seen within 62 days</p></li>
 </ul>
 </div>
-</section>
-<section id="row-3b" class="level2" data-number="6.5">
-<h2 data-number="6.5" class="anchored" data-anchor-id="row-3b"><span class="header-section-number">6.5</span> Row 3b</h2>
-<div class="cell" content="valuebox" title="Number of admissions to A&amp;E (unit)">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="fu">ifelse</span>(beds<span class="sc">&lt;</span><span class="dv">150</span>, <span class="st">"primary"</span>, <span class="st">"secondary"</span>),</span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="st">""</span></span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$color
-[1] "secondary"
+<div class="card bg-secondary text-white">
+<div class="card-body text-center">
+<i class="bi bi-hospital" style="font-size: 3rem;"></i><br>
 
-$value
-[1] ""</code></pre>
+<h4 class="anchored">
+Average number of admissions to A&amp;E (monthly)
+</h4>
+<p class="fs-2">
+9441
+</p>
 </div>
 </div>
-<div class="cell" content="valuebox" title="Average A&amp;E waiting times">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"danger"</span>,</span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="st">""</span></span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$color
-[1] "danger"
+<div class="card bg-danger text-white">
+<div class="card-body text-center">
+<i class="bi bi-hourglass" style="font-size: 3rem;"></i><br>
 
-$value
-[1] ""</code></pre>
+<h4 class="anchored">
+Average % of patients waiting &gt;4 hours in A&amp;E
+</h4>
+<p class="fs-2">
+71%
+</p>
 </div>
 </div>
-<div class="cell" content="valuebox" title="Ambulance response times (category 2 incident)">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"danger"</span>,</span>
-<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="st">""</span></span>
-<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$color
-[1] "danger"
+<div class="card bg-danger text-white">
+<div class="card-body text-center">
+<i class="bi bi-clock" style="font-size: 3rem;"></i><br>
 
-$value
-[1] ""</code></pre>
+<h4 class="anchored">
+Ambulance response times (minutes)
+</h4>
+<p class="fs-2">
+80 min
+</p>
 </div>
 </div>
 </section>
-<section id="row-4-waiting-times" class="level2" data-number="6.6">
-<h2 data-number="6.6" class="anchored" data-anchor-id="row-4-waiting-times"><span class="header-section-number">6.6</span> Row 4, waiting times</h2>
-<div class="cell" content="valuebox" title="Average waiting time for referral (any)">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"danger"</span>,</span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="st">""</span></span>
-<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$color
-[1] "danger"
+<section id="ae-wait-times-metrics" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="ae-wait-times-metrics">A&amp;E Wait Times Metrics</h3>
+<div class="card bg-danger text-white">
+<div class="card-body text-center">
+<i class="bi bi-calendar3" style="font-size: 3rem;"></i><br>
 
-$value
-[1] ""</code></pre>
+<h4 class="anchored">
+% of patients waiting &lt;62 days for referral (any)
+</h4>
+<p class="fs-2">
+67%
+</p>
 </div>
 </div>
-<div class="cell" content="valuebox" title="Average waiting time for cancer treatment">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"danger"</span>,</span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="st">""</span></span>
-<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$color
-[1] "danger"
+<div class="card bg-danger text-white">
+<div class="card-body text-center">
+<i class="bi bi-calendar3-event" style="font-size: 3rem;"></i><br>
 
-$value
-[1] ""</code></pre>
+<h4 class="anchored">
+% of patients waiting &lt;62 days for cancer treatment
+</h4>
+<p class="fs-2">
+60%
+</p>
 </div>
 </div>
-<div class="cell" content="valuebox" title="Average waiting time for elective surgery">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
-<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"danger"</span>,</span>
-<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="st">""</span></span>
-<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$color
-[1] "danger"
+<div class="card bg-info text-white">
+<div class="card-body text-center">
+<i class="bi bi-calendar3-week" style="font-size: 3rem;"></i><br>
 
-$value
-[1] ""</code></pre>
+<h4 class="anchored">
+Number of patients waiting for elective surgery
+</h4>
+<p class="fs-2">
+6600
+</p>
 </div>
 </div>
 </section>
-<section id="row-5-header" class="level2" data-number="6.7">
-<h2 data-number="6.7" class="anchored" data-anchor-id="row-5-header"><span class="header-section-number">6.7</span> Row 5, header</h2>
+</section>
+<section id="infection-control-metrics" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="infection-control-metrics">Infection Control Metrics</h2>
 <div class="card">
-<p>The Queen Rose hospital strives to meet stringent targets for infection control and antibiotic stewardship to ensure patient safety and combat antimicrobial resistance. Infection control protocols are critical in maintaining high standards of hygiene and patient care. Similarly, antibiotic stewardship programs are essential for optimizing the use of antimicrobials, thereby reducing the risk of resistance and ensuring effective treatments for future generations.</p>
+<p>The Queen’s College hospital strives to meet stringent targets for infection control and antibiotic stewardship to ensure patient safety and combat antimicrobial resistance. Infection control protocols are critical in maintaining high standards of hygiene and patient care. Similarly, antibiotic stewardship programs are essential for optimizing the use of antimicrobials, thereby reducing the risk of resistance and ensuring effective treatments for future generations.</p>
 <ul>
-<li><p>There were 4 more hospital-acquired MRSA infections in 2025 than there were in 2024.</p></li>
-<li><p>There was 1 more hospital-acquired <em>Clostridiodes difficile</em> infection in 2025 than there were in 2024.</p></li>
-<li><p>There were 8 more hospital-acquired <em>Candida auris</em> infections in 2025 than there were in 2024.</p></li>
+<li><p>There was 1 fewer hospital-acquired MRSA infection in 2025 than there were in 2024.</p></li>
+<li><p>There were 2 more hospital-acquired <em>Clostridiodes difficile</em> infections in 2025 than there were in 2024.</p></li>
+<li><p>There were 7 fewer hospital-acquired <em>Candida auris</em> infections in 2025 than there were in 2024.</p></li>
 </ul>
 </div>
-</section>
-<section id="row-6-organism-stats" class="level2" data-number="6.8">
-<h2 data-number="6.8" class="anchored" data-anchor-id="row-6-organism-stats"><span class="header-section-number">6.8</span> Row 6, organism stats</h2>
-<div class="cell" content="valuebox" title="Number of hospital-acquired MRSA cases (this year)">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
-<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="fu">ifelse</span>(mrsa2<span class="sc">&lt;</span>mrsa1, <span class="st">"arrow-down-right"</span>, <span class="st">"arrow-up-right"</span>), </span>
-<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="fu">ifelse</span>(mrsa2<span class="sc">&lt;</span>mrsa1, <span class="st">"success"</span>, <span class="st">"danger"</span>), </span>
-<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> mrsa2</span>
-<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$icon
-[1] "arrow-up-right"
+<div class="card bg-success text-white">
+<div class="card-body text-center">
+<i class="bi bi-arrow-down-right" style="font-size: 3rem;"></i><br>
 
-$color
-[1] "danger"
-
-$value
-[1] 10</code></pre>
+<h4 class="anchored">
+Hospital-acquired MRSA cases (trend)
+</h4>
+<p class="fs-2">
+4
+</p>
 </div>
 </div>
-<div class="cell" content="valuebox" title="Number of hospital-acquired Clostridiodes difficile cases (this year)">
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
-<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="fu">ifelse</span>(Cdiff2<span class="sc">&lt;</span>Cdiff1, <span class="st">"arrow-down-right"</span>, <span class="st">"arrow-up-right"</span>), </span>
-<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="fu">ifelse</span>(Cdiff2<span class="sc">&lt;</span>Cdiff1, <span class="st">"success"</span>, <span class="st">"danger"</span>), </span>
-<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> Cdiff2</span>
-<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$icon
-[1] "arrow-up-right"
+<div class="card bg-danger text-white">
+<div class="card-body text-center">
+<i class="bi bi-arrow-up-right" style="font-size: 3rem;"></i><br>
 
-$color
-[1] "danger"
-
-$value
-[1] 7</code></pre>
+<h4 class="anchored">
+Hospital-acquired C. difficile cases (trend)
+</h4>
+<p class="fs-2">
+8
+</p>
 </div>
 </div>
-<div class="cell" content="valuebox" title="Number of hospital-acquired Candida auris cases (this year)">
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
-<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="fu">ifelse</span>(Cauris2<span class="sc">&lt;</span>Cauris1, <span class="st">"arrow-down-right"</span>, <span class="st">"arrow-up-right"</span>), </span>
-<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="fu">ifelse</span>(Cauris2<span class="sc">&lt;</span>Cauris1, <span class="st">"success"</span>, <span class="st">"danger"</span>), </span>
-<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> Cauris2</span>
-<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$icon
-[1] "arrow-up-right"
+<div class="card bg-success text-white">
+<div class="card-body text-center">
+<i class="bi bi-arrow-down-right" style="font-size: 3rem;"></i><br>
 
-$color
-[1] "danger"
-
-$value
-[1] 10</code></pre>
+<h4 class="anchored">
+Hospital-acquired Candida auris cases (trend)
+</h4>
+<p class="fs-2">
+3
+</p>
 </div>
 </div>
-</section>
-<section id="row-7-overall-stats" class="level2" data-number="6.9">
-<h2 data-number="6.9" class="anchored" data-anchor-id="row-7-overall-stats"><span class="header-section-number">6.9</span> Row 7, overall stats</h2>
-<div class="cell" content="valuebox" title="% of antibiotic prescriptions judged appropriate by an AMR steward">
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
-<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"prescription"</span>,</span>
-<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="fu">ifelse</span>(app_therapy <span class="sc">&gt;</span> <span class="dv">95</span>, <span class="st">"success"</span>, <span class="st">"warning"</span>),</span>
-<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> app_therapy</span>
-<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$icon
-[1] "prescription"
+<div class="card bg-warning text-white">
+<div class="card-body text-center">
+<i class="bi bi-prescription" style="font-size: 3rem;"></i><br>
 
-$color
-[1] "warning"
-
-$value
-[1] 87</code></pre>
+<h4 class="anchored">
+Antibiotic prescriptions judged appropriate (%)
+</h4>
+<p class="fs-2">
+89%
+</p>
 </div>
 </div>
-<div class="cell" content="valuebox" title="Antibiotic Descalation rate (% of prescriptions switched from broad to narrow-spectrum antibiotics)">
-<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
-<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"capsule-pill"</span>,</span>
-<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="fu">ifelse</span>(desc <span class="sc">&gt;</span> <span class="dv">15</span>, <span class="st">"success"</span>, <span class="st">"warning"</span>),</span>
-<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> desc</span>
-<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$icon
-[1] "capsule-pill"
+<div class="card bg-success text-white">
+<div class="card-body text-center">
+<i class="bi bi-capsule-pill" style="font-size: 3rem;"></i><br>
 
-$color
-[1] "success"
-
-$value
-[1] 17</code></pre>
+<h4 class="anchored">
+Antibiotic de-escalation rate (%)
+</h4>
+<p class="fs-2">
+19%
+</p>
 </div>
 </div>
-<div class="cell" content="valuebox" title="Prevalence of MDR-resistant organisms (% isolated) ">
-<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
-<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"exclamation-diamond"</span>,</span>
-<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="fu">ifelse</span>(amr_rate <span class="sc">&gt;</span> <span class="dv">50</span>, <span class="st">"success"</span>, <span class="st">"warning"</span>),</span>
-<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> amr_rate</span>
-<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$icon
-[1] "exclamation-diamond"
+<div class="card bg-warning text-white">
+<div class="card-body text-center">
+<i class="bi bi-exclamation-diamond" style="font-size: 3rem;"></i><br>
 
-$color
-[1] "warning"
-
-$value
-[1] 35</code></pre>
+<h4 class="anchored">
+Prevalence of MDR-resistant organisms (%)
+</h4>
+<p class="fs-2">
+39%
+</p>
 </div>
 </div>
 </section>
-<section id="row-8a-header" class="level2" data-number="6.10">
-<h2 data-number="6.10" class="anchored" data-anchor-id="row-8a-header"><span class="header-section-number">6.10</span> Row 8a, header</h2>
+<section id="community-health-data" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="community-health-data">Community Health Data</h2>
 <div class="card">
-<p>The Queen Rose monitors the prevalence of COVID-19 and other viruses in the community to ensure they are prepared for potential surges in patient admissions, enabling them to allocate resources and staff efficiently. By tracking these trends, the hospital can implement timely public health interventions and provide accurate information to the community to mitigate the spread of infections. Additionally, continuous monitoring helps in identifying emerging outbreaks early, allowing for a rapid response that minimizes the impact on public health and healthcare services.</p>
+<p>The Queen’s College monitors the prevalence of COVID-19 and other viruses in the community to ensure they are prepared for potential surges in patient admissions, enabling them to allocate resources and staff efficiently. By tracking these trends, the hospital can implement timely public health interventions and provide accurate information to the community to mitigate the spread of infections. Additionally, continuous monitoring helps in identifying emerging outbreaks early, allowing for a rapid response that minimizes the impact on public health and healthcare services.</p>
 <ul>
-<li><p>There were 17 fewer COVID-19 cases this week than in the previous week.</p></li>
+<li><p>There were 44 more COVID-19 cases this week than in the previous week.</p></li>
 <li><p>We are seeing an increase in infections caused by other respiratory viruses (e.g., influenza, adenovirus, rhinovirus, RSV).</p></li>
 </ul>
 </div>
-</section>
-<section id="row-8-covid-cases-weekly" class="level2" data-number="6.11">
-<h2 data-number="6.11" class="anchored" data-anchor-id="row-8-covid-cases-weekly"><span class="header-section-number">6.11</span> Row 8, covid cases (weekly)</h2>
-<div class="cell" content="valuebox" title="Number of COVID-19 cases (weekly)">
-<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
-<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"virus"</span>,</span>
-<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="fu">ifelse</span>(covid2<span class="sc">&lt;</span>covid1, <span class="st">"success"</span>, <span class="st">"danger"</span>),</span>
-<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> covid1</span>
-<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$icon
-[1] "virus"
+<div class="card bg-success text-white">
+<div class="card-body text-center">
+<i class="bi bi-virus" style="font-size: 3rem;"></i><br>
 
-$color
-[1] "danger"
-
-$value
-[1] 96</code></pre>
+<h4 class="anchored">
+COVID-19 cases (weekly)
+</h4>
+<p class="fs-2">
+208
+</p>
 </div>
 </div>
-<div class="cell" content="valuebox" title="Number of other respiratory virus infections (weekly)">
-<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
-<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"virus2"</span>,</span>
-<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="fu">ifelse</span>(virus2<span class="sc">&lt;</span>virus1, <span class="st">"success"</span>, <span class="st">"danger"</span>),</span>
-<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> virus1</span>
-<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$icon
-[1] "virus2"
+<div class="card bg-danger text-white">
+<div class="card-body text-center">
+<i class="bi bi-virus2" style="font-size: 3rem;"></i><br>
 
-$color
-[1] "danger"
-
-$value
-[1] 93</code></pre>
+<h4 class="anchored">
+Other respiratory virus infections (weekly)
+</h4>
+<p class="fs-2">
+84
+</p>
 </div>
 </div>
-</section>
-<section id="row-9-vaccination-rate" class="level2" data-number="6.12">
-<h2 data-number="6.12" class="anchored" data-anchor-id="row-9-vaccination-rate"><span class="header-section-number">6.12</span> Row 9, vaccination rate</h2>
-<div class="cell" content="valuebox" title="SARS-CoV2 vaccination rate (booster campaign)">
-<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
-<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"clipboard2-pulse"</span>,</span>
-<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"success"</span>,</span>
-<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> covid_vacc</span>
-<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$icon
-[1] "clipboard2-pulse"
+<div class="card bg-success text-white">
+<div class="card-body text-center">
+<i class="bi bi-clipboard2-pulse" style="font-size: 3rem;"></i><br>
 
-$color
-[1] "success"
-
-$value
-[1] 65</code></pre>
+<h4 class="anchored">
+SARS-CoV2 vaccination rate (booster campaign)
+</h4>
+<p class="fs-2">
+72%
+</p>
 </div>
 </div>
-<div class="cell" content="valuebox" title="Childhood vaccination rate (DTaP/IPV/Hib/HepB)">
-<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list</span>(</span>
-<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">icon =</span> <span class="st">"clipboard2-pulse"</span>,</span>
-<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="st">"warning"</span>,</span>
-<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> vacc_rate</span>
-<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$icon
-[1] "clipboard2-pulse"
+<div class="card bg-warning text-dark">
+<div class="card-body text-center">
+<i class="bi bi-clipboard2-pulse" style="font-size: 3rem;"></i><br>
 
-$color
-[1] "warning"
-
-$value
-[1] 93</code></pre>
+<h4 class="anchored">
+Childhood vaccination rate (DTaP/IPV/Hib/HepB)
+</h4>
+<p class="fs-2">
+96%
+</p>
 </div>
 </div>
 
