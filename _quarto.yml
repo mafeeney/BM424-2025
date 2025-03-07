@@ -20,6 +20,7 @@ book:
   # Define chapters and contents here
   chapters:
     - index.qmd
+    - text: "Workshop 3"
     - part: "Group A"
       chapters:
         - workshop3/3A.qmd
