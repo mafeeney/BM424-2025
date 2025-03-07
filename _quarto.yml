@@ -20,6 +20,49 @@ book:
   # Define chapters and contents here
   chapters:
     - index.qmd
+    - workshop4.qmd
+    - part: "Group A"
+      chapters:
+        - workshop4/4A.qmd
+        - workshop4/dashboardA.qmd
+    - part: "Group B"
+      chapters: 
+        - workshop4/4B.qmd
+        - workshop4/dashboardB.qmd
+    - part: "Group C"
+      chapters: 
+        - workshop4/4C.qmd
+        - workshop4/dashboardC.qmd
+    - part: "Group D"
+      chapters: 
+        - workshop4/4D.qmd
+        - workshop4/dashboardD.qmd
+    - part: "Group E"
+      chapters: 
+        - workshop4/4E.qmd
+        - workshop4/dashboardE.qmd
+    - part: "Group F"
+      chapters: 
+        - workshop4/4F.qmd
+        - workshop4/dashboardF.qmd
+    - part: "Group G"
+      chapters: 
+        - workshop4/4G.qmd
+        - workshop4/dashboardG.qmd
+    - part: "Group H"
+      chapters: 
+        - workshop4/4H.qmd
+        - workshop4/dashboardH.qmd
+    - part: "Group I - 1"
+      chapters: 
+        - workshop4/4I1.qmd
+        - workshop4/dashboardI1.qmd
+    - part: "Group I - 2"
+      chapters: 
+        - workshop4/4I2.qmd
+        - workshop4/dashboardI2.qmd
+        
+    - workshop3.qmd
     - part: "Group A"
       chapters:
         - workshop3/3A.qmd
