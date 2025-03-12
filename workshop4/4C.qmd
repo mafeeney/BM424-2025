@@ -21,7 +21,15 @@ set.seed(345345) # Ensures reproducibility
 
 At the previous emergency pandemic response team meeting, the following action points were agreed:
 
+* Public Health Education campaign via TV, Social Media, Newspapers, Radio, Posters etc.
 
+* Advise vulnerable people to isolate and avoid non-essential travel. 
+
+* Triage of confirmed cases
+
+* Closing/reducing non-essential/high risk locations (gyms, cinemas, nightclubs). Sanitizer and better hygiene in more essentials e.g. supermarkets
+
+* Contact tracing of confirmed cases (people, places, notable events) over last 10 days. 
 
 ## Data collected for the current Emergency Pandemic Response Team Meeting {.unnumbered}
 

@@ -21,7 +21,15 @@ set.seed(234234) # Ensures reproducibility
 
 At the previous emergency pandemic response team meeting, the following action points were agreed:
 
+* Testing and halting the sale of contaminated bird products
 
+* Increase awareness of the importance of personal hygiene, hand washing, hand sanitisers etc and have resources (e.g. posters and leaflets) available in public spaces for educating public 
+
+* Providing rapid and at home influenza antigen-dependent immunological diagnostic assay testing
+
+* vaccination program against H9N2 for all potentially affected bird species 
+
+* Making antiviral medications (oseltamivir and zanamivir) more accessible to all positive patients by supplying them in pharmacies and allowing prescription after evidence of a positive at-home diagnostic test
 
 ## Data collected for the current Emergency Pandemic Response Team Meeting {.unnumbered}
 

@@ -2,19 +2,14 @@
 
 library(ggplot2)
 library(knitr)
-```
 
-### Pandemic Report {.unnumbered}
-
-```{r data4A, echo=FALSE}
 outbreak_deaths3A <- 25
-
-floor(runif(1, min = 10, max = 30))
 outbreak_cases3A <- 462
-floor(runif(1, min = 400, max = 700))
 outbreak_icu3A <- 16
 
 ```
+
+### Pandemic Report {.unnumbered}
 
 *Briefing:*
 
