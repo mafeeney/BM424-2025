@@ -22,8 +22,6 @@ set.seed(987654) # Ensures reproducibility
 At the previous emergency pandemic response team meeting, the following action points were agreed:
 
 
-* Provision of microbiology home testing kits for home water and compost testing
-
 ## Data collected for the current Emergency Pandemic Response Team Meeting {.unnumbered}
 
 {{< include _includes/dataI2.qmd >}}
