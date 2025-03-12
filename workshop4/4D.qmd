@@ -18,6 +18,20 @@ group <- "D"
 
 At the previous emergency pandemic response team meeting, the following action points were agreed:
 
+* Implementing safety measures: Restaurants – increasing health standards and hygiene practices.  Ensure food is being cooked properly.
+
+* Public health warnings and advice
+
+* Microbiology Testing: Transmitted from animals to humans, agriculture “all stages of the food chain, send someone to farms, spread through water. Carried out by epidemiologists.
+
+* Case investigation and patient interviews
+-	Initiate case investigation of confirmed and suspected cases to identify routes of transmission 
+-	Interview patients to determine possible exposure routes including recent food and water sources 
+
+* Healthcare system preparedness
+-	Postponing procedures
+-	Discharging patients that can be seen at home
+
 
 ## Data collected for the current Emergency Pandemic Response Team Meeting {.unnumbered}
 
