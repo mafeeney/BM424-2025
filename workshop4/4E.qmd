@@ -21,6 +21,19 @@ set.seed(567) # Ensures reproducibility
 
 At the previous emergency pandemic response team meeting, the following action points were agreed:
 
+* Carry out environmental sampling in restaurants, of food products. Swabbing of cold-water environments such as drains and fridges. 
+
+With environmental and patient samples inoculate Buffered Listeria Enrichment broth with added selective components to inhibit the growth of competing organisms. Carry out subsequent inoculations of selective media and then use a differential media such as CHROMagar to determine whether the isolates are Listeria monocytogenes. Carry out biochemical tests such as CAMP and haemolysis for further confirmation of the strains.
+
+Carry out serotyping using corresponding antibodies to determine the serotype. Carry out genetic subtyping using pulsed-field gel electrophoresis, multi-locus sequence typing or ribotyping and comparing the strains to see if source isolate and clinical isolate are related. 
+
+* Implementation of punitive measures for not following mandatory food safety measures in public and private sectors. High fines, close establishments if they do not follow procedures.
+
+* Public announcement and Food safety posters: Key guidelines for food safety to follow strict hygiene measures, cold chain management, shelf-life control, avoid high risk foods, prevent cross contamination, staff training. Make these posters mandatory for display in public kitchens. Build a social media campaign, targeting users of TikTok, Instagram and snapchat to promote awareness.
+
+* Build AMR profile of strains involved.
+
+* Close 5 of the gyms to use the space to ICU hospital overflow. Cancel low priority procedures. Refer low risk patients back to GP,
 
 ## Data collected for the current Emergency Pandemic Response Team Meeting {.unnumbered}
 

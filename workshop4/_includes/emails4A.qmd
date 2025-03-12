@@ -106,7 +106,7 @@ Dear Pandemic Response Committee
 
 I am so worried about this pandemic, it seems like there is lots of PPE and testing kits this time around (which is great, I am not so old that I don't remember all the scandals surrounding PPE back when the COVID19 pandemic first was!) But it seems like there should be something more we can do, are we doomed to go through a cycle of pandemic after pandemic, always sitting at home and worrying about whether we will die?
 
-Some of the folks last time said that I was overcautious, and that it was just a made-up pandemic that we were all afraid of, but I've got an old `r sample(c("mum", "auntie", "nan"), 1) who's quite frail, I can't go taking risks when it comes to her health, I would be just `r angry1` if anything happened to her.
+Some of the folks last time said that I was overcautious, and that it was just a made-up pandemic that we were all afraid of, but I've got an old `r sample(c("mum", "auntie", "nan"), 1)` who's quite frail, I can't go taking risks when it comes to her health, I would be just `r angry1` if anything happened to her.
 
 `r sample(closing_phrases, 1)`<br> `r author_data$Name[1]`
 
