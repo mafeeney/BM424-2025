@@ -1,0 +1,36 @@
+---
+title: "Workshop 4 Group I1"
+---
+
+```{r setupI14, include=FALSE}
+
+#define variables for each group: city and hospital name, infectious agent and disease, group letter
+city_name <- "Ardkeld"
+hosp_name <- "Riverview"
+dis_name <- "anthrax"
+inf_agent <- "Bacillus anthracis"
+inf_type <- "bact"
+group <- "I"
+set.seed(987987) # Ensures reproducibility
+
+```
+
+
+::: panel-tabset
+## Minutes from the last Emergency Pandemic Response Team Meeting {.unnumbered}
+
+At the previous emergency pandemic response team meeting, the following action points were agreed:
+
+
+* Provision of microbiology home testing kits for home water and compost testing
+
+## Data collected for the current Emergency Pandemic Response Team Meeting {.unnumbered}
+
+{{< include _includes/dataI1.qmd >}}
+
+## Public Opinion: News and E-mails {.unnumbered}
+
+{{< include _includes/emails4I1.qmd >}}
+
+
+:::

@@ -1,0 +1,31 @@
+---
+title: "Workshop 4 Group D"
+---
+
+```{r setupD4, include=FALSE}
+
+city_name <- "Rosblane"
+hosp_name <- "North Shore"
+dis_name <- "Campylobacteriosis"
+inf_agent <- "Campylobacter jejuni"
+inf_type <- "bact"
+group <- "D"
+
+```
+
+::: panel-tabset
+## Minutes from the last Emergency Pandemic Response Team Meeting {.unnumbered}
+
+At the previous emergency pandemic response team meeting, the following action points were agreed:
+
+
+## Data collected for the current Emergency Pandemic Response Team Meeting {.unnumbered}
+
+{{< include _includes/dataD.qmd >}}
+
+## Public Opinion: News and E-mails {.unnumbered}
+
+{{< include _includes/emails4D.qmd >}}
+
+
+:::

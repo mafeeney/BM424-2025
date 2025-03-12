@@ -1,0 +1,25 @@
+```{r data4A, include=FALSE}
+
+library(ggplot2)
+library(knitr)
+```
+
+### Pandemic Report {.unnumbered}
+
+```{r data4A, echo=FALSE}
+outbreak_deaths3A <- 25
+
+floor(runif(1, min = 10, max = 30))
+outbreak_cases3A <- 462
+floor(runif(1, min = 400, max = 700))
+outbreak_icu3A <- 16
+
+```
+
+*Briefing:*
+
+* Based on collated hospital reports and death certificates, it is believed that there have been `r outbreak_deaths` deaths due to `r dis_name` in `r city_name` thus far
+
+* There are currently `r outbreak_cases` patients in the `r hosp_name` with confirmed `r dis_name`, or symptoms consistent with `r dis_name`
+
+* There are currently `r outbreak_icu`  patients currently in the ICU with confirmed `r dis_name`

@@ -1,0 +1,47 @@
+---
+title: "Workshop 4 Group A"
+---
+
+```{r setupA4, include=FALSE}
+
+#define variables for each group: city and hospital name, infectious agent and disease, group letter
+city_name <- "Inverkeld"
+hosp_name <- "Queen Rose"
+dis_name <- "Legionellosis"
+inf_agent <- "Legionella pneumophila"
+inf_type <- "bact"
+group <- "A"
+set.seed(123123) # Ensures reproducibility
+paper_name <- sample(c("Times", "Courier", "Express", "Chronicle", "Gazette", "Herald", "News", "Metro", "Sentinel", "Beacon", "Journal"), 1)
+
+#Define variables for the dates: 
+workshop3_date <- as.Date("2025-02-28", format="%Y-%m-%d")
+news_date <- workshop3_date - sample(c(3:6), 1)
+news_date <- format(news_date, "%d %B, %Y")
+
+
+```
+
+::: panel-tabset
+## Minutes from the last Emergency Pandemic Response Team Meeting {.unnumbered}
+
+At the previous emergency pandemic response team meeting, the following action points were agreed:
+
+* Water quality checking and auditing
+
+* Public science communication campaign
+
+* Training for the companies that own water tanks; imposition of fines and water training safety course for companies who failed water quality checks
+
+* Provision of microbiology home testing kits for home water and compost testing
+
+## Data collected for the current Emergency Pandemic Response Team Meeting {.unnumbered}
+
+{{< include _includes/dataA.qmd >}}
+
+## Public Opinion: News and E-mails {.unnumbered}
+
+{{< include _includes/emails4A.qmd >}}
+
+
+:::

@@ -1,0 +1,33 @@
+---
+title: "Workshop 4 Group H"
+---
+
+```{r setupH4, include=FALSE}
+
+#define variables for each group: city and hospital name, infectious agent and disease, group letter
+city_name <- "Dalessie"
+hosp_name <- "Fairview"
+dis_name <- "Group A Streptococcus infection"
+inf_agent <- "Streptococcus pyogenes"
+inf_type <- "bact"
+group <- "H"
+set.seed(890) # Ensures reproducibility
+```
+
+::: panel-tabset
+## Minutes from the last Emergency Pandemic Response Team Meeting {.unnumbered}
+
+At the previous emergency pandemic response team meeting, the following action points were agreed:
+
+
+
+## Data collected for the current Emergency Pandemic Response Team Meeting {.unnumbered}
+
+{{< include _includes/dataH.qmd >}}
+
+## Public Opinion: News and E-mails {.unnumbered}
+
+{{< include _includes/emails4H.qmd >}}
+
+
+:::

@@ -1,1 +1,11 @@
-placeholder
+---
+title: "Overview"
+---
+
+# Preface {.unnumbered}
+
+These are materials for the workshop sessions on pandemic management and infectious disease control, presented as part of BM424 at the University of Strathclyde (SIPBS) in AY 2024-25. 
+
+Please use the menu on the left to find the briefing packet for your group for each workshop. Group lists, and other workshop materials, are posted on the module MyPlace page.
+
+Please report any issues or any broken links to Dr. Feeney.

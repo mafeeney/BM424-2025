@@ -1,0 +1,35 @@
+---
+title: "Workshop 4 Group B"
+---
+
+```{r setupB4, include=FALSE}
+
+#define variables for each group: city and hospital name, infectious agent and disease, group letter
+city_name <- "Baltyre"
+hosp_name <- "Queen's College"
+dis_name <- "influenza"
+inf_agent <- "Alphainfluenzavirus influenzae"
+inf_type <- "vir"
+group <- "B"
+set.seed(234234) # Ensures reproducibility
+
+
+```
+
+::: panel-tabset
+## Minutes from the last Emergency Pandemic Response Team Meeting {.unnumbered}
+
+At the previous emergency pandemic response team meeting, the following action points were agreed:
+
+
+
+## Data collected for the current Emergency Pandemic Response Team Meeting {.unnumbered}
+
+{{< include _includes/dataB.qmd >}}
+
+## Public Opinion: News and E-mails {.unnumbered}
+
+{{< include _includes/emails4B.qmd >}}
+
+
+:::

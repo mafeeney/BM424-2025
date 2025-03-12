@@ -1,0 +1,150 @@
+```{r email-setup4, echo=FALSE}
+# Load necessary libraries
+library(randomNames)
+library(stringr)
+
+# Define generic variables for emails
+
+closing_phrases <- c("Yours sincerely,", "Best wishes,", "Kind regards,", "All the best,", "Sincerely,", "Yours truly,", "Respectfully,")
+
+# Generate random names for 10 authors
+author_names <- randomNames(10, which.names = "both", return.complete.data = TRUE)
+
+# Initialize an empty data frame to store names, emails, and other details
+author_data <- data.frame(
+  Name = character(0),
+  Email = character(0),
+  RandomDates = character(0),  # Initialize column for random dates
+  RandomDateTime = character(0),  # Initialize column for random date and time
+  stringsAsFactors = FALSE
+)
+
+# Iterate through each author's name to generate email addresses and add random dates
+for (i in 1:nrow(author_names)) {
+  first_name <- author_names[i, "first_name"]
+  last_name <- author_names[i, "last_name"]
+  
+  # Concatenate all last names without spaces
+  last_names_concat <- paste0(gsub(" ", "", last_name), collapse = "")
+  
+  # Choose a random domain for the email address
+  domain <- sample(c("gmail.com", "aol.com", "yahoo.com", "msn.com", "comcast.net", "mail.com", "hotmail.co.uk", "att.net"), 1)
+  
+  # Choose a random method for generating the email address
+  method <- sample(1:4, 1)  # Randomly select one of the methods
+  
+  # Initialize variable to store the email address
+  email_address <- ""
+  
+  # Generate email address based on selected method
+  if (method == 1) {
+    # Method 1: Generate a plausible email address
+    email_address <- paste0(tolower(substr(first_name, 1, 1)), tolower(substr(last_names_concat, 1, 1)), sprintf("%04d", sample(1:9999, 1)), "@", domain)
+  } else if (method == 2) {
+    # Method 2: Concatenate first and last name
+    email_address <- paste0(tolower(first_name), ".", tolower(last_names_concat), "@", domain)
+  } else if (method == 3) {
+    # Method 3: Concatenate first initial of first name with last name
+    email_address <- paste0(tolower(substr(first_name, 1, 1)), ".", tolower(last_names_concat), "@", domain)
+  } else {
+    # Method 4: Concatenate last name with a random number
+    email_address <- paste0(tolower(last_names_concat), sample(1000:9999, 1), "@", domain)
+  }
+  
+  # Append to the data frame
+  author_data <- rbind(author_data, data.frame(Name = paste(first_name, last_name),
+                                               Email = email_address,
+                                               RandomDates = NA,  # Placeholder for random dates
+                                               RandomDateTime = NA,  # Placeholder for random date and time
+                                               stringsAsFactors = FALSE))
+}
+
+# Define the workshop3_date
+workshop4_date <- as.Date("2025-03-13", format = "%Y-%m-%d")
+
+# Generate 10 random dates within 0 to 2 days before workshop4_date
+random_dates <- workshop4_date - sample(0:2, nrow(author_data), replace = TRUE)
+
+# Format the random dates
+formatted_random_dates <- format(random_dates, "%d %B %Y")
+
+# Add formatted random dates to author_data
+author_data$RandomDates <- formatted_random_dates
+
+# Generate random hours and minutes
+random_hours <- sample(1:24, nrow(author_data), replace = TRUE)
+random_minutes <- sample(0:59, nrow(author_data), replace = TRUE)
+
+# Combine random hours and minutes into HH:MM format
+random_times <- paste0(random_hours, ":", sprintf("%02d", random_minutes))
+
+# Add random times to RandomDateTime column in author_data
+author_data$RandomDateTime <- random_times
+```
+
+### Emails {.unnumbered}
+
+Your committee has recently received a great deal of correspondence regarding the pandemic in `r city_name`. A representative sample of these e-mails is shown below.
+
+::: {.callout-caution collapse="true" icon=false}
+## Email #1 {.unnumbered}
+```{r email-upset, echo=FALSE}
+# Define variables to randomise e-mail content
+adjectives <- sample(c("Disgraceful", "Terrible", "Horrible", "Devastating", "Sad", "Bloody"), 1)
+angry1 <-  sample(c("outraged", "upset", "so angry", "devastated", "shattered"), 1)
+hope <-  sample(c("hope", "hope very much", "wish", "expect", "sincerely hope"), 1)
+states_of_affairs <-  sample(c("dreadful state of affairs", "horrible pandemic", "all of the poor people dying", "tragedy"), 1)
+times <-  sample(c("immediately", "very soon", "at once", "as soon as possible"), 1)
+```
+<b>From:</b> `r author_data$Email[1]`<br>
+<b>To:</b> pandemic_response@`r city_name`.co.uk <br>
+<b>Cc:</b> <br>
+<b>Subject:</b> This `r adjectives` Pandemic <br>
+<b>Date:</b> `r author_data$RandomDates[1]` `r author_data$RandomDateTime[1]`<br>
+
+Dear Pandemic Response Committee
+
+I am so worried about this pandemic, it seems like there is lots of PPE and testing kits this time around (which is great, I am not so old that I don't remember all the scandals surrounding PPE back when the COVID19 pandemic first was!) But it seems like there should be something more we can do, are we doomed to go through a cycle of pandemic after pandemic, always sitting at home and worrying about whether we will die?
+
+Some of the folks last time said that I was overcautious, and that it was just a made-up pandemic that we were all afraid of, but I've got an old `r sample(c("mum", "auntie", "nan"), 1) who's quite frail, I can't go taking risks when it comes to her health, I would be just `r angry1` if anything happened to her.
+
+`r sample(closing_phrases, 1)`<br> `r author_data$Name[1]`
+
+:::
+
+::: {.callout-caution collapse="true" icon=false}
+## Email #2 {.unnumbered}
+
+:::
+
+::: {.callout-caution collapse="true" icon=false}
+## Email #3 {.unnumbered}
+
+:::
+
+::: {.callout-caution collapse="true" icon=false}
+## Email #4 {.unnumbered}
+
+
+:::
+
+### News/Blog Posts {.unnumbered}
+
+Your committee has also been monitoring news and published blog posts about the pandemic in `r city_name`, in order to better gauge public opinion. A representative sample of these is shown below.
+
+::: {.callout-caution collapse="true" icon=false}
+## News/blog post #1 {.unnumbered}
+
+
+:::
+
+::: {.callout-caution collapse="true" icon=false}
+## News/blog post #2 {.unnumbered}
+
+
+:::
+
+::: {.callout-caution collapse="true" icon=false}
+## News/blog post #3 {.unnumbered}
+
+:::

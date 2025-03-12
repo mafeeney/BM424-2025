@@ -1,0 +1,34 @@
+---
+title: "Workshop 4 Group E"
+---
+
+```{r setupE4, include=FALSE}
+
+#define variables for each group: city and hospital name, infectious agent and disease, group letter
+city_name <- "Rosmakirk"
+hosp_name <- "Horizon NHS"
+dis_name <- "Listeriosis"
+inf_agent <- "Listeria monocytogenes"
+inf_type <- "bact"
+group <- "E"
+set.seed(567) # Ensures reproducibility
+
+
+```
+
+::: panel-tabset
+## Minutes from the last Emergency Pandemic Response Team Meeting {.unnumbered}
+
+At the previous emergency pandemic response team meeting, the following action points were agreed:
+
+
+## Data collected for the current Emergency Pandemic Response Team Meeting {.unnumbered}
+
+{{< include _includes/dataE.qmd >}}
+
+## Public Opinion: News and E-mails {.unnumbered}
+
+{{< include _includes/emails4E.qmd >}}
+
+
+:::
