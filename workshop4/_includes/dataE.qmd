@@ -14,8 +14,8 @@ outbreak_icu4E <- 13
 # set up data for microbiology testing table
 # Sample sources
 sample_sources <- c(
-  "Patient 1", "Patient 2", "Patient 3", "Patient 4", "Patient 5", 
-  "Patient 6", "Patient 7", "Patient 8", "Patient 9", "Patient 10", 
+  "Environmental Sample 1", "Environmental Sample 2", "Environmental Sample 3", "Environmental Sample 4", "Environmental Sample 5", 
+  "Environmental Sample 6", "Environmental Sample 7", "Environmental Sample 8", "Environmental Sample 9", "Environmental Sample 10", 
   "Drain 1", "Drain 2", "Drain 3", "Drain 4", "Drain 5",
   "Fridge 1", "Fridge 2", "Fridge 3", "Fridge 4", "Fridge 5",
   "Restaurant 1", "Restaurant 2", "Restaurant 3", "Restaurant 4", "Restaurant 5"
