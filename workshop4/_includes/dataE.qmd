@@ -84,6 +84,7 @@ html_table_resistance <- paste0(
 
 `r html_table_listeria_testing`
 
+
 Based on pulsed-field gel electrophoresis (PFGE) analysis, all strains were shown to be matches to one another.
 
 
