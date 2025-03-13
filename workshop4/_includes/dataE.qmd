@@ -82,7 +82,7 @@ html_table_resistance <- paste0(
 
 * Microbiological testing has been carried out on samples taken from patients, and environmental samples such as fridges, restaurants, and other potential contamination points: a representative sample of the results is shown below.
 
-`r `html_table_listeria_testing`
+`r html_table_listeria_testing`
 
 Based on pulsed-field gel electrophoresis (PFGE) analysis, all strains were shown to be matches to one another.
 
@@ -91,6 +91,6 @@ Based on pulsed-field gel electrophoresis (PFGE) analysis, all strains were show
 
 * The AMR profile of <i>L. monocytogenes</i> strains isolated from the outbreak has been determined; a representative sample of data is shown below. 
 
-`r `html_table_resistance`
+`r html_table_resistance`
 
 CEF: Cefotaxime, CEP: Cephalothin, K: Kanamycin. GEN: Gentamicin, S: Streptomycin, TE: Tetracycline, DOX: Doxycycline. NA: Nalidixic acid, CIP: Ciprofloxacin, ENR: Enrofloxacin, AZI: Azithromycin, CLIN: Clindamycin, P: Penicillin, AMC: Amoxicillin-clavulanic acid, AMP: Ampicillin, SXT: Sulfamethoxazole-Trimethoprim.
