@@ -325,7 +325,7 @@ obit2surname <- sample(c("Smith", "Jones", "Williams", "Taylor", "Davies", "Brow
 by `r sample(authname1, 1)` `r sample(surname1, 1)`
 `r sample(pubdate, 1)`
 
-The pandemic ravaging `r city_name` has claimed yet another victim. There have been `r outbreak_deaths4A` deaths in the pandemic so far, but perhaps the most tragic loss is `r obit1name` `r obit1surname` - at only `r obit1age`, the youngest victim that the pandemic has claimed.    
+The pandemic ravaging `r city_name` has claimed yet another victim. There have been `r outbreak_deaths4B` deaths in the pandemic so far, but perhaps the most tragic loss is `r obit1name` `r obit1surname` - at only `r obit1age`, the youngest victim that the pandemic has claimed.    
 
 `r obit1name` `r obit1surname` liked `r obit1like1` and `r obit1like2`. Friends and family say that `r pron1` was always `r sample(c("a delight", "an absolute joy", "a treasure", "the most precious child"), 1)`. 
 
