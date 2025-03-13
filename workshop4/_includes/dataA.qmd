@@ -3,13 +3,38 @@
 library(ggplot2)
 library(knitr)
 
+city_name <- "Inverkeld"
+hosp_name <- "Queen Rose"
+dis_name <- "Legionellosis"
+inf_agent <- "Legionella pneumophila"
+
 outbreak_deaths3A <- 25
 outbreak_cases3A <- 462
 outbreak_icu3A <- 16
 
+outbreak_deaths4A <- 40
+outbreak_cases4A <- 432
+outbreak_icu4A <- 11
+
+kits <- floor(runif(1, min = 50, max = 500))
+attendees <- floor(runif(1, min = 50, max = 500))
 ```
 
 ### Pandemic Report {.unnumbered}
 
 *Briefing:*
+
+* Based on collated hospital reports and death certificates, it is believed that there have been `r outbreak_deaths4A` deaths due to `r dis_name` in `r city_name` thus far
+
+* There are currently `r outbreak_cases4A` patients in the `r hosp_name` with confirmed `r dis_name`, or symptoms consistent with `r dis_name`
+
+* There are currently `r outbreak_icu4A`  patients currently in the ICU with confirmed `r dis_name`
+
+* `r kits` home testing kits have been distributed to the public 
+
+* Microbiological testing has found no evidence of *`r inf_agent`* in the 4 water cooling towers in `r city_name`
+
+* A training seminar for companies that own water tanks was organised; `r attendees` people attended
+
+* A company has been contracted to begin a public science campaign
 
