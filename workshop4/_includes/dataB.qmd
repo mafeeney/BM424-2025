@@ -1,0 +1,148 @@
+```{r data4B, include=FALSE}
+
+library(ggplot2)
+library(knitr)
+
+outbreak_deaths3B <- 26
+outbreak_cases3B <- 534
+outbreak_icu3B <- 13
+
+outbreak_deaths4B <- 37
+outbreak_cases4B <- 432
+outbreak_icu4B <- 9
+
+kits <- floor(runif(1, min = 50, max = 500))
+prescriptions <- floor(runif(1, min = 50, max = 500))
+vaccines <- floor(runif(1, min = 50, max = 100))
+```
+
+### Pandemic Report {.unnumbered}
+
+*Briefing:*
+
+* Based on collated hospital reports and death certificates, it is believed that there have been `r outbreak_deaths4B` deaths due to `r dis_name` in `r city_name` thus far
+
+* There are currently `r outbreak_cases4B` patients in the `r hosp_name` with confirmed `r dis_name`, or symptoms consistent with `r dis_name`
+
+* There are currently `r outbreak_icu4B`  patients currently in the ICU with confirmed `r dis_name`
+
+* `r kits` home testing kits have been distributed to the public 
+
+* A vaccination program has been set up; `r vaccines` have been distributed to date
+
+* Pharmacies have rolled out distribution of anti-viral drugs, with `r prescriptions` prescriptions to date
+
+* A company has been contracted to begin a public awareness campaign
+
+* Testing of potentially contaminated bird products has begun; a sample of the results is shown in Table 1.
+
+Table 1. RT-PCR testing of products from poultry farms in the `r city_name` `r dis_name` outbreak.
+<table>
+<table border="1">
+  <tr>
+    <th>Location</th>
+    <th>Number of products tested</th>
+    <th>Number of positive RT-PCR tests</th>
+  </tr>
+  <tr>
+    <td>Sue's Duck Farm</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:10, 1)`</td>
+  </tr>
+  <tr>
+    <td>Craig's Chickens</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:10, 1)`</td>
+  </tr>
+  <tr>
+    <td>Ellenmere Farm</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:10, 1)`</td>
+  </tr>
+  <tr>
+    <td>Highgrove</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:10, 1)`</td>
+  </tr>
+  <tr>
+    <td>Clucks-alot Farms</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:10, 1)`</td>
+  </tr>
+  <tr>
+    <td>Lucky Clucky Farms</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:10, 1)`</td>
+  </tr>
+  <tr>
+    <td>The Golden Goose</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:10, 1)`</td>
+  </tr>
+  <tr>
+    <td>Hightree Nature Reserve</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:10, 1)`</td>
+  </tr>
+  <tr>
+    <td>Lakesmere</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:10, 1)`</td>
+  </tr>
+  <tr>
+    <td>Heather and Gorse Farms</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:10, 1)`</td>
+  </tr>
+  <tr>
+    <td>Grace's Ganders</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:10, 1)`</td>
+  </tr>
+  <tr>
+    <td>Loosey Goosey Farms</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:10, 1)`</td>
+  </tr>
+  <tr>
+    <td>The Chicken Run</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:10, 1)`</td>
+  </tr>
+  <tr>
+    <td>Greenacres</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:10, 1)`</td>
+  </tr>
+  <tr>
+    <td>Hill Farm</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:10, 1)`</td>
+  </tr>
+  <tr>
+    <td>Loyola's Turkey Farm</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:10, 1)`</td>
+  </tr>
+  <tr>
+    <td>The Quick Quail Farm</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:10, 1)`</td>
+  </tr>
+  <tr>
+    <td>Goosopolis Farms</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:10, 1)`</td>
+  </tr>
+  <tr>
+    <td>Cordelia and Ken's Chickens</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:10, 1)`</td>
+  </tr>
+  <tr>
+    <td>Fair Hope Farm</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:10, 1)`</td>
+  </tr>
+</table>  
+<br><br>

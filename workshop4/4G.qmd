@@ -21,7 +21,15 @@ set.seed(789789) # Ensures reproducibility
 
 At the previous emergency pandemic response team meeting, the following action points were agreed:
 
+* Start analysing the patient strains sequence data for presence of resistance genes and begin drug susceptibility testing using rapid molecular testing or culture methods, and start patients with confirmed TB on the 6 months all oral regimen BPaLM/BPaL
 
+* Create posters, TV ads, public health announcements etc with information about transmission, symptoms
+
+* Encourage public to be vaccinated, especially children and close contacts of confirmed cases
+
+* Contact local authorities about potentially outsourcing spare staff equipment, ventilators, PPE, overflow sites
+
+* Track and trace on the patients
 
 ## Data collected for the current Emergency Pandemic Response Team Meeting {.unnumbered}
 

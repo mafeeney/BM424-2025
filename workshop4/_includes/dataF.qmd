@@ -1,0 +1,110 @@
+```{r data4F, include=FALSE}
+
+library(ggplot2)
+library(knitr)
+
+outbreak_deaths3F <- 11
+outbreak_cases3F <- 646
+outbreak_icu3F <- 25
+
+outbreak_deaths4F <- 18
+outbreak_cases4F <- 432
+outbreak_icu4F <- 18
+
+vaccines <- floor(runif(1, min = 50, max = 500))
+
+# data for microbiology table
+
+# Define plausible locations
+locations <- c(
+  "University dormitory", "Public transport", "Music festival", "Sports stadium",
+  "Nightclub", "Shopping mall", "Airport", "Hospital ward", "Military base",
+  "Street food stall", "Concert venue", "Church service", "School classroom",
+  "Train station", "Theme park", "Bus stop", "Coffee shop", "Library", "Public swimming pool", "Restaurant"
+)
+
+# Sample results (+ve for positive, -ve for negative)
+set.seed(42)
+results <- sample(c("+", "-"), 20, replace = TRUE, prob = c(0.3, 0.7))
+
+# Create a data frame with locations and results
+meningitis_data <- data.frame(
+  Location = locations,
+  Microbiological_Test_Result = results
+)
+
+# Generate the HTML table
+html_table_meningitis <- paste0(
+  "<table border='1'>",
+  "<tr><th>Location</th><th>Microbiological Test Result</th></tr>",
+  paste0(
+    "<tr><td>", meningitis_data$Location, "</td><td>", meningitis_data$Microbiological_Test_Result, "</td></tr>", collapse = "\n"
+  ),
+  "</table>"
+)
+
+
+# set up antibiotic table
+
+# Define antibiotic names
+antibiotics <- c("Penicillin", "Cefoxtamine", "Ciprofloxacin", "Rifampicin")
+
+# Define a more resistant base profile for the first strain (resistant to 3 antibiotics)
+base_profile <- c("R", "R", "R", "S")  # Resistant to Penicillin, Cefoxtamine, Ciprofloxacin, susceptible to Rifampicin
+
+# Create 5 strains, each with mostly the same profile, but with 1 or 2 changes for each
+set.seed(42)
+profiles <- data.frame(
+  Strain = paste("Strain", 1:5),
+  Penicillin = base_profile[1],
+  Cefoxtamine = base_profile[2],
+  Ciprofloxacin = base_profile[3],
+  Rifampicin = base_profile[4]
+)
+
+# Introduce 1 or 2 variations in the resistance profile for each strain (other than Strain 1)
+for (i in 2:5) {
+  change_idx <- sample(1:4, 1)  # Randomly select 1 position to change
+  new_value <- ifelse(profiles[i, change_idx] == "S", "R", "S")  # Change S to R or vice versa
+  profiles[i, change_idx] <- new_value
+}
+
+# Generate the HTML table for the antibiotic resistance profile
+html_table_antibiotic_resistance <- paste0(
+  "<table border='1'>",
+  "<tr><th>Strain</th><th>Penicillin</th><th>Cefoxtamine</th><th>Ciprofloxacin</th><th>Rifampicin</th></tr>",
+  paste0(
+    "<tr><td>", profiles$Strain, "</td><td>", profiles$Penicillin, "</td><td>", profiles$Cefoxtamine, "</td><td>", profiles$Ciprofloxacin, "</td><td>", profiles$Rifampicin, "</td></tr>", collapse = "\n"
+  ),
+  "</table>"
+)
+
+```
+
+### Pandemic Report {.unnumbered}
+
+*Briefing:*
+
+* Based on collated hospital reports and death certificates, it is believed that there have been `r outbreak_deaths4F` deaths due to `r dis_name` in `r city_name` thus far
+
+* There are currently `r outbreak_cases4F` patients in the `r hosp_name` with confirmed `r dis_name`, or symptoms consistent with `r dis_name`
+
+* There are currently `r outbreak_icu4F`  patients currently in the ICU with confirmed `r dis_name`
+
+* A company has been contracted to begin a public advertisement campaign
+
+* Extra supplies of PPE have been purchased and distributed to hospitals and healthcare settings
+
+* Vaccination programmes have been initiated, and `r vaccines` have been administered to date
+
+* The local NHS board has confirmed the EPRC's recommendations for hospitals, and have forwarded these on to the local hospital
+
+* Microbiological surveillance for `r inf_agent` at potential high-risk locations has been performed, and a representative sample of results is shown below:
+
+`r html_table_meningitis`
+
+* Antibiotic resistance profiling has been carried out on strains isolated from patient samples; a representative set of results is shown below:
+
+`r html_table_antibiotic_resistance`
+
+* Monitoring of strain evolution has suggested overall that the strains from this outbreak are all of the same serotype.

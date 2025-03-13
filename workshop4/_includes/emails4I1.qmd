@@ -1,0 +1,399 @@
+```{r email-setup4I1, echo=FALSE}
+# Load necessary libraries
+library(randomNames)
+library(stringr)
+
+# Define generic variables for emails
+
+closing_phrases <- c("Yours sincerely,", "Best wishes,", "Kind regards,", "All the best,", "Sincerely,", "Yours truly,", "Respectfully,")
+
+# Generate random names for 10 authors
+author_names <- randomNames(10, which.names = "both", return.complete.data = TRUE)
+
+# Initialize an empty data frame to store names, emails, and other details
+author_data <- data.frame(
+  Name = character(0),
+  Email = character(0),
+  RandomDates = character(0),  # Initialize column for random dates
+  RandomDateTime = character(0),  # Initialize column for random date and time
+  stringsAsFactors = FALSE
+)
+
+# Iterate through each author's name to generate email addresses and add random dates
+for (i in 1:nrow(author_names)) {
+  first_name <- author_names[i, "first_name"]
+  last_name <- author_names[i, "last_name"]
+  
+  # Concatenate all last names without spaces
+  last_names_concat <- paste0(gsub(" ", "", last_name), collapse = "")
+  
+  # Choose a random domain for the email address
+  domain <- sample(c("gmail.com", "aol.com", "yahoo.com", "msn.com", "comcast.net", "mail.com", "hotmail.co.uk", "att.net"), 1)
+  
+  # Choose a random method for generating the email address
+  method <- sample(1:4, 1)  # Randomly select one of the methods
+  
+  # Initialize variable to store the email address
+  email_address <- ""
+  
+  # Generate email address based on selected method
+  if (method == 1) {
+    # Method 1: Generate a plausible email address
+    email_address <- paste0(tolower(substr(first_name, 1, 1)), tolower(substr(last_names_concat, 1, 1)), sprintf("%04d", sample(1:9999, 1)), "@", domain)
+  } else if (method == 2) {
+    # Method 2: Concatenate first and last name
+    email_address <- paste0(tolower(first_name), ".", tolower(last_names_concat), "@", domain)
+  } else if (method == 3) {
+    # Method 3: Concatenate first initial of first name with last name
+    email_address <- paste0(tolower(substr(first_name, 1, 1)), ".", tolower(last_names_concat), "@", domain)
+  } else {
+    # Method 4: Concatenate last name with a random number
+    email_address <- paste0(tolower(last_names_concat), sample(1000:9999, 1), "@", domain)
+  }
+  
+  # Append to the data frame
+  author_data <- rbind(author_data, data.frame(Name = paste(first_name, last_name),
+                                               Email = email_address,
+                                               RandomDates = NA,  # Placeholder for random dates
+                                               RandomDateTime = NA,  # Placeholder for random date and time
+                                               stringsAsFactors = FALSE))
+}
+
+# Define the workshop4_date
+workshop4_date <- as.Date("2025-03-13", format = "%Y-%m-%d")
+
+# Generate 10 random dates within 0 to 2 days before workshop4_date
+random_dates <- workshop4_date - sample(0:2, nrow(author_data), replace = TRUE)
+
+# Format the random dates
+formatted_random_dates <- format(random_dates, "%d %B %Y")
+
+# Add formatted random dates to author_data
+author_data$RandomDates <- formatted_random_dates
+
+# Generate random hours and minutes
+random_hours <- sample(1:24, nrow(author_data), replace = TRUE)
+random_minutes <- sample(0:59, nrow(author_data), replace = TRUE)
+
+# Combine random hours and minutes into HH:MM format
+random_times <- paste0(random_hours, ":", sprintf("%02d", random_minutes))
+
+# Add random times to RandomDateTime column in author_data
+author_data$RandomDateTime <- random_times
+```
+
+### Emails {.unnumbered}
+
+Your committee has recently received a great deal of correspondence regarding the pandemic in `r city_name`. A representative sample of these e-mails is shown below.
+
+::: {.callout-caution collapse="true" icon=false}
+## Email #1 {.unnumbered}
+```{r email-upsetI1, echo=FALSE}
+# Define variables to randomise e-mail content
+adjectives <- sample(c("Disgraceful", "Terrible", "Horrible", "Devastating", "Sad", "Bloody"), 1)
+angry1 <-  sample(c("outraged", "upset", "so angry", "devastated", "shattered"), 1)
+hope <-  sample(c("hope", "hope very much", "wish", "expect", "sincerely hope"), 1)
+states_of_affairs <-  sample(c("dreadful state of affairs", "horrible pandemic", "all of the poor people dying", "tragedy"), 1)
+times <-  sample(c("immediately", "very soon", "at once", "as soon as possible"), 1)
+```
+<b>From:</b> `r author_data$Email[1]`<br>
+<b>To:</b> pandemic_response@`r city_name`.co.uk <br>
+<b>Cc:</b> <br>
+<b>Subject:</b> This `r adjectives` Pandemic <br>
+<b>Date:</b> `r author_data$RandomDates[1]` `r author_data$RandomDateTime[1]`<br>
+
+Dear Pandemic Response Committee
+
+I am so worried about this pandemic, it seems like there is lots of PPE and testing kits this time around (which is great, I am not so old that I don't remember all the scandals surrounding PPE back when the COVID19 pandemic first was!) But it seems like there should be something more we can do, are we doomed to go through a cycle of pandemic after pandemic, always sitting at home and worrying about whether we will die?
+
+Some of the folks last time said that I was overcautious, and that it was just a made-up pandemic that we were all afraid of, but I've got an old `r sample(c("mum", "auntie", "nan"), 1)` who's quite frail, I can't go taking risks when it comes to her health, I would be just `r angry1` if anything happened to her.
+
+`r sample(closing_phrases, 1)`<br> `r author_data$Name[1]`
+
+:::
+
+::: {.callout-caution collapse="true" icon=false}
+## Email #2 {.unnumbered}
+
+<b>From:</b> `r author_data$Email[2]`<br>
+<b>To:</b> pandemic_response@`r city_name`.co.uk <br>
+<b>Cc:</b> <br>
+<b>Subject:</b> Save Our Hospitals<br>
+<b>Date:</b> `r author_data$RandomDates[2]` `r author_data$RandomDateTime[2]`<br>
+
+
+Dear Pandemic Response Committee,
+
+I am so frightened about new pandemic, the news you read about it is very scary. Thank you so much for all your hard work you are doing to protect us.
+
+I am writing out of concern for the state of the health care system in `r city_name`, it is becoming very clear that the NHS is overwhelmed. We hear about it in the news every year, it's like flu season comes as a surprise somehow and then of course there's a new pandemic on top of that. I was so worried during the COVID19 pandemic when all the nightingale hospitals were built and the poor doctors and nurses and all were being so overworked. I hope that there will be enough funds to increase the hospital staff the way that the government really ought to do. 
+
+My son is a nurse at the `r hosp_name` and he has just been worked off his feet these last two weeks, quite frankly it is bringing back our PTSD from the COVID times and our mental health is struggling. But I am sure it is just that it takes time to build things like the nightingale hospitals and get the money from Parliament to hire some more staff.
+
+Thank you so much for all the hard work you do,<br>
+`r author_data$Name[2]`
+
+:::
+
+::: {.callout-caution collapse="true" icon=false}
+## Email #3 {.unnumbered}
+
+<b>From:</b> `r author_data$Email[3]`<br>
+<b>To:</b> pandemic_response@`r city_name`.co.uk <br>
+<b>Cc:</b> <br>
+<b>Subject:</b> More Scaremongering <br>
+<b>Date:</b> `r author_data$RandomDates[3]` `r author_data$RandomDateTime[3]`<br>
+
+Dear Pandemic Response Committee,
+
+It is an outrage the way that in this modern era, pandemics are being manufactured and allowed to disrupt our very way of life. Last time it was the so-called "COVID" virus and the sheer utter gall of the government trying to shut down everything that gave us pleasure in life, whether that's a simple birthday party with friends or the ability to go out to the shops without having to wear a suffocating mask. 
+
+Now it is supposed to be some sort of anthrax "pandemic", just as though we are gullible enough to believe that - what rot! The last time I heard something so ridiculous, there were terrorists mailing unidentified white powders to US senators!
+
+You can be assured that I will *not* be voting for any of you when the next election comes!
+
+`r sample(closing_phrases, 1)`<br>
+`r author_data$Name[3]`
+
+:::
+
+::: {.callout-caution collapse="true" icon=false}
+## Email #4 {.unnumbered}
+
+<b>From:</b> `r author_data$Email[4]`<br>
+<b>To:</b> pandemic_response@`r city_name`.co.uk <br>
+<b>Cc:</b> <br>
+<b>Subject:</b> Scared<br>
+<b>Date:</b> `r author_data$RandomDates[4]` `r author_data$RandomDateTime[4]`<br>
+
+Dear Pandemic Response Committee,
+
+Thank you so much for your time and hard work trying to protect our beautiful city from this terrible pandemic. You hear so much nowadays about disease outbreaks in oh, just every city, and it is a real relief to hear that you are doing the hard work needed in order to keep us all safe.
+
+I wouldn't want to take your time up, only I have a friend working at a local farm and she is real worried that she will lose her job if they are forced to close. She has three small children and a mortgage that needs paying. Is there nothing that can be done to protect the workers in our city?
+
+`r sample(closing_phrases, 1)`<br>
+`r author_data$Name[4]`
+
+:::
+
+### News/Blog Posts {.unnumbered}
+
+```{r news4I1, include=FALSE}
+# Load needed libraries
+library(randomNames)
+library(stringr)
+
+# Generate a paper name
+paper_name <- sample(c("Times", "Courier", "Express", "Chronicle", "Gazette", "Herald", "News", "Metro", "Sentinel", "Beacon", "Journal"), 1)
+
+# Generate journalist information (name, pronoun, e-mail address)
+# Generate a random journalist name and gender
+journalist <- randomNames(gender = sample(c(0, 1, 2), 1), which.names = "both", return.complete.data = TRUE)
+
+# Extract first and last names and gender for the journalist
+first_name <- journalist$first_name
+last_name <- journalist$last_name
+journ_name <- paste(first_name, last_name)
+gender <- journalist$gender
+
+# Generate a plausible email address
+journ_email <- paste0(tolower(substr(first_name, 1, 1)), tolower(substr(last_name, 1, 1)), 
+                sprintf("%04d", sample(1:9999, 1)), "@", city_name, paper_name, ".com")
+
+# Determine pronoun based on gender
+journ_pronoun <- ifelse(gender == 0, "He", ifelse(gender == 1, "She", "They"))
+
+# Generate a random number for the contact info
+generate_uk_landline_number <- function() {
+  # Generate a random landline number
+  area_code <- sample(c("01382", "01224", "01463", "01786", "01738", "01343"), 1)  # Sample some common area codes
+  part1 <- sprintf("%04d", sample(1000:9999, 1))
+  part2 <- sprintf("%04d", sample(1000:9999, 1))
+  phone_number <- paste0("+44 ", area_code, " ", part1, " ", part2)
+  return(phone_number)
+}
+
+# Generate a random UK landline number
+landline_number <- generate_uk_landline_number()
+
+#Define variables for the dates: 
+workshop4_date <- as.Date("2025-03-13", format="%Y-%m-%d")
+news_date <- workshop4_date - sample(c(3:6), 1)
+news_date <- format(news_date, "%d %B, %Y")
+pubdate <- news_date
+
+```
+
+Your committee has also been monitoring news and published blog posts about the pandemic in `r city_name`, in order to better gauge public opinion. A representative sample of these is shown below.
+
+::: {.callout-caution collapse="true" icon=false}
+## News/blog post #1 {.unnumbered}
+
+<font size="+3"><b>Increasing Concerns Over Outbreak of `r dis_name` in `r city_name`</b></font><br>
+<font size="+2"><b>`r city_name` `r paper_name`</b></font><br>
+
+
+The situation appears to be quite grim in `r city_name`, as we see cases mount and the city struggles under the wave of another pandemic, coming hard on the heels of the COVID pandemic which began nearly five years ago. 
+
+To date there have been `r outbreak_deaths4I1` deaths attributed to the pathogen, *`r inf_agent`*, and hundreds of people are currently ill with the disease.
+
+The city's Emergency Pandemic Response Committee is working to pin down the source of the outbreak, but there are real fears for what impact this new pandemic will have on the city's economy. The spectre of COVID looms large over the residents of this lovely city. 
+
+The Emergency Pandemic Response Committee was not available for comment. The First Minister of Scotland made a statement saying that every effort possible is being made to tackle the pandemic in `r city_name`. 
+
+**About the Author:**
+
+`r journ_name` is a health correspondent at the `r city_name` `r paper_name`, specializing in public health and safety issues.`r journ_pronoun` can be contacted at `r journ_email`.
+
+:::
+
+::: {.callout-caution collapse="true" icon=false}
+## News/blog post #2 {.unnumbered}
+
+```{r news4A2, echo=FALSE}
+
+papername1 <- c("News", "Daily Press", "Evening News", "Star", "Telegraph", "Post", "Looking-Glass", "Sentinel", "Times")
+authname1 <- c("Maurice", "Cyrus", "Aaron", "Jane", "Abigail", "Ben", "Eden", "Jessica", "Leone", "Louisa", "Louis", "Fred", "Steve", "Barbara", "Norman", "Susan", "Edwin", "Isaac", "Austin", "Hugh", "Roselyne", "Francis", "Frances", "David", "Elliot", "Alan", "Joan", "Lester", "Devendra", "Lettitia", "Clive", "Perry", "J.M.", "S.R.", "A.B.", "Frank", "Mick", "Graham", "Walter", "Tony", "Leana", "Chester", "Peter", "Ward", "Ken", "Alice", "Erin", "Kate", "Niels", "Emma", "Elena", "Mary-Louise", "George", "Omar", "Carol", "Deborah", "Joseph", "Ashleigh", "Emily", "Joyce", "Harry", "Marcus", "Bill", "Martin", "Luis", "Leo", "Byron", "Joseph", "John", "Julia", "Eric", "Thomas", "Pablo", "Lewis", "Willa", "Miguel", "Edith", "Tracy")
+surname1 <- c("Chevalier", "Charles", "Chesterton", "Clay", "Cohen", "Collins", "Conway", "Cunningham", "Davis", "Daniels", "Douglas", "Evans", "Elliot", "Fields", "Ford", "Fox", "Gallagher", "Gibson", "Grant", "Harris", "Henry", "Hill", "Holmes", "Hunt", "James", "Jones", "Jensen", "Jennings", "Johnson", "Kay", "Kennedy", "King", "Lamb", "Lane", "Lee", "Lewis", "Locke", "Lynch", "MacArthur", "Mann", "Marin", "Martin", "Matthews", "May", "McCarthy", "McClary", "McGill", "McKay", "Mill", "Miller", "Mitchell", "Moore", "Morris", "Nelson", "Nicoll", "Ogilvy", "Ochs", "O'Brien", "Page", "Patterson", "Perry", "Phillips", "Ray", "Reed", "Rogers", "Russell", "Schiller", "Schultz", "Shelley", "Smith", "Snow", "Spencer", "Stein", "Star", "Stewart", "Stone", "Swift")
+adj3 <- c("Disgraceful", "Terrible", "Horrible", "Devastating", "Sad", "Bloody")
+emotion2 <- c("outraged", "upset", "extremely vexed", "so angry", "devastated")
+sent7 <- c()
+wish2 <- c("hope", "hope very much", "wish", "expect", "sincerely hope")
+state2 <- c("dreadful state of affairs", "horrible pandemic", "all of the poor people dying", "tragedy")
+time2 <- c("immediately", "very soon", "at once", "as soon as possible")
+name2 <- c("Anna", "Luke", "Siobhan", "Su", "Ailidh", "Fiona", "Graham", "Madison", "Eleanor", "Rodrigo", "Kieran", "Wilson", "Anika", "Rosemary", "Alise", "Gordon", "Roman", "Karen")
+verb2 <- c("devastate", "obliterate", "ruin", "destroy", "crush")
+adj4 <- c("nearly", "almost", "virtually", "almost literally", "practically")
+
+
+#set up person details for obits
+x <- sample(1:2, 1)
+if(x == 1){
+pron1 <- "he"
+posspron1 <- "his"
+obit1name <- sample(c("Charles", "Robert", "Luke", "Phil", "George", "Elijah", "Noah", "William", "Ben", "James", "Henry", "Leo", "Luca", "Ray"), 1)
+}
+if(x == 2){
+pron1 <- "she"
+posspron1 <- "her"
+obit1name <- sample(c("Dorothy", "Ellen", "Olivia", "Emma", "Charlotte", "Amelia", "Ava", "Sophia", "Millie", "Freya", "Poppy", "Sienna", "Florence"), 1)
+}
+obit1age <- sample(2:5, 1)
+obit1like1 <- sample(c("jigsaw puzzles", "teddy bears", "dinosaurs", "airplanes", "books", "butterflies", "elephants", "hedgehogs", "horses", "fire engines", "penguins", "sail boats", "zebras"), 1)
+obit1like2 <- sample(c("giraffes", "koala bears", "dragons", "cars", "movies", "goldfish", "trains", "unicorns", "winter", "trucks", "finger painting", "flowers", "sea turtles"), 1)
+obit1siblings <- sample(c("Charlie, Alfie, and Jacob", "Tammy and Beth", "Theodore and Mason", "Rory and Susan", "William and Ethan", "Louise and Edward", "Caleb and Brody", "Carter, David, and Milo", "Billy and Parker", "Livvy and Jane"), 1)
+obit1surname <- sample(c("Smith", "Jones", "Williams", "Taylor", "Davies", "Brown", "Wilson", "Evans", "Roberts", "Walker", "Wright", "Thompson", "Hughes", "Edwards", "Green", "Lewis", "Wood", "Martin", "Jackson", "Clark"), 1)
+
+
+x <- sample(1:3, 1)
+if(x == 1){
+pron2 <- "he"
+posspron2 <- "his"
+obit2name <- sample(c("Edward", "Riley", "Hugo", "Ronnie", "Louis", "Grayson", "Caleb", "Benjamin", "Kai", "Jasper", "Albert", "Blake", "Dylan", "Liam"), 1)
+}
+if(x == 2){
+pron2 <- "she"
+posspron2 <- "her"
+obit2name <- sample(c("Matilda", "Lucy", "Jessica", "Alice", "Maya", "Lottie", "Erin", "Maisie", "Bonnie", "Penelope", "Violet", "Esme", "Aurora"), 1)
+}
+if(x == 3){
+pron2 <- "they"
+posspron2 <- "their"
+obit2name <- sample(c("Cypress", "Hollis", "Lex", "Landry", "Rory", "Salem", "Sol", "Kit", "Bellamy"), 1)
+}
+
+obit2age <- sample(50:90, 1)
+obit2prof1 <- sample(c("musician", "author", "comedian", "artist"), 1)
+obit2work1 <- sample(c("Green Grass", "A Whole Latte", "Golden Days", "One True Love", "Idle Thoughts", "Hopeless", "Purple Skies", "Framed", "Enemy of Fire", "Friends and Lovers", "My Best Friend", "A Fool's Errand", "Harmful", "Pigeons and Partridges"), 1)
+obit2siblings <- sample(c("Luke and Chester", "Emily and Jonathan", "Gloria and Stephen", "Hester and Winifred", "Tammy, Theodore, and Thomas", "Frank and Thelma", "Eva and Elaine", "Charlotte and Harper", "Daisy and Phoebe", "Jim, Ella, and Evie"), 1)
+obit2surname <- sample(c("Smith", "Jones", "Williams", "Taylor", "Davies", "Brown", "Wilson", "Evans", "Roberts", "Walker", "Wright", "Thompson", "Hughes", "Edwards", "Green", "Lewis", "Wood", "Martin", "Jackson", "Clark", "Campbell", "Burns", "Murphy", "Watt", "Marshall", "White", "Stevenson", "Young", "Watson", "Morrison", "King", "Bruce", "Hill", "Gibson", "Gordon"), 1)
+
+```
+
+
+<font size="+3"><b>`r city_name` `r sample(papername1, 1)`</b></font><br>
+<font size="+2"><b>`r city_name` says farewell to pandemic's youngest victim</b></font><br>
+by `r sample(authname1, 1)` `r sample(surname1, 1)`<br>
+`r sample(pubdate, 1)`
+
+The pandemic ravaging `r city_name` has claimed yet another victim. There have been `r outbreak_deaths4I1` deaths in the pandemic so far, but perhaps the most tragic loss is `r obit1name` `r obit1surname` - at only `r obit1age`, the youngest victim that the pandemic has claimed.    
+
+`r obit1name` `r obit1surname` liked `r obit1like1` and `r obit1like2`. Friends and family say that `r pron1` was always `r sample(c("a delight", "an absolute joy", "a treasure", "the most precious child"), 1)`. 
+
+`r obit1name` is survived by `r posspron1` parents and grandparents, and by `r posspron1` siblings `r obit1siblings`. 
+
+The funeral service will be held `r sample(c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"), 1)` at `r sample(c("St. Ninian's", "Trinity Baptist Church", "Westlake Memorial", "St. Elfrida's Catholic Church", "St. Mary's", "Trinity Church", "St. Andrew's", "St. Judes"), 1)`.
+
+
+
+:::
+
+::: {.callout-caution collapse="true" icon=false}
+## News/blog post #3 {.unnumbered}
+
+<font size="+3"><b>`r city_name` `r sample(papername1, 1)`</b></font><br>
+<font size="+2"><b>`r city_name` says farewell to local legend</b></font><br>
+by `r sample(authname1, 1)` `r sample(surname1, 1)`<br>
+`r sample(pubdate, 1)`
+
+The `r dis_name` pandemic ravaging `r city_name` has claimed yet another victim. `r obit2name` `r obit2surname`, local `r obit2prof1` and star, sadly passed away on `r sample(c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"), 1)`. 
+
+`r obit2name` was perhaps best known for `r posspron2` `r sample(2000:2015, 1)` work `r obit2work1` , but fans say that the rest of `r posspron2` work was equally as `r sample(c("memorable", "genre-changing", "excellent", "influential"), 1)`. 
+
+`r obit2name` is survived by `r posspron2` `r sample(c("partner", "husband", "wife"), 1)`, and by `r posspron2` siblings `r obit2siblings`. 
+
+The funeral service will be held `r sample(c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"), 1)` at `r sample(c("St. Ninian's", "Trinity Baptist Church", "Westlake Memorial", "St. Elfrida's Catholic Church", "St. Mary's", "Trinity Church", "St. Andrew's", "St. Judes"), 1)`.
+
+:::
+
+::: {.callout-caution collapse="true" icon=false}
+## News/blog post #3 {.unnumbered}
+
+<font size="+3"><b>`r city_name` `r sample(papername1, 1)`</b></font><br>
+<font size="+2"><b>`r city_name` pandemic council making great strides</b></font><br>
+by `r sample(authname1, 1)` `r sample(surname1, 1)`
+`r sample(pubdate, 1)`
+
+Citizens of `r city_name` should be `r sample(c("grateful", "thankful", "glad"), 1)` that the city's Emergency Pandemic Response Committee, `r sample(c("swiftly", "quickly", "hurriedly"), 1)` convened when a new pandemic began to hit `r city_name`, has been so effective. While the initial death toll from the pandemic appeared to be quite `r sample(c("alarming", "devastating", "serious", "high", "heavy"), 1)`, the actions taken by the EPRC seem to have been sensible and will hopefully be effective. 
+
+Officials from `r sample(c("the NHS", "Public Health Scotland", "the World Health Organisation", "the Center for Disease Control", "the Red Cross"), 1)` have publicly praised the `r city_name` EPRC, saying that `r sample(c("it is difficult to imagine a more effective public health response", "their actions have been extremely effective", "the EPRC has done all of the right things", "this is a triumph that shows how effective public health responses can be", "countless lives have been saved due to the actions of the EPRC"), 1)`
+
+There do continue to be deaths occuring due to the pandemic, but hopefully `r city_name` will see the death toll begin to decrease in the coming weeks. 
+
+:::
+
+
+
+::: {.callout-caution collapse="true" icon=false}
+## News/blog post #4 {.unnumbered}
+
+<font size="+3"><b>`r city_name` `r sample(papername1, 1)`</b></font><br>
+<font size="+2"><b>Yet more overreach in the name of "science"</b></font><br>
+by `r sample(authname1, 1)` `r sample(surname1, 1)`<br>
+`r sample(pubdate, 1)`
+
+Governments across the globe have seen how successful power-grabs in the name of public health can be, following on the wave of restrictions imposed because of so-called viral diseases like COVID-19 and "mpox". So-called scientists are fearmongering - aerosols, monkeys, "bird" flu - now they think that they can fool us into thinking that the air and water are unsafe. Citizens of `r city_name` should stand strong against this terrible tyranny! No more mask mandates, no more senseless restrictions!
+
+Our elders should not be left to die alone, left frightened and hopeless in a mandatory lockdown claimed to be "for their benefit." Our children should not be left to struggle through "pandemic" after "pandemic" - their language and literacy skills have been left behind due to these lockdowns, and their mental health is suffering. It is time that we take back control of our lives and end this tyranny of fear-mongering and so-called science. Citizens of `r city_name`, stand with me and resist this most recent attack on your freedoms and your lives. 
+
+:::
+
+::: {.callout-caution collapse="true" icon=false}
+## News/blog post #5 {.unnumbered} 
+
+<font size="+3"><b>`r sample(c("BBC Scotland", "The Guardian", "The Independent"), 1)` </b></font><br>
+<font size="+2"><b>`r dis_name` pandemic in `r city_name`</b></font><br>
+by `r sample(authname1, 1)` `r sample(surname1, 1)`<br>
+`r sample(pubdate, 1)`
+
+
+Hard on the heels of the COVID-19 pandemic and a number of other health scares (monkeypox, or "mpox", avian flu, and worries about other infectious disease outbreaks), another pandemic has hit the Scottish town of `r city_name`. This time, it's *`r city_name`*, a bacterium that can very sadly be fatal.
+
+There have been `r outbreak_deaths4I1` deaths in the pandemic so far, but perhaps the most frightening aspect to this new pandemic is rumours that these *`r inf_agent`* strains may have become resistant to even more antibiotics - a truly chilling possibility.
+
+Scientists have been warning about the antibiotic resistance crisis for years, saying that careless use of antibiotics could mean that these precious medicines will no longer be available to us in the future. 
+
+Some of the *`r inf_agent`* strains found in `r city_name` are reportedly resistant to all clinically available antibiotics, and scientists warn that these drug-resistant pathogens might be able to spread to new locations. Will nearby towns be next, or could these *`r inf_agent`* strains go as global as the SARS-COV2 virus did?
+
+:::

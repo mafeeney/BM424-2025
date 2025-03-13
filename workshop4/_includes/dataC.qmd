@@ -1,0 +1,100 @@
+```{r data4C, include=FALSE}
+
+library(ggplot2)
+library(knitr)
+
+outbreak_deaths3C <- 19
+outbreak_cases3C <- 434
+outbreak_icu3C <- 13
+
+outbreak_deaths4C <- 25
+outbreak_cases4C <- 204
+outbreak_icu4C <- 7
+
+```
+
+### Pandemic Report {.unnumbered}
+
+*Briefing:*
+
+* Based on collated hospital reports and death certificates, it is believed that there have been `r outbreak_deaths4C` deaths due to `r dis_name` in `r city_name` thus far
+
+* There are currently `r outbreak_cases4C` patients in the `r hosp_name` with confirmed `r dis_name`, or symptoms consistent with `r dis_name`
+
+* There are currently `r outbreak_icu4C`  patients currently in the ICU with confirmed `r dis_name`
+
+* A triage system for cases in the `r hosp_name` has been approved by the local NHS Board and implemented
+
+* A company has been contracted to begin a public science campaign
+
+* Vulnerable persons have been advised to avoid travel
+
+* Gyms, cinemas, and nightclubs have been closed by order of the `r city_name` City Council
+
+* Contact tracing of confirmed cases has begun; a selection of representative data is in Table 1 below.
+
+```{r travel4C, include=FALSE}
+
+# Define all data vectors 
+shop1 <- c("Tesco", "M&S Food Hall", "Iceland", "Aldi", "ASDA", "Lidl", "Morrisons", "Sainsbury's")
+shop2 <- c("Blacks", "Anthropologie", "Clarks", "Dorothy Perkins", "Edinburgh Woollen Mill", "Fat Face", "Forever 21", "Gap", "Greenwoods", "Guess", "H&M", "JoJo Maman Bebe", "Jones", "Joules", "John Lewis", "M&Co", "Matalan", "Monsoon", "Mountain Warehouse", "New Look", "Next", "Primark", "Reiss", "Schuh", "Superdry", "TK Maxx", "Topshop", "Wallis", "Jack Wills", "Zara", "Around the Corner", "Jewels", "Blacks", "Anthropologie", "Clarks", "Dorothy Perkins", "Edinburgh Woollen Mill", "Fat Face", "Forever 21", "The Gap", "Greenwoods", "Guess", "H&M", "JoJo Maman Bebe", "Jones", "Joules", "John Lewis", "M&Co", "Matalan", "Monsoon", "Mountain Warehouse", "New Look", "Next", "Primark", "Reiss", "Schuh", "Superdry", "TK Maxx", "Topshop", "Wallis", "Jack Wills", "Zara", "The Snazzy Shop", "Fraser & Co.", "Lovely Used Books", "The Corner Shop", "Kitchy Kitchenwares", "M&S")
+work1 <- c("the office", "Primary School", "work", "The Daily newspaper office", "work - ASDA", "work - from home mostly", "work - GP surgery on Queens Lane", "work - nursery", "work (plumber)", "work - the Dreamy Day Nursery", "work - insurance agency", "the  City Hall", "work: Waterstones", "the City Museum for work", "Bodacious Brewery (work)", "the office", "work", "work - cleaning houses", "Blacks (work)", "work: Anthropologie", "work at Clarks", "work: Dorothy Perkins", "work: Edinburgh Woollen Mill", "Fat Face (work)", "Forever 21 (work)", "Gap - work", "Greenwoods", "work - Guess", "work: H&M", "JoJo Maman Bebe (work)", "Jones (work)", "Joules (work)", "John Lewis (work)", "work: M&Co", "work: Matalan", "work - Monsoon", "work: Mountain Warehouse", "work (New Look)", "at work - Next", "work at Primark", "work - Reiss", "work: Schuh", "at work at Superdry", "TK Maxx (work)", "Topshop (work)", "Wallis (work)", "at work at Jack Wills", "work: Zara", "The Snazzy Shop (work)", "Fraser & Co. (work)", "Bella's (work)", "at work - Around the Corner", "work at Jewels", "work: the coffee shop", "work: the Cat Cafe", "work: Bella Italia", "work: bookshop", "work (shop)", "work (records shop)", "work: used bookstore", "toy stop (work)", "work - sweet shop", "work - Advisa Insurance Agents", "work: clerical", "work - data entry", "work", "work (museum)", "Work: Awesome Academy", "work - Ardkeld Conservatory", "work - B & Q", "work - the library", "work (from home)", "work (self-employed)", "work: bus driver", "work - taxi driver", "work (lorry driver)", "work", "work (from home)", "work (self-employed)", "work: restaurant", "work: deliveries", "work (City Museum)", "work - at the library", "work (the Tremendous Temp Agency)", "work (Tesco)", "work - at City Hall", "work (Open Office Complex)", "work - Neville's Nurseries", "work - data entry", "work (London)", "work (Belfast)", "work at Cafe Nero", "Costa (work)", "Pizza Express (work)", "work (Prezzo)", "Wagamama (work)", "Frankie and Benny's (work)", "Five Guys = work", "work = Gourmet Burger Kitchen", "at work at Yo!Sushi", "at work (@The Slug and Lettuce)", "work = The Queen's Head", "at work at The King's Arms", "work - waiter at The Bell", "at work: Pret", "at work at Nandos", "ASK Italian (work)", "at work (barista at Starbucks)", "at work - server at The Squid and Sextant")
+other1 <- c("The Beautiful Botanical Garden", "The City Museum", "the Modern Art Museum", "the zoo", "the playground", "the cinema", "the movies", "the library", "the bowling alley", "Calline Castle", "the beach", "the gardens", "Ardkeld Hall", "coastal walk", "river walk", "the Cathedral", "the art gallery", "the theatre", "the market", "music concert" ,"gig", "the gym", "dinner party at a friend's", "coffee at a friend's", "tea with my nan", "dance class", "cooking class", "went to the pub", "played football", "brewery tour", "went for a long walk", "went to the pool", "went to the gym", "exercised", "improv night", "pub quiz", "pub quiz (The Queen's Head)", "went for a run", "went running along the river", "bird-watching on Saturday", "bird-watching", "went to school", "went to a night class", "story hour at the library (Saturday)", "volunteering", "art lessons", "drawing lessons", "improv night at the Loud Lobster", "cycling", "board game night with friends", "went to the park", "went to the playground", "fishing", "visited nan", "visited my sister", "visited my brother", "saw my sister's kids", "saw my brother's kids", "saw my niblings", "visited my mum", "visited my dad", "visited granddad", "care home - to see nan", "saw an old friend from uni for coffee", "coffee with an old school friend", "coffee with friends", "pub crawl with friends", "pub crawl with friends - can't remember where we went", "Paint and Pinot night at Debbie's", "cookery class", "went out dancing with friends", "went clubbing with friends", "went to a concert with some friends", "went to a gig with friends", "shopping with friends - can't remember where all we went", "long walk in the countryside", "walk along the canal path", "walk by the lake", "went for a walk in the park", "played tennis with Steve", "played tennis with friends", "Saturday pick-up football game", "played badminton", "played raquetball", "played pool with some friends", "went cycling with friends", "went for a swim", "went to church", "family dinner at nan's", "family dinner with granddad", "dinner with my in-laws", "walked on the beach", "went beachcombing", "went bowling", "played golf", "played golf with my mates", "played basketball", "went camping", "went camping - nature reserve", "weekend photography class", "board game night at Susan's", "horse riding", "played hockey", "paintball with friends", "piano lessons", "went out for cocktails", "went clubbing", "went shopping")
+restaurant1 <- c("The Cat Cafe", "Bella Italia", "Cafe Nero", "Costa", "Pizza Express", "McDonalds", "Pizza Hut", "Prezzo", "Wagamama", "Frankie and Benny's", "Five Guys", "Gourmet Burger Kitchen", "Yo!Sushi", "The Slug and Lettuce", "The Queen's Head", "The King's Arms", "The Bell", "Pret", "KFC", "Greggs", "Nandos", "ASK Italian", "Subway", "Burger King", "The Bagel Bar", "Starbucks", "The Squid and Sextant", "The Queen's Heart", "The Grey Ewe", "Sizzle and Spice", "Curry in a Hurry", "The Pizza Place", "The Loud Lobster", "The Ardkeld Pavilion", "The Daily Catch", "Amuse-Bouche", "Edamame Dreams", "The Green House", "Fruit and Fancy", "Ardkeld Ice Cream", "The Breakfast Club", "The Friendly Tortoise", "The Cocoa Tree", "Fancy Flour", "Ardkeld Cakes", "Knead to Know", "Crumbs", "Cloud Nine Brewing Company", "Deep Dish Pizzas", "Pizzazz Pizzeria", "Javawocky", "The Lemon and Lime", "The Slice and Ice", "Beans and Barley", "The Tower Bistro", "Java and Jazz", "Elements", "Cinnamon Grove", "Fresh Coriander", "Harbourview", "Central Square", "The Soup Kitchen")
+travel1 <- c("London", "Inverness", "Glasgow", "Edinburgh", "Arran", "Skye", "Stirling", "Loch Lomond", "York", "Perth", "Dundee", "Aberdeen", "Oban", "Fort William", "Elgin", "Wick", "Portree", "Harris", "Lewis", "Ayr", "Paisley", "Aviemore", "Newcastle", "Leeds", "Sheffield", "Norwich", "Cambridge", "Brighton", "Oxford", "Luton", "Bournemouth", "Plymouth", "Swansea", "Snowdonia", "Liverpool", "Chester", "Blakepool", "the Lakes", "Cumbria", "Keswick", "Penrith", "Carlisle", "Falkirk", "Kirkcaldy", "St Andrews", "Nairn", "Belfast", "Lairg", "Mull", "Tobermory", "Islay", "Derry", "Lisburn", "Dublin", "Cork", "Galway", "Paris", "Madrid", "Belgium", "Amsterdam", "Marseille", "Barcelona", "Monaco", "Tenerife", "New York City", "Rome", "Athens", "Lisbon", "Berlin", "Warsaw", "Vilnius", "Riga", "Budapest", "Majorca", "Spain", "New York", "Greece", "Faroe Islands", "Iceland", "Greenland", "Wales", "Oslo")
+no <- c("I don't really remember", "sorry I don't remember", "not really sure", "survey form returned blank", "not too sure, sorry", "I haven't really been anywhere I don't think", "haven't been anywhere - sorry", "just stayed at home really")
+
+# Helper to sample and collapse (returns "" if n = 0)
+safe_sample <- function(x, n) {
+  if (n == 0) return("")
+  paste(sample(x, n), collapse = ", ")
+}
+
+# Function to generate a patient's movement
+generate_movement <- function(include_no = FALSE, extra = NULL) {
+  if (include_no) {
+    return(sample(no, 1))
+  }
+  
+  parts <- c(
+    sample(work1, 1),
+    safe_sample(shop1, sample(0:3, 1)),
+    safe_sample(shop2, sample(0:3, 1)),
+    safe_sample(restaurant1, sample(0:6, 1)),
+    safe_sample(other1, sample(0:10, 1)),
+    safe_sample(travel1, sample(0:2, 1)),
+    extra
+  )
+  
+  # Remove empty strings and collapse with commas
+  paste(na.omit(parts[nzchar(parts)]), collapse = ", ")
+}
+
+# Generate movements for each patient
+movements <- c(
+  generate_movement(extra = "train to Perth"),
+  generate_movement(),
+  generate_movement(include_no = TRUE),
+  generate_movement(extra = "the grocery shop"),
+  generate_movement(extra = "the grocery store"),
+  generate_movement(extra = "Tesco"), 
+  generate_movement(extra = "work (Tesco)"),
+  generate_movement(extra = "the train station"),
+  generate_movement(extra = "the rail station"),
+  generate_movement(extra = "train to London")
+)
+
+```
+
+Table 1. Contact tracing results from patients with `r dis_name` cases (`r city_name`)
+
+<table border="1">
+  <tr>
+    <th>Patient no.</th>
+    <th>Movements 10 days prior to symptom onset</th>
+  </tr>
+  `r paste0(
+    "<tr><td>", 1:10, "</td><td>", movements, "</td></tr>", collapse = "\n"
+  )`
+</table>
+

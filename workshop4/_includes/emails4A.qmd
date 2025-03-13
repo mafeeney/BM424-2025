@@ -118,7 +118,7 @@ Some of the folks last time said that I was overcautious, and that it was just a
 <b>From:</b> `r author_data$Email[2]`<br>
 <b>To:</b> pandemic_response@`r city_name`.co.uk <br>
 <b>Cc:</b> <br>
-<b>Subject:</b> Save Our Hospitals
+<b>Subject:</b> Save Our Hospitals<br>
 <b>Date:</b> `r author_data$RandomDates[2]` `r author_data$RandomDateTime[2]`<br>
 
 
@@ -141,7 +141,7 @@ Thank you so much for all the hard work you do,<br>
 <b>From:</b> `r author_data$Email[3]`<br>
 <b>To:</b> pandemic_response@`r city_name`.co.uk <br>
 <b>Cc:</b> <br>
-<b>Subject:</b> Is Nothing Sacred Anymore
+<b>Subject:</b> Is Nothing Sacred Anymore<br>
 <b>Date:</b> `r author_data$RandomDates[3]` `r author_data$RandomDateTime[3]`<br>
 
 Dear Pandemic Response Committee,
@@ -163,7 +163,7 @@ You can be assured that I will *not* be voting for any of you when the next elec
 <b>From:</b> `r author_data$Email[4]`<br>
 <b>To:</b> pandemic_response@`r city_name`.co.uk <br>
 <b>Cc:</b> <br>
-<b>Subject:</b> Scared
+<b>Subject:</b> Scared<br>
 <b>Date:</b> `r author_data$RandomDates[4]` `r author_data$RandomDateTime[4]`<br>
 
 Dear Pandemic Response Committee,
@@ -234,8 +234,9 @@ Your committee has also been monitoring news and published blog posts about the 
 ::: {.callout-caution collapse="true" icon=false}
 ## News/blog post #1 {.unnumbered}
 
-**Increasing Concerns Over Outbreak of `r dis_name` in `r city_name`**
-`r city_name` `r paper_name`
+<font size="+3"><b>Increasing Concerns Over Outbreak of `r dis_name` in `r city_name`</b></font><br>
+<font size="+2"><b>`r city_name` `r paper_name`</b></font><br>
+
 
 The situation appears to be quite grim in `r city_name`, as we see cases mount and the city struggles under the wave of another pandemic, coming hard on the heels of the COVID pandemic which began nearly five years ago. 
 
@@ -320,7 +321,7 @@ obit2surname <- sample(c("Smith", "Jones", "Williams", "Taylor", "Davies", "Brow
 by `r sample(authname1, 1)` `r sample(surname1, 1)`
 `r sample(pubdate, 1)`
 
-The ` pandemic ravaging `r city_name` has claimed yet another victim. There have been `r outbreak_deaths4A` deaths in the pandemic so far, but perhaps the most tragic loss is `r obit1name` `r obit1surname` - at only `r obit1age`, the youngest victim that the pandemic has claimed.    
+The pandemic ravaging `r city_name` has claimed yet another victim. There have been `r outbreak_deaths4A` deaths in the pandemic so far, but perhaps the most tragic loss is `r obit1name` `r obit1surname` - at only `r obit1age`, the youngest victim that the pandemic has claimed.    
 
 `r obit1name` `r obit1surname` liked `r obit1like1` and `r obit1like2`. Friends and family say that `r pron1` was always `r sample(c("a delight", "an absolute joy", "a treasure", "the most precious child"), 1)`. 
 
@@ -360,7 +361,7 @@ by `r sample(authname1, 1)` `r sample(surname1, 1)`
 
 Citizens of `r city_name` should be `r sample(c("grateful", "thankful", "glad"), 1)` that the city's Emergency Pandemic Response Committee, `r sample(c("swiftly", "quickly", "hurriedly"), 1)` convened when a new pandemic began to hit `r city_name`, has been so effective. While the initial death toll from the pandemic appeared to be quite `r sample(c("alarming", "devastating", "serious", "high", "heavy"), 1)`, the actions taken by the EPRC seem to have been sensible and will hopefully be effective. 
 
-Officials from `r sample(c("the NHS", "Public Health Scotland", "the World Health Organisation", "the Center for Disease Control", "the Red Cross"), 1)` have publicly praised the `r city_name` PRC, saying that `r sample(c("it is difficult to imagine a more effective public health response", "their actions have been extremely effective", "the EPRC has done all of the right things", "this is a triumph that shows how effective public health responses can be", "countless lives have been saved due to the actions of the EPRC"), 1)`
+Officials from `r sample(c("the NHS", "Public Health Scotland", "the World Health Organisation", "the Center for Disease Control", "the Red Cross"), 1)` have publicly praised the `r city_name` EPRC, saying that `r sample(c("it is difficult to imagine a more effective public health response", "their actions have been extremely effective", "the EPRC has done all of the right things", "this is a triumph that shows how effective public health responses can be", "countless lives have been saved due to the actions of the EPRC"), 1)`
 
 There do continue to be deaths occuring due to the pandemic, but hopefully `r city_name` will see the death toll begin to decrease in the coming weeks. 
 
@@ -373,7 +374,7 @@ There do continue to be deaths occuring due to the pandemic, but hopefully `r ci
 
 <font size="+3"><b>`r city_name` `r sample(papername1, 1)`</b></font><br>
 <font size="+2"><b>Yet more overreach in the name of "science"</b></font><br>
-by `r sample(authname1, 1)` `r sample(surname1, 1)`
+by `r sample(authname1, 1)` `r sample(surname1, 1)`<br>
 `r sample(pubdate, 1)`
 
 Governments across the globe have seen how successful power-grabs in the name of public health can be, following on the wave of restrictions imposed because of so-called viral diseases like COVID-19 and "mpox". So-called scientists are fearmongering - aerosols, monkeys, "bird" flu - now they think that they can fool us into thinking that the air and water are unsafe. Citizens of `r city_name` should stand strong against this terrible tyranny! No more mask mandates, no more senseless restrictions!
@@ -387,7 +388,7 @@ Our elders should not be left to die alone, left frightened and hopeless in a ma
 
 <font size="+3"><b>`r sample(c("BBC Scotland", "The Guardian", "The Independent"), 1)` </b></font><br>
 <font size="+2"><b>`r dis_name` pandemic in `r city_name`</b></font><br>
-by `r sample(authname1, 1)` `r sample(surname1, 1)`
+by `r sample(authname1, 1)` `r sample(surname1, 1)`<br>
 `r sample(pubdate, 1)`
 
 Hard on the heels of the COVID-19 pandemic and a number of other health scares (monkeypox, or "mpox", avian flu, and worries about other infectious disease outbreaks), another pandemic has hit the Scottish town of `r city_name`. This time, it's Legionella, a bacterium that can very sadly be fatal.

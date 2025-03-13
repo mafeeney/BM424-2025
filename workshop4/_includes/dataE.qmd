@@ -1,0 +1,96 @@
+```{r data4E, include=FALSE}
+
+library(ggplot2)
+library(knitr)
+
+outbreak_deaths3E <- 17
+outbreak_cases3E <- 412
+outbreak_icu3E <- 25
+
+outbreak_deaths4E <- 26
+outbreak_cases4E <- 287
+outbreak_icu4E <- 13
+
+# set up data for microbiology testing table
+# Sample sources
+sample_sources <- c(
+  "Patient 1", "Patient 2", "Patient 3", "Patient 4", "Patient 5", 
+  "Patient 6", "Patient 7", "Patient 8", "Patient 9", "Patient 10", 
+  "Drain 1", "Drain 2", "Drain 3", "Drain 4", "Drain 5",
+  "Fridge 1", "Fridge 2", "Fridge 3", "Fridge 4", "Fridge 5",
+  "Restaurant 1", "Restaurant 2", "Restaurant 3", "Restaurant 4", "Restaurant 5"
+)
+
+# Listeria presence: + (30% chance) or - (70% chance)
+listeria_status <- sample(c("+", "-"), 25, replace = TRUE, prob = c(0.3, 0.7))
+
+# Create the HTML table with descriptive variable name
+html_table_listeria_testing <- paste0(
+  "<table border='1'>",
+  "<tr><th>Sample Source</th><th>Presence of Listeria</th></tr>",
+  paste0(
+    "<tr><td>", sample_sources, "</td><td>", listeria_status, "</td></tr>", collapse = "\n"
+  ),
+  "</table>"
+)
+
+
+# mock up data for antibiotic resistance
+
+# Define antibiotic list
+antibiotics <- c("CEF", "CEP", "K", "GEN", "S", "TE", "DOX", "NA", "CIP", "ENR", "AZI", 
+                 "CLIN", "P", "AMC", "AMP", "SXT")
+
+# Define resistance profiles for each Listeria strain
+strain_1 <- c("R", "R", "R", "S", "S", "R", "S", "S", "S", "S", "S", "S", "S", "R", "S", "S")
+strain_2 <- c("R", "R", "R", "S", "S", "R", "S", "S", "S", "S", "S", "S", "S", "R", "S", "S")
+strain_3 <- c("R", "R", "R", "S", "S", "R", "S", "S", "S", "S", "S", "R", "S", "R", "S", "S")
+strain_4 <- c("R", "R", "R", "S", "S", "R", "S", "S", "S", "S", "S", "S", "S", "R", "S", "S")
+strain_5 <- c("R", "R", "R", "S", "S", "R", "S", "S", "S", "S", "S", "S", "S", "R", "S", "R")
+
+# Create a data frame with the profiles for all strains
+resistance_data <- data.frame(
+  Antibiotic = antibiotics,
+  Strain_1 = strain_1,
+  Strain_2 = strain_2,
+  Strain_3 = strain_3,
+  Strain_4 = strain_4,
+  Strain_5 = strain_5
+)
+
+# Generate the HTML table
+html_table_resistance <- paste0(
+  "<table border='1'>",
+  "<tr><th>Antibiotic</th><th>Strain 1</th><th>Strain 2</th><th>Strain 3</th><th>Strain 4</th><th>Strain 5</th></tr>",
+  paste0(
+    "<tr><td>", resistance_data$Antibiotic, "</td><td>", resistance_data$Strain_1, "</td><td>", resistance_data$Strain_2, 
+    "</td><td>", resistance_data$Strain_3, "</td><td>", resistance_data$Strain_4, "</td><td>", resistance_data$Strain_5, "</td></tr>", collapse = "\n"
+  ),
+  "</table>"
+)
+```
+
+### Pandemic Report {.unnumbered}
+
+*Briefing:*
+
+* Based on collated hospital reports and death certificates, it is believed that there have been `r outbreak_deaths4E` deaths due to `r dis_name` in `r city_name` thus far
+
+* There are currently `r outbreak_cases4E` patients in the `r hosp_name` with confirmed `r dis_name`, or symptoms consistent with `r dis_name`
+
+* There are currently `r outbreak_icu4E`  patients currently in the ICU with confirmed `r dis_name`
+
+* Microbiological testing has been carried out on samples taken from patients, and environmental samples such as fridges, restaurants, and other potential contamination points: a representative sample of the results is shown below.
+
+`r `html_table_listeria_testing`
+
+Based on pulsed-field gel electrophoresis (PFGE) analysis, all strains were shown to be matches to one another.
+
+
+* A company has been contracted to begin a public social media campaign
+
+* The AMR profile of <i>L. monocytogenes</i> strains isolated from the outbreak has been determined; a representative sample of data is shown below. 
+
+`r `html_table_resistance`
+
+CEF: Cefotaxime, CEP: Cephalothin, K: Kanamycin. GEN: Gentamicin, S: Streptomycin, TE: Tetracycline, DOX: Doxycycline. NA: Nalidixic acid, CIP: Ciprofloxacin, ENR: Enrofloxacin, AZI: Azithromycin, CLIN: Clindamycin, P: Penicillin, AMC: Amoxicillin-clavulanic acid, AMP: Ampicillin, SXT: Sulfamethoxazole-Trimethoprim.

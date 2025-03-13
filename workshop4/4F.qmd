@@ -21,6 +21,39 @@ set.seed(678678) # Ensures reproducibility
 
 At the previous emergency pandemic response team meeting, the following action points were agreed:
 
+* VACCINATION PROGRAMMES 
+Set up in:
+-	Gym/sports facility
+-	School
+-	Health visitors give to infants 
+
+* PPE AND SOCIAL DISTANCING
+-	Masks in high populated areas 
+-	Extra PPE equipment for front line staff (care homes, doctors surgeries, dentists, hospitals, home helps)
+
+* ADVERTISEMENT 
+-	Public transport, education facilities, cafes/restaurants
+-	Symptom awareness 
+-	Reminder to take fast action for medical help if symptoms arise 
+-	Guidance on where to go/who to contact if symptoms arise 
+-	Guidance on what to do if you are close contact of infected person 
+-	Tumbler test – press clear glass to rash 
+-	Take caution around vulnerable people 
+
+* SURVEILLANCE
+-	Determine high risk areas 
+-	Monitor antibiotic resistance 
+-	Monitor incidence trends
+-	Monitor strain evolution/ evolution of serotypes/serogroups
+-	Notify all cases to public health authorities 
+-	Determine point  source 
+
+* HOSPITALISATION TESTING AND TREATMENT 
+-	Check ABCDs (Airway, Breathing, Circulation, Disaviity, Senior Rewiew) -> Diagnostic techniqies (bloods, lumbar puncture)
+-	antibiotics (dexamethasome, ceftriaxone)
+-	if following ABCDs suspect severe meningitis (neurological effects, rapid evolving rash) -> stabilise patient, immediate antibiotics -> then LP after stabilsation
+-	monitor patient 
+
 
 ## Data collected for the current Emergency Pandemic Response Team Meeting {.unnumbered}
 

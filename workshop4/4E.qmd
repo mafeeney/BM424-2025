@@ -33,7 +33,7 @@ Carry out serotyping using corresponding antibodies to determine the serotype. C
 
 * Build AMR profile of strains involved.
 
-* Close 5 of the gyms to use the space to ICU hospital overflow. Cancel low priority procedures. Refer low risk patients back to GP,
+* Close 5 of the gyms to use the space to ICU hospital overflow. Cancel low priority procedures. Refer low risk patients back to GP.
 
 ## Data collected for the current Emergency Pandemic Response Team Meeting {.unnumbered}
 

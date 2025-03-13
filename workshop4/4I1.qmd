@@ -22,7 +22,18 @@ set.seed(987987) # Ensures reproducibility
 At the previous emergency pandemic response team meeting, the following action points were agreed:
 
 
-* Provision of microbiology home testing kits for home water and compost testing
+* Interview the patients currently known to be infected with anthrax. Identify what variation of the infection they have (cutaneous, respiratory, etc.) 
+
+* Post identification of source (food source, building, etc.) cut it off. In the case of a building, it should be shut immediately (condemned) and decontaminated. 
+
+* Vaccination program. Encourage people to get vaccinated to minimise infection. 
+
+* Hospital policy for disposal of bodies. No autopsy. 
+
+* Investigate local farms and livestock. Testing the soil and the animals for the presence of the spores.
+Vaccinate the animals and farm staff. (2)
+Biochemical assays testing for catalase(+), oxidase(-). Gram positive rods. That are neg for haemolysis. (4)
+
 
 ## Data collected for the current Emergency Pandemic Response Team Meeting {.unnumbered}
 

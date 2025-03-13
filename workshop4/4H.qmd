@@ -12,6 +12,7 @@ inf_agent <- "Streptococcus pyogenes"
 inf_type <- "bact"
 group <- "H"
 set.seed(890) # Ensures reproducibility
+
 ```
 
 ::: panel-tabset
@@ -19,7 +20,15 @@ set.seed(890) # Ensures reproducibility
 
 At the previous emergency pandemic response team meeting, the following action points were agreed:
 
+* Develop clear messaging campaigns. Use local media and social platforms as well as direct community engagement. Daily updates on outbreak status.
 
+* Increase healthcare workforce readiness. Open temporary clinics and testing sites at the hospital and pharmacies. Ensure antibiotic availability.
+
+* Implement hygiene campaigns across schools, care homes, and public transport. Distribute PPE and sanitation supplies to hospitals, schools, and public venues. Provide testing kits to local businesses. Enforce a 10-day isolation period for confirmed cases.
+
+* Expand laboratory capacity at hospital and associated clinics. Mandate reporting by healthcare providers. Implement contact tracing through GP referrals, school reports, and workplace notifications. 
+
+* Issue targeted guidance for schools, workplaces, and care homes. Prepare contingency plans for school closures and remote learning. Promote remote work policies.
 
 ## Data collected for the current Emergency Pandemic Response Team Meeting {.unnumbered}
 

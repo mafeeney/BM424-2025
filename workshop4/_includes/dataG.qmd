@@ -1,0 +1,128 @@
+```{r data4G, include=FALSE}
+
+library(ggplot2)
+library(knitr)
+
+outbreak_deaths3G <- 16
+outbreak_cases3G <- 420
+outbreak_icu3G <- 28
+
+outbreak_deaths4G <- 26
+outbreak_cases4G <- 432
+outbreak_icu4G <- 11
+
+vaccines <- floor(runif(1, min = 50, max = 500))
+
+# set up antibiotic data table
+
+# Define antibiotic names
+antibiotics <- c("INH", "RIF", "PZA", "EMB", "SM")
+
+# Define a more resistant base profile for the first strain (resistant to 3 antibiotics)
+base_profile <- c("R", "R", "R", "S", "S")  # Resistant to INH, RIF, PZA, susceptible to EMB and SM
+
+# Create 5 strains, each with mostly the same profile, but with 1 or 2 changes for each
+set.seed(42)
+profiles <- data.frame(
+  Strain = paste("Strain", 1:5),
+  INH = base_profile[1],
+  RIF = base_profile[2],
+  PZA = base_profile[3],
+  EMB = base_profile[4],
+  SM = base_profile[5]
+)
+
+# Introduce 1 or 2 variations in the resistance profile for each strain (other than Strain 1)
+for (i in 2:5) {
+  change_idx <- sample(1:5, 1)  # Randomly select 1 position to change
+  new_value <- ifelse(profiles[i, change_idx] == "S", "R", "S")  # Change S to R or vice versa
+  profiles[i, change_idx] <- new_value
+}
+
+# Generate the HTML table for the antibiotic resistance profile
+html_table_antibiotic_resistance <- paste0(
+  "<table border='1'>",
+  "<tr><th>Strain</th><th>INH</th><th>RIF</th><th>PZA</th><th>EMB</th><th>SM</th></tr>",
+  paste0(
+    "<tr><td>", profiles$Strain, "</td><td>", profiles$INH, "</td><td>", profiles$RIF, "</td><td>", profiles$PZA, "</td><td>", profiles$EMB, "</td><td>", profiles$SM, "</td></tr>", collapse = "\n"
+  ),
+  "</table>"
+)
+
+# set up track and trace data for the patients
+
+# Define a vector of realistic, specific locations
+locations <- c("St. Mary's Hospital Ward", "Pinewood Pharmacy", "Central Train Station", "Downtown Shopping Mall", "Greenfield Supermarket", 
+               "Baker's Café", "Eastside Bus Station", "London Heathrow Airport", "Mill Park Public Park", "Cineplex Cinema", 
+               "The Olive Garden Restaurant", "Peak Fitness Gym", "Main Street Bus Stop", "City Library", "University of East London Campus", 
+               "Tech Solutions Office", "Market Square Street Market", "The Royal Art Gallery", "Metropolitan Museum", "Sunnydale Hotel", 
+               "Spring Valley Public Toilet", "Lakeside Swimming Pool", "Tidewater Beach", "Hillview Zoo", "Royal Hotel Lobby", 
+               "Greenwood Community Center", "St. Joseph's Church", "Sapphire Concert Hall", "St. Anne's School", 
+               "Electric Night Nightclub", "The Last Stop Bar", "Dr. Patel's Clinic", "Sunset Food Court", "Riverfront Bus Station", 
+               "Beachside Café", "Forest View Picnic Area", "Greenfield Sports Stadium", "Lakeside Wedding Venue", 
+               "Autumn Festival Public Event", "Readers' Haven Bookstore", "Red's Food Truck", "Sunny Park Amusement Park", 
+               "Happy Tails Pet Store", "Shady Grove Park Bench", "Burger Joint Fast Food Outlet", "Town Square Laundromat", 
+               "Cool Breeze Ice Cream Stand", "Bright Horizons Vaccine Clinic", "Hope Foundation Charity Event", "Riverside Pub", 
+               "Sunnytrain Train Carriage", "Citywide Taxi", "Green Park Subway Station", "Cashpoint ATM", "Main Street Bank")
+
+# Define a function to generate patient movements, allowing for superspreader locations
+generate_patient_movements <- function(patient_id, num_locations = sample(10:20, 1), superspreaders = NULL) {
+  # Randomly sample locations for the patient
+  visited_locations <- sample(locations, num_locations, replace = FALSE)
+  
+  # If there are any superspreaders, ensure they are included in the list of visited locations
+  if (!is.null(superspreaders)) {
+    # Add superspreader locations to the list, ensuring uniqueness
+    visited_locations <- unique(c(visited_locations, superspreaders))
+  }
+  
+  # Return a formatted row for the patient
+  paste0("<tr><td>", patient_id, "</td><td>", paste(visited_locations, collapse = ", "), "</td></tr>")
+}
+
+# Create a list to store the table rows
+patient_rows <- list()
+
+# Add track and trace information for 10 patients
+for (i in 1:10) {
+  # Manually add superspreaders (can be customized as needed)
+  superspreaders <- if (i %% 2 == 0) c("The Olive Garden Restaurant", "Electric Night Nightclub") else NULL
+  
+  # Generate the patient movements and store in the table rows
+  patient_rows[[i]] <- generate_patient_movements(i, superspreaders = superspreaders)
+}
+
+# Create the HTML table with patient data
+html_table_tb_track_trace <- paste0(
+  "<table border='1'>",
+  "<tr><th>Patient ID</th><th>Locations Visited</th></tr>",
+  paste(patient_rows, collapse = "\n"),
+  "</table>"
+)
+```
+
+### Pandemic Report {.unnumbered}
+
+*Briefing:*
+
+* Based on collated hospital reports and death certificates, it is believed that there have been `r outbreak_deaths4G` deaths due to `r dis_name` in `r city_name` thus far
+
+* There are currently `r outbreak_cases4G` patients in the `r hosp_name` with confirmed `r dis_name`, or symptoms consistent with `r dis_name`
+
+* There are currently `r outbreak_icu4G`  patients currently in the ICU with confirmed `r dis_name`
+
+* A company has been contracted to begin a public awareness campaign
+
+* A vaccination program has been initiated, with `r vaccines` doses admitted so far.
+
+* Extra hospital supplies, PPE, resources, etc. have been sourced, and a committee set up to distribute them according to guidelines set out by the local NHS board
+
+* Drug susceptibility tests on confirmed patient isolates have been performed, and representative data are shown in the table below:
+
+`r html_table_antibiotic_resistance`
+
+* Track and trace efforts have begun for confirmed Tb cases; a representative sample is shown below: 
+
+`r html_table_tb_track_trace`
+
+

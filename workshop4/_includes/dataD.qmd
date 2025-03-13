@@ -1,0 +1,228 @@
+```{r data4D, include=FALSE}
+
+library(ggplot2)
+library(knitr)
+
+outbreak_deaths3D <- 11
+outbreak_cases3D <- 657
+outbreak_icu3D <- 18
+
+outbreak_deaths4D <- 22
+outbreak_cases4D <- 385
+outbreak_icu4D <- 10
+
+```
+
+### Pandemic Report {.unnumbered}
+
+*Briefing:*
+
+* Based on collated hospital reports and death certificates, it is believed that there have been `r outbreak_deaths4D` deaths due to `r dis_name` in `r city_name` thus far
+
+* There are currently `r outbreak_cases4D` patients in the `r hosp_name` with confirmed `r dis_name`, or symptoms consistent with `r dis_name`
+
+* There are currently `r outbreak_icu4D`  patients currently in the ICU with confirmed `r dis_name`
+
+* The public have been provided with health warnings and advice
+
+* Hospital triage measures for postponing procedures and discharging patients where possible have been approved by the local NHS board and implemented
+
+* Microbiology testing has been performed on samples from all stages of the food chain (Table 1)
+
+Table 1. Microbiological testing of products from poultry farms and related food chain stages in the `r city_name` `r dis_name` outbreak.
+
+<table border="1" style="border-collapse: collapse;">
+  <tr>
+    <th>Location</th>
+    <th>Number of products tested</th>
+    <th>Number of positive cultures</th>
+  </tr>
+  <tr>
+    <td>Sue's Duck Farm</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:10, 1)`</td>
+  </tr>
+  <tr>
+    <td>Craig's Chickens</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:10, 1)`</td>
+  </tr>
+  <tr>
+    <td>MeatCo Packing Plant</td>
+    <td>`r sample(50:200, 1)`</td>
+    <td>`r sample(0:15, 1)`</td>
+  </tr>
+  <tr>
+    <td>Highgrove Poultry Processing</td>
+    <td>`r sample(50:150, 1)`</td>
+    <td>`r sample(0:10, 1)`</td>
+  </tr>
+  <tr>
+    <td>Clucks-alot Farms</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:5, 1)`</td>
+  </tr>
+  <tr>
+    <td>Lucky Clucky Farms</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:3, 1)`</td>
+  </tr>
+  <tr>
+    <td>The Golden Goose</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:7, 1)`</td>
+  </tr>
+  <tr>
+    <td>Packaged Poultry Inc.</td>
+    <td>`r sample(50:200, 1)`</td>
+    <td>`r sample(1:10, 1)`</td>
+  </tr>
+  <tr>
+    <td>Lakesmere Butchers</td>
+    <td>`r sample(20:70, 1)`</td>
+    <td>`r sample(0:4, 1)`</td>
+  </tr>
+  <tr>
+    <td>Heather and Gorse Farms</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:8, 1)`</td>
+  </tr>
+  <tr>
+    <td>Grace's Ganders</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:5, 1)`</td>
+  </tr>
+  <tr>
+    <td>Loosey Goosey Farms</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:2, 1)`</td>
+  </tr>
+  <tr>
+    <td>FoodMart Supermarket</td>
+    <td>`r sample(50:200, 1)`</td>
+    <td>`r sample(0:6, 1)`</td>
+  </tr>
+  <tr>
+    <td>Greenacres</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:3, 1)`</td>
+  </tr>
+  <tr>
+    <td>Hill Farm</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:7, 1)`</td>
+  </tr>
+  <tr>
+    <td>Loyola's Turkey Farm</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:4, 1)`</td>
+  </tr>
+  <tr>
+    <td>Pre-Packaged Poultry Ltd.</td>
+    <td>`r sample(50:200, 1)`</td>
+    <td>`r sample(1:10, 1)`</td>
+  </tr>
+  <tr>
+    <td>Goosopolis Farms</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:5, 1)`</td>
+  </tr>
+  <tr>
+    <td>Cordelia and Ken's Chickens</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:6, 1)`</td>
+  </tr>
+  <tr>
+    <td>Fair Hope Farm</td>
+    <td>`r sample(30:100, 1)`</td>
+    <td>`r sample(0:2, 1)`</td>
+  </tr>
+</table>
+<br><br>
+
+
+* Case investigation and patient interviews have been carried out (Table 2)
+```{r data4Dfoods, include=FALSE}
+
+# Sample foods for exposure
+food_items <- c("poultry", "beef", "pork", "salad", "spinach", "apple", "bread", "milk", "cheese", 
+                "potatoes", "chocolate", "fruit juice", "orange", "rice", "pasta", "yogurt", "pizza", 
+                "soda", "chicken nuggets", "chips", "coffee", "beer", "tofu", "fish", "hamburger", 
+                "turkey", "tomatoes", "garlic", "onion", "cabbage", "beans", "carrot", "peach", 
+                "lettuce", "cucumber", "eggplant", "peanut butter", "popcorn", "canned soup", 
+                "ice cream", "mushrooms", "green beans", "pancakes", "waffles", "sushi", "steak", 
+                "bacon", "smoothie", "bread rolls", "salsa", "nuts", "ketchup", "mustard", 
+                "hot dog", "tacos", "fried chicken", "bagels", "grapes", "doughnuts", "granola", 
+                "hummus", "tomato sauce", "crackers", "avocado", "bacon", "cantaloupe", "asparagus", 
+                "sardines", "clams", "cherry pie", "spinach dip", "popcorn chicken", "chicken soup", 
+                "zucchini", "pita bread", "mango", "pineapple", "brownies", "cereal", "french fries", 
+                "soda pop", "milkshake", "energy drink", "nachos", "apple pie", "scrambled eggs", 
+                "toast", "crepes", "pie", "cheese sandwich", "fish sticks", "roast chicken", 
+                "vegetable soup", "burritos", "lasagna", "ginger ale", "root beer", "apple", "banana", "carrot", "chicken breast", "beef steak", "pork chop", "salmon", 
+  "turkey", "potatoes", "lettuce", "spinach", "tomato", "cucumber", "onion", "garlic", 
+  "cabbage", "broccoli", "cauliflower", "green beans", "zucchini", "bell pepper", "chili pepper", 
+  "avocado", "kiwi", "pear", "grapes", "orange", "strawberries", "blueberries", "mango", 
+  "pineapple", "papaya", "watermelon", "apricot", "plum", "peach", "cherries", "fig", 
+  "lemon", "lime", "grapefruit", "pomegranate", "coconut", "almonds", "walnuts", "pecans", 
+  "hazelnuts", "cashews", "pistachios", "peanuts", "sunflower seeds", "pumpkin seeds", 
+  "chia seeds", "flaxseeds", "quinoa", "rice", "pasta", "spaghetti", "couscous", "bulgur", 
+  "oats", "barley", "wheat bread", "sourdough", "baguette", "croissant", "whole wheat bread", 
+  "tortilla", "naan", "pita bread", "flatbread", "pizza", "burger", "hot dog", "chicken nuggets", 
+  "fish fingers", "cheese", "cheddar", "mozzarella", "parmesan", "feta", "cream cheese", 
+  "cottage cheese", "yogurt", "greek yogurt", "butter", "margarine", "olive oil", "vegetable oil", 
+  "coconut oil", "peanut butter", "almond butter", "mayonnaise", "ketchup", "mustard", "bbq sauce", 
+  "hot sauce", "soy sauce", "teriyaki sauce", "salsa", "guacamole", "hummus", "tzatziki", "pesto", 
+  "balsamic vinegar", "apple cider vinegar", "white vinegar", "red wine vinegar", "rice vinegar", 
+  "coconut vinegar", "fish sauce", "worcestershire sauce", "vinegar", "lemon juice", "lime juice", 
+  "orange juice", "cranberry juice", "apple juice", "carrot juice", "tomato juice", "green juice", 
+  "smoothie", "milk", "almond milk", "soy milk", "coconut milk", "oat milk", "chocolate milk", 
+  "coffee", "tea", "green tea", "herbal tea", "black tea", "matcha", "hot chocolate", "beer", 
+  "wine", "whiskey", "vodka", "gin", "rum", "tequila", "cocktail", "fruit punch", "soda", "ginger ale", 
+  "lemonade", "iced tea", "sports drink", "energy drink", "sparkling water")
+
+
+# Function to generate food consumption
+generate_food <- function(include_poultry = FALSE) {
+  # Randomly sample between 15 and 35 items
+  sampled_foods <- sample(food_items, sample(15:35, 1))
+  
+  # Optionally add a poultry product if include_poultry is TRUE
+  if (include_poultry) {
+    sampled_foods <- c(sampled_foods, sample(c("chicken breast", "chicken wings", "roast chicken", "chicken sandwich", "chicken salad", "turkey sandwich", "turkey breast", "roast dinner", "roast chicken", "chicken fingers"), 1))
+  }
+  
+  # Return the foods as a comma-separated string
+  paste(sampled_foods, collapse = ", ")
+}
+
+# Generate food consumption data for patients
+patients_foods <- c(
+  generate_food(include_poultry = TRUE),
+  generate_food(include_poultry = TRUE),
+  generate_food(),
+  generate_food(include_poultry = TRUE),
+  generate_food(include_poultry = TRUE),
+  generate_food(),
+  generate_food(include_poultry = TRUE),
+  generate_food(),
+  generate_food(include_poultry = TRUE),
+  generate_food(include_poultry = TRUE)
+)
+
+# Print the food consumption data in HTML table format
+html_table <- paste0(
+  "<table border='1'>
+    <tr><th>Patient no.</th><th>Foods consumed (10 days prior to symptom onset)</th></tr>",
+  paste0("<tr><td>", 1:10, "</td><td>", patients_foods, "</td></tr>", collapse = "\n"),
+  "</table>"
+)
+
+# Output the HTML table
+
+
+```
+
+
+`r html_table`
+
+

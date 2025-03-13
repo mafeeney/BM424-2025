@@ -1,0 +1,90 @@
+```{r data4H, include=FALSE}
+
+library(ggplot2)
+library(knitr)
+
+outbreak_deaths3H <- 26
+outbreak_cases3H <- 404
+outbreak_icu3H <- 15
+
+outbreak_deaths4H <- 35
+outbreak_cases4H <- 319
+outbreak_icu4H <- 11
+
+kits <- floor(runif(1, min = 50, max = 500))
+attendees <- floor(runif(1, min = 50, max = 500))
+
+# set up contact tracing data
+
+# Define a vector of realistic, specific locations for Group A Strep cases
+locations_strep <- c("St. Luke's General Hospital", "Cedar Park Elementary School", "Riverside Public Library", 
+                     "Royal Park Café", "Maple Street Grocery Store", "Central City Bus Station", 
+                     "Lakeside Community Center", "The Cornerstone Pub", "Sunnyvale Shopping Plaza", 
+                     "Woodland Retreat Hotel", "The Bluefin Seafood Restaurant", "Market Street Bakery", 
+                     "Westside Fitness Center", "Main Avenue Bus Stop", "Parkview Secondary School", 
+                     "Sunnydale Convention Center", "Green Grove Public Park", "Crescent Bay Beach", 
+                     "The King's Palace Theater", "Redwood Family Clinic", "Maple Street Takeaway", 
+                     "Willowbrook Museum", "Downtown Farmers Market", "Silver Stream Pub", 
+                     "Green Meadows Veterinary Clinic", "Kensington Cafe", "The Royal Orchard Inn", 
+                     "Harbor View Mall", "Sunset Garden Shopping Center", "Oasis Beach Resort", 
+                     "Kingston Library", "Briarwood Academy", "Chestnut Grove Pub", "Lakeside Stadium", 
+                     "Sunshine Hill Superstore", "Horizon View Restaurant", "Northgate Hospital Ward", 
+                     "East Bay Coffee House", "Clearwater Park", "Mosswood Town Hall", "Brightstone Sports Bar", 
+                     "Riverstone Hotel", "Bayside Café", "Lakeshore Inn", "Pinecrest Medical Center", 
+                     "Bloomfield Street Market", "The Hillside Inn", "Grandview Clinic", "Oakland Heights Gym")
+
+# Define a function to generate patient movements, allowing for superspreaders
+generate_patient_movements_strep <- function(patient_id, num_locations = sample(10:20, 1), superspreaders = NULL) {
+  # Randomly sample locations for the patient
+  visited_locations <- sample(locations_strep, num_locations, replace = FALSE)
+  
+  # If there are any superspreaders, ensure they are included in the list of visited locations
+  if (!is.null(superspreaders)) {
+    # Add superspreader locations to the list, ensuring uniqueness
+    visited_locations <- unique(c(visited_locations, superspreaders))
+  }
+  
+  # Return a formatted row for the patient
+  paste0("<tr><td>", patient_id, "</td><td>", paste(visited_locations, collapse = ", "), "</td></tr>")
+}
+
+# Create a list to store the table rows
+patient_rows_strep <- list()
+
+# Add contact tracing information for 10 Group A Strep patients
+for (i in 1:10) {
+  # Manually add superspreaders (can be customized as needed)
+  superspreaders <- if (i %% 2 == 0) c("The Bluefin Seafood Restaurant", "The King's Palace Theater") else NULL
+  
+  # Generate the patient movements and store in the table rows
+  patient_rows_strep[[i]] <- generate_patient_movements_strep(i, superspreaders = superspreaders)
+}
+
+# Create the HTML table with patient data for Group A Strep contact tracing
+html_table_strep_contact_trace <- paste0(
+  "<table border='1'>",
+  "<tr><th>Patient ID</th><th>Locations Visited</th></tr>",
+  paste(patient_rows_strep, collapse = "\n"),
+  "</table>"
+)
+```
+
+### Pandemic Report {.unnumbered}
+
+*Briefing:*
+
+* Based on collated hospital reports and death certificates, it is believed that there have been `r outbreak_deaths4H` deaths due to `r dis_name` in `r city_name` thus far
+
+* There are currently `r outbreak_cases4H` patients in the `r hosp_name` with confirmed `r dis_name`, or symptoms consistent with `r dis_name`
+
+* There are currently `r outbreak_icu4H`  patients currently in the ICU with confirmed `r dis_name`
+
+* A company has been contracted to begin a public awareness campaign
+
+* PHS-approved guidance has been issued to all schools, workplaces, and care homes
+
+* A distribution system PPE and testing kits has been set up, with `r kits` distributed to date
+
+* Contact tracing has been implemented. A representative sample of the results is shown below: 
+
+`r html_table_strep_contact_trace`

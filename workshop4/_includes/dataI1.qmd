@@ -1,0 +1,79 @@
+```{r data4I1, include=FALSE}
+
+library(ggplot2)
+library(knitr)
+
+outbreak_deaths3I1 <- 29
+outbreak_cases3I1 <- 525
+outbreak_icu3I1 <- 12
+
+outbreak_deaths4I1 <- 35
+outbreak_cases4I1 <- 335
+outbreak_icu4I1 <- 8
+
+vaccines <- floor(runif(1, min = 50, max = 500))
+
+
+# set up testing results table
+
+# Define a vector of realistic, specific farm and livestock sample names
+farms_and_samples <- c("Green Acres Farm - Cattle", "Silverstone Livestock - Sheep", "Foxhill Farm - Goats", 
+                       "Broadway Livestock Exchange - Pigs", "Whispering Pines Ranch - Horses", 
+                       "Meadowbrook Cattle Ranch - Cattle", "Sunrise Meat Processing Plant - Beef", 
+                       "Oak Ridge Animal Processing - Chickens", "Briarcliff Livestock Auction - Ducks", 
+                       "Pinewood Agricultural Co-op - Sheep", "Cedar Ridge Animal Farm - Goats", 
+                       "Kingsford Livestock Auction - Lambs", "Riverbend Veterinary Clinic - Pigs", 
+                       "Springhill Livestock Market - Turkeys", "Clearview Butcher Shop - Beef", 
+                       "Lakeshore Meatpacking Plant - Lamb", "Silver Creek Cattle Farm - Cattle", 
+                       "Hartford County Livestock Fair - Poultry", "Clearwater Animal Health Center - Horses", 
+                       "Windmill Ridge Leather Works - Goats", "Glenwood Butchery - Sheep", 
+                       "Meadow Springs Cattle Farm - Cattle", "Riverside Butcher Shop - Poultry", 
+                       "Woodland Livestock Barn - Cattle", "Mossberg Farm - Goats")
+
+# Function to generate a positive or negative result for anthrax spores
+generate_spore_result <- function() {
+  sample(c("+", "-"), size = 1, prob = c(0.4, 0.6))
+}
+
+# Create a list to store the table rows for the testing data
+testing_rows_anthrax <- list()
+
+# Add testing information for each sample
+for (i in 1:length(farms_and_samples)) {
+  # Generate the test result (+ or -)
+  result <- generate_spore_result()
+  
+  # Store the row with farm/sample name and result
+  testing_rows_anthrax[[i]] <- paste0("<tr><td>", farms_and_samples[i], "</td><td>", result, "</td></tr>")
+}
+
+# Create the HTML table with testing data for Anthrax spores
+html_table_anthrax_testing <- paste0(
+  "<table border='1'>",
+  "<tr><th>Farm/Livestock Sample</th><th>Anthrax Spores Detected</th></tr>",
+  paste(testing_rows_anthrax, collapse = "\n"),
+  "</table>"
+)
+
+
+```
+
+### Pandemic Report {.unnumbered}
+
+*Briefing:*
+
+* Based on collated hospital reports and death certificates, it is believed that there have been `r outbreak_deaths4I1` deaths due to `r dis_name` in `r city_name` thus far
+
+* There are currently `r outbreak_cases4I1` patients in the `r hosp_name` with confirmed `r dis_name`, or symptoms consistent with `r dis_name`
+
+* There are currently `r outbreak_icu4I1`  patients currently in the ICU with confirmed `r dis_name`
+
+* A vaccination programme has been initiated, with `r vaccines` vaccines administered to date
+
+* An updated hospital policy for disposal of bodies has been approved by the local NHS board
+
+* All patients with anthrax interviewed had the respiratory form of the disease, except for one patient, which had cutaneous anthrax
+
+* A programme of microbiological testing of local farms and samples for anthrax has been initiated, and a sample of representative results are shown in the table below: 
+
+`r html_table_anthrax_testing`
